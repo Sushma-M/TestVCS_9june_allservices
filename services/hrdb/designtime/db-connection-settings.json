@@ -11,7 +11,19 @@
   "dbName" : "hrdb",
   "port" : "",
   "schemaName" : "PUBLIC",
-  "tableFilter" : [ ],
+  "tableFilter" : [ {
+    "table" : "DEPARTMENT",
+    "schema" : "PUBLIC"
+  }, {
+    "table" : "EMPLOYEE",
+    "schema" : "PUBLIC"
+  }, {
+    "table" : "USER",
+    "schema" : "PUBLIC"
+  }, {
+    "table" : "VACATION",
+    "schema" : "PUBLIC"
+  } ],
   "schemaFilter" : [ ".*" ],
   "impersonateUser" : false,
   "activeDirectoryDomain" : "",

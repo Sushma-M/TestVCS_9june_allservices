@@ -1,219 +1,175 @@
 {
-  "insertQuery_User" : {
-    "name" : "insertQuery_User",
-    "description" : "insertQuery_User",
+  "employeedatabyID" : {
+    "name" : "employeedatabyID",
+    "description" : "getemployeedatabyID",
     "version" : "V1",
-    "queryString" : "insert into USER(USERNAME, PASSWORD, ROLE, TENANT_ID) values(:USERNAME, :PASSWORD, :ROLE, :TENANT_ID)",
-    "countQueryString" : null,
+    "queryString" : "select * from Employee where DEPT_ID =:id",
+    "countQueryString" : "select count(*) from (select * from Employee where DEPT_ID =:id) wmTempTable",
     "nativeSql" : true,
-    "fetchCount" : false,
-    "type" : "INSERT",
+    "fetchCount" : true,
+    "type" : "SELECT",
     "parameters" : [ {
-      "name" : "USERNAME",
-      "type" : "string",
-      "list" : false,
-      "variableType" : "PROMPT",
-      "testValue" : "admin1234",
-      "required" : false
-    }, {
-      "name" : "PASSWORD",
-      "type" : "string",
-      "list" : false,
-      "variableType" : "PROMPT",
-      "testValue" : "admin1234",
-      "required" : false
-    }, {
-      "name" : "ROLE",
-      "type" : "string",
-      "list" : false,
-      "variableType" : "PROMPT",
-      "testValue" : "user",
-      "required" : false
-    }, {
-      "name" : "TENANT_ID",
-      "type" : "integer",
-      "list" : false,
-      "variableType" : "PROMPT",
-      "testValue" : "35",
-      "required" : false
-    } ],
-    "request" : {
-      "wrapped" : true,
-      "typeRef" : "InsertQuery_UserRequest",
-      "method" : "POST"
-    },
-    "response" : {
-      "typeRef" : "java.lang.Integer",
-      "returns" : "PRIMITIVE",
-      "responseType" : "SINGLE"
-    }
-  },
-  "insertQuesryEmployee" : {
-    "name" : "insertQuesryEmployee",
-    "description" : "insertQuesryEmployee",
-    "version" : "V1",
-    "queryString" : "insert into EMPLOYEE(EMP_ID, LASTNAME, FIRSTNAME, USERNAME, PASSWORD, STREET, CITY, STATE, ZIP,BIRTHDATE, TENANT_ID) values(:EMP_ID, :LASTNAME, :FIRSTNAME, :USERNAME, :PASSWORD, :STREET, :CITY, :STATE, :ZIP, :BIRTHDATE, :TENANT_ID)",
-    "countQueryString" : null,
-    "nativeSql" : true,
-    "fetchCount" : false,
-    "type" : "INSERT",
-    "parameters" : [ {
-      "name" : "EMP_ID",
-      "type" : "integer",
-      "list" : false,
-      "variableType" : "PROMPT",
-      "testValue" : "467",
-      "required" : false
-    }, {
-      "name" : "LASTNAME",
-      "type" : "string",
-      "list" : false,
-      "variableType" : "PROMPT",
-      "testValue" : "T",
-      "required" : false
-    }, {
-      "name" : "FIRSTNAME",
-      "type" : "string",
-      "list" : false,
-      "variableType" : "PROMPT",
-      "testValue" : "P",
-      "required" : false
-    }, {
-      "name" : "USERNAME",
-      "type" : "string",
-      "list" : false,
-      "variableType" : "PROMPT",
-      "testValue" : "kavya",
-      "required" : false
-    }, {
-      "name" : "PASSWORD",
-      "type" : "string",
-      "list" : false,
-      "variableType" : "PROMPT",
-      "testValue" : "kavya",
-      "required" : false
-    }, {
-      "name" : "STREET",
-      "type" : "string",
-      "list" : false,
-      "variableType" : "PROMPT",
-      "testValue" : "Manikonda",
-      "required" : false
-    }, {
-      "name" : "CITY",
-      "type" : "string",
-      "list" : false,
-      "variableType" : "PROMPT",
-      "testValue" : "Hyderabad",
-      "required" : false
-    }, {
-      "name" : "STATE",
-      "type" : "string",
-      "list" : false,
-      "variableType" : "PROMPT",
-      "testValue" : "TN",
-      "required" : false
-    }, {
-      "name" : "ZIP",
-      "type" : "string",
-      "list" : false,
-      "variableType" : "PROMPT",
-      "testValue" : "456",
-      "required" : false
-    }, {
-      "name" : "BIRTHDATE",
-      "type" : "date",
-      "list" : false,
-      "variableType" : "PROMPT",
-      "testValue" : "2001-02-21",
-      "required" : false
-    }, {
-      "name" : "TENANT_ID",
-      "type" : "integer",
-      "list" : false,
-      "variableType" : "PROMPT",
-      "testValue" : "3534",
-      "required" : false
-    } ],
-    "request" : {
-      "wrapped" : true,
-      "typeRef" : "InsertQuesryEmployeeRequest",
-      "method" : "POST"
-    },
-    "response" : {
-      "typeRef" : "java.lang.Integer",
-      "returns" : "PRIMITIVE",
-      "responseType" : "SINGLE"
-    }
-  },
-  "insertQuesryVacation" : {
-    "name" : "insertQuesryVacation",
-    "description" : "insertQuesryVacation",
-    "version" : "V1",
-    "queryString" : "insert into VACATION(ID, START_DATE, END_DATE, EMP_ID, TENANT_ID, STATUS, \"TYPE\") values(:ID, :START_DATE, :END_DATE, :EMP_ID, :TENANT_ID, :STATUS, :TYPECol)",
-    "countQueryString" : null,
-    "nativeSql" : true,
-    "fetchCount" : false,
-    "type" : "INSERT",
-    "parameters" : [ {
-      "name" : "ID",
-      "type" : "integer",
-      "list" : false,
-      "variableType" : "PROMPT",
-      "testValue" : "167",
-      "required" : false
-    }, {
-      "name" : "START_DATE",
-      "type" : "date",
-      "list" : false,
-      "variableType" : "PROMPT",
-      "testValue" : "2016-11-30",
-      "required" : false
-    }, {
-      "name" : "END_DATE",
-      "type" : "date",
-      "list" : false,
-      "variableType" : "PROMPT",
-      "testValue" : "2016-12-28",
-      "required" : false
-    }, {
-      "name" : "EMP_ID",
+      "name" : "id",
       "type" : "integer",
       "list" : false,
       "variableType" : "PROMPT",
       "testValue" : "1",
       "required" : false
-    }, {
-      "name" : "TENANT_ID",
-      "type" : "integer",
-      "list" : false,
-      "variableType" : "PROMPT",
-      "testValue" : "45",
-      "required" : false
-    }, {
-      "name" : "STATUS",
-      "type" : "string",
-      "list" : false,
-      "variableType" : "PROMPT",
-      "testValue" : "Pending",
-      "required" : false
-    }, {
-      "name" : "TYPECol",
-      "type" : "string",
-      "list" : false,
-      "variableType" : "PROMPT",
-      "testValue" : "Sick Leave",
-      "required" : false
     } ],
     "request" : {
-      "wrapped" : true,
-      "typeRef" : "InsertQuesryVacationRequest",
-      "method" : "POST"
+      "wrapped" : false,
+      "typeRef" : null,
+      "method" : "GET"
     },
     "response" : {
-      "typeRef" : "java.lang.Integer",
-      "returns" : "PRIMITIVE",
-      "responseType" : "SINGLE"
+      "typeRef" : "com.hrdb.models.query.EmployeedatabyIdResponse",
+      "returns" : "CUSTOM",
+      "responseType" : "PAGINATED",
+      "properties" : [ {
+        "name" : "BIRTHDATE",
+        "fieldName" : "birthdate",
+        "optional" : false,
+        "fieldType" : {
+          "type" : "PRIMITIVE",
+          "typeRef" : "java.sql.Date",
+          "list" : false
+        }
+      }, {
+        "name" : "CITY",
+        "fieldName" : "city",
+        "optional" : false,
+        "fieldType" : {
+          "type" : "PRIMITIVE",
+          "typeRef" : "java.lang.String",
+          "list" : false
+        }
+      }, {
+        "name" : "DEPT_ID",
+        "fieldName" : "deptId",
+        "optional" : false,
+        "fieldType" : {
+          "type" : "PRIMITIVE",
+          "typeRef" : "java.lang.Integer",
+          "list" : false
+        }
+      }, {
+        "name" : "EMP_ID",
+        "fieldName" : "empId",
+        "optional" : false,
+        "fieldType" : {
+          "type" : "PRIMITIVE",
+          "typeRef" : "java.lang.Integer",
+          "list" : false
+        }
+      }, {
+        "name" : "FIRSTNAME",
+        "fieldName" : "firstname",
+        "optional" : false,
+        "fieldType" : {
+          "type" : "PRIMITIVE",
+          "typeRef" : "java.lang.String",
+          "list" : false
+        }
+      }, {
+        "name" : "JOB_TITLE",
+        "fieldName" : "jobTitle",
+        "optional" : false,
+        "fieldType" : {
+          "type" : "PRIMITIVE",
+          "typeRef" : "java.lang.String",
+          "list" : false
+        }
+      }, {
+        "name" : "LASTNAME",
+        "fieldName" : "lastname",
+        "optional" : false,
+        "fieldType" : {
+          "type" : "PRIMITIVE",
+          "typeRef" : "java.lang.String",
+          "list" : false
+        }
+      }, {
+        "name" : "MANAGER_ID",
+        "fieldName" : "managerId",
+        "optional" : false,
+        "fieldType" : {
+          "type" : "PRIMITIVE",
+          "typeRef" : "java.lang.String",
+          "list" : false
+        }
+      }, {
+        "name" : "PASSWORD",
+        "fieldName" : "password",
+        "optional" : false,
+        "fieldType" : {
+          "type" : "PRIMITIVE",
+          "typeRef" : "java.lang.String",
+          "list" : false
+        }
+      }, {
+        "name" : "PICURL",
+        "fieldName" : "picurl",
+        "optional" : false,
+        "fieldType" : {
+          "type" : "PRIMITIVE",
+          "typeRef" : "java.lang.String",
+          "list" : false
+        }
+      }, {
+        "name" : "ROLE",
+        "fieldName" : "role",
+        "optional" : false,
+        "fieldType" : {
+          "type" : "PRIMITIVE",
+          "typeRef" : "java.lang.String",
+          "list" : false
+        }
+      }, {
+        "name" : "STATE",
+        "fieldName" : "state",
+        "optional" : false,
+        "fieldType" : {
+          "type" : "PRIMITIVE",
+          "typeRef" : "java.lang.String",
+          "list" : false
+        }
+      }, {
+        "name" : "STREET",
+        "fieldName" : "street",
+        "optional" : false,
+        "fieldType" : {
+          "type" : "PRIMITIVE",
+          "typeRef" : "java.lang.String",
+          "list" : false
+        }
+      }, {
+        "name" : "TENANT_ID",
+        "fieldName" : "tenantId",
+        "optional" : false,
+        "fieldType" : {
+          "type" : "PRIMITIVE",
+          "typeRef" : "java.lang.Integer",
+          "list" : false
+        }
+      }, {
+        "name" : "USERNAME",
+        "fieldName" : "username",
+        "optional" : false,
+        "fieldType" : {
+          "type" : "PRIMITIVE",
+          "typeRef" : "java.lang.String",
+          "list" : false
+        }
+      }, {
+        "name" : "ZIP",
+        "fieldName" : "zip",
+        "optional" : false,
+        "fieldType" : {
+          "type" : "PRIMITIVE",
+          "typeRef" : "java.lang.String",
+          "list" : false
+        }
+      } ]
     }
   }
 }
