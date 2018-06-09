@@ -13,6 +13,13 @@
             </resource>
             <resource>
                 <filtering>true</filtering>
+                <directory>services/hrdb/src</directory>
+                <excludes>
+                    <exclude>**/*.java</exclude>
+                </excludes>
+            </resource>
+            <resource>
+                <filtering>true</filtering>
                 <directory>services/securityService/src</directory>
                 <excludes>
                     <exclude>**/*.java</exclude>
@@ -101,6 +108,7 @@
                         </goals>
                         <configuration>
                             <sources>
+                                <source>services/hrdb/src</source>
                                 <source>services/securityService/src</source>
                             </sources>
                         </configuration>
@@ -269,6 +277,16 @@
             <version>3.1.0</version>
             <scope>provided</scope>
         </dependency>
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>5.1.38</version>
+        </dependency>
+        <dependency>
+            <groupId>org.hsqldb</groupId>
+            <artifactId>hsqldb</artifactId>
+            <version>2.3.3</version>
+        </dependency>
     </dependencies>
     <dependencyManagement>
         <dependencies>
@@ -301,6 +319,6 @@
         <profile.props.file>development.properties</profile.props.file>
         <spring.version>4.3.14.RELEASE</spring.version>
         <spring.security.version>4.2.4.RELEASE</spring.security.version>
-        <wavemaker.studio.version>9.3.1.4775</wavemaker.studio.version>
+        <wavemaker.studio.version>9.3.1.4777</wavemaker.studio.version>
     </properties>
 </project>
