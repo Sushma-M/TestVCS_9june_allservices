@@ -44,7 +44,7 @@ public class MyJavaService {
      * Methods in this class can declare HttpServletRequest, HttpServletResponse as input parameters to access the
      * caller's request/response objects respectively. These parameters will be injected when request is made (during API invocation).
      */
-    public String sampleJavaOperation(String name, HttpServletRequest request) {
+    public String sampleJavaOperation(String name,int abc, HttpServletRequest request) {
         logger.debug("Starting sample operation with request url " + request.getRequestURL().toString());
         
         String result = null;

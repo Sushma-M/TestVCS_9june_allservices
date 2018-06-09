@@ -9,6 +9,11 @@ import javax.servlet.http.HttpServletRequest;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.http.MediaType;
 import org.springframework.beans.factory.annotation.Autowired;
+import com.wordnik.swagger.annotations.Api;
+import com.wordnik.swagger.annotations.ApiOperation;
+import com.wordnik.swagger.annotations.ApiParam;
+import com.wavemaker.tools.api.core.annotations.WMAccessVisibility;
+import com.wavemaker.tools.api.core.models.AccessSpecifier;
 
 @RestController
 @RequestMapping(value = "/myJava")
@@ -18,7 +23,7 @@ public class MyJavaController {
     private MyJavaService myJavaService;
 
     @RequestMapping(value = "/sampleJavaOperation", produces = "application/json", method = RequestMethod.GET)
-    public String sampleJavaOperation(@RequestParam(value = "name", required = false) String name, HttpServletRequest request) {
-        return myJavaService.sampleJavaOperation(name, request);
+    public String sampleJavaOperation(@RequestParam(value = "name", required = false) String name, @RequestParam(value = "abc", required = false) int abc, HttpServletRequest request) {
+        return myJavaService.sampleJavaOperation(name, abc, request);
     }
 }
