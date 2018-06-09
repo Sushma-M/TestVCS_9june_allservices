@@ -1,0 +1,75 @@
+<wm-page data-ng-controller="PanelPageController" pagetitle="Panel" name="page1"> 
+    <wm-header content="header" name="header1"></wm-header> 
+    <wm-top-nav content="topnav" name="top_nav1"></wm-top-nav> 
+    <wm-content name="content1"> 
+        <wm-left-panel columnwidth="2" content="LN_Widgets" name="left_panel1"></wm-left-panel> 
+        <wm-page-content columnwidth="10" name="page_content1"> 
+            <wm-container name="container1" content="breadcrumbpartial"></wm-container> 
+            <wm-layoutgrid name="layoutgrid1"> 
+                <wm-gridrow class="bordered-row" name="gridrow4"> 
+                    <wm-gridcolumn columnwidth="2" name="gridcolumn7_1"> 
+                        <wm-label padding="unset 0.5em" name="label2" caption="Primary Panel" class="h4"></wm-label> 
+                        <wm-label padding="unset 0.5em" class="code" caption="class: &quot;panel-primary&quot;" name="label30"></wm-label> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="10" name="gridcolumn8"> 
+                        <wm-panel subheading="subheading" iconclass="wi wi-account-circle" name="panel1" title="Primay Panel" class="panel-primary" collapsible="true" enablefullscreen="true" closable="true" actions="bind:Variables.menuactions.dataSet" itemlabel="label" itemicon="icon" helptext="This is help content"> 
+                            <wm-label name="label8" class="h2" caption="Lorem Ipsum"></wm-label> 
+                            <wm-label name="label9" class="p" caption="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ligula quam, mollis a condimentum vel, molestie nec lacus. Vestibulum magna eros, tristique eu ligula ut, posuere blandit nisl. Pellentesque posuere fringilla neque a imperdiet."></wm-label> 
+                            <wm-label name="label10" class="p text-muted" caption="Vivamus eleifend augue purus, varius rhoncus enim posuere ut. Aenean nisi lectus, aliquet ullamcorper commodo vitae, bibendum eget magna. Nullam sollicitudin scelerisque lorem, quis auctor enim imperdiet eget. Sed imperdiet leo ac eros sodales,"></wm-label> 
+                            <wm-panel-footer name="panel_footer1"> 
+                                <wm-label padding="unset 0.5em" class="text-muted" caption="Addition Info" name="label11"></wm-label> 
+                                <wm-button class="btn-primary pull-right" caption="action" type="button" margin="unset 0.5em" name="button2"></wm-button> 
+                            </wm-panel-footer> 
+                        </wm-panel> 
+                    </wm-gridcolumn> 
+                </wm-gridrow> 
+                <wm-gridrow class="bordered-row" name="gridrow4"> 
+                    <wm-gridcolumn columnwidth="2" name="gridcolumn7_1"> 
+                        <wm-label padding="unset 0.5em" name="label2" caption="Default Panel" class="h4"></wm-label> 
+                        <wm-label padding="unset 0.5em" class="code" caption="class: &quot;panel-default&quot;" name="label30"></wm-label> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="10" name="gridcolumn8"> 
+                        <wm-panel subheading="subheading" iconclass="wi wi-account-circle" name="panel2" title="Default Panel" class="panel-default" content="pagecontent"></wm-panel> 
+                    </wm-gridcolumn> 
+                </wm-gridrow> 
+                <wm-gridrow class="bordered-row" name="gridrow4"> 
+                    <wm-gridcolumn columnwidth="2" name="gridcolumn7_1"> 
+                        <wm-label padding="unset 0.5em" name="label2" caption="Danger Panel" class="h4"></wm-label> 
+                        <wm-label padding="unset 0.5em" class="code" caption="class: &quot;panel-danger&quot;" name="label30"></wm-label> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="10" name="gridcolumn8"> 
+                        <wm-panel subheading="subheading" iconclass="wi wi-account-circle" name="panel2" title="Danger Panel" class="panel-danger" content="pagecontent"></wm-panel> 
+                    </wm-gridcolumn> 
+                </wm-gridrow> 
+                <wm-gridrow class="bordered-row" name="gridrow4"> 
+                    <wm-gridcolumn columnwidth="2" name="gridcolumn7_1"> 
+                        <wm-label padding="unset 0.5em" name="label2" caption="Info Panel" class="h4"></wm-label> 
+                        <wm-label padding="unset 0.5em" class="code" caption="class: &quot;panel-info&quot;" name="label30"></wm-label> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="10" name="gridcolumn8"> 
+                        <wm-panel subheading="subheading" iconclass="wi wi-account-circle" name="panel4" title="Info Panel" class="panel-info" content="pagecontent"></wm-panel> 
+                    </wm-gridcolumn> 
+                </wm-gridrow> 
+                <wm-gridrow class="bordered-row" name="gridrow4"> 
+                    <wm-gridcolumn columnwidth="2" name="gridcolumn7_1"> 
+                        <wm-label padding="unset 0.5em" caption="Success Panel" class="h4" name="label15"></wm-label> 
+                        <wm-label padding="unset 0.5em" class="code" caption="class: &quot;panel-success&quot;" name="label16"></wm-label> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="10" name="gridcolumn8"> 
+                        <wm-panel subheading="subheading" iconclass="wi wi-account-circle" title="Success Panel" class="panel-success" content="pagecontent" name="panel5"></wm-panel> 
+                    </wm-gridcolumn> 
+                </wm-gridrow> 
+                <wm-gridrow class="bordered-row" name="gridrow8"> 
+                    <wm-gridcolumn columnwidth="2" name="gridcolumn15"> 
+                        <wm-label padding="unset 0.5em" caption="Warning Panel" class="h4" name="label17"></wm-label> 
+                        <wm-label padding="unset 0.5em" class="code" caption="class: &quot;panel-warning&quot;" name="label18"></wm-label> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="10" name="gridcolumn16"> 
+                        <wm-panel subheading="subheading" iconclass="wi wi-account-circle" title="Warning Panel" class="panel-warning" content="pagecontent" name="panel7"></wm-panel> 
+                    </wm-gridcolumn> 
+                </wm-gridrow> 
+            </wm-layoutgrid> 
+        </wm-page-content> 
+    </wm-content> 
+    <wm-footer content="footer" name="footer1"></wm-footer> 
+</wm-page>

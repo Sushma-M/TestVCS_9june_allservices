@@ -1,0 +1,67 @@
+{
+  "calendarEvents" : {
+    "_id" : "wm-calendarEvents-wm.Variable-1484745294460",
+    "name" : "calendarEvents",
+    "owner" : "Page",
+    "category" : "wm.Variable",
+    "dataBinding" : [ ],
+    "dataSet" : [ {
+      "title" : "World Braille Day",
+      "start" : "2017/01/04",
+      "end" : "",
+      "All" : "",
+      "className" : "bg-primary"
+    }, {
+      "title" : "Meeting",
+      "start" : "2017/01/18",
+      "end" : "",
+      "All" : "",
+      "className" : "bg-primary"
+    }, {
+      "title" : "Birthday Party",
+      "start" : "2017/01/24",
+      "end" : "",
+      "All" : "",
+      "className" : "bg-primary"
+    }, {
+      "title" : "International Programmers' Day",
+      "start" : "2017/01/07",
+      "end" : "",
+      "All" : "",
+      "className" : "bg-primary"
+    }, {
+      "title" : "2017 Pharma Market Research Conference USA",
+      "start" : "2017/02/01",
+      "end" : "2017/02/03",
+      "All" : "",
+      "className" : "bg-warning"
+    }, {
+      "title" : "Trip to Italy",
+      "start" : "2017/02/11",
+      "end" : "2017/02/16",
+      "All" : "",
+      "className" : "bg-warning"
+    }, {
+      "title" : "Call Mr.Eric",
+      "start" : "2017/02/24",
+      "end" : "",
+      "All" : "",
+      "className" : "bg-warning"
+    }, {
+      "title" : "World Vegetarian Day",
+      "start" : "2017/10/01",
+      "end" : "",
+      "All" : "",
+      "className" : "bg-primary"
+    }, {
+      "title" : "International Men's Day",
+      "start" : "2017/11/19",
+      "end" : "",
+      "All" : "",
+      "className" : "bg-primary"
+    } ],
+    "type" : "string",
+    "isList" : true,
+    "saveInPhonegap" : false
+  }
+}

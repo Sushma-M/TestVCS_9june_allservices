@@ -1,0 +1,58 @@
+{
+  "mailInboxData" : {
+    "_id" : "wm-mailInboxData-wm.Variable-1484048163331",
+    "name" : "mailInboxData",
+    "owner" : "Page",
+    "category" : "wm.Variable",
+    "dataBinding" : [ ],
+    "dataSet" : [ {
+      "name" : "Eric Lin",
+      "messageLabel" : "",
+      "message" : "Lorem ipsum dolor noretek imit set.",
+      "date" : "119989800000"
+    }, {
+      "name" : "Brad Tucker",
+      "messageLabel" : "",
+      "message" : "Aldus PageMaker including versions of Lorem Ipsum.",
+      "date" : "669321000000"
+    }, {
+      "name" : "Chris Madison",
+      "messageLabel" : "Clients",
+      "message" : "Many desktop publishing packages and web page editors.",
+      "date" : "180124200000"
+    }, {
+      "name" : "Amanda Brown",
+      "messageLabel" : "",
+      "message" : "There are many variations of passages of Lorem Ipsum.",
+      "date" : "659298600000"
+    }, {
+      "name" : "Jane Lisa",
+      "messageLabel" : "Documents",
+      "message" : "Lorem ipsum dolor noretek imit set.",
+      "date" : "446495400000"
+    }, {
+      "name" : "Jessica Bennet",
+      "messageLabel" : "",
+      "message" : "The standard chunk of Lorem Ipsum used.",
+      "date" : "717791400000"
+    }, {
+      "name" : "Keith Neilson",
+      "messageLabel" : "Adv",
+      "message" : "Contrary to popular belief.",
+      "date" : "573417000000"
+    }, {
+      "name" : "William Hogan",
+      "messageLabel" : "Clients",
+      "message" : "If you are going to use a passage of Lorem",
+      "date" : "560284200000"
+    }, {
+      "name" : "Sally Jones",
+      "messageLabel" : "",
+      "message" : "Oor Lorem Ipsum is that it has a more-or-less normal.",
+      "date" : "560284200000"
+    } ],
+    "type" : "string",
+    "isList" : true,
+    "saveInPhonegap" : false
+  }
+}

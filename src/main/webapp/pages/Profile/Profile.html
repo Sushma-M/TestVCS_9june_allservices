@@ -1,0 +1,49 @@
+<wm-page data-ng-controller="ProfilePageController" pagetitle="Profile" name="page1"> 
+    <wm-header content="header" name="header1"></wm-header> 
+    <wm-top-nav content="topnav" name="top_nav1"></wm-top-nav> 
+    <wm-content name="content1"> 
+        <wm-left-panel columnwidth="2" content="leftnav" name="left_panel1"></wm-left-panel> 
+        <wm-page-content columnwidth="10" name="page_content1"> 
+            <wm-container name="container1" content="breadcrumbpartial"> 
+                <wm-param name="category" value="ui" type="string"></wm-param> 
+            </wm-container> 
+            <wm-layoutgrid name="employeeProfileLayoutGrid"> 
+                <wm-gridrow name="gridRowOne"> 
+                    <wm-gridcolumn columnwidth="4" name="gridColumnOne" padding="unset 1em" class="col-xs-12"> 
+                        <wm-card name="employeePicture" picturesource="resources/images/imagelists/stock/1.jpg" title="Jane Lisa" subheading="Riviera State 32/106" iconurl="http://dev.wavemaker.com/examples/salesrep/Jane-Lisa.png" margin="unset 0em 2em 0em"> 
+                            <wm-card-content name="card_content2"> 
+                                <wm-label name="aboutme" fontsize="1.286" fontunit="em" caption="About me" margin="unset 0.2em unset unset"></wm-label> 
+                                <wm-label name="employeeDescription" class="p text-muted" caption="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitat."></wm-label> 
+                                <wm-layoutgrid name="empPostlayoutgrid"> 
+                                    <wm-gridrow name="gridrow"> 
+                                        <wm-gridcolumn columnwidth="4" name="graphColumnOne" horizontalalign="left" class="col-xs-4"> 
+                                            <wm-chart type="Column" title="" iconclass="" name="postGraph" dataset="bind:Variables.salesMarketingChartData.dataSet" xaxisdatakey="x" yaxisdatakey="y1" height="50px" offsetleft="0" offsetbottom="0" showlegend="hide" showxaxis="false" showyaxis="false" theme="Annabelle"></wm-chart> 
+                                            <wm-label caption="169 Posts" class="small" margin="0px unset" name="postLabel"></wm-label> 
+                                        </wm-gridcolumn> 
+                                        <wm-gridcolumn columnwidth="4" name="graphColumnTwo" horizontalalign="left" class="col-xs-4"> 
+                                            <wm-chart type="Area" title="" iconclass="" name="followingGraph" height="50px" dataset="bind:Variables.salesMarketingChartData.dataSet" xaxisdatakey="x" yaxisdatakey="y1" offsetleft="0" offsetbottom="0" showlegend="hide" showxaxis="false" showyaxis="false" theme="Retro"></wm-chart> 
+                                            <wm-label name="followingLabel" caption="28 Following" class="small" margin="0px unset"></wm-label> 
+                                        </wm-gridcolumn> 
+                                        <wm-gridcolumn columnwidth="4" name="graphColumnThree" horizontalalign="left" class="col-xs-4"> 
+                                            <wm-chart type="Column" title="" iconclass="" dataset="bind:Variables.salesMarketingChartData.dataSet" xaxisdatakey="x" yaxisdatakey="y1" height="50px" offsetleft="0" offsetbottom="0" showlegend="hide" name="followersGraph" showxaxis="false" showyaxis="false" theme="Annabelle"></wm-chart> 
+                                            <wm-label caption="240 Followers" class="small" margin="0px unset" name="followersLabel"></wm-label> 
+                                        </wm-gridcolumn> 
+                                    </wm-gridrow> 
+                                </wm-layoutgrid> 
+                            </wm-card-content> 
+                            <wm-card-actions name="empCard_Actions" horizontalalign="center"> 
+                                <wm-anchor margin="unset 0.5em" name="sendMessage" class="btn btn-default btn-xs" caption="" iconclass="wi wi-message" hyperlink="mailto:jane.lisa@mobeteq.com"></wm-anchor> 
+                                <wm-anchor margin="unset 0.5em" class="btn btn-default btn-xs" caption="" iconclass="wi wi-mail" hyperlink="mailto:jane.lisa@mobeteq.com" name="sendEmail"></wm-anchor> 
+                                <wm-anchor margin="unset 0.5em" class="btn btn-default btn-xs" caption="" iconclass="fa fa-coffee" name="buyACoffee"></wm-anchor> 
+                            </wm-card-actions> 
+                        </wm-card> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="8" name="gridColumnTwo" padding="unset 1em" class="col-xs-12"> 
+                        <wm-panel iconclass="" autoclose="outsideClick" name="employeeActivityPanel" title="Activities" collapsible="true" closable="true" actions="bind:Variables.menuactions.dataSet" class="panel-default" content="UserCommentsPartial"></wm-panel> 
+                    </wm-gridcolumn> 
+                </wm-gridrow> 
+            </wm-layoutgrid> 
+        </wm-page-content> 
+    </wm-content> 
+    <wm-footer content="footer" name="footer1"></wm-footer> 
+</wm-page>

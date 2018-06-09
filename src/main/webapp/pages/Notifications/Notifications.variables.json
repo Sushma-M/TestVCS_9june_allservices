@@ -1,0 +1,390 @@
+{
+  "bottomCenterToaster" : {
+    "_id" : "wm-bottomCenterToaster-wm.NotificationVariable-1483353311754",
+    "name" : "bottomCenterToaster",
+    "owner" : "Page",
+    "category" : "wm.NotificationVariable",
+    "dataBinding" : [ {
+      "target" : "content",
+      "value" : "inline",
+      "type" : "string"
+    }, {
+      "target" : "text",
+      "value" : "Toaster on bottom center position",
+      "type" : "string"
+    }, {
+      "target" : "duration",
+      "value" : "5000",
+      "type" : "number"
+    }, {
+      "target" : "class",
+      "value" : "Error",
+      "type" : "string"
+    }, {
+      "target" : "toasterPosition",
+      "value" : "bottom center",
+      "type" : "string"
+    } ],
+    "operation" : "toast"
+  },
+  "bottomLeftToaster" : {
+    "_id" : "wm-bottomLeftToaster-wm.NotificationVariable-1483353261504",
+    "name" : "bottomLeftToaster",
+    "owner" : "Page",
+    "category" : "wm.NotificationVariable",
+    "dataBinding" : [ {
+      "target" : "content",
+      "value" : "inline",
+      "type" : "string"
+    }, {
+      "target" : "text",
+      "value" : "Toaster on bottom left position",
+      "type" : "string"
+    }, {
+      "target" : "duration",
+      "value" : "5000",
+      "type" : "number"
+    }, {
+      "target" : "class",
+      "value" : "Success",
+      "type" : "string"
+    }, {
+      "target" : "toasterPosition",
+      "value" : "bottom left",
+      "type" : "string"
+    } ],
+    "operation" : "toast"
+  },
+  "bottomRightToaster" : {
+    "_id" : "wm-bottomRightToaster-wm.NotificationVariable-1483353375840",
+    "name" : "bottomRightToaster",
+    "owner" : "Page",
+    "category" : "wm.NotificationVariable",
+    "dataBinding" : [ {
+      "target" : "content",
+      "value" : "inline",
+      "type" : "string"
+    }, {
+      "target" : "text",
+      "value" : "Toaster on bottom right position",
+      "type" : "string"
+    }, {
+      "target" : "duration",
+      "value" : "15000",
+      "type" : "number"
+    }, {
+      "target" : "class",
+      "value" : "Info",
+      "type" : "string"
+    }, {
+      "target" : "toasterPosition",
+      "value" : "bottom right",
+      "type" : "string"
+    } ],
+    "operation" : "toast"
+  },
+  "centerCenterToaster" : {
+    "_id" : "wm-centerCenterToaster-wm.NotificationVariable-1483353140865",
+    "name" : "centerCenterToaster",
+    "owner" : "Page",
+    "category" : "wm.NotificationVariable",
+    "dataBinding" : [ {
+      "target" : "content",
+      "value" : "inline",
+      "type" : "string"
+    }, {
+      "target" : "text",
+      "value" : "Toaster in the middle",
+      "type" : "string"
+    }, {
+      "target" : "duration",
+      "value" : "5000",
+      "type" : "number"
+    }, {
+      "target" : "class",
+      "value" : "Error",
+      "type" : "string"
+    }, {
+      "target" : "toasterPosition",
+      "value" : "center center",
+      "type" : "string"
+    } ],
+    "operation" : "toast"
+  },
+  "centerLeftToaster" : {
+    "_id" : "wm-centerLeftToaster-wm.NotificationVariable-1483353081293",
+    "name" : "centerLeftToaster",
+    "owner" : "Page",
+    "category" : "wm.NotificationVariable",
+    "dataBinding" : [ {
+      "target" : "content",
+      "value" : "inline",
+      "type" : "string"
+    }, {
+      "target" : "text",
+      "value" : "Toaster on center left position",
+      "type" : "string"
+    }, {
+      "target" : "duration",
+      "value" : "5000",
+      "type" : "number"
+    }, {
+      "target" : "class",
+      "value" : "Success",
+      "type" : "string"
+    }, {
+      "target" : "toasterPosition",
+      "value" : "center left",
+      "type" : "string"
+    } ],
+    "operation" : "toast"
+  },
+  "centerRightToaster" : {
+    "_id" : "wm-centerRightToaster-wm.NotificationVariable-1483353194924",
+    "name" : "centerRightToaster",
+    "owner" : "Page",
+    "category" : "wm.NotificationVariable",
+    "dataBinding" : [ {
+      "target" : "content",
+      "value" : "inline",
+      "type" : "string"
+    }, {
+      "target" : "text",
+      "value" : "Toaster on center right position",
+      "type" : "string"
+    }, {
+      "target" : "duration",
+      "value" : "5000",
+      "type" : "number"
+    }, {
+      "target" : "class",
+      "value" : "Info",
+      "type" : "string"
+    }, {
+      "target" : "toasterPosition",
+      "value" : "center right",
+      "type" : "string"
+    } ],
+    "operation" : "toast"
+  },
+  "customToaster" : {
+    "_id" : "wm-customToaster-wm.NotificationVariable-1483353875210",
+    "name" : "customToaster",
+    "owner" : "Page",
+    "category" : "wm.NotificationVariable",
+    "dataBinding" : [ {
+      "target" : "content",
+      "value" : "page",
+      "type" : "string"
+    }, {
+      "target" : "page",
+      "value" : "CustomToaster",
+      "type" : "string"
+    }, {
+      "target" : "duration",
+      "value" : "15000",
+      "type" : "number"
+    }, {
+      "target" : "toasterPosition",
+      "value" : "bottom right",
+      "type" : "string"
+    } ],
+    "operation" : "toast"
+  },
+  "errorToaster" : {
+    "_id" : "wm-errorToaster-wm.NotificationVariable-1483352617124",
+    "name" : "errorToaster",
+    "owner" : "Page",
+    "category" : "wm.NotificationVariable",
+    "dataBinding" : [ {
+      "target" : "content",
+      "value" : "inline",
+      "type" : "string"
+    }, {
+      "target" : "text",
+      "value" : "An error occured! Please try again later",
+      "type" : "string"
+    }, {
+      "target" : "duration",
+      "value" : "5000",
+      "type" : "number"
+    }, {
+      "target" : "class",
+      "value" : "Error",
+      "type" : "string"
+    }, {
+      "target" : "toasterPosition",
+      "value" : "bottom right",
+      "type" : "string"
+    } ],
+    "operation" : "toast"
+  },
+  "infoToaster" : {
+    "_id" : "wm-infoToaster-wm.NotificationVariable-1483351255972",
+    "name" : "infoToaster",
+    "owner" : "Page",
+    "category" : "wm.NotificationVariable",
+    "dataBinding" : [ {
+      "target" : "content",
+      "value" : "inline",
+      "type" : "string"
+    }, {
+      "target" : "text",
+      "value" : "You've 1 new mail in your Inbox",
+      "type" : "string"
+    }, {
+      "target" : "duration",
+      "value" : "5000",
+      "type" : "number"
+    }, {
+      "target" : "class",
+      "value" : "Info",
+      "type" : "string"
+    }, {
+      "target" : "toasterPosition",
+      "value" : "bottom right",
+      "type" : "string"
+    } ],
+    "operation" : "toast"
+  },
+  "successToaster" : {
+    "_id" : "wm-notificationVariable1-wm.NotificationVariable-1483346757693",
+    "name" : "successToaster",
+    "owner" : "Page",
+    "category" : "wm.NotificationVariable",
+    "dataBinding" : [ {
+      "target" : "content",
+      "value" : "inline",
+      "type" : "string"
+    }, {
+      "target" : "text",
+      "value" : "Successfully Saved!",
+      "type" : "string"
+    }, {
+      "target" : "duration",
+      "value" : "5000",
+      "type" : "number"
+    }, {
+      "target" : "class",
+      "value" : "Success",
+      "type" : "string"
+    }, {
+      "target" : "toasterPosition",
+      "value" : "bottom right",
+      "type" : "string"
+    } ],
+    "operation" : "toast"
+  },
+  "topCenterToaster" : {
+    "_id" : "wm-topCenterToaster-wm.NotificationVariable-1483352905251",
+    "name" : "topCenterToaster",
+    "owner" : "Page",
+    "category" : "wm.NotificationVariable",
+    "dataBinding" : [ {
+      "target" : "content",
+      "value" : "inline",
+      "type" : "string"
+    }, {
+      "target" : "text",
+      "value" : "Toaster on top center position",
+      "type" : "string"
+    }, {
+      "target" : "duration",
+      "value" : "5000",
+      "type" : "number"
+    }, {
+      "target" : "class",
+      "value" : "Error",
+      "type" : "string"
+    }, {
+      "target" : "toasterPosition",
+      "value" : "top center",
+      "type" : "string"
+    } ],
+    "operation" : "toast"
+  },
+  "topLeftToaster" : {
+    "_id" : "wm-topLeftToaster-wm.NotificationVariable-1483352855186",
+    "name" : "topLeftToaster",
+    "owner" : "Page",
+    "category" : "wm.NotificationVariable",
+    "dataBinding" : [ {
+      "target" : "content",
+      "value" : "inline",
+      "type" : "string"
+    }, {
+      "target" : "text",
+      "value" : "Toaster on top left position",
+      "type" : "string"
+    }, {
+      "target" : "duration",
+      "value" : "5000",
+      "type" : "number"
+    }, {
+      "target" : "class",
+      "value" : "Success",
+      "type" : "string"
+    }, {
+      "target" : "toasterPosition",
+      "value" : "top left",
+      "type" : "string"
+    } ],
+    "operation" : "toast"
+  },
+  "topRightToaster" : {
+    "_id" : "wm-toprightToaster-wm.NotificationVariable-1483352954112",
+    "name" : "topRightToaster",
+    "owner" : "Page",
+    "category" : "wm.NotificationVariable",
+    "dataBinding" : [ {
+      "target" : "content",
+      "value" : "inline",
+      "type" : "string"
+    }, {
+      "target" : "text",
+      "value" : "Toaster on top right position",
+      "type" : "string"
+    }, {
+      "target" : "duration",
+      "value" : "5000",
+      "type" : "number"
+    }, {
+      "target" : "class",
+      "value" : "Info",
+      "type" : "string"
+    }, {
+      "target" : "toasterPosition",
+      "value" : "top right",
+      "type" : "string"
+    } ],
+    "operation" : "toast"
+  },
+  "warningToaster" : {
+    "_id" : "wm-warningToaster-wm.NotificationVariable-1483351693645",
+    "name" : "warningToaster",
+    "owner" : "Page",
+    "category" : "wm.NotificationVariable",
+    "dataBinding" : [ {
+      "target" : "content",
+      "value" : "inline",
+      "type" : "string"
+    }, {
+      "target" : "text",
+      "value" : "No internet connection",
+      "type" : "string"
+    }, {
+      "target" : "duration",
+      "value" : "5000",
+      "type" : "number"
+    }, {
+      "target" : "class",
+      "value" : "Warning",
+      "type" : "string"
+    }, {
+      "target" : "toasterPosition",
+      "value" : "bottom right",
+      "type" : "string"
+    } ],
+    "operation" : "toast"
+  }
+}

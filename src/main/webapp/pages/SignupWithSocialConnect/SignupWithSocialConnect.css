@@ -1,0 +1,10 @@
+.app-login.login-form-padding .app-form.app-login-form {
+    padding-left:1em;
+    padding-right: 1em;
+}
+
+@media only screen and (max-width: 480px) and (min-width: 299px) {
+    .hide-btn-caption .btn-caption {
+        display: none;
+    }
+}

@@ -1,0 +1,192 @@
+{
+  "dashboardTreeStructure" : {
+    "_id" : "wm-sampleTree-wm.Variable-1485166391824",
+    "name" : "dashboardTreeStructure",
+    "owner" : "Page",
+    "category" : "wm.Variable",
+    "dataBinding" : [ ],
+    "dataSet" : [ {
+      "label" : "Alert",
+      "icon" : "wi wi-add-alert"
+    }, {
+      "label" : "Solution Packs",
+      "icon" : "fa fa-lightbulb-o",
+      "children" : [ {
+        "label" : "ECM VMAX",
+        "icon" : "wi wi-beenhere"
+      }, {
+        "label" : "ECM VNX",
+        "icon" : "wi wi-beenhere"
+      }, {
+        "label" : "ECM VPLEX",
+        "icon" : "wi wi-beenhere"
+      }, {
+        "label" : "SRM Suite",
+        "icon" : "wi wi-badge",
+        "children" : [ {
+          "label" : "Dashboard",
+          "icon" : "wi wi-dashboard"
+        }, {
+          "label" : "Explore",
+          "icon" : "wi wi-explore"
+        }, {
+          "label" : "Topolpgy Maps",
+          "icon" : "wi wi-map"
+        }, {
+          "label" : "Service Levels",
+          "icon" : "fa fa-gears"
+        }, {
+          "label" : "Compliance",
+          "icon" : "fa fa-history"
+        }, {
+          "label" : "Operations",
+          "icon" : "wi wi-open-with"
+        }, {
+          "label" : "Discovery",
+          "icon" : "wi wi-search"
+        }, {
+          "label" : "Admin",
+          "icon" : "wi wi-account-circle"
+        } ]
+      }, {
+        "label" : "Storage Operations",
+        "icon" : "wi wi-file-download"
+      }, {
+        "label" : "VMware vCenter",
+        "icon" : "wi wi-file-download"
+      } ]
+    }, {
+      "label" : "Reports",
+      "icon" : "wi wi-report",
+      "children" : [ {
+        "label" : "Employees",
+        "icon" : "wi wi-supervisor-account",
+        "children" : [ {
+          "label" : "Employee Sales Summary",
+          "icon" : "wi wi-shopping-basket"
+        }, {
+          "label" : "Company Sales",
+          "icon" : "fa fa-briefcase"
+        } ]
+      }, {
+        "label" : "Customer",
+        "icon" : "wi wi-account-circle",
+        "children" : [ {
+          "label" : "Product Sales",
+          "icon" : "fa fa-line-chart"
+        }, {
+          "label" : "Product Line Sales",
+          "icon" : "fa fa-file-archive-o"
+        }, {
+          "label" : "Sale Order Details",
+          "icon" : "fa fa-briefcase"
+        } ]
+      } ]
+    }, {
+      "label" : "Device",
+      "icon" : "wi wi-perm-device-information",
+      "children" : [ {
+        "label" : "Desktop Device",
+        "icon" : "wi wi-important-devices"
+      }, {
+        "label" : "Mobile Device",
+        "icon" : "fa fa-mobile"
+      }, {
+        "label" : "Xbox Device",
+        "icon" : "fa fa-soccer-ball-o"
+      }, {
+        "label" : "loT Device",
+        "icon" : "wi wi-developer-board"
+      }, {
+        "label" : "HoloLens Device",
+        "icon" : "wi wi-device-hub"
+      } ]
+    }, {
+      "label" : "Administration",
+      "icon" : "wi wi-account-circle",
+      "children" : [ {
+        "label" : "Content Management",
+        "icon" : "wi wi-import-contacts",
+        "children" : [ {
+          "label" : "Blogs",
+          "icon" : "wi wi-pages"
+        }, {
+          "label" : "Checked-out Items",
+          "icon" : "wi wi-file-text"
+        }, {
+          "label" : "My Documents",
+          "icon" : "wi wi-file"
+        }, {
+          "label" : "Outdated Documents",
+          "icon" : "fa fa-sticky-note-o"
+        }, {
+          "label" : "Pending Documents",
+          "icon" : "wi wi-phone-book"
+        }, {
+          "label" : "Recycle Bin",
+          "icon" : "fa fa-recycle"
+        }, {
+          "label" : "My Desk",
+          "icon" : "fa fa-desktop"
+        } ]
+      } ]
+    } ],
+    "type" : "string",
+    "isList" : true,
+    "saveInPhonegap" : false
+  },
+  "TreeValues" : {
+    "_id" : "wm-TreeValues-wm.Variable-1482387790372",
+    "name" : "TreeValues",
+    "owner" : "Page",
+    "category" : "wm.Variable",
+    "dataBinding" : [ ],
+    "dataSet" : [ {
+      "label" : "item1",
+      "icon" : "wi wi-euro-symbol",
+      "children" : [ ]
+    }, {
+      "label" : "item2",
+      "icon" : "wi wi-euro-symbol",
+      "children" : [ {
+        "label" : "item2.1",
+        "icon" : "wi wi-euro-symbol",
+        "children" : [ {
+          "label" : "item2.1",
+          "icon" : "wi wi-euro-symbol",
+          "children" : [ {
+            "label" : "item2.1",
+            "icon" : "wi wi-euro-symbol"
+          }, {
+            "label" : "item2.2",
+            "icon" : "wi wi-euro-symbol"
+          }, {
+            "label" : "item2.3",
+            "icon" : "wi wi-euro-symbol"
+          }, {
+            "label" : "item2.4",
+            "icon" : "wi wi-euro-symbol"
+          } ]
+        } ]
+      }, {
+        "label" : "item2.2",
+        "icon" : "wi wi-euro-symbol"
+      }, {
+        "label" : "item2.3",
+        "icon" : "wi wi-euro-symbol"
+      }, {
+        "label" : "item2.4",
+        "icon" : "wi wi-euro-symbol"
+      } ]
+    }, {
+      "label" : "item3",
+      "icon" : "wi wi-euro-symbol"
+    }, {
+      "label" : "item4",
+      "icon" : "wi wi-euro-symbol"
+    } ],
+    "type" : "string",
+    "isList" : false,
+    "saveInPhonegap" : false
+  }
+}

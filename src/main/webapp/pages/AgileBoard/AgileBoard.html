@@ -1,0 +1,56 @@
+<wm-page data-ng-controller="AgileBoardPageController" pagetitle="Agile Board" name="page1"> 
+    <wm-header content="header" name="header1"></wm-header> 
+    <wm-top-nav content="topnav" name="top_nav1"></wm-top-nav> 
+    <wm-content name="content1"> 
+        <wm-left-panel columnwidth="2" content="leftnav" name="left_panel1"></wm-left-panel> 
+        <wm-page-content columnwidth="10" name="page_content1"> 
+            <wm-container name="container1" content="breadcrumbpartial"> 
+                <wm-param name="category" value="ui" type="string"></wm-param> 
+            </wm-container> 
+            <wm-layoutgrid name="toDoLayoutGrid"> 
+                <wm-gridrow name="gridRowOne"> 
+                    <wm-gridcolumn columnwidth="4" name="gridColumnOne" padding="1em"> 
+                        <wm-panel subheading="Drag task between list" iconclass="" autoclose="outsideClick" name="viewOnlyToDoListPanel" title="In Progress"> 
+                            <wm-list listclass="list-group agile-board" template="true" itemsperrow="xs-1 sm-1 md-1 lg-1" class="media-list" dataset="bind:Variables.alphaMeetingList.dataSet" navigation="None" name="viewOnlyToDoList" enablereorder="true" itemclass="bind:(Variables.alphaMeetingList.dataSet[$i].tag === 'Mark') ? 'list-group-item info-element': (Variables.alphaMeetingList.dataSet[$i].tag === 'Tag') ? 'list-group-item success-element' : 'list-group-item danger-element'" title=""> 
+                                <wm-listtemplate layout="media" name="listtemplate1"> 
+                                    <wm-label name="inprogressTaskTitle" class="p" caption="bind:Variables.alphaMeetingList.dataSet[$i].comment"></wm-label> 
+                                    <wm-icon name="inprogressDateIcon" iconclass="wi wi-clock" caption="bind:Variables.messageNotificationList.dataSet[$i].time | toDate: 'yyyy-MM-dd HH:mm'"></wm-icon> 
+                                    <wm-label padding="unset 0.5em" name="inprogressItemStatus" class="badge pull-right" caption="bind:Variables.alphaMeetingList.dataSet[$i].tag"></wm-label> 
+                                </wm-listtemplate> 
+                            </wm-list> 
+                        </wm-panel> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="4" name="gridColumnTwo" padding="1em"> 
+                        <wm-panel subheading="Drag task between list" iconclass="" autoclose="outsideClick" name="ReadWriteToDoListPanel" title="To-do"> 
+                            <wm-list listclass="list-group agile-board" template="true" itemsperrow="xs-1 sm-1 md-1 lg-1" class="media-list" dataset="bind:Variables.projectDetails.dataSet" navigation="None" enablereorder="true" itemclass="bind:(Variables.projectDetails.dataSet[$i].tag === 'Mark') ? 'list-group-item warning-element': (Variables.projectDetails.dataSet[$i].tag === 'Tag') ? 'list-group-item success-element' : 'list-group-item danger-element'" name="inProgressLiveList"> 
+                                <wm-listtemplate layout="media" name="listtemplate2"> 
+                                    <wm-container name="container9"> 
+                                        <wm-label class="p" caption="bind:Variables.projectDetails.dataSet[$i].description" name="toDoTaskTitle"></wm-label> 
+                                        <wm-icon iconclass="wi wi-clock" name="toDoDateIcon"></wm-icon> 
+                                        <wm-label padding="unset 0.5em" margin="0px unset" caption="bind:Variables.projectDetails.dataSet[$i].editedOn | toDate: 'yyyy-MM-dd HH:mm'" name="toDoDate"></wm-label> 
+                                        <wm-label padding="unset 0.5em" class="pull-right badge" name="todoItemStatus" caption="bind:Variables.projectDetails.dataSet[$i].tag"></wm-label> 
+                                    </wm-container> 
+                                </wm-listtemplate> 
+                            </wm-list> 
+                        </wm-panel> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="4" name="gridColumnThree" padding="1em"> 
+                        <wm-panel subheading="Drag task between list" iconclass="" autoclose="outsideClick" title="Completed" name="CompletedTaskList"> 
+                            <wm-list listclass="list-group agile-board" template="true" itemsperrow="xs-1 sm-1 md-1 lg-1" class="media-list" dataset="bind:Variables.projectDetails.dataSet" navigation="None" enablereorder="true" itemclass="bind:(Variables.projectDetails.dataSet[$i].tag === 'Mark') ? 'list-group-item warning-element': (Variables.projectDetails.dataSet[$i].tag === 'Tag') ? 'list-group-item success-element' : 'list-group-item danger-element'" name="FinishedTaskList"> 
+                                <wm-listtemplate layout="media" name="listtemplate4"> 
+                                    <wm-container name="container11"> 
+                                        <wm-label class="p" caption="bind:Variables.projectDetails.dataSet[$i].description" name="completeTaskTitle"></wm-label> 
+                                        <wm-icon iconclass="wi wi-clock" name="completedDateIcon"></wm-icon> 
+                                        <wm-label padding="unset 0.5em" margin="0px unset" caption="bind:Variables.projectDetails.dataSet[$i].editedOn | toDate: 'yyyy-MM-dd HH:mm'" name="completeDate"></wm-label> 
+                                        <wm-label padding="unset 0.5em" class="pull-right badge" caption="bind:Variables.projectDetails.dataSet[$i].tag" name="completedItemStatus"></wm-label> 
+                                    </wm-container> 
+                                </wm-listtemplate> 
+                            </wm-list> 
+                        </wm-panel> 
+                    </wm-gridcolumn> 
+                </wm-gridrow> 
+            </wm-layoutgrid> 
+        </wm-page-content> 
+    </wm-content> 
+    <wm-footer content="footer" name="footer1"></wm-footer> 
+</wm-page>

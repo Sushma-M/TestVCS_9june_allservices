@@ -1,0 +1,147 @@
+<wm-page data-ng-controller="WizardPageController" pagetitle="Wizard" name="page1"> 
+    <wm-header content="header" name="header1"></wm-header> 
+    <wm-top-nav content="topnav" name="top_nav1"></wm-top-nav> 
+    <wm-content name="content1"> 
+        <wm-left-panel columnwidth="2" content="LN_Widgets" name="left_panel1"></wm-left-panel> 
+        <wm-page-content columnwidth="10" name="page_content1"> 
+            <wm-container content="breadcrumbpartial" name="container1"></wm-container> 
+            <wm-layoutgrid name="layoutgrid1"> 
+                <wm-gridrow name="gridrow19_1" class="bordered-row"> 
+                    <wm-gridcolumn columnwidth="2" name="gridcolumn37"> 
+                        <wm-label padding="unset 0.5em" caption="Default" name="label45" class="h4"></wm-label> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="10" name="gridcolumn38" padding="1em unset unset unset"> 
+                        <wm-wizard name="wizard1"> 
+                            <wm-wizardstep name="wizardstep1" title="Basic" iconclass="wi wi-user"> 
+                                <wm-liveform novalidate="false" errormessage="" title="" iconclass="" defaultmode="Edit" dataset="bind:Variables.HrdbUserData.dataSet" captionalign="left" captionposition="top" name="liveform2"> 
+                                    <wm-layoutgrid columns="2" name="layoutgrid8"> 
+                                        <wm-gridrow name="gridrow20"> 
+                                            <wm-gridcolumn columnwidth="6" name="gridcolumn39"> 
+                                                <wm-form-field name="username" displayname="Username" show="true" primary-key="false" generator="assigned" key="username" type="string" widget="text" maxchars="20" inputtype="text" placeholder="Enter value"></wm-form-field> 
+                                            </wm-gridcolumn> 
+                                            <wm-gridcolumn columnwidth="6" name="gridcolumn40"> 
+                                                <wm-form-field name="password" displayname="Password" show="true" primary-key="false" generator="assigned" key="password" type="string" widget="text" maxchars="20" inputtype="text" placeholder="Enter value"></wm-form-field> 
+                                            </wm-gridcolumn> 
+                                        </wm-gridrow> 
+                                        <wm-gridrow name="gridrow21"> 
+                                            <wm-gridcolumn columnwidth="6" name="gridcolumn41"> 
+                                                <wm-form-field name="role" displayname="Role" show="true" primary-key="false" generator="assigned" key="role" type="string" widget="text" maxchars="20" inputtype="text" placeholder="Enter value"></wm-form-field> 
+                                            </wm-gridcolumn> 
+                                            <wm-gridcolumn columnwidth="6" name="gridcolumn42"> 
+                                                <wm-form-field name="tenantId" displayname="Tenant Id" show="true" primary-key="false" generator="assigned" key="tenantId" type="integer" step="0" widget="number" inputtype="number" placeholder="Enter value"></wm-form-field> 
+                                            </wm-gridcolumn> 
+                                        </wm-gridrow> 
+                                    </wm-layoutgrid> 
+                                    <wm-form-field name="userId" displayname="User Id" show="false" primary-key="true" generator="identity" key="userId" type="integer" readonly="readonly" required="required" step="0" widget="number" inputtype="number" placeholder="Enter value"></wm-form-field> 
+                                </wm-liveform> 
+                            </wm-wizardstep> 
+                            <wm-wizardstep name="wizardstep2" title="Employment" iconclass="wi wi-briefcase"> 
+                                <wm-liveform novalidate="false" errormessage="" title="" iconclass="" defaultmode="Edit" dataset="bind:Variables.HrdbEmployeeDataContactList.dataSet" captionalign="left" captionposition="top" name="liveform3"> 
+                                    <wm-layoutgrid columns="2" name="layoutgrid9"> 
+                                        <wm-gridrow name="gridrow22"> 
+                                            <wm-gridcolumn columnwidth="6" name="gridcolumn43"> 
+                                                <wm-form-field name="firstname" displayname="Firstname" show="true" primary-key="false" generator="assigned" key="firstname" type="string" widget="text" maxchars="255" inputtype="text" placeholder="Enter value"></wm-form-field> 
+                                            </wm-gridcolumn> 
+                                            <wm-gridcolumn columnwidth="6" name="gridcolumn44"> 
+                                                <wm-form-field name="lastname" displayname="Lastname" show="true" primary-key="false" generator="assigned" key="lastname" type="string" widget="text" maxchars="255" inputtype="text" placeholder="Enter value"></wm-form-field> 
+                                            </wm-gridcolumn> 
+                                        </wm-gridrow> 
+                                        <wm-gridrow name="gridrow23"> 
+                                            <wm-gridcolumn columnwidth="6" name="gridcolumn45"> 
+                                                <wm-form-field name="birthdate" displayname="Birthdate" show="true" primary-key="false" generator="assigned" key="birthdate" type="date" widget="date" placeholder="Select date" outputformat="yyyy-MM-dd"></wm-form-field> 
+                                            </wm-gridcolumn> 
+                                            <wm-gridcolumn columnwidth="6" name="gridcolumn46"> 
+                                                <wm-form-field name="city" displayname="City" show="true" primary-key="false" generator="assigned" key="city" type="string" widget="text" maxchars="255" inputtype="text" placeholder="Enter value"></wm-form-field> 
+                                            </wm-gridcolumn> 
+                                        </wm-gridrow> 
+                                        <wm-gridrow name="gridrow24"> 
+                                            <wm-gridcolumn columnwidth="6" name="gridcolumn47"> 
+                                                <wm-form-field name="jobTitle" displayname="Job Title" show="true" primary-key="false" generator="assigned" key="jobTitle" type="string" widget="text" maxchars="40" inputtype="text" placeholder="Enter value"></wm-form-field> 
+                                            </wm-gridcolumn> 
+                                            <wm-gridcolumn columnwidth="6" name="gridcolumn48"> 
+                                                <wm-form-field name="zip" displayname="Zip" show="true" primary-key="false" generator="assigned" key="zip" type="string" widget="text" maxchars="255" inputtype="text" placeholder="Enter value"></wm-form-field> 
+                                            </wm-gridcolumn> 
+                                        </wm-gridrow> 
+                                    </wm-layoutgrid> 
+                                </wm-liveform> 
+                            </wm-wizardstep> 
+                            <wm-wizardstep name="wizardstep3" title="Address" iconclass="wi wi-location-on"></wm-wizardstep> 
+                            <wm-wizardstep name="wizardstep4" title="Summary" iconclass="wi wi-view-list"> 
+                                <wm-label padding="unset 0.5em" class="h2" caption="Lorem Ipsum" name="label43"></wm-label> 
+                                <wm-label padding="unset 0.5em" class="p" caption="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ligula quam, mollis a condimentum vel, molestie nec lacus. Vestibulum magna eros, tristique eu ligula ut, posuere blandit nisl. Pellentesque posuere fringilla neque a imperdiet." name="label42"></wm-label> 
+                            </wm-wizardstep> 
+                        </wm-wizard> 
+                    </wm-gridcolumn> 
+                </wm-gridrow> 
+                <wm-gridrow name="gridrow26" class="bordered-row"> 
+                    <wm-gridcolumn columnwidth="2" name="gridcolumn51"> 
+                        <wm-label padding="unset 0.5em" caption="Justified" name="label46" class="h4"></wm-label> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="10" name="gridcolumn52" padding="1em unset unset unset"> 
+                        <wm-wizard name="wizard2" stepstyle="justified"> 
+                            <wm-wizardstep title="Basic" iconclass="wi wi-user" name="wizardstep5"> 
+                                <wm-liveform novalidate="false" errormessage="" title="" iconclass="" defaultmode="Edit" dataset="bind:Variables.HrdbUserData.dataSet" captionalign="left" captionposition="top" name="liveform4"> 
+                                    <wm-layoutgrid columns="2" name="layoutgrid10"> 
+                                        <wm-gridrow name="gridrow27"> 
+                                            <wm-gridcolumn columnwidth="6" name="gridcolumn53"> 
+                                                <wm-form-field displayname="Username" show="true" primary-key="false" generator="assigned" key="username" type="string" widget="text" maxchars="20" inputtype="text" placeholder="Enter value" name="form_field17"></wm-form-field> 
+                                            </wm-gridcolumn> 
+                                            <wm-gridcolumn columnwidth="6" name="gridcolumn54"> 
+                                                <wm-form-field displayname="Password" show="true" primary-key="false" generator="assigned" key="password" type="string" widget="text" maxchars="20" inputtype="text" placeholder="Enter value" name="form_field18"></wm-form-field> 
+                                            </wm-gridcolumn> 
+                                        </wm-gridrow> 
+                                        <wm-gridrow name="gridrow28"> 
+                                            <wm-gridcolumn columnwidth="6" name="gridcolumn55"> 
+                                                <wm-form-field displayname="Role" show="true" primary-key="false" generator="assigned" key="role" type="string" widget="text" maxchars="20" inputtype="text" placeholder="Enter value" name="form_field19"></wm-form-field> 
+                                            </wm-gridcolumn> 
+                                            <wm-gridcolumn columnwidth="6" name="gridcolumn56"> 
+                                                <wm-form-field displayname="Tenant Id" show="true" primary-key="false" generator="assigned" key="tenantId" type="integer" step="0" widget="number" inputtype="number" placeholder="Enter value" name="form_field20"></wm-form-field> 
+                                            </wm-gridcolumn> 
+                                        </wm-gridrow> 
+                                    </wm-layoutgrid> 
+                                    <wm-form-field displayname="User Id" show="false" primary-key="true" generator="identity" key="userId" type="integer" readonly="readonly" required="required" step="0" widget="number" inputtype="number" placeholder="Enter value" name="form_field21"></wm-form-field> 
+                                </wm-liveform> 
+                            </wm-wizardstep> 
+                            <wm-wizardstep title="Employment" iconclass="wi wi-briefcase" name="wizardstep6"> 
+                                <wm-liveform novalidate="false" errormessage="" title="" iconclass="" defaultmode="Edit" dataset="bind:Variables.HrdbEmployeeDataContactList.dataSet" captionalign="left" captionposition="top" name="liveform5"> 
+                                    <wm-layoutgrid columns="2" name="layoutgrid11"> 
+                                        <wm-gridrow name="gridrow29"> 
+                                            <wm-gridcolumn columnwidth="6" name="gridcolumn57"> 
+                                                <wm-form-field displayname="Firstname" show="true" primary-key="false" generator="assigned" key="firstname" type="string" widget="text" maxchars="255" inputtype="text" placeholder="Enter value" name="form_field22"></wm-form-field> 
+                                            </wm-gridcolumn> 
+                                            <wm-gridcolumn columnwidth="6" name="gridcolumn58"> 
+                                                <wm-form-field displayname="Lastname" show="true" primary-key="false" generator="assigned" key="lastname" type="string" widget="text" maxchars="255" inputtype="text" placeholder="Enter value" name="form_field23"></wm-form-field> 
+                                            </wm-gridcolumn> 
+                                        </wm-gridrow> 
+                                        <wm-gridrow name="gridrow30"> 
+                                            <wm-gridcolumn columnwidth="6" name="gridcolumn59"> 
+                                                <wm-form-field displayname="Birthdate" show="true" primary-key="false" generator="assigned" key="birthdate" type="date" widget="date" placeholder="Select date" outputformat="yyyy-MM-dd" name="form_field24"></wm-form-field> 
+                                            </wm-gridcolumn> 
+                                            <wm-gridcolumn columnwidth="6" name="gridcolumn60"> 
+                                                <wm-form-field displayname="City" show="true" primary-key="false" generator="assigned" key="city" type="string" widget="text" maxchars="255" inputtype="text" placeholder="Enter value" name="form_field25"></wm-form-field> 
+                                            </wm-gridcolumn> 
+                                        </wm-gridrow> 
+                                        <wm-gridrow name="gridrow31"> 
+                                            <wm-gridcolumn columnwidth="6" name="gridcolumn61"> 
+                                                <wm-form-field displayname="Job Title" show="true" primary-key="false" generator="assigned" key="jobTitle" type="string" widget="text" maxchars="40" inputtype="text" placeholder="Enter value" name="form_field26"></wm-form-field> 
+                                            </wm-gridcolumn> 
+                                            <wm-gridcolumn columnwidth="6" name="gridcolumn62"> 
+                                                <wm-form-field displayname="Zip" show="true" primary-key="false" generator="assigned" key="zip" type="string" widget="text" maxchars="255" inputtype="text" placeholder="Enter value" name="form_field27"></wm-form-field> 
+                                            </wm-gridcolumn> 
+                                        </wm-gridrow> 
+                                    </wm-layoutgrid> 
+                                </wm-liveform> 
+                            </wm-wizardstep> 
+                            <wm-wizardstep title="Address" iconclass="wi wi-location-on" name="wizardstep7"></wm-wizardstep> 
+                            <wm-wizardstep title="Summary" iconclass="wi wi-view-list" name="wizardstep8"> 
+                                <wm-label padding="unset 0.5em" class="h2" caption="Lorem Ipsum" name="label47"></wm-label> 
+                                <wm-label padding="unset 0.5em" class="p" caption="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ligula quam, mollis a condimentum vel, molestie nec lacus. Vestibulum magna eros, tristique eu ligula ut, posuere blandit nisl. Pellentesque posuere fringilla neque a imperdiet." name="label48"></wm-label> 
+                            </wm-wizardstep> 
+                        </wm-wizard> 
+                    </wm-gridcolumn> 
+                </wm-gridrow> 
+            </wm-layoutgrid> 
+        </wm-page-content> 
+    </wm-content> 
+    <wm-footer content="footer" name="footer1"></wm-footer> 
+</wm-page>

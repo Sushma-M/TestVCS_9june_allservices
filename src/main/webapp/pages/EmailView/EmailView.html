@@ -1,0 +1,62 @@
+<wm-page data-ng-controller="EmailViewPageController" pagetitle="Email View" name="page1"> 
+    <wm-header content="header" name="header1"></wm-header> 
+    <wm-top-nav content="topnav" name="top_nav1"></wm-top-nav> 
+    <wm-content name="content1"> 
+        <wm-left-panel columnwidth="2" content="leftnav" name="left_panel1"></wm-left-panel> 
+        <wm-page-content columnwidth="10" name="page_content1"> 
+            <wm-container name="container1" content="breadcrumbpartial"> 
+                <wm-param name="category" value="ui" type="string"></wm-param> 
+            </wm-container> 
+            <wm-layoutgrid name="emailViewLayoutGrid"> 
+                <wm-gridrow name="gridRowOne"> 
+                    <wm-gridcolumn columnwidth="3" name="gridColumnOne" padding="0.5em" class="col-sm-12 col-xs-12"> 
+                        <wm-container name="emailActionPanelContainer" content="emailActionPanel"></wm-container> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="9" name="gridColumnTwo" padding="0.5em" class="col-sm-12 col-xs-12"> 
+                        <wm-panel iconclass="" autoclose="outsideClick" name="messageViewPanel" title="View Message" class="panel-default"> 
+                            <wm-panel-footer name="panel_footer1"> 
+                                <wm-container name="panelFooterActions" horizontalalign="right"> 
+                                    <wm-button class="btn-default btn-sm" type="button" caption="Reply" name="replyButton" iconclass="wi wi-reply" margin="unset 0.2em" hint="Reply"></wm-button> 
+                                    <wm-button class="btn-default btn-sm" type="button" caption="Print" name="printButton" iconclass="wi wi-print" margin="unset 0.2em" hint="Print"></wm-button> 
+                                    <wm-button class="btn-default btn-sm" type="button" caption="Forward" name="forwardButton" iconclass="wi wi-forward" margin="unset 0.2em" hint="Forward"></wm-button> 
+                                    <wm-button class="btn-default btn-sm" caption="Remove" type="button" margin="unset 0.2em" name="removeButton" iconclass="wi wi-delete" hint="Trash"></wm-button> 
+                                </wm-container> 
+                            </wm-panel-footer> 
+                            <wm-layoutgrid name="emailViewLlayoutGrid"> 
+                                <wm-gridrow name="rowOne" padding="1em unset unset unset"> 
+                                    <wm-gridcolumn columnwidth="8" name="columnOne" class="col-lg-8 col-md-8 col-sm-6 col-xs-6"> 
+                                        <wm-label name="subjectLabel" class="h3" caption="Subject: Revisions For Sales Report" margin="0px unset unset unset"></wm-label> 
+                                    </wm-gridcolumn> 
+                                    <wm-gridcolumn columnwidth="4" name="columnTwo" horizontalalign="right" class="col-lg-4 col-lg-4 col-sm-6 col-xs-6"> 
+                                        <wm-button class="btn-default btn-sm" type="button" caption="Reply" name="replySMButton" iconclass="wi wi-reply" margin="unset 0.2em" hint="Reply"></wm-button> 
+                                        <wm-button class="btn-default btn-sm" type="button" caption="" name="printSMButton" iconclass="fa fa-print" margin="unset 0.2em" hint="Print email"></wm-button> 
+                                        <wm-button class="btn-default btn-sm" type="button" caption="" name="deleteSMButton" iconclass="wi wi-delete" margin="unset 0.2em" hint="Move to trash"></wm-button> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                                <wm-gridrow name="rowTwo" class="bordered-bottom" padding="unset unset 1em unset"> 
+                                    <wm-gridcolumn columnwidth="8" name="columnThree" class="col-lg-8 col-md-8 col-sm-6 col-xs-7"> 
+                                        <wm-label name="mailFrom" caption="From:" padding="unset 0.5em unset unset"></wm-label> 
+                                        <wm-label name="senderName" class="h5 inline" caption="amanda.brown@mobeteq.co.in"></wm-label> 
+                                    </wm-gridcolumn> 
+                                    <wm-gridcolumn columnwidth="4" name="columnFour" horizontalalign="right" class="col-lg-4 col-lg-4 col-sm-6 col-xs-5"> 
+                                        <wm-label padding="unset 0.5em" name="mailSentDate" caption="bind:1484129036707 | toDate: 'yyyy-MM-dd HH:mm'"></wm-label> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                                <wm-gridrow name="rowThree" padding="1em unset" class="bordered-bottom"> 
+                                    <wm-gridcolumn columnwidth="12" name="columnFive"> 
+                                        <wm-html name="emailViewContent" content="bind:Variables.messageContent.dataSet.dataValue.message">
+                                             bind:Variables.messageContent.dataSet.dataValue.message 
+                                        </wm-html> 
+                                        <wm-label name="Signature" caption="Eric Lin" fontweight="bold"></wm-label> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                            </wm-layoutgrid> 
+                            <wm-container name="emailAttachmentContainer" content="EmailAttachments"></wm-container> 
+                        </wm-panel> 
+                    </wm-gridcolumn> 
+                </wm-gridrow> 
+            </wm-layoutgrid> 
+        </wm-page-content> 
+    </wm-content> 
+    <wm-footer content="footer" name="footer1"></wm-footer> 
+</wm-page>

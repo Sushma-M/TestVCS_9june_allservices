@@ -1,0 +1,32 @@
+<wm-page data-ng-controller="SocialFeedPageController" pagetitle="Social Feed" name="page1"> 
+    <wm-header content="header" name="header1"></wm-header> 
+    <wm-top-nav content="topnav" name="top_nav1"></wm-top-nav> 
+    <wm-content name="content1"> 
+        <wm-left-panel columnwidth="2" content="leftnav" name="left_panel1"></wm-left-panel> 
+        <wm-page-content columnwidth="10" name="page_content1"> 
+            <wm-container name="container1" content="breadcrumbpartial"> 
+                <wm-param name="category" value="ui" type="string"></wm-param> 
+            </wm-container> 
+            <wm-list listclass="list-group" template="true" itemsperrow="xs-1 sm-1 md-2 lg-2" class="media list-card" dataset="bind:Variables.HrdbEmployeeData.dataSet" navigation="None" name="livelist1"> 
+                <wm-listtemplate layout="media" name="listtemplate1"> 
+                    <wm-card name="employeePicture" picturesource="bind:&quot;resources/images/imagelists/stock/&quot;+Variables.HrdbEmployeeData.dataSet.data[$i].empId+&quot;.jpg&quot;" imageheight="200" show="true" title="bind:Variables.HrdbEmployeeData.dataSet.data[$i].firstname + &quot; &quot; + Variables.HrdbEmployeeData.dataSet.data[$i].lastname" subheading="bind:1483521732211 | timeFromNow" iconurl="bind:Variables.HrdbEmployeeData.dataSet.data[$i].picurl"> 
+                        <wm-card-content name="card_content" padding="1.25em"> 
+                            <wm-label name="Description" class="p text-muted" whitespace="nowrap" caption="" margin="unset unset 1em unset"></wm-label> 
+                            <wm-label padding="unset 0.5em" name="descriptionOne" caption="Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Packages and web page editors now use Lorem Ipsum as their  model."></wm-label> 
+                            <wm-label padding="unset 0.5em" name="descriptionTwo" caption="Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Packages and web page editors now use Lorem Ipsum as their default model text."></wm-label> 
+                        </wm-card-content> 
+                        <wm-card-actions name="cardButtonActions"> 
+                            <wm-button class="btn-default btn-xs" type="button" caption="Like this!" name="likeButton" iconclass="wi wi-thumb-up" iconwidth="1.5em"></wm-button> 
+                            <wm-button class="btn-default btn-xs" type="button" caption="Comment" name="commentButton" iconclass="fa fa-comments" iconwidth="1.5em"></wm-button> 
+                            <wm-button class="btn-default btn-xs" type="button" caption="Share" name="shareButton" iconclass="fa fa-share" iconwidth="1.5em"></wm-button> 
+                        </wm-card-actions> 
+                        <wm-card-footer name="card_footer" class="bg-lightgray"> 
+                            <wm-container name="container6" content="feedcomments"></wm-container> 
+                        </wm-card-footer> 
+                    </wm-card> 
+                </wm-listtemplate> 
+            </wm-list> 
+        </wm-page-content> 
+    </wm-content> 
+    <wm-footer content="footer" name="footer1"></wm-footer> 
+</wm-page>

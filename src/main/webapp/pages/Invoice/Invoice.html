@@ -1,0 +1,81 @@
+<wm-page data-ng-controller="InvoicePageController" pagetitle="Invoice" name="page1"> 
+    <wm-header content="header" name="header1"></wm-header> 
+    <wm-top-nav content="topnav" name="top_nav1"></wm-top-nav> 
+    <wm-content name="content1"> 
+        <wm-left-panel columnwidth="2" content="leftnav" name="left_panel1"></wm-left-panel> 
+        <wm-page-content columnwidth="10" name="page_content1"> 
+            <wm-container name="container1" content="breadcrumbpartial"> 
+                <wm-param name="category" value="ui" type="string"></wm-param> 
+            </wm-container> 
+            <wm-panel name="invoicePanel" title=""> 
+                <wm-layoutgrid name="invoiceLayoutGrid"> 
+                    <wm-gridrow name="gridRowOne"> 
+                        <wm-gridcolumn columnwidth="6" name="gridColumnOne" padding="1em unset unset 1em"> 
+                            <wm-label name="fromAddressLabel" caption="From:" class="h5"></wm-label> 
+                            <wm-html name="fromAddress" content="bind:Variables.invoiceAddressData.dataSet.fromAddress">
+                                 bind:Variables.invoiceAddressData.dataSet.fromAddress 
+                            </wm-html> 
+                        </wm-gridcolumn> 
+                        <wm-gridcolumn columnwidth="6" name="gridColumnTwo" horizontalalign="right" padding="1em 1em unset unset"> 
+                            <wm-label caption="Invoice No." class="h4" name="invoiceLabel"></wm-label> 
+                            <wm-label caption="ABC-00123-01" class="h4 text-primary" name="invoiceNo"></wm-label> 
+                            <wm-label caption="To:" class="p" name="toAddressLabel"></wm-label> 
+                            <wm-html name="toAddress" content="bind:Variables.invoiceAddressData.dataSet.toAddress">
+                                 bind:Variables.invoiceAddressData.dataSet.toAddress 
+                            </wm-html> 
+                            <wm-container name="invoiceDateContainer"> 
+                                <wm-label caption="Invoice Date:" class="bold" margin="unset unset 0px unset" name="invoiceDateLabel"></wm-label> 
+                                <wm-label caption="bind:1488778271974 | toDate: 'yyyy-MM-dd HH:mm'" margin="unset .5em 0em .5em" name="invoiceDate"></wm-label> 
+                            </wm-container> 
+                            <wm-container name="dueDateContainer"> 
+                                <wm-label caption="Due Date:" class="bold" margin="unset unset 0px unset" name="dueDateLabel"></wm-label> 
+                                <wm-label caption="bind:1488778396760  | toDate: 'yyyy-MM-dd HH:mm'" margin="unset .5em 0em .5em" name="dueDate"></wm-label> 
+                            </wm-container> 
+                        </wm-gridcolumn> 
+                    </wm-gridrow> 
+                    <wm-gridrow name="gridRowTwo"> 
+                        <wm-gridcolumn columnwidth="12" name="gridColumnThree" padding="2.2em 1em unset 1em"> 
+                            <wm-table title="" dataset="bind:Variables.invoiceData.dataSet" navigation="None" name="paymentDataList" gridclass="" multiselect="false" radioselect="false" enablecolumnselection="false" gridfirstrowselect="true"> 
+                                <wm-table-column binding="Item list" caption="Item List" type="string" widget-type="label" width="500px" readonly="true" edit-widget-type="text" show="true"> 
+                                    <wm-label caption="{{row.getProperty('Item list')}}" class="p" ng-class="" fontweight="bold"></wm-label> 
+                                    <wm-label caption="{{row.getProperty('Description')}}" class="" ng-class=""></wm-label> 
+                                </wm-table-column> 
+                                <wm-table-column binding="Quantity" caption="Quantity" type="string" width="15%" textalignment="right" readonly="true" edit-widget-type="text" show="true"></wm-table-column> 
+                                <wm-table-column binding="Unit price" caption="Unit Price" type="string" width="10%" textalignment="right" readonly="true" edit-widget-type="text" show="true"></wm-table-column> 
+                                <wm-table-column binding="tax" caption="Tax" type="string" width="10%" textalignment="right" readonly="true" edit-widget-type="text" show="true"></wm-table-column> 
+                                <wm-table-column binding="Total price" caption="Total Price" type="string" width="15%" textalignment="right" readonly="true" edit-widget-type="text" show="true"></wm-table-column> 
+                            </wm-table> 
+                        </wm-gridcolumn> 
+                    </wm-gridrow> 
+                    <wm-gridrow name="gridRowThree"> 
+                        <wm-gridcolumn columnwidth="8" name="gridColumnFour"></wm-gridcolumn> 
+                        <wm-gridcolumn columnwidth="4" name="gridColumnFive" padding="unset 1em"> 
+                            <wm-composite name="subTotalCompositeBox"> 
+                                <wm-label class="col-md-3 col-sm-6 control-label" name="subTotalLabel" caption="Sub Total :" textalign="right"></wm-label> 
+                                <wm-container class="col-md-9 col-sm-6" name="subTotalInputBox" padding="unset unset unset 1em" horizontalalign="right"> 
+                                    <wm-text name="subTotalText" datavalue="$1906" textalign="right" class="pull-right"></wm-text> 
+                                </wm-container> 
+                            </wm-composite> 
+                            <wm-composite name="taxCompositeBox"> 
+                                <wm-label class="col-md-3 col-sm-6 control-label" name="taxLabel" caption="TAX :" textalign="right"></wm-label> 
+                                <wm-container class="col-md-9 col-sm-6" name="taxInputBox" padding="unset unset unset 1em"> 
+                                    <wm-text name="taxText" datavalue="$326.28" textalign="right"></wm-text> 
+                                </wm-container> 
+                            </wm-composite> 
+                            <wm-composite name="totalCompositeBox"> 
+                                <wm-label class="col-md-3 col-sm-6 control-label" name="totalLabel" caption="TOTAL :" textalign="right"></wm-label> 
+                                <wm-container class="col-md-9 col-sm-6" name="totalInputBox" padding="unset unset unset 1em"> 
+                                    <wm-text name="totalText" datavalue="$2232.28" textalign="right"></wm-text> 
+                                </wm-container> 
+                            </wm-composite> 
+                        </wm-gridcolumn> 
+                    </wm-gridrow> 
+                </wm-layoutgrid> 
+                <wm-panel-footer name="panel_footer1"> 
+                    <wm-button class="btn-primary pull-right" caption="$ Make A Payment" type="button" name="paymentButton"></wm-button> 
+                </wm-panel-footer> 
+            </wm-panel> 
+        </wm-page-content> 
+    </wm-content> 
+    <wm-footer content="footer" name="footer1"></wm-footer> 
+</wm-page>

@@ -1,0 +1,41 @@
+{
+  "userActivityListData" : {
+    "_id" : "wm-userActivityListData-wm.Variable-1481525116981",
+    "name" : "userActivityListData",
+    "owner" : "Page",
+    "category" : "wm.Variable",
+    "dataBinding" : [ ],
+    "dataSet" : [ {
+      "pageLabel" : "Pages / Visit",
+      "newVisits" : "% New Visits",
+      "lastWeek" : "Last week",
+      "pageValue" : "236 321.80",
+      "newVisitsPercentage" : "46.11%",
+      "lastWeekValue" : "432.021"
+    }, {
+      "pageLabel" : "Pages / Visit",
+      "newVisits" : "% New Visits",
+      "lastWeek" : "Last week",
+      "pageValue" : "643 321.10",
+      "newVisitsPercentage" : "92.43%",
+      "lastWeekValue" : "564.554"
+    }, {
+      "pageLabel" : "Pages / Visit",
+      "newVisits" : "% New Visits",
+      "lastWeek" : "Last week",
+      "pageValue" : "436 547.20",
+      "newVisitsPercentage" : "150.23%",
+      "lastWeekValue" : "124.990"
+    }, {
+      "pageLabel" : "Pages / Visit",
+      "newVisits" : "% New Visits",
+      "lastWeek" : "Last week",
+      "pageValue" : "236 321.80",
+      "newVisitsPercentage" : "46.11%",
+      "lastWeekValue" : "432.021"
+    } ],
+    "type" : "string",
+    "isList" : true,
+    "saveInPhonegap" : false
+  }
+}

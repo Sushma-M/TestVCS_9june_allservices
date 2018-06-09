@@ -1,0 +1,145 @@
+{
+  "analyticsDetails" : {
+    "_id" : "wm-analyticsDetails-wm.Variable-1482227025948",
+    "name" : "analyticsDetails",
+    "owner" : "Page",
+    "category" : "wm.Variable",
+    "dataBinding" : [ ],
+    "dataSet" : [ {
+      "itemName" : "Income",
+      "badgeValue" : "Monthly",
+      "data" : "40,886,200",
+      "total" : "Total income",
+      "percentage" : "98%",
+      "icon" : "wi wi-flash-on"
+    }, {
+      "itemName" : "Orders",
+      "badgeValue" : "Annual",
+      "data" : "275,800",
+      "total" : "New orders",
+      "percentage" : "20%",
+      "icon" : "fa fa-level-up"
+    }, {
+      "itemName" : "visits",
+      "badgeValue" : "Today",
+      "data" : "106,120",
+      "total" : "New visits",
+      "percentage" : "44%",
+      "icon" : "fa fa-level-up"
+    }, {
+      "itemName" : "User activity",
+      "badgeValue" : "Low value",
+      "data" : "80,600",
+      "total" : "In first month",
+      "percentage" : "38%",
+      "icon" : "fa fa-level-down"
+    } ],
+    "type" : "string",
+    "isList" : true,
+    "saveInPhonegap" : false
+  },
+  "ordersBadgeList" : {
+    "_id" : "wm-ordersBadgeList-wm.Variable-1481175783230",
+    "name" : "ordersBadgeList",
+    "owner" : "Page",
+    "category" : "wm.Variable",
+    "dataBinding" : [ ],
+    "dataSet" : [ {
+      "label" : "Today"
+    }, {
+      "label" : "Monthly"
+    }, {
+      "label" : "Annual"
+    } ],
+    "type" : "string",
+    "isList" : true,
+    "saveInPhonegap" : false
+  },
+  "projectList" : {
+    "_id" : "wm-projectList-wm.Variable-1481260342448",
+    "name" : "projectList",
+    "owner" : "Page",
+    "category" : "wm.Variable",
+    "dataBinding" : [ ],
+    "dataSet" : [ {
+      "status" : "Pending",
+      "date" : "11:20pm",
+      "user" : "Samantha",
+      "value" : "24%"
+    }, {
+      "status" : "",
+      "date" : "10:40am",
+      "user" : "Monica",
+      "value" : "66%"
+    }, {
+      "status" : "Pending",
+      "date" : "01:30pm",
+      "user" : "John",
+      "value" : "54%"
+    }, {
+      "status" : "Pending",
+      "date" : "02:20pm",
+      "user" : "Agnes",
+      "value" : "12%"
+    }, {
+      "status" : "Pending",
+      "date" : "09:40pm",
+      "user" : "Janet",
+      "value" : "22%"
+    }, {
+      "status" : "",
+      "date" : "04:10am",
+      "user" : "Amelia",
+      "value" : "66%"
+    }, {
+      "status" : "Pending",
+      "date" : "12:08am",
+      "user" : "Damian",
+      "value" : "23%"
+    } ],
+    "type" : "string",
+    "isList" : true,
+    "saveInPhonegap" : false
+  },
+  "transactionWorldWIde" : {
+    "_id" : "wm-transactionWorldWIde-wm.Variable-1481264058155",
+    "name" : "transactionWorldWIde",
+    "owner" : "Page",
+    "category" : "wm.Variable",
+    "dataBinding" : [ ],
+    "dataSet" : [ {
+      "No" : "1",
+      "Transaction" : "Security doors",
+      "Date" : "16 Jun 2014",
+      "Amount" : "$483.00"
+    }, {
+      "No" : "2",
+      "Transaction" : "Wardrobes",
+      "Date" : "10 Jun 2014",
+      "Amount" : "$327.00"
+    }, {
+      "No" : "3",
+      "Transaction" : "Set of tools",
+      "Date" : "12 Jun 2014",
+      "Amount" : "$125.00"
+    }, {
+      "No" : "4",
+      "Transaction" : "Panoramic pictures",
+      "Date" : "22 Jun 2013",
+      "Amount" : "$344.00"
+    }, {
+      "No" : "5",
+      "Transaction" : "Phones",
+      "Date" : "24 Jun 2013",
+      "Amount" : "$235.00"
+    }, {
+      "No" : "6",
+      "Transaction" : "Monitors",
+      "Date" : "26 Jun 2013",
+      "Amount" : "$100.00"
+    } ],
+    "type" : "string",
+    "isList" : true,
+    "saveInPhonegap" : false
+  }
+}

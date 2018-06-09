@@ -1,0 +1,18 @@
+.agile-board li.app-list-item.list-group-item {
+    margin-bottom: 1em; 
+}
+.list-group-item.warning-element {
+    border-left: 3px solid #f8ac59;
+}
+.list-group-item.success-element {
+    border-left: 3px solid Green;
+}
+.list-group-item.danger-element .badge{
+    background-color: green;
+}
+.list-group-item.info-element {
+    border-left: 3px solid #03A9F4;
+}
+.list-group-item.danger-element {
+    border-left: 3px solid #F44336;
+}

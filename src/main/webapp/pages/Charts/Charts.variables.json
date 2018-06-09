@@ -1,0 +1,31 @@
+{
+  "chartthemes" : {
+    "_id" : "wm-chartList-wm.Variable-1479470653091",
+    "name" : "chartthemes",
+    "owner" : "Page",
+    "category" : "wm.Variable",
+    "dataBinding" : [ ],
+    "dataSet" : [ {
+      "title" : "Annabelle"
+    }, {
+      "title" : "Azure"
+    }, {
+      "title" : "Flyer"
+    }, {
+      "title" : "GrayScale"
+    }, {
+      "title" : "Luminosity"
+    }, {
+      "title" : "Mellow"
+    }, {
+      "title" : "Orient"
+    }, {
+      "title" : "Retro"
+    }, {
+      "title" : "Terrestrial"
+    } ],
+    "type" : "string",
+    "isList" : true,
+    "saveInPhonegap" : false
+  }
+}

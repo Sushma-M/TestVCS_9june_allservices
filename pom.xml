@@ -13,27 +13,6 @@
             </resource>
             <resource>
                 <filtering>true</filtering>
-                <directory>services/AdventureWorks2014/src</directory>
-                <excludes>
-                    <exclude>**/*.java</exclude>
-                </excludes>
-            </resource>
-            <resource>
-                <filtering>true</filtering>
-                <directory>services/CountryInfoService/src</directory>
-                <excludes>
-                    <exclude>**/*.java</exclude>
-                </excludes>
-            </resource>
-            <resource>
-                <filtering>true</filtering>
-                <directory>services/FeedService/src</directory>
-                <excludes>
-                    <exclude>**/*.java</exclude>
-                </excludes>
-            </resource>
-            <resource>
-                <filtering>true</filtering>
                 <directory>services/FileService/src</directory>
                 <excludes>
                     <exclude>**/*.java</exclude>
@@ -41,21 +20,7 @@
             </resource>
             <resource>
                 <filtering>true</filtering>
-                <directory>services/MyJavaService/src</directory>
-                <excludes>
-                    <exclude>**/*.java</exclude>
-                </excludes>
-            </resource>
-            <resource>
-                <filtering>true</filtering>
-                <directory>services/googleapis/src</directory>
-                <excludes>
-                    <exclude>**/*.java</exclude>
-                </excludes>
-            </resource>
-            <resource>
-                <filtering>true</filtering>
-                <directory>services/heartRate/src</directory>
+                <directory>services/github/src</directory>
                 <excludes>
                     <exclude>**/*.java</exclude>
                 </excludes>
@@ -70,6 +35,13 @@
             <resource>
                 <filtering>true</filtering>
                 <directory>services/securityService/src</directory>
+                <excludes>
+                    <exclude>**/*.java</exclude>
+                </excludes>
+            </resource>
+            <resource>
+                <filtering>true</filtering>
+                <directory>services/websocket/src</directory>
                 <excludes>
                     <exclude>**/*.java</exclude>
                 </excludes>
@@ -114,15 +86,6 @@
         </pluginManagement>
         <plugins>
             <plugin>
-                <artifactId>maven-resources-plugin</artifactId>
-                <version>3.0.1</version>
-                <configuration>
-                    <nonFilteredFileExtensions>
-                        <nonFilteredFileExtension>jks</nonFilteredFileExtension>
-          </nonFilteredFileExtensions>
-                </configuration>
-            </plugin>
-            <plugin>
                 <artifactId>maven-clean-plugin</artifactId>
                 <version>2.4.1</version>
                 <executions>
@@ -155,15 +118,11 @@
                         </goals>
                         <configuration>
                             <sources>
-                                <source>services/AdventureWorks2014/src</source>
-                                <source>services/CountryInfoService/src</source>
-                                <source>services/FeedService/src</source>
                                 <source>services/FileService/src</source>
-                                <source>services/MyJavaService/src</source>
-                                <source>services/googleapis/src</source>
-                                <source>services/heartRate/src</source>
+                                <source>services/github/src</source>
                                 <source>services/hrdb/src</source>
                                 <source>services/securityService/src</source>
+                                <source>services/websocket/src</source>
                             </sources>
                         </configuration>
                     </execution>
@@ -236,6 +195,15 @@
                         </goals>
                     </execution>
                 </executions>
+            </plugin>
+            <plugin>
+                <artifactId>maven-resources-plugin</artifactId>
+                <version>3.0.1</version>
+                <configuration>
+                    <nonFilteredFileExtensions>
+                        <nonFilteredFileExtension>jks</nonFilteredFileExtension>
+          </nonFilteredFileExtensions>
+                </configuration>
             </plugin>
             <plugin>
                 <groupId>com.wavemaker.app.build</groupId>
@@ -334,11 +302,9 @@
             <version>2.3.3</version>
         </dependency>
         <dependency>
-            <groupId>sqljdbc4-4.0</groupId>
-            <artifactId>sqljdbc4-4.0</artifactId>
-            <version>1.0</version>
-            <scope>system</scope>
-            <systemPath>${project.lib.directory}/sqljdbc4-4.0.jar</systemPath>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>5.1.38</version>
         </dependency>
     </dependencies>
     <dependencyManagement>

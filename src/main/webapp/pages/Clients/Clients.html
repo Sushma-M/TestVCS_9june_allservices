@@ -1,0 +1,111 @@
+<wm-page data-ng-controller="ClientsPageController" pagetitle="Clients" name="page1"> 
+    <wm-header content="header" name="header1"></wm-header> 
+    <wm-top-nav content="topnav" name="top_nav1"></wm-top-nav> 
+    <wm-content name="content1"> 
+        <wm-left-panel columnwidth="2" content="leftnav" name="left_panel1"></wm-left-panel> 
+        <wm-page-content columnwidth="10" name="page_content1"> 
+            <wm-container name="container1" content="breadcrumbpartial"> 
+                <wm-param name="category" value="ui" type="string"></wm-param> 
+            </wm-container> 
+            <wm-layoutgrid name="layoutgrid1"> 
+                <wm-gridrow name="gridrow1"> 
+                    <wm-gridcolumn columnwidth="8" name="gridcolumn1" padding="unset 0.5em"> 
+                        <wm-panel iconclass="wi wi-account-circle" autoclose="outsideClick" name="clientsDetailsPanel" title="Clients" class="panel-default" margin="unset unset 2em unset"> 
+                            <wm-container name="container5" horizontalalign="right"> 
+                                <wm-label name="lastModifiedLabel" margin="0em 0.5em" caption="Last modification:" class="small inline"></wm-label> 
+                                <wm-icon name="icon8" iconclass="wi wi-clock" caption="2:10 pm - 12.06.2014" class="small inline"></wm-icon> 
+                            </wm-container> 
+                            <wm-layoutgrid height="100%" name="layoutgrid7"> 
+                                <wm-gridrow name="gridrow23"> 
+                                    <wm-gridcolumn columnwidth="12" name="gridcolumn41" padding="unset unset 1em unset"> 
+                                        <wm-label name="clientSearchLabel" margin="0px unset" caption="All clients need to be verified before you can send email and set a project."></wm-label> 
+                                        <wm-search name="clientSearchBar" placeholder="Search client"></wm-search> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                                <wm-gridrow name="gridrow24"> 
+                                    <wm-gridcolumn columnwidth="12" name="gridcolumn43"> 
+                                        <wm-tabs name="employeeActivityTab"> 
+                                            <wm-tabpane title="Contacts" name="employeeMessagePane" paneicon="wi wi-person"> 
+                                                <wm-table title="" dataset="bind:Variables.HrdbEmployeeData.dataSet" navigation="None" name="employeeContactList" gridclass="table-hover"> 
+                                                    <wm-table-column binding="picurl" caption="Picurl" type="string" widget-type="image" width="64px" generator="assigned" readonly="true" edit-widget-type="text" show="true"> 
+                                                        <img data-ng-src="{{row.getProperty('picurl')}}" alt="{{row.getProperty('picurl')}}" class="img-circle" data-ng-class=""> 
+                                                    </wm-table-column> 
+                                                    <wm-table-column binding="Empname" caption="Empname" type="string" widget-type="label" width="15%" edit-widget-type="text" searchable="false" show="true" readonly="false"> 
+                                                        <wm-label caption="{{row.getProperty('firstname')+' '+row.getProperty('lastname')}}" class="bold" data-ng-class=""></wm-label> 
+                                                    </wm-table-column> 
+                                                    <wm-table-column binding="jobTitle" caption="Job Title" type="string" width="20%" generator="assigned" readonly="true" edit-widget-type="text" show="true"></wm-table-column> 
+                                                    <wm-table-column binding="Empemail" caption="Empemail" type="string" widget-type="anchor" width="25%" edit-widget-type="text" searchable="false" show="true" readonly="false"> 
+                                                        <wm-anchor href="" iconclass="wi wi-email" caption="{{row.getProperty('firstname')+'.'+row.getProperty('lastname')+'@mobeteq.com'}}" hyperlink="mailto:" class="text-ellipsis" data-ng-class=""></wm-anchor> 
+                                                    </wm-table-column> 
+                                                    <wm-table-column binding="status" caption="Status" type="string" widget-type="label" width="10%" textalignment="center" edit-widget-type="text" searchable="false" show="true" readonly="false"> 
+                                                        <label caption="{{row.getProperty('status')}}" class="small label" data-ng-class="{'label-success':row.empId%3 == 0, 'label-danger':row.empId%2 == 0, 'label-warning':row.empId%2 != 0 &amp;&amp; row.empId%3 != 0}">{{(row.empId%3 == 0) ? "Active" : (row.empId%2 == 0) ? "Deleted" : "Waiting"}}</label> 
+                                                    </wm-table-column> 
+                                                </wm-table> 
+                                            </wm-tabpane> 
+                                            <wm-tabpane title="Companies" name="employeeActivityPane" paneicon="fa fa-briefcase"> 
+                                                <wm-table title="" dataset="bind:Variables.HrdbEmployeeData.dataSet" navigation="None" name="companiesDetails" showheader="false" gridclass="table-hover"> 
+                                                    <wm-table-column binding="customField" caption="companyName" type="string" widget-type="label" width="20%" readonly="true" searchable="false" show="true"> 
+                                                        <wm-label caption="Mobeteq Inc." class="" ng-class=""></wm-label> 
+                                                    </wm-table-column> 
+                                                    <wm-table-column binding="department.name" caption="Department Name" type="string" width="30%" primary-key="false" generator="assigned" readonly="true" show="true" related-entity-name="Department"></wm-table-column> 
+                                                    <wm-table-column binding="department.location" caption="Department Location" type="string" widget-type="label" width="30%" primary-key="false" generator="assigned" readonly="true" show="true" related-entity-name="Department"> 
+                                                        <wm-icon name="icon2_1" iconclass="wi wi-flag"></wm-icon> 
+                                                        <wm-label caption="{{row.getProperty('department.location')}}" class="inline" padding="unset 0.5em"></wm-label> 
+                                                    </wm-table-column> 
+                                                    <wm-table-column binding="customField1" caption="status" type="string" widget-type="label" width="20%" textalignment="center" readonly="true" searchable="false" show="true"> 
+                                                        <label class="label" data-ng-class="{'label-success':row.department.deptId == 1, 'label-warning':row.department.deptId == 5, 'label-primary':row.department.deptId !=  1 &amp;&amp; row.department.deptId != 5}">{{row.department.deptId == 1 ? 'Active' : row.department.deptId == 5 ? 'Waiting' : 'New' }}</label> 
+                                                    </wm-table-column> 
+                                                </wm-table> 
+                                            </wm-tabpane> 
+                                        </wm-tabs> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                            </wm-layoutgrid> 
+                        </wm-panel> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="4" name="gridcolumn29" padding="unset 0.5em"> 
+                        <wm-panel iconclass="" autoclose="outsideClick" name="clientTimeline" title=""> 
+                            <wm-panel-footer name="panel_footer1"> 
+                                <wm-container name="EricActivityContainer" height="650" overflow="auto"> 
+                                    <wm-list listclass="list-group" itemclass="list-group-item" template="true" dataset="bind:Variables.messageNotificationList.dataSet" navigation="None" title="Last activity" class="panel" name="empActivityList"> 
+                                        <wm-listtemplate layout="media" name="listtemplate3_1"> 
+                                            <wm-layoutgrid name="empActivityLayoutgrid"> 
+                                                <wm-gridrow name="gridrow14_1"> 
+                                                    <wm-gridcolumn columnwidth="8" class="col-xs-7" name="gridcolumn24_1"> 
+                                                        <wm-label caption="bind:Variables.messageNotificationList.dataSet[$i].message" name="activityLabel"></wm-label> 
+                                                    </wm-gridcolumn> 
+                                                    <wm-gridcolumn columnwidth="4" class="col-xs-3" name="gridcolumn25_1"> 
+                                                        <wm-label caption="bind:Variables.messageNotificationList.dataSet[$i].time" margin="0px" name="activityTime"></wm-label> 
+                                                    </wm-gridcolumn> 
+                                                </wm-gridrow> 
+                                            </wm-layoutgrid> 
+                                        </wm-listtemplate> 
+                                    </wm-list> 
+                                    <wm-tile name="NotesTile"> 
+                                        <wm-label name="NoteHeader" margin="0px unset" caption="Notes" fontweight="bold"></wm-label> 
+                                        <wm-label margin="0px unset" name="NoteDescription" caption="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." padding="unset unset 1em unset" class="bordered-bottom"></wm-label> 
+                                    </wm-tile> 
+                                    <wm-container name="container5_1" content="TimelinePartial"></wm-container> 
+                                </wm-container> 
+                            </wm-panel-footer> 
+                            <wm-layoutgrid height="100%" name="empDetailsLayoutgrid"> 
+                                <wm-gridrow height="100%" name="gridrow14" padding="unset unset 1em unset"> 
+                                    <wm-gridcolumn columnwidth="4" horizontalalign="center" name="gridcolumn30"> 
+                                        <wm-label class="h2" caption="Eric Lin" name="label24" margin="0px unset" whitespace="normal"></wm-label> 
+                                        <wm-picture picturesource="bind:Variables.HrdbEmployeeDataContactList.dataSet.data[0].picurl" name="picture4" width="48pt" height="auto" shape="circle"></wm-picture> 
+                                    </wm-gridcolumn> 
+                                    <wm-gridcolumn columnwidth="8" name="gridcolumn44"> 
+                                        <wm-label caption="About me" name="aboutEmployee" fontweight="bold"></wm-label> 
+                                        <wm-label class="p" caption="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." name="EmployeeDescription"></wm-label> 
+                                        <wm-button class="btn-primary" caption="Send Message" type="button" margin="0.5em unset" iconclass="wi wi-email" name="sendMessage" width="100%"></wm-button> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                            </wm-layoutgrid> 
+                        </wm-panel> 
+                    </wm-gridcolumn> 
+                </wm-gridrow> 
+            </wm-layoutgrid> 
+        </wm-page-content> 
+    </wm-content> 
+    <wm-footer content="footer" name="footer1"></wm-footer> 
+</wm-page>

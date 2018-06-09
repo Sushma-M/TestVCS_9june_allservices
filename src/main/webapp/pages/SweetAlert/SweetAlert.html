@@ -1,0 +1,114 @@
+<wm-page data-ng-controller="SweetAlertPageController" pagetitle="Sweet Alert" name="page1"> 
+    <wm-header content="header" name="header1"></wm-header> 
+    <wm-top-nav content="topnav" name="top_nav1"></wm-top-nav> 
+    <wm-content name="content1"> 
+        <wm-left-panel columnwidth="2" content="leftnav" name="left_panel1"></wm-left-panel> 
+        <wm-page-content columnwidth="10" name="page_content1"> 
+            <wm-container name="container1" content="breadcrumbpartial"> 
+                <wm-param name="category" value="ui" type="string"></wm-param> 
+            </wm-container> 
+            <wm-panel iconclass="" autoclose="outsideClick" name="SweetAlertPanel" title="Sweet Alert" class="panel-default" margin="1em unset unset unset"> 
+                <wm-label name="alertHeader" caption="An awesome replacement for JavaScript's alert." class="bold p"></wm-label> 
+                <wm-label name="alertLabel" class="p" caption="SweetAlert automatically centers itself on the page and looks great no matter if you're using a desktop computer, mobile or tablet. It's even highly customizeable, as you can see below! http://t4t5.github.io/sweetalert/"></wm-label> 
+                <wm-layoutgrid name="alertLayout"> 
+                    <wm-gridrow name="gridRowOne" padding="0em 1em"> 
+                        <wm-gridcolumn columnwidth="6" name="gridcolumn1" horizontalalign="center" class="col-sm-12" padding="1em unset"> 
+                            <wm-label padding="unset 0.5em" name="basicAlertLabel" class="p" caption="A basic sweetalert message" margin="unset unset 1em unset"></wm-label> 
+                            <wm-button class="btn-primary" caption="Run example" type="button" margin="unset 0.5em" name="basicAlertBtn" on-click="Widgets.basicAlertDialog.open()"></wm-button> 
+                        </wm-gridcolumn> 
+                        <wm-gridcolumn columnwidth="6" name="gridcolumn2" horizontalalign="center" class="col-sm-12" padding="1em unset"> 
+                            <wm-label padding="unset 0.5em" class="p" caption="A success message!" name="successAlertLabel" margin="unset unset 1em unset"></wm-label> 
+                            <wm-button class="btn-info" caption="Run example" type="button" margin="unset 0.5em" on-click="Widgets.successDialogBox.open()" name="successAlertBtn"></wm-button> 
+                        </wm-gridcolumn> 
+                    </wm-gridrow> 
+                    <wm-gridrow name="gridRowTwo" padding="0em 1em"> 
+                        <wm-gridcolumn columnwidth="6" name="gridcolumn3" horizontalalign="center" class="col-sm-12" padding="1em unset"> 
+                            <wm-label padding="unset 0.5em" class="p" caption="A warning message, with a function attached to the &quot;Confirm&quot;-button..." name="warningAlertLabel" margin="unset unset 1em unset"></wm-label> 
+                            <wm-button class="btn-warning" caption="Run example" type="button" margin="unset 0.5em" on-click="Widgets.confirmDesignDialog.open()" name="warningAlertBtn"></wm-button> 
+                        </wm-gridcolumn> 
+                        <wm-gridcolumn columnwidth="6" name="gridcolumn4" horizontalalign="center" class="col-sm-12" padding="1em unset"> 
+                            <wm-label padding="unset 0.5em" class="p" caption="... and by passing a parameter, you can execute something else for &quot;Cancel&quot;." name="cancelAlertLabel" margin="unset unset 1em unset"></wm-label> 
+                            <wm-button class="btn-danger" caption="Run example" type="button" margin="unset 0.5em" on-click="Widgets.confirmCancelationAlert.open()" name="cancelAlertBtn"></wm-button> 
+                        </wm-gridcolumn> 
+                    </wm-gridrow> 
+                </wm-layoutgrid> 
+            </wm-panel> 
+        </wm-page-content> 
+    </wm-content> 
+    <wm-footer content="footer" name="footer1"></wm-footer> 
+    <wm-view class="dialog-view" name="view1"> 
+        <wm-dialog dialogtype="design-dialog" modal="false" title="" iconclass="" name="basicAlertDialog" animation="bounceIn" showheader="false"> 
+            <wm-container name="container1" horizontalalign="center"> 
+                <wm-label padding="unset 0.5em" name="label6" class="h1" caption="Welcome in Alerts"></wm-label> 
+                <wm-label padding="unset 0.5em" name="label7" class="h4" caption="Oops..Something went wrong!"></wm-label> 
+                <wm-button class="btn-info btn-lg" caption="OK" on-click="Widgets.basicAlertDialog.close()" name="button2" textalign="center" margin="1em unset .25em unset"></wm-button> 
+            </wm-container> 
+        </wm-dialog> 
+    </wm-view> 
+    <wm-view class="dialog-view" name="view7"> 
+        <wm-dialog dialogtype="design-dialog" modal="true" title="" iconclass="" name="successDialogBox" showheader="false" animation="bounceIn"> 
+            <wm-container name="alertContainer" horizontalalign="center" padding="unset unset .25em unset"> 
+                <wm-icon name="icon1" iconclass="wi wi-check" class="text-success" iconsize="7em"></wm-icon> 
+                <wm-label padding="unset 0.5em" name="alertHeaderLabel" class="h1" caption="Good job!"></wm-label> 
+                <wm-label padding="unset 0.5em" name="alertDescription" caption="You clicked the button!" class="h3"></wm-label> 
+                <wm-button class="btn-info btn-lg" caption="Ok" on-click="Widgets.successDialogBox.close()" name="button7" margin="1em unset unset unset"></wm-button> 
+            </wm-container> 
+        </wm-dialog> 
+    </wm-view> 
+    <wm-view class="dialog-view" name="view8"> 
+        <wm-dialog dialogtype="design-dialog" modal="true" title="" iconclass="" name="confirmDesignDialog" showheader="false" animation="bounceIn"> 
+            <wm-container name="confirmDeleteDialogConatiner" horizontalalign="center"> 
+                <wm-icon name="icon2" iconclass="wi wi-exclamation-circle" class="text-warning" iconsize="8em"></wm-icon> 
+                <wm-label name="dialogHeaderText" class="h1" caption="Are you sure?" margin="0px unset"></wm-label> 
+                <wm-label name="dialogDescription" class="h3" caption="You will not be able to recover this imaginary file!"></wm-label> 
+                <wm-container name="container8" padding="1.5em unset 0.5em unset"> 
+                    <wm-button class="btn-default btn-lg" type="button" caption="Cancel" name="button12" on-click="Widgets.confirmDesignDialog.close()" margin="unset .5em"></wm-button> 
+                    <wm-button class="btn-danger btn-lg" type="button" caption="Yes, delete it!" name="button13" on-click="Widgets.confirmDesignDialog.close();Widgets.deleteDialog.open()" margin="unset .5em"></wm-button> 
+                </wm-container> 
+            </wm-container> 
+        </wm-dialog> 
+    </wm-view> 
+    <wm-view class="dialog-view" name="view4"> 
+        <wm-dialog dialogtype="design-dialog" modal="true" title="" iconclass="" name="deleteDialog" showheader="false"> 
+            <wm-container name="deleteContainer" horizontalalign="center"> 
+                <wm-icon name="icon1" iconclass="wi wi-check" class="text-success" iconsize="6em"></wm-icon> 
+                <wm-label padding="unset 0.5em" name="deleteHeader" class="h1" caption="Deleted!" margin="unset unset 0px unset"></wm-label> 
+                <wm-label padding="unset 0.5em" name="deleteDescription" caption="Your imaginary file has been deleted." class="h3"></wm-label> 
+                <wm-button class="btn-info btn-lg" caption="Ok" on-click="Widgets.deleteDialog.close()" name="button9" margin="1em unset 0.25em unset"></wm-button> 
+            </wm-container> 
+        </wm-dialog> 
+    </wm-view> 
+    <wm-view class="dialog-view" name="view5"> 
+        <wm-dialog dialogtype="design-dialog" modal="true" title="Information" iconclass="wi wi-file-text" name="ConfirmDeletDialog" showheader="false"> 
+            <wm-container name="alertContainer" horizontalalign="center"> 
+                <wm-icon name="icon1" iconclass="wi wi-check-circle fa-5x" color="#67c26a" class="fvdfd"></wm-icon> 
+                <wm-label padding="unset 0.5em" name="alertHeaderLabel" class="h1" caption="Good job!" color="#5ca85f"></wm-label> 
+                <wm-label padding="unset 0.5em" name="alertDescription" caption="You clicked the button!" class="h3"></wm-label> 
+                <wm-button class="btn-info btn-lg" caption="Close" on-click="closeDialog()" name="button10"></wm-button> 
+            </wm-container> 
+        </wm-dialog> 
+    </wm-view> 
+    <wm-view class="dialog-view" name="view6"> 
+        <wm-dialog dialogtype="design-dialog" modal="true" title="" iconclass="" name="finalCancelDialog" showheader="false"> 
+            <wm-container name="deleteContainer" horizontalalign="center"> 
+                <wm-icon name="icon1" iconclass="wi wi-cancel" class="text-danger" iconsize="7em"></wm-icon> 
+                <wm-label name="deleteHeader" class="h1" caption="Cancelled" margin="0px unset unset unset"></wm-label> 
+                <wm-label name="deleteDescription" caption="Your imaginary file is safe :)" class="h4"></wm-label> 
+                <wm-button class="btn-info btn-lg" caption="Ok" on-click="Widgets.finalCancelDialog.close()" name="button11" margin="1em unset .25em unset"></wm-button> 
+            </wm-container> 
+        </wm-dialog> 
+    </wm-view> 
+    <wm-view class="dialog-view" name="view7_1"> 
+        <wm-dialog dialogtype="design-dialog" modal="true" title="Information" iconclass="wi wi-file-text" name="confirmCancelationAlert" showheader="false" animation="bounceIn"> 
+            <wm-container name="confirmDeleteDialogContainer" horizontalalign="center"> 
+                <wm-icon name="icon2" iconclass="wi wi-exclamation-circle" class="text-warning" iconsize="8em"></wm-icon> 
+                <wm-label name="dialogHeaderText" class="h1" caption="Are you sure?" margin="0px unset"></wm-label> 
+                <wm-label name="dialogDescription" class="h3" caption="You will not be able to recover this imaginary file!"></wm-label> 
+                <wm-container name="container8" padding="1.5em unset 0.5em unset"> 
+                    <wm-button class="btn-default btn-lg" type="button" caption="No, cancel plx!" name="button12" on-click="Widgets.confirmCancelationAlert.close();Widgets.finalCancelDialog.open()" margin="unset .5em"></wm-button> 
+                    <wm-button class="btn-danger btn-lg" type="button" caption="Yes, delete it!" name="button13" on-click="Widgets.confirmCancelationAlert.close();Widgets.deleteDialog.open()" margin="unset .5em"></wm-button> 
+                </wm-container> 
+            </wm-container> 
+        </wm-dialog> 
+    </wm-view> 
+</wm-page>

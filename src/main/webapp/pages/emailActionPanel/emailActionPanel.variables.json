@@ -1,0 +1,59 @@
+{
+  "categoriesList" : {
+    "_id" : "wm-categoriesList-wm.Variable-1484034726514",
+    "name" : "categoriesList",
+    "owner" : "Page",
+    "category" : "wm.Variable",
+    "dataBinding" : [ ],
+    "dataSet" : [ {
+      "label" : "Work",
+      "icon" : "fa fa-circle text-danger"
+    }, {
+      "label" : "Documents",
+      "icon" : "fa fa-circle text-success"
+    }, {
+      "label" : "Social",
+      "icon" : "fa fa-circle text-warning"
+    }, {
+      "label" : "Advertising",
+      "icon" : "fa fa-circle text-info"
+    }, {
+      "label" : "Clients",
+      "icon" : "fa fa-circle  text-primary"
+    } ],
+    "type" : "string",
+    "isList" : true,
+    "saveInPhonegap" : false
+  },
+  "mailFolderActionList" : {
+    "_id" : "wm-mailFolderActionList-wm.Variable-1484034782116",
+    "name" : "mailFolderActionList",
+    "owner" : "Page",
+    "category" : "wm.Variable",
+    "dataBinding" : [ ],
+    "dataSet" : [ {
+      "label" : "Inbox",
+      "icon" : "wi wi-inbox",
+      "badge" : "23"
+    }, {
+      "label" : "Send Mail",
+      "icon" : "wi wi-mail-outline",
+      "badge" : ""
+    }, {
+      "label" : "Important",
+      "icon" : "wi wi-wb-sunny",
+      "badge" : ""
+    }, {
+      "label" : "Draft",
+      "icon" : "wi wi-drafts",
+      "badge" : "2"
+    }, {
+      "label" : "Trash",
+      "icon" : "wi wi-trash",
+      "badge" : ""
+    } ],
+    "type" : "string",
+    "isList" : true,
+    "saveInPhonegap" : false
+  }
+}

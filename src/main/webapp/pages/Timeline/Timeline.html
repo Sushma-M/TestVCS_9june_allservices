@@ -1,0 +1,14 @@
+<wm-page data-ng-controller="TimelinePageController" pagetitle="Timeline" name="page1"> 
+    <wm-header content="header" name="header1"></wm-header> 
+    <wm-top-nav content="topnav" name="top_nav1"></wm-top-nav> 
+    <wm-content name="content1"> 
+        <wm-left-panel columnwidth="2" content="leftnav" name="left_panel1"></wm-left-panel> 
+        <wm-page-content columnwidth="10" name="page_content1"> 
+            <wm-container name="container1" content="breadcrumbpartial"> 
+                <wm-param name="category" value="ui" type="string"></wm-param> 
+            </wm-container> 
+            <wm-panel iconclass="" autoclose="outsideClick" name="timelinePanel" title="Events" actions="bind:Variables.menuactions.dataSet" collapsible="false" closable="false" class="panel-default" expanded="true" content="TimelinePartial"></wm-panel> 
+        </wm-page-content> 
+    </wm-content> 
+    <wm-footer content="footer" name="footer1"></wm-footer> 
+</wm-page>

@@ -1,0 +1,202 @@
+<wm-page data-ng-controller="ProgressBarsAndSpinnerPageController" pagetitle="Progress Bars And Spinner" name="page1"> 
+    <wm-header content="header" name="header1"></wm-header> 
+    <wm-top-nav content="topnav" name="top_nav1"></wm-top-nav> 
+    <wm-content name="content1"> 
+        <wm-left-panel columnwidth="2" content="LN_Widgets" name="left_panel1"></wm-left-panel> 
+        <wm-page-content columnwidth="10" name="page_content1"> 
+            <wm-container content="breadcrumbpartial" name="container1"></wm-container> 
+            <wm-label padding="unset 0.5em" caption="Progress bars" class="h2" name="label1"></wm-label> 
+            <wm-layoutgrid name="layoutgrid1"> 
+                <wm-gridrow class="bordered-row" name="gridrow1"> 
+                    <wm-gridcolumn columnwidth="2" name="gridcolumn1" padding=".5em unset unset unset"> 
+                        <wm-label padding="unset 0.5em" caption="type: &quot;default&quot;" name="label8" class="code"></wm-label> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="3" name="gridcolumn2" padding="1em unset unset unset"> 
+                        <wm-progress name="progress1" datavalue="30" captionplacement="inside"></wm-progress> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="2" name="gridcolumn35_1"></wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="2" name="gridcolumn35"> 
+                        <wm-label padding="unset 0.5em" caption="type: &quot;default-striped&quot;" name="label9" class="code"></wm-label> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="3" name="gridcolumn36_1" padding="1em unset unset unset"> 
+                        <wm-progress name="progress2" type="default-striped" captionplacement="hidden" datavalue="30"></wm-progress> 
+                    </wm-gridcolumn> 
+                </wm-gridrow> 
+                <wm-gridrow name="gridrow13_1" class="bordered-row"> 
+                    <wm-gridcolumn columnwidth="2" name="gridcolumn36_2"> 
+                        <wm-label padding="unset 0.5em" caption="type: &quot;success&quot;" name="label10" class="code"></wm-label> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="3" name="gridcolumn37_1" padding="1em unset unset unset"> 
+                        <wm-progress type="success" name="progress3" datavalue="30" captionplacement="inside"></wm-progress> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="2" name="gridcolumn38"></wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="2" name="gridcolumn39"> 
+                        <wm-label padding="unset 0.5em" caption="type: &quot;success-striped&quot;" name="label11" class="code"></wm-label> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="3" name="gridcolumn40" padding="1em unset unset unset"> 
+                        <wm-progress type="success-striped" name="progress5" datavalue="30"></wm-progress> 
+                    </wm-gridcolumn> 
+                </wm-gridrow> 
+                <wm-gridrow name="gridrow14_1" class="bordered-row"> 
+                    <wm-gridcolumn columnwidth="2" name="gridcolumn41_1"> 
+                        <wm-label padding="unset 0.5em" caption="type: &quot;info&quot;" name="label12" class="code"></wm-label> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="3" name="gridcolumn42_1" padding="1em unset unset unset"> 
+                        <wm-progress type="info" name="progress6" datavalue="30"></wm-progress> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="2" name="gridcolumn43"></wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="2" name="gridcolumn44"> 
+                        <wm-label padding="unset 0.5em" caption="type: &quot;info-striped&quot;" name="label13" class="code"></wm-label> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="3" name="gridcolumn45" padding="1em unset unset unset"> 
+                        <wm-progress type="info-striped" name="progress7" datavalue="30"></wm-progress> 
+                    </wm-gridcolumn> 
+                </wm-gridrow> 
+                <wm-gridrow name="gridrow13_2" class="bordered-row"> 
+                    <wm-gridcolumn columnwidth="2" name="gridcolumn38_1"> 
+                        <wm-label padding="unset 0.5em" caption="type: &quot;success&quot;" name="label14" class="code"></wm-label> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="3" name="gridcolumn39_1" padding="1em unset unset unset"> 
+                        <wm-progress type="warning" name="progress8" datavalue="30"></wm-progress> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="2" name="gridcolumn40_1"></wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="2" name="gridcolumn41"> 
+                        <wm-label padding="unset 0.5em" caption="type: &quot;success-striped&quot;" name="label15" class="code"></wm-label> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="3" name="gridcolumn42" padding="1em unset unset unset"> 
+                        <wm-progress type="warning-striped" name="progress9" datavalue="30"></wm-progress> 
+                    </wm-gridcolumn> 
+                </wm-gridrow> 
+                <wm-gridrow name="gridrow14_2" class="bordered-row"> 
+                    <wm-gridcolumn columnwidth="2" name="gridcolumn43_1"> 
+                        <wm-label padding="unset 0.5em" caption="type: &quot;danger&quot;" name="label16" class="code"></wm-label> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="3" name="gridcolumn44_1" padding="1em unset unset unset"> 
+                        <wm-progress type="danger" name="progress10" datavalue="30"></wm-progress> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="2" name="gridcolumn45_1"></wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="2" name="gridcolumn46"> 
+                        <wm-label padding="unset 0.5em" caption="type: &quot;danger-striped&quot;" name="label17" class="code"></wm-label> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="3" name="gridcolumn47" padding="1em unset unset unset"> 
+                        <wm-progress type="danger-striped" name="progress11" datavalue="30" displayformat="percentage" captionplacement="hidden"></wm-progress> 
+                    </wm-gridcolumn> 
+                </wm-gridrow> 
+            </wm-layoutgrid> 
+            <wm-label padding="unset 0.5em" caption="Progress Bar properties" class="h2" name="label22"></wm-label> 
+            <wm-layoutgrid name="layoutgrid3"> 
+                <wm-gridrow class="bordered-row" name="gridrow14"> 
+                    <wm-gridcolumn columnwidth="3" name="gridcolumn29"> 
+                        <wm-label padding="unset 0.5em" caption="Percentage display format" class="h4" name="label54"></wm-label> 
+                        <wm-label padding="unset 0.5em" caption="type: &quot;danger-striped&quot;" class="code" name="label24"></wm-label> 
+                        <wm-container name="container6"> 
+                            <wm-label padding="unset 0.5em" caption="value: 50" class="code" name="label55"></wm-label> 
+                        </wm-container> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="9" name="gridcolumn30" padding="1em unset unset unset"> 
+                        <wm-progress type="danger-striped" captionplacement="inside" height="auto" name="progress12" maxvalue="100" datavalue="50"></wm-progress> 
+                    </wm-gridcolumn> 
+                </wm-gridrow> 
+                <wm-gridrow class="bordered-row" name="gridrow15"> 
+                    <wm-gridcolumn columnwidth="3" name="gridcolumn31"> 
+                        <wm-label padding="unset 0.5em" caption="Absolute display format" class="h4" name="label56"></wm-label> 
+                        <wm-label padding="unset 0.5em" caption="type: &quot;success&quot;" name="label25" class="code"></wm-label> 
+                        <wm-container name="container7"> 
+                            <wm-label padding="unset 0.5em" caption="value: &quot;100&quot;" class="code" name="label34"></wm-label> 
+                        </wm-container> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="9" name="gridcolumn32" padding="1em unset unset unset"> 
+                        <wm-progress type="success" name="progress13" datavalue="100" displayformat="absolute" captionplacement="inside" height="auto"></wm-progress> 
+                    </wm-gridcolumn> 
+                </wm-gridrow> 
+                <wm-gridrow name="gridrow13_3" class="bordered-row"> 
+                    <wm-gridcolumn columnwidth="3" name="gridcolumn40_2"> 
+                        <wm-label padding="unset 0.5em" caption="Height property" class="h4" name="label37"></wm-label> 
+                        <wm-label padding="unset 0.5em" caption="type: &quot;info-striped&quot;" class="code" name="label40"></wm-label> 
+                        <wm-container name="container8"> 
+                            <wm-label padding="unset 0.5em" caption="height: &quot;20&quot;" name="label38" class="code"></wm-label> 
+                        </wm-container> 
+                        <wm-container name="container9"> 
+                            <wm-label padding="unset 0.5em" caption="caption: &quot;hidden&quot;" name="label39" class="code"></wm-label> 
+                        </wm-container> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="9" name="gridcolumn41_2" padding="1em unset unset unset"> 
+                        <wm-progress type="info-striped" datavalue="100" displayformat="absolute" captionplacement="inside" height="20" name="progress14"></wm-progress> 
+                    </wm-gridcolumn> 
+                </wm-gridrow> 
+                <wm-gridrow name="gridrow14_3" class="bordered-row"> 
+                    <wm-gridcolumn columnwidth="3" name="gridcolumn42_2"> 
+                        <wm-label padding="unset 0.5em" caption="Animation property" class="h4" name="label41"></wm-label> 
+                        <wm-label padding="unset 0.5em" caption="type: &quot;danger-striped&quot;" class="code" name="label42"></wm-label> 
+                        <wm-container name="container10"> 
+                            <wm-label padding="unset 0.5em" caption="class: &quot;active&quot;" class="code" name="label44"></wm-label> 
+                        </wm-container> 
+                        <wm-container name="container11"> 
+                            <wm-label padding="unset 0.5em" caption="caption: &quot;hidden&quot;" class="code" name="label43"></wm-label> 
+                        </wm-container> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="9" name="gridcolumn43_2" padding="1em unset unset unset"> 
+                        <wm-progress type="danger-striped" datavalue="50" displayformat="absolute" captionplacement="inside" height="20" name="progress15" class="active"></wm-progress> 
+                    </wm-gridcolumn> 
+                </wm-gridrow> 
+            </wm-layoutgrid> 
+            <wm-label padding="unset 0.5em" caption="Spinners" class="h2" name="label18"></wm-label> 
+            <wm-layoutgrid name="layoutgrid2"> 
+                <wm-gridrow class="bordered-row" name="gridrow11"> 
+                    <wm-gridcolumn columnwidth="3" name="gridcolumn22" padding="unset 1em unset unset"> 
+                        <wm-label padding="unset 0.5em" caption="Spinner with Icon" name="label14_1" class="h4"></wm-label> 
+                        <wm-label padding="unset 0.5em" caption="icon class: &quot;fa fa-circle-o-notch fa-spin&quot;" name="label16_1" class="code"></wm-label> 
+                        <wm-label padding="unset 0.5em" caption="animation: &quot;spin&quot;" name="label18_2" class="code"></wm-label> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="9" name="gridcolumn27"> 
+                        <wm-container name="container3" height="100"> 
+                            <wm-spinner show="true" name="spinner1" type="icon"></wm-spinner> 
+                        </wm-container> 
+                    </wm-gridcolumn> 
+                </wm-gridrow> 
+                <wm-gridrow class="bordered-row" name="gridrow12"> 
+                    <wm-gridcolumn columnwidth="3" name="gridcolumn24"> 
+                        <wm-label padding="unset 0.5em" caption="Spinner with Animated Image" class="h4" name="label19"></wm-label> 
+                        <wm-label padding="unset 0.5em" caption="source defined as path" name="label20" class="code"></wm-label> 
+                        <wm-label padding="unset 0.5em" caption="animation: &quot;none&quot;" name="label19_1" class="code"></wm-label> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="9" name="gridcolumn28"> 
+                        <wm-container name="container3_1" height="100"> 
+                            <wm-spinner show="true" type="image" name="spinner2" image="resources/images/imagelists/sloader.gif" imagewidth="36px" backgroundrepeat="no-repeat" imageheight="36px"></wm-spinner> 
+                        </wm-container> 
+                    </wm-gridcolumn> 
+                </wm-gridrow> 
+                <wm-gridrow name="gridrow16" class="bordered-row"> 
+                    <wm-gridcolumn columnwidth="3" name="gridcolumn33"> 
+                        <wm-label padding="unset 0.5em" caption="Spinner with Image and Animation" class="h4" name="label29"></wm-label> 
+                        <wm-label padding="unset 0.5em" caption="source defined as path" class="code" name="label30"></wm-label> 
+                        <wm-label padding="unset 0.5em" caption="animation: &quot;spin&quot;" name="label31" class="code"></wm-label> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="9" name="gridcolumn34"> 
+                        <wm-container name="container4" height="100"> 
+                            <wm-spinner show="true" type="image" image="resources/images/imagelists/static-loader.png" imagewidth="31" backgroundrepeat="no-repeat" imageheight="31" name="spinner3"></wm-spinner> 
+                        </wm-container> 
+                    </wm-gridcolumn> 
+                </wm-gridrow> 
+            </wm-layoutgrid> 
+            <wm-label padding="unset 0.5em" caption="Spinner Styles" class="h2" name="label31_1"></wm-label> 
+            <wm-layoutgrid name="layoutgrid4"> 
+                <wm-gridrow class="bordered-row" name="gridrow17"> 
+                    <wm-gridcolumn columnwidth="3" name="gridcolumn36" padding="unset 1em unset unset"> 
+                        <wm-label padding="unset 0.5em" caption="Spinner with Custom Styles" class="h4" name="label32"></wm-label> 
+                        <wm-label padding="unset 0.5em" caption="caption: &quot;Please wait while the content loads...&quot;" name="label36" class="code"></wm-label> 
+                        <wm-label padding="unset 0.5em" caption="icon class: &quot;fa fa-spinner fa-pulse&quot;" name="label35" class="code"></wm-label> 
+                        <wm-label padding="unset 0.5em" caption="color: &quot;#fff&quot;" class="code" name="label34_1"></wm-label> 
+                        <wm-label padding="unset 0.5em" caption="background color: &quot;rgba(189, 195, 206, 0.55)&quot;" name="label33" class="code"></wm-label> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="9" name="gridcolumn37"> 
+                        <wm-container name="container2" height="300px"> 
+                            <wm-spinner show="true" type="icon" name="spinner4" color="#ffffff" caption="Please wait while the content loads..." backgroundcolor="rgba(189, 195, 206, 0.55)" iconclass="fa fa-spinner fa-pulse"></wm-spinner> 
+                        </wm-container> 
+                    </wm-gridcolumn> 
+                </wm-gridrow> 
+            </wm-layoutgrid> 
+        </wm-page-content> 
+    </wm-content> 
+    <wm-footer content="footer" name="footer1"></wm-footer> 
+</wm-page>

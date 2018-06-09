@@ -1,0 +1,58 @@
+{
+  "fileManagerList" : {
+    "_id" : "wm-fileManagerList-wm.Variable-1484660480238",
+    "name" : "fileManagerList",
+    "owner" : "Page",
+    "category" : "wm.Variable",
+    "dataBinding" : [ ],
+    "dataSet" : [ {
+      "fileImage" : "resources/images/imagelists/stock/1.jpg",
+      "icon" : "",
+      "updateDate" : "1484586784906",
+      "fileName" : "stock_img1.png"
+    }, {
+      "fileImage" : "",
+      "icon" : "fa fa-bar-chart-o",
+      "updateDate" : "1484585184363",
+      "fileName" : "StudentAttendance.xls"
+    }, {
+      "fileImage" : "resources/images/imagelists/stock/2.jpg",
+      "icon" : "",
+      "updateDate" : "1484658356941",
+      "fileName" : "stock_img2.png"
+    }, {
+      "fileImage" : "",
+      "icon" : "fa fa-file",
+      "updateDate" : "1484586784906",
+      "fileName" : "projectPresentation.doc"
+    }, {
+      "fileImage" : "",
+      "icon" : "fa fa-film",
+      "updateDate" : "1484586784906",
+      "fileName" : "Rrics_Birthday.mpg4"
+    }, {
+      "fileImage" : "resources/images/imagelists/stock/3.jpg",
+      "icon" : "",
+      "updateDate" : "1484658356941",
+      "fileName" : "stock_img3.png"
+    }, {
+      "fileImage" : "",
+      "icon" : "fa fa-file",
+      "updateDate" : "1484586784906",
+      "fileName" : "Document_2015.doc"
+    }, {
+      "fileImage" : "",
+      "icon" : "fa fa-bar-chart-o",
+      "updateDate" : "1484585184363",
+      "fileName" : "AnnualReport2014.xls"
+    }, {
+      "fileImage" : "resources/images/imagelists/stock/4.jpg",
+      "icon" : "",
+      "updateDate" : "1484585184363",
+      "fileName" : "my_feel.png"
+    } ],
+    "type" : "string",
+    "isList" : true,
+    "saveInPhonegap" : false
+  }
+}

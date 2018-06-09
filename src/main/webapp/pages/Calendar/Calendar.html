@@ -1,0 +1,38 @@
+<wm-page data-ng-controller="CalendarPageController" pagetitle="Calendar" name="page1"> 
+    <wm-header content="header" name="header1"></wm-header> 
+    <wm-top-nav content="topnav" name="top_nav1"></wm-top-nav> 
+    <wm-content name="content1"> 
+        <wm-left-panel columnwidth="2" content="leftnav" name="left_panel1"></wm-left-panel> 
+        <wm-page-content columnwidth="10" name="page_content1"> 
+            <wm-container name="container1" content="breadcrumbpartial"> 
+                <wm-param name="category" value="ui" type="string"></wm-param> 
+            </wm-container> 
+            <wm-layoutgrid name="wrapperLayout"> 
+                <wm-gridrow name="gridRowOne"> 
+                    <wm-gridcolumn columnwidth="3" name="gridColumnOne" padding="1em"> 
+                        <wm-panel iconclass="" autoclose="outsideClick" name="eventsPanel" title="Calendar Events" class="panel-default" collapsible="false" closable="false" enablefullscreen="true"> 
+                            <wm-list listclass="list-inline" itemclass="bind:Variables.calendarEvents.dataSet[$i].className + ' list-item-margin'" template="true" itemsperrow="xs-1 sm-1 md-1 lg-1" class="media-list" dataset="bind:Variables.calendarEvents.dataSet" navigation="None" name="eventList" enablereorder="true"> 
+                                <wm-listtemplate layout="inline" name="listtemplate1"> 
+                                    <wm-container name="eventContainer"> 
+                                        <wm-label name="eventName" class="p" caption="bind:Variables.calendarEvents.dataSet[$i].title" fontunit="em" margin="5px unset"></wm-label> 
+                                    </wm-container> 
+                                </wm-listtemplate> 
+                            </wm-list> 
+                        </wm-panel> 
+                        <wm-tile name="noteContainer" padding="1em" borderwidth="0.5px" bordercolor="rgba(0,0,0,0.1)" borderstyle="solid"> 
+                            <wm-label name="noteHeader" class="h2" caption="Full Calendar" margin="0px unset"></wm-label> 
+                            <wm-label caption="is a jQuery plugin that provides a full-sized, drag &amp; drop calendar like the one below. It uses AJAX to fetch events on-the-fly for each month and is easily configured to use your own feed format (an extension is provided for Google Calendar)." class="p" name="noteDescription" margin="5px unset"></wm-label> 
+                            <wm-anchor margin="0.5em 0em" caption="FullCalendar documentation" hyperlink="http://www.wavemaker.com/learn/app-development/widgets/form-widgets/calendar/" name="documentationLink" target="_blank"></wm-anchor> 
+                        </wm-tile> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="9" name="gridColumnTwo" padding="1em"> 
+                        <wm-panel iconclass="" autoclose="outsideClick" name="calendarPanel" class="panel-default" title="Striped Table" collapsible="true" closable="false"> 
+                            <wm-calendar name="fullCalendar" dataset="bind:Variables.calendarEvents.dataSet" eventtitle="title" eventstart="start" eventallday="All" calendartype="basic" eventclass="className"></wm-calendar> 
+                        </wm-panel> 
+                    </wm-gridcolumn> 
+                </wm-gridrow> 
+            </wm-layoutgrid> 
+        </wm-page-content> 
+    </wm-content> 
+    <wm-footer content="footer" name="footer1"></wm-footer> 
+</wm-page>

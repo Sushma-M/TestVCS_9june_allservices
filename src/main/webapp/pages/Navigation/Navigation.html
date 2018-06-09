@@ -1,0 +1,234 @@
+<wm-page data-ng-controller="NavigationPageController" pagetitle="Navigation" name="page1"> 
+    <wm-header content="header" name="header1"></wm-header> 
+    <wm-top-nav content="topnav" name="top_nav1"></wm-top-nav> 
+    <wm-content name="content1"> 
+        <wm-left-panel columnwidth="2" content="LN_Widgets" name="left_panel1"></wm-left-panel> 
+        <wm-page-content columnwidth="10" name="page_content1"> 
+            <wm-container name="container1" content="breadcrumbpartial"></wm-container> 
+            <wm-layoutgrid name="layoutgrid1"> 
+                <wm-gridrow class="bordered-row" name="gridrow1"> 
+                    <wm-gridcolumn columnwidth="3" name="gridcolumn1"> 
+                        <wm-label padding="unset 0.5em" name="label1" class="h4" caption="Breadcrumb"></wm-label> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="9" name="gridcolumn2"> 
+                        <wm-breadcrumb dataset="Home, Page" name="breadcrumb1"></wm-breadcrumb> 
+                    </wm-gridcolumn> 
+                </wm-gridrow> 
+                <wm-gridrow name="gridrow14" class="bordered-row"> 
+                    <wm-gridcolumn columnwidth="3" name="gridcolumn38"> 
+                        <wm-label padding="unset 0.5em" class="h4" caption="Tree" name="label13_1"></wm-label> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="9" name="gridcolumn39"> 
+                        <wm-tree name="treeExample" dataset="bind:Variables.dashboardTreeStructure.dataSet" nodelabel="label" nodeicon="icon" height="150"></wm-tree> 
+                    </wm-gridcolumn> 
+                </wm-gridrow> 
+            </wm-layoutgrid> 
+            <wm-label padding="unset 0.5em" name="label6_1" caption="Dropdown Menu" class="h2"></wm-label> 
+            <wm-layoutgrid name="layoutgrid2"> 
+                <wm-gridrow class="bordered-row" name="gridrow6"> 
+                    <wm-gridcolumn columnwidth="3" name="gridcolumn11"> 
+                        <wm-label padding="unset 0.5em" name="label8" class="h4" caption="Layout"></wm-label> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="3" name="gridcolumn36"> 
+                        <wm-menu caption="Menu Vertical" name="menu1" dataset="bind:Variables.menuactions.dataSet" iconclass="wi wi-bars" menulayout="vertical" menuclass="btn-default" width="180"></wm-menu> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="6" name="gridcolumn37"></wm-gridcolumn> 
+                </wm-gridrow> 
+                <wm-gridrow name="gridrow10_1" class="bordered-row"> 
+                    <wm-gridcolumn columnwidth="3" name="gridcolumn27"> 
+                        <wm-label padding="unset 0.5em" class="h4" caption="Position" name="label13"></wm-label> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="3" name="gridcolumn28"> 
+                        <wm-menu caption="Menu Up Right" dataset="bind:Variables.menuactions.dataSet" iconclass="wi wi-bars" menulayout="vertical" menuposition="up,right" name="menu5" width="180" menuclass="btn-primary"></wm-menu> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="3" name="gridcolumn29"> 
+                        <wm-menu caption="Menu Up Left" dataset="bind:Variables.menuactions.dataSet" iconclass="wi wi-bars" menulayout="vertical" menuposition="up,left" name="menu6" width="180" menuclass="btn-success"></wm-menu> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="3" name="gridcolumn41"></wm-gridcolumn> 
+                </wm-gridrow> 
+                <wm-gridrow name="gridrow9" class="bordered-row"> 
+                    <wm-gridcolumn columnwidth="3" name="gridcolumn23"></wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="3" name="gridcolumn24"> 
+                        <wm-menu caption="Menu Down Right" dataset="bind:Variables.menuactions.dataSet" iconclass="wi wi-bars" itemlabel="label" itemicon="icon" menulayout="vertical" menuposition="down,right" name="menu7_1" width="180" menuclass="btn-danger"></wm-menu> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="6" name="gridcolumn25"> 
+                        <wm-menu caption="Menu Down Left" dataset="bind:Variables.menuactions.dataSet" iconclass="wi wi-bars" itemlabel="label" itemicon="icon" menulayout="vertical" menuposition="down,left" name="menu8_1" width="180" menuclass="btn-warning"></wm-menu> 
+                    </wm-gridcolumn> 
+                </wm-gridrow> 
+                <wm-gridrow name="gridrow11" class="bordered-row"> 
+                    <wm-gridcolumn columnwidth="3" name="gridcolumn30_1"></wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="4" name="gridcolumn31_1"> 
+                        <wm-menu caption="Menu Inline" dataset="bind:Variables.menuactions.dataSet" iconclass="wi wi-bars" itemlabel="label" itemicon="icon" menulayout="vertical" menuposition="inline" name="menu7" menuclass="btn-primary" width="180" autoclose="disabled"></wm-menu> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="5" name="gridcolumn32_2"></wm-gridcolumn> 
+                </wm-gridrow> 
+            </wm-layoutgrid> 
+            <wm-label padding="unset 0.5em" name="label6_1" caption="Navbar" class="h2"></wm-label> 
+            <wm-layoutgrid name="layoutgrid3"> 
+                <wm-gridrow class="bordered-row" name="gridrow3"> 
+                    <wm-gridcolumn columnwidth="3" name="gridcolumn5"> 
+                        <wm-label padding="unset 0.5em" class="h4" name="label3" caption="Nav"></wm-label> 
+                        <wm-label padding="unset 0.5em" class="code" caption="type: &quot;pills&quot;" name="label18_2"></wm-label> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="9" name="gridcolumn6"> 
+                        <wm-nav type="pills" name="nav4"> 
+                            <wm-nav-item name="nav_item8"> 
+                                <wm-anchor caption="Home" name="anchor5_1" iconclass="wi wi-home"></wm-anchor> 
+                            </wm-nav-item> 
+                            <wm-nav-item name="nav_item9"> 
+                                <wm-anchor caption="About" name="anchor6_1" iconclass="fa fa-info-circle"></wm-anchor> 
+                            </wm-nav-item> 
+                            <wm-nav-item name="nav_item10"> 
+                                <wm-anchor caption="Contact" name="anchor7_1" iconclass="wi wi-perm-contact-calendar"></wm-anchor> 
+                            </wm-nav-item> 
+                            <wm-nav-item name="nav_item11"> 
+                                <wm-menu caption="Work" name="menu8" iconclass="wi wi-assignment" type="anchor" dataset="bind:Variables.menuactions.dataSet" itemlabel="label" itemicon="icon"></wm-menu> 
+                            </wm-nav-item> 
+                            <wm-nav-item name="nav_item12"> 
+                                <wm-popover popoverwidth="540" margin="unset 0.5em" name="popover5" iconclass="fa fa-registered" caption="Start Tour" content="popoverTemplate"></wm-popover> 
+                            </wm-nav-item> 
+                        </wm-nav> 
+                    </wm-gridcolumn> 
+                </wm-gridrow> 
+                <wm-gridrow name="gridrow16" class="bordered-row"> 
+                    <wm-gridcolumn columnwidth="3" name="gridcolumn43"> 
+                        <wm-label padding="unset 0.5em" class="code" caption="type: &quot;pills&quot;" name="label19"></wm-label> 
+                        <wm-label padding="unset 0.5em" class="code" caption="layout: &quot;stacked&quot;" name="label20"></wm-label> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="9" name="gridcolumn44"> 
+                        <wm-nav type="pills" name="nav4" layout="stacked"> 
+                            <wm-nav-item name="nav_item8"> 
+                                <wm-anchor caption="Home" name="anchor5_1" iconclass="wi wi-home"></wm-anchor> 
+                            </wm-nav-item> 
+                            <wm-nav-item name="nav_item9"> 
+                                <wm-anchor caption="About" name="anchor6_1" iconclass="fa fa-info-circle"></wm-anchor> 
+                            </wm-nav-item> 
+                            <wm-nav-item name="nav_item10"> 
+                                <wm-anchor caption="Contact" name="anchor7_1" iconclass="wi wi-perm-contact-calendar"></wm-anchor> 
+                            </wm-nav-item> 
+                            <wm-nav-item name="nav_item12"> 
+                                <wm-popover popoverwidth="540" name="popover5" iconclass="fa fa-registered" caption="Start Tour" content="popoverTemplate"></wm-popover> 
+                            </wm-nav-item> 
+                        </wm-nav> 
+                    </wm-gridcolumn> 
+                </wm-gridrow> 
+                <wm-gridrow class="bordered-row" name="gridrow4"> 
+                    <wm-gridcolumn columnwidth="3" name="gridcolumn7"> 
+                        <wm-label padding="unset 0.5em" class="h4" caption="Nav Bar Default" name="label5"></wm-label> 
+                        <wm-label padding="unset 0.5em" class="code" caption="Default" name="label16"></wm-label> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="9" name="gridcolumn8"> 
+                        <wm-navbar title="My Store" name="navbar1" imgsrc="resources/images/logos/logo.png"> 
+                            <wm-nav type="navbar" class="navbar-left" name="nav2"> 
+                                <wm-nav-item name="nav_item4"> 
+                                    <wm-anchor caption="Men" name="anchor4" iconclass="wi wi-person"></wm-anchor> 
+                                </wm-nav-item> 
+                                <wm-nav-item name="nav_item5"> 
+                                    <wm-anchor caption="Women" name="anchor5" iconclass="fa fa-female"></wm-anchor> 
+                                </wm-nav-item> 
+                                <wm-nav-item name="nav_item6"> 
+                                    <wm-anchor caption="More" name="anchor6" iconclass="wi wi-ellipsis-v"></wm-anchor> 
+                                </wm-nav-item> 
+                            </wm-nav> 
+                            <wm-nav type="navbar" class="navbar-right" name="nav3"> 
+                                <wm-nav-item name="nav_item7"> 
+                                    <wm-anchor caption="My account" name="anchor7" iconclass="wi wi-account-box"></wm-anchor> 
+                                </wm-nav-item> 
+                                <wm-nav-item name="nav_item16"> 
+                                    <wm-popover popoverwidth="340" margin="unset 0.5em" name="popover3" iconclass="wi wi-shopping-cart" caption="Add to Cart" content="popoverTemplate" badgevalue="4"></wm-popover> 
+                                </wm-nav-item> 
+                            </wm-nav> 
+                        </wm-navbar> 
+                    </wm-gridcolumn> 
+                </wm-gridrow> 
+                <wm-gridrow class="bordered-row" name="gridrow15_1"> 
+                    <wm-gridcolumn columnwidth="3" name="gridcolumn32_1"> 
+                        <wm-label padding="unset 0.5em" class="h4" caption="Nav Bar Inverse" name="label17"></wm-label> 
+                        <wm-label padding="unset 0.5em" class="code" caption="class: &quot;navbar-inverse&quot;" name="label18"></wm-label> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="9" name="gridcolumn33_1"> 
+                        <wm-navbar title="My Store" name="navbar2" class="navbar-inverse" imgsrc="resources/images/logos/logo.png"> 
+                            <wm-nav type="navbar" class="navbar-left" name="nav4_1"> 
+                                <wm-nav-item name="nav_item13"> 
+                                    <wm-anchor caption="men" name="anchor8" iconclass="wi wi-person"></wm-anchor> 
+                                </wm-nav-item> 
+                                <wm-nav-item name="nav_item14"> 
+                                    <wm-anchor caption="women" name="anchor9" iconclass="fa fa-female"></wm-anchor> 
+                                </wm-nav-item> 
+                                <wm-nav-item name="nav_item15"> 
+                                    <wm-anchor caption="more" name="anchor10" iconclass="wi wi-ellipsis-v"></wm-anchor> 
+                                </wm-nav-item> 
+                            </wm-nav> 
+                            <wm-nav type="navbar" class="navbar-right" name="nav5"> 
+                                <wm-nav-item name="nav_item17"> 
+                                    <wm-anchor caption="my account" name="anchor12" iconclass="wi wi-account-box"></wm-anchor> 
+                                </wm-nav-item> 
+                                <wm-nav-item name="nav_item19"> 
+                                    <wm-popover popoverwidth="240" margin="unset 0.5em" name="popover8" iconclass="wi wi-shopping-cart" caption="Add to cart" content="popoverTemplate" badgevalue="4"></wm-popover> 
+                                </wm-nav-item> 
+                            </wm-nav> 
+                        </wm-navbar> 
+                    </wm-gridcolumn> 
+                </wm-gridrow> 
+            </wm-layoutgrid> 
+            <wm-label padding="unset 0.5em" name="label6_1" caption="Popover" class="h2"></wm-label> 
+            <wm-layoutgrid name="layoutgrid4"> 
+                <wm-gridrow class="bordered-row" name="gridrow5"> 
+                    <wm-gridcolumn columnwidth="3" name="gridcolumn9"> 
+                        <wm-label padding="unset 0.5em" name="label24" class="h4" caption="Position"></wm-label> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="2" name="gridcolumn41_1" padding="1em unset unset unset"> 
+                        <wm-popover popoverwidth="320px" popoverheight="233px" margin="unset 0.5em" name="popover1" content="popoverTemplate" caption="Placement Top" popoverplacement="top" iconclass="wi wi-arrow-upward"></wm-popover> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="2" name="gridcolumn42" padding="1em unset unset unset"> 
+                        <wm-popover popoverwidth="320px" popoverheight="233px" margin="unset 0.5em" content="popoverTemplate" caption="Placement Left" name="popover5_1" popoverplacement="left" iconclass="wi wi-arrow-left"></wm-popover> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="2" name="gridcolumn43_1" padding="1em unset unset unset"> 
+                        <wm-popover popoverwidth="320px" popoverheight="233px" margin="unset 0.5em" content="popoverTemplate" caption="Placement Right" name="popover6" popoverplacement="right" iconclass="wi wi-arrow-right"></wm-popover> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="2" name="gridcolumn44_1" padding="1em unset unset unset"> 
+                        <wm-popover popoverwidth="320px" popoverheight="233px" margin="unset 0.5em" content="popoverTemplate" caption="Placement Bottom" name="popover4" iconclass="wi wi-arrow-downward"></wm-popover> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="1" name="gridcolumn30" padding="2em unset unset unset"></wm-gridcolumn> 
+                </wm-gridrow> 
+            </wm-layoutgrid> 
+            <wm-label padding="unset 0.5em" name="label6_1" caption="Data Navigator" class="h2"></wm-label> 
+            <wm-layoutgrid name="layoutgrid5"> 
+                <wm-gridrow name="gridrow11_1" class="bordered-row"> 
+                    <wm-gridcolumn columnwidth="3" name="gridcolumn31_2"> 
+                        <wm-label padding="unset 0.5em" class="code" caption="type: &quot;basic&quot;" name="label15"></wm-label> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="4" name="gridcolumn34" padding="1em unset unset unset"> 
+                        <wm-pagination name="datanavigator1" dataset="bind:Variables.HrdbEmployeeData.dataSet" navigation="Basic"></wm-pagination> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="5" name="gridcolumn32_3" padding="1em unset unset unset"> 
+                        <wm-pagination dataset="bind:Variables.HrdbEmployeeData.dataSet" navigation="Basic" name="datanavigator4" navigationsize="small"></wm-pagination> 
+                    </wm-gridcolumn> 
+                </wm-gridrow> 
+                <wm-gridrow name="gridrow11_1" class="bordered-row"> 
+                    <wm-gridcolumn columnwidth="3" name="gridcolumn31_2"> 
+                        <wm-label padding="unset 0.5em" class="code" caption="type: &quot;pager&quot;" name="label17_1"></wm-label> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="4" name="gridcolumn34"> 
+                        <wm-pagination name="datanavigator1" dataset="bind:Variables.HrdbEmployeeData.dataSet" navigation="Pager"></wm-pagination> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="5" name="gridcolumn33"> 
+                        <wm-pagination dataset="bind:Variables.HrdbEmployeeData.dataSet" navigation="Pager" name="datanavigator6" navigationsize="small"></wm-pagination> 
+                    </wm-gridcolumn> 
+                </wm-gridrow> 
+                <wm-gridrow name="gridrow11_1" class="bordered-row"> 
+                    <wm-gridcolumn columnwidth="3" name="gridcolumn31_2"> 
+                        <wm-label padding="unset 0.5em" class="code" caption="type: &quot;classic&quot;" name="label18_1"></wm-label> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="4" name="gridcolumn34"> 
+                        <wm-pagination name="datanavigator1" dataset="bind:Variables.HrdbEmployeeData.dataSet" navigation="Classic"></wm-pagination> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="5" name="gridcolumn34_1"> 
+                        <wm-pagination dataset="bind:Variables.HrdbEmployeeData.dataSet" navigation="Classic" name="datanavigator7" navigationsize="small"></wm-pagination> 
+                    </wm-gridcolumn> 
+                </wm-gridrow> 
+            </wm-layoutgrid> 
+        </wm-page-content> 
+    </wm-content> 
+    <wm-footer content="footer" name="footer1"></wm-footer> 
+</wm-page>

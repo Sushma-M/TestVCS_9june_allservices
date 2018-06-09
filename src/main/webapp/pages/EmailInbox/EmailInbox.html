@@ -1,0 +1,48 @@
+<wm-page data-ng-controller="EmailInboxPageController" pagetitle="Email Inbox" name="page1"> 
+    <wm-header content="header" name="header1"></wm-header> 
+    <wm-top-nav content="topnav" name="top_nav1"></wm-top-nav> 
+    <wm-content name="content1"> 
+        <wm-left-panel columnwidth="2" content="leftnav" name="left_panel1"></wm-left-panel> 
+        <wm-page-content columnwidth="10" name="page_content1"> 
+            <wm-container name="container1" content="breadcrumbpartial"> 
+                <wm-param name="category" value="ui" type="string"></wm-param> 
+            </wm-container> 
+            <wm-layoutgrid name="inboxLayoutGrid"> 
+                <wm-gridrow name="gridRowOne"> 
+                    <wm-gridcolumn columnwidth="3" name="gridColumnOne" padding="unset 0.5em"> 
+                        <wm-container name="emailActionPanelContainer" content="emailActionPanel" margin="unset unset 2em unset"></wm-container> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="9" name="gridColumnTwo" padding="unset 0.5em"> 
+                        <wm-panel iconclass="" autoclose="outsideClick" title="Inbox (10)" name="inboxMailPanel" class="panel-default"> 
+                            <wm-layoutgrid name="mailActionLayoutGrid"> 
+                                <wm-gridrow name="actionGridRow" padding="unset unset 2em unset"> 
+                                    <wm-gridcolumn columnwidth="8" name="actionColumnOne" class="col-xs-7" padding="1em unset unset unset"> 
+                                        <wm-button class="btn-default btn-sm" type="button" caption="Refresh" iconclass="fa fa-refresh" margin="unset .2em" hint="Refresh inbox" name="refreshButton"></wm-button> 
+                                        <wm-button class="btn-default btn-sm" type="button" caption="" iconclass="fa fa-eye" margin="unset .2em" hint="Mark as read" name="watchedButton"></wm-button> 
+                                        <wm-button class="btn-default btn-sm" type="button" caption="" iconclass="fa fa-exclamation" margin="unset .2em" hint="Mark as important" name="importantButton"></wm-button> 
+                                        <wm-button class="btn-default btn-sm" caption="" type="button" margin="unset .2em" iconclass="wi wi-delete" hint="Move to trash" name="deleteButton"></wm-button> 
+                                    </wm-gridcolumn> 
+                                    <wm-gridcolumn columnwidth="4" name="actionColumnTwo" class="col-xs-5"> 
+                                        <wm-search placeholder="Search email" name="mailSearch" dataset="bind:Variables.mailInboxData.dataSet" searchkey="date,message,messageLabel,name" displaylabel="message" datafield="All Fields"></wm-search> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                            </wm-layoutgrid> 
+                            <wm-table title="" dataset="bind:Variables.mailInboxData.dataSet" navigation="Pager" name="inboxMailDataGrid" radioselect="false" showheader="false" multiselect="true" gridclass="table-striped table-hover" pagesize="10" searchlabel="Search email"> 
+                                <wm-table-column binding="name" caption="Name" type="string" width="15%" readonly="true" show="true"></wm-table-column> 
+                                <wm-table-column binding="messageLabel" caption="Message Label" type="string" widget-type="label" width="10%" textalignment="right" readonly="true" show="true"> 
+                                    <label class="label" data-ng-class="{'label-warning':row.messageLabel == 'Clients', 'label-danger':row.messageLabel == 'Documents', 'label-info':row.messageLabel == 'Adv'}">{{row.getProperty('messageLabel')}}</label> 
+                                </wm-table-column> 
+                                <wm-table-column binding="message" caption="Message" type="string" readonly="true" show="true"></wm-table-column> 
+                                <wm-table-column binding="customField" caption="Attachment" type="string" width="24px" readonly="true" searchable="false" show="true"> 
+                                    <wm-icon name="icon1" iconclass="wi wi-attach-file"></wm-icon> 
+                                </wm-table-column> 
+                                <wm-table-column binding="date" caption="Date" type="string" width="12%" readonly="true" datepattern="M/d/yyyy" formatpattern="toDate" show="true"></wm-table-column> 
+                            </wm-table> 
+                        </wm-panel> 
+                    </wm-gridcolumn> 
+                </wm-gridrow> 
+            </wm-layoutgrid> 
+        </wm-page-content> 
+    </wm-content> 
+    <wm-footer content="footer" name="footer1"></wm-footer> 
+</wm-page>

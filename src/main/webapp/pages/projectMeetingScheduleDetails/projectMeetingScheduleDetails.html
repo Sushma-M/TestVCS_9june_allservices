@@ -1,0 +1,24 @@
+<wm-partial data-ng-controller="projectMeetingScheduleDetailsPageController" name="partial1"> 
+    <wm-list itemclass="seperate-list-items media" template="true" itemsperrow="xs-1 sm-1 md-1 lg-1" datafield="All Fields" dataset="bind:Variables.alphaMeetingList.dataSet" navigation="None" name="meetingLivelist" padding="unset 0.5em" class="project-timeline" disableitem="true"> 
+        <wm-listtemplate layout="inline" name="listtemplate5"> 
+            <wm-container name="iconContainer" class="media-left"> 
+                <wm-icon name="icon3" iconclass="bind:Variables.alphaMeetingList.dataSet[$i].icon" iconsize="1.2em" class="{{item.icon_class}}"></wm-icon> 
+            </wm-container> 
+            <wm-container name="noteContainer" class="media-body panel" padding="1em"> 
+                <wm-label class="h4 media-heading" name="Header" caption="bind:Variables.alphaMeetingList.dataSet[$i].heading" fontunit="px"></wm-label> 
+                <wm-label class="p" caption="bind:Variables.alphaMeetingList.dataSet[$i].comment" fontunit="em" name="meetingDescription"></wm-label> 
+                <wm-layoutgrid name="meetingScheduleLayout"> 
+                    <wm-gridrow name="gridrow12"> 
+                        <wm-gridcolumn columnwidth="5" name="gridcolumn23" class="col-xs-6"> 
+                            <wm-label class="p" caption="bind:Variables.alphaMeetingList.dataSet[$i].days" fontunit="em" name="Schedule"></wm-label> 
+                            <wm-label class="p text-primary" caption="bind:Variables.alphaMeetingList.dataSet[$i].time" fontunit="em" name="Date"></wm-label> 
+                        </wm-gridcolumn> 
+                        <wm-gridcolumn columnwidth="7" name="gridcolumn24" class="col-xs-6 text-right"> 
+                            <wm-button class="{{item.action_button_class}} + ' pull-right'" caption="bind:Variables.alphaMeetingList.dataSet[$i].action_button" type="button" name="morrDetailsButton" padding="unset 4px" show="bind:!!Variables.alphaMeetingList.dataSet[$i].action_button"></wm-button> 
+                        </wm-gridcolumn> 
+                    </wm-gridrow> 
+                </wm-layoutgrid> 
+            </wm-container> 
+        </wm-listtemplate> 
+    </wm-list> 
+</wm-partial>

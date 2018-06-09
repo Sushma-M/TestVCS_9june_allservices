@@ -1,0 +1,22 @@
+{
+  "discussionList" : {
+    "_id" : "wm-discussionList-wm.Variable-1482304842918",
+    "name" : "discussionList",
+    "owner" : "Page",
+    "category" : "wm.Variable",
+    "dataBinding" : [ ],
+    "dataSet" : [ {
+      "title" : "General topic",
+      "badgeValue" : "16"
+    }, {
+      "title" : "The generated Lorem",
+      "badgeValue" : "12"
+    }, {
+      "title" : "There are many variations",
+      "badgeValue" : "7"
+    } ],
+    "type" : "string",
+    "isList" : true,
+    "saveInPhonegap" : false
+  }
+}

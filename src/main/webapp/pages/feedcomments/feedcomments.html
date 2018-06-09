@@ -1,0 +1,25 @@
+<wm-partial data-ng-controller="feedcommentsPageController" name="partial1"> 
+    <wm-list listclass="list-group" itemclass="media" template="true" itemsperrow="xs-1 sm-1 md-1 lg-1" dataset="bind:Variables.githubcomments.dataSet" navigation="On-Demand" name="empPostList" title="" ondemandmessage="Show More" pagesize="3" paginationclass="btn-primary" padding="unset unset 1em unset"> 
+        <wm-listtemplate layout="media" name="listtemplate1"> 
+            <wm-container class="media-left media-top" name="empImageContainer"> 
+                <wm-picture name="empImage" class="media-object" width="32pt" height="32pt" picturesource="bind:Variables.githubcomments.dataSet.user.avatar_url"></wm-picture> 
+            </wm-container> 
+            <wm-container class="media-body" padding="unset .25em unset 1.25em" name="postContainer"> 
+                <wm-anchor class="inline" caption="bind:Variables.githubcomments.dataSet[$i].user.login + ' '" name="Name" margin="0em unset 0.5em unset"></wm-anchor> 
+                <wm-html name="postDescription" content="bind:Variables.githubcomments.dataSet[$i].body" class="pre-wrap inline">
+                     bind:Variables.githubcomments.dataSet[$i].body 
+                </wm-html> 
+                <wm-anchor margin="unset 0.5em" name="LikeAnchor" iconclass="wi wi-thumb-up" caption="11 Like this!" class="small inline"></wm-anchor> 
+                <wm-label caption="bind:Variables.githubcomments.dataSet[$i].updated_at  | toDate: 'yyyy-MM-dd HH:mm'" name="UpdatedAt" class="small inline"></wm-label> 
+            </wm-container> 
+        </wm-listtemplate> 
+    </wm-list> 
+    <wm-container class="media" name="container3"> 
+        <wm-container class="media-left media-top" name="empImageContainer"> 
+            <wm-picture class="media-object" width="32pt" height="32pt" picturesource="http://dev.wavemaker.com/examples/salesrep/Eric-Lin.png" name="picture2"></wm-picture> 
+        </wm-container> 
+        <wm-container class="media-body" padding="unset .25em unset 1.25em" name="postContainer"> 
+            <wm-textarea name="textarea1" placeholder="Write comment"></wm-textarea> 
+        </wm-container> 
+    </wm-container> 
+</wm-partial>

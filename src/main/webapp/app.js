@@ -1,15 +1,19 @@
-Application.run(function ($rootScope) {
+Application.run(function($rootScope) {
     "use strict";
     /* perform any action on the variables within this block(on-page-load) */
-    $rootScope.onAppVariablesReady = function () {
+    $rootScope.onAppVariablesReady = function() {
         /*
          * variables can be accessed through '$rootScope.Variables' property here
          * e.g. $rootScope.Variables.staticVariable1.getData()
          */
+
     };
+    $rootScope.updateBread = function(pageName) {
+
+    }
 
     /* perform any action on session timeout here, e.g clearing some data, etc */
-    $rootScope.onSessionTimeout = function () {
+    $rootScope.onSessionTimeout = function() {
         /*
          * NOTE:
          * On re-login after session timeout:

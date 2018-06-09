@@ -1,0 +1,102 @@
+<wm-page data-ng-controller="NotificationsPageController" pagetitle="Notifications" name="page1"> 
+    <wm-header content="header" name="header1"></wm-header> 
+    <wm-top-nav content="topnav" name="top_nav1"></wm-top-nav> 
+    <wm-content name="content1"> 
+        <wm-left-panel columnwidth="2" content="LN_Widgets" name="left_panel1"></wm-left-panel> 
+        <wm-page-content columnwidth="10" name="page_content1"> 
+            <wm-container content="breadcrumbpartial" name="container1"></wm-container> 
+            <wm-label padding="unset 0.5em" name="label2" caption="Toasters" class="h2"></wm-label> 
+            <wm-layoutgrid name="layoutgrid2"> 
+                <wm-gridrow name="gridrow3" class="bordered-row"> 
+                    <wm-gridcolumn columnwidth="3" class="col-xs-6" name="gridcolumn5"> 
+                        <wm-label padding="unset 0.5em" name="label3" caption="Success Toaster" class="h4"></wm-label> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="9" class="col-xs-6" name="gridcolumn6"> 
+                        <wm-button class="btn-success" caption="Save" type="button" margin="unset 0.5em" name="button1" on-click="Variables.successToaster.invoke()" iconclass="wi wi-save" width="160"></wm-button> 
+                    </wm-gridcolumn> 
+                </wm-gridrow> 
+                <wm-gridrow name="gridrow4" class="bordered-row"> 
+                    <wm-gridcolumn columnwidth="3" class="col-xs-6" name="gridcolumn7"> 
+                        <wm-label padding="unset 0.5em" caption="Information Toaster" name="label3_1" class="h4"></wm-label> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="9" class="col-xs-6" name="gridcolumn8"> 
+                        <wm-button class="btn-info" caption="Notification" type="button" margin="unset 0.5em" on-click="Variables.infoToaster.invoke()" name="button2" iconclass="wi wi-info-outline" width="160"></wm-button> 
+                    </wm-gridcolumn> 
+                </wm-gridrow> 
+                <wm-gridrow name="gridrow3_1" class="bordered-row"> 
+                    <wm-gridcolumn columnwidth="3" class="col-xs-6" name="gridcolumn5_1"> 
+                        <wm-label padding="unset 0.5em" caption="Warning Toaster" name="label4" class="h4"></wm-label> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="9" class="col-xs-6" name="gridcolumn6_1"> 
+                        <wm-button class="btn-warning" caption="Check connection" type="button" margin="unset 0.5em" on-click="Variables.warningToaster.invoke()" name="button3" iconclass="wi wi-bluetooth-connected" width="160"></wm-button> 
+                    </wm-gridcolumn> 
+                </wm-gridrow> 
+                <wm-gridrow name="gridrow4_1" class="bordered-row"> 
+                    <wm-gridcolumn columnwidth="3" class="col-xs-6" name="gridcolumn7_1"> 
+                        <wm-label padding="unset 0.5em" caption="Danger Toaster" name="label5" class="h4"></wm-label> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="9" class="col-xs-6" name="gridcolumn8_1"> 
+                        <wm-button class="btn-danger" caption="Exit" type="button" margin="unset 0.5em" on-click="Variables.errorToaster.invoke()" name="button4" width="160" iconclass="wi wi-exit-to-app"></wm-button> 
+                    </wm-gridcolumn> 
+                </wm-gridrow> 
+            </wm-layoutgrid> 
+            <wm-label padding="unset 0.5em" caption="Toaster positions" class="h2" name="label6"></wm-label> 
+            <wm-layoutgrid name="layoutgrid2_1"> 
+                <wm-gridrow class="bordered-row" name="gridrow5"> 
+                    <wm-gridcolumn columnwidth="3" class="col-xs-6" name="gridcolumn9"> 
+                        <wm-label padding="unset 0.5em" caption="Top" name="label7" class="h4"></wm-label> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="2" name="gridcolumn29"> 
+                        <wm-button class="btn-warning" caption="Top-Left" type="button" margin="unset 0.5em" on-click="Variables.topLeftToaster.invoke()" name="button5" iconclass="wi wi-arrow-left" width="140"></wm-button> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="2" name="gridcolumn30"> 
+                        <wm-button class="btn-success" caption="Top-Center" type="button" margin="unset 0.5em" on-click="Variables.topCenterToaster.invoke()" name="button9" iconclass="wi wi-arrow-up" width="140"></wm-button> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="5" class="col-xs-6" name="gridcolumn10"> 
+                        <wm-button class="btn-warning" caption="Top-Right" type="button" margin="unset 0.5em" on-click="Variables.topRightToaster.invoke()" name="button10" iconclass="wi wi-arrow-right" iconposition="right" width="140"></wm-button> 
+                    </wm-gridcolumn> 
+                </wm-gridrow> 
+                <wm-gridrow class="bordered-row" name="gridrow5"> 
+                    <wm-gridcolumn columnwidth="3" class="col-xs-6" name="gridcolumn9"> 
+                        <wm-label padding="unset 0.5em" caption="Middle" name="label7" class="h4"></wm-label> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="2" class="col-xs-6" name="gridcolumn10"> 
+                        <wm-button class="btn-success" caption="Middle-Left" type="button" margin="unset 0.5em" on-click="Variables.centerLeftToaster.invoke()" name="button5" width="140" iconclass="wi wi-arrow-left"></wm-button> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="2" name="gridcolumn31"> 
+                        <wm-button class="btn-info" caption="Middle-Center" type="button" margin="unset 0.5em" on-click="Variables.centerCenterToaster.invoke()" name="button9" width="140" iconclass="wi wi-vertical-align-center"></wm-button> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="5" name="gridcolumn32"> 
+                        <wm-button class="btn-success" caption="Middle-Right" type="button" margin="unset 0.5em" on-click="Variables.centerRightToaster.invoke()" name="button10" width="140" iconclass="wi wi-arrow-right" iconposition="right"></wm-button> 
+                    </wm-gridcolumn> 
+                </wm-gridrow> 
+                <wm-gridrow class="bordered-row" name="gridrow5"> 
+                    <wm-gridcolumn columnwidth="3" class="col-xs-6" name="gridcolumn9"> 
+                        <wm-label padding="unset 0.5em" caption="Bottom" name="label7" class="h4"></wm-label> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="2" class="col-xs-6" name="gridcolumn10"> 
+                        <wm-button class="btn-warning" caption="Bottom-Left" type="button" margin="unset 0.5em" on-click="Variables.bottomLeftToaster.invoke()" name="button5" iconclass="wi wi-arrow-left" width="140"></wm-button> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="2" name="gridcolumn33"> 
+                        <wm-button class="btn-success" caption="Bottom-Center" type="button" margin="unset 0.5em" on-click="Variables.bottomCenterToaster.invoke()" name="button9" iconclass="wi wi-arrow-down" width="140"></wm-button> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="5" name="gridcolumn34"> 
+                        <wm-button class="btn-warning" caption="Bottom-Right" type="button" margin="unset 0.5em" on-click="Variables.bottomRightToaster.invoke()" name="button10" iconclass="wi wi-arrow-right" iconposition="right" width="140"></wm-button> 
+                    </wm-gridcolumn> 
+                </wm-gridrow> 
+            </wm-layoutgrid> 
+            <wm-label padding="unset 0.5em" caption="Toaster positions" class="h2" name="label16"></wm-label> 
+            <wm-layoutgrid name="layoutgrid3"> 
+                <wm-gridrow class="bordered-row" name="gridrow14"> 
+                    <wm-gridcolumn columnwidth="3" class="col-xs-6" name="gridcolumn27"> 
+                        <wm-label padding="unset 0.5em" caption="Customized Toaster in partial page" name="label17" class="h4"></wm-label> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="9" class="col-xs-6" name="gridcolumn28"> 
+                        <wm-button class="btn-default" caption="Open" type="button" margin="unset 0.5em" name="button14" on-click="Variables.customToaster.invoke()" width="160"></wm-button> 
+                    </wm-gridcolumn> 
+                </wm-gridrow> 
+            </wm-layoutgrid> 
+        </wm-page-content> 
+    </wm-content> 
+    <wm-footer content="footer" name="footer1"></wm-footer> 
+</wm-page>

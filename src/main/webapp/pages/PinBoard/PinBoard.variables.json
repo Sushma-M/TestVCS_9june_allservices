@@ -1,0 +1,41 @@
+{
+  "pinBoardActionItems" : {
+    "_id" : "wm-pinBoardActionItems-wm.Variable-1484585283937",
+    "name" : "pinBoardActionItems",
+    "owner" : "Page",
+    "category" : "wm.Variable",
+    "dataBinding" : [ ],
+    "dataSet" : [ {
+      "label" : "Long established fact",
+      "description" : "The years, sometimes by accident, sometimes on purpose (injected humour and the like).",
+      "date" : "1484586784906"
+    }, {
+      "label" : "Latin professor at Hampden-Sydney",
+      "description" : "The first line of Lorem Ipsum, 'Lorem ipsum dolor sit amet..', comes from a line in section 1.10.32.",
+      "date" : "1484585184363"
+    }, {
+      "label" : "The standard chunk of Lorem",
+      "description" : "Ipsum used since the 1500s is reproduced below for those interested.",
+      "date" : "1484585126539"
+    }, {
+      "label" : "The generated Lorem Ipsum",
+      "description" : "The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.",
+      "date" : "1484585143596"
+    }, {
+      "label" : "Contrary to popular belief",
+      "description" : "Hampden-Sydney College in Virginia, looked up one.",
+      "date" : "1484585162946"
+    }, {
+      "label" : "There are many variations",
+      "description" : "All the Lorem Ipsum generators on the Internet .",
+      "date" : "1484585101569"
+    }, {
+      "label" : "Ipsum used standard chunk of Lorem",
+      "description" : "Standard chunk is reproduced below for those.",
+      "date" : "1484585223539"
+    } ],
+    "type" : "string",
+    "isList" : true,
+    "saveInPhonegap" : false
+  }
+}

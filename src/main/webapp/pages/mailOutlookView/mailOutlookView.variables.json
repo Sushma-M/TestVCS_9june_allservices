@@ -1,0 +1,25 @@
+{
+  "mailAttachmentList" : {
+    "_id" : "wm-mailAttachmentList-wm.Variable-1483941060186",
+    "name" : "mailAttachmentList",
+    "owner" : "Page",
+    "category" : "wm.Variable",
+    "dataBinding" : [ ],
+    "dataSet" : [ {
+      "icon" : "wi wi-file",
+      "fileName" : "DOcument_2014.doc",
+      "time" : "1483682392899"
+    }, {
+      "icon" : "wi wi-trending-up",
+      "fileName" : "Charts_data.xls",
+      "time" : "1483683952137"
+    }, {
+      "icon" : "wi wi-featured-video",
+      "fileName" : "Meeting_coverage.mp3",
+      "time" : "1483684078276"
+    } ],
+    "type" : "string",
+    "isList" : true,
+    "saveInPhonegap" : false
+  }
+}

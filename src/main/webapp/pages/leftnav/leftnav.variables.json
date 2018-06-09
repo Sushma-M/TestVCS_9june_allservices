@@ -1,0 +1,30 @@
+{
+  "dynamicNavigator" : {
+    "_id" : "wm-navigationVariable1-wm.NavigationVariable-1484836818986",
+    "name" : "dynamicNavigator",
+    "owner" : "Page",
+    "category" : "wm.NavigationVariable",
+    "dataBinding" : [ {
+      "target" : "pageName",
+      "value" : "bind:trimDataValue()",
+      "type" : "string"
+    } ],
+    "operation" : "gotoPage",
+    "dataSet" : [ ],
+    "pageTransitions" : "none"
+  },
+  "dynamicUINavigator" : {
+    "_id" : "wm-dynamicUINavigator-wm.NavigationVariable-1489140678940",
+    "name" : "dynamicUINavigator",
+    "owner" : "Page",
+    "category" : "wm.NavigationVariable",
+    "dataBinding" : [ {
+      "target" : "pageName",
+      "value" : "bind:trimDataLeftUI()",
+      "type" : "string"
+    } ],
+    "operation" : "gotoPage",
+    "dataSet" : [ ],
+    "pageTransitions" : "none"
+  }
+}

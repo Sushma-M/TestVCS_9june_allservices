@@ -1,0 +1,1200 @@
+<wm-page data-ng-controller="FormPageController" pagetitle="Form" name="page1"> 
+    <wm-header content="header" name="header1"></wm-header> 
+    <wm-top-nav content="topnav" name="top_nav1"></wm-top-nav> 
+    <wm-content name="content1"> 
+        <wm-left-panel columnwidth="2" content="LN_Widgets" name="left_panel1"></wm-left-panel> 
+        <wm-page-content columnwidth="10" name="page_content1"> 
+            <wm-container name="container1" content="breadcrumbpartial"></wm-container> 
+            <wm-label padding="unset unset unset 10px" name="label4" caption="Types" class="h2"></wm-label> 
+            <wm-tabs name="tabs1"> 
+                <wm-tabpane name="tabpane4" title="Basic form" paneicon="wi wi-library-books"> 
+                    <wm-form errormessage="" captionposition="left" title="Create an account" enctype="application/x-www-form-urlencoded" method="post" captionalign="left" name="BasicForm" subheading="It's free and takes less than 30 seconds!" iconclass="wi wi-user"> 
+                        <wm-layoutgrid columns="1" name="layoutgrid4_1"> 
+                            <wm-gridrow name="gridrow12"> 
+                                <wm-gridcolumn columnwidth="6" name="gridcolumn20"> 
+                                    <wm-layoutgrid name="layoutgrid6"> 
+                                        <wm-gridrow name="gridrow19"> 
+                                            <wm-gridcolumn columnwidth="12" name="gridcolumn39"> 
+                                                <wm-form-field name="USERNAME" key="USERNAME" type="string" show="true" widget="text" placeholder="User name" inputtype="text"></wm-form-field> 
+                                            </wm-gridcolumn> 
+                                        </wm-gridrow> 
+                                        <wm-gridrow name="gridrow20"> 
+                                            <wm-gridcolumn columnwidth="12" name="gridcolumn41"> 
+                                                <wm-form-field name="PASSWORD" key="PASSWORD" type="string" show="true" widget="text" placeholder="Password" inputtype="password"></wm-form-field> 
+                                            </wm-gridcolumn> 
+                                        </wm-gridrow> 
+                                        <wm-gridrow name="gridrow20_1"> 
+                                            <wm-gridcolumn columnwidth="12" name="gridcolumn33_2"> 
+                                                <wm-form-field name="form_field26" key="PASSWORD" type="string" show="true" widget="text" placeholder="Email" inputtype="text"></wm-form-field> 
+                                            </wm-gridcolumn> 
+                                        </wm-gridrow> 
+                                        <wm-gridrow name="gridrow21_1"> 
+                                            <wm-gridcolumn columnwidth="12" name="gridcolumn34_2"> 
+                                                <wm-form-field name="BIRTHDATE" key="BIRTHDATE" type="string" show="true" widget="date" placeholder="Birthday"></wm-form-field> 
+                                            </wm-gridcolumn> 
+                                        </wm-gridrow> 
+                                        <wm-gridrow name="gridrow21_2"> 
+                                            <wm-gridcolumn columnwidth="12" name="gridcolumn30" horizontalalign="left"> 
+                                                <wm-form-field name="form_field26_1" key="BIRTHDATE" type="string" show="true" widget="checkbox" placeholder="Birthday" caption="I agree to the terms and conditions." displayname="I agree to the terms and conditions."></wm-form-field> 
+                                            </wm-gridcolumn> 
+                                        </wm-gridrow> 
+                                        <wm-gridrow name="gridrow22_1"> 
+                                            <wm-gridcolumn columnwidth="12" name="gridcolumn35_2"> 
+                                                <wm-buttongroup horizontalalign="right" class="form-action col-md-12" name="buttongroup1"> 
+                                                    <wm-button caption="Reset" type="reset" class="btn-secondary" name="button1" iconclass="wi wi-refresh"></wm-button> 
+                                                    <wm-button caption="Get Started" type="submit" class="btn-success" name="button3" iconclass="wi wi-sign-in"></wm-button> 
+                                                </wm-buttongroup> 
+                                            </wm-gridcolumn> 
+                                        </wm-gridrow> 
+                                    </wm-layoutgrid> 
+                                </wm-gridcolumn> 
+                                <wm-gridcolumn columnwidth="6" name="gridcolumn25" horizontalalign="center"> 
+                                    <wm-layoutgrid name="layoutgrid5_1"> 
+                                        <wm-gridrow name="gridrow17"> 
+                                            <wm-gridcolumn columnwidth="12" name="gridcolumn35_1"> 
+                                                <wm-label padding="unset 0.5em" name="label2" caption="Or Sign up with Social Network" fontunit="em" class="h3" margin="0px unset unset unset" horizontalalign="center"></wm-label> 
+                                            </wm-gridcolumn> 
+                                        </wm-gridrow> 
+                                        <wm-gridrow name="gridrow18"> 
+                                            <wm-gridcolumn columnwidth="12" name="gridcolumn37_1" padding="1em unset unset unset"> 
+                                                <wm-button class="btn-rounded" caption="Facebook" type="button" margin="unset 0.5em .5em 0.5em" name="button4" backgroundcolor="#3368df" color="#ffffff" iconclass="fa fa-facebook"></wm-button> 
+                                                <wm-button class="btn-rounded" caption="Google" type="button" margin="unset 0.5em .5em 0.5em" backgroundcolor="#d6201f" color="#ffffff" iconclass="fa fa-google-plus" name="button5" horizontalalign="center"></wm-button> 
+                                                <wm-button class="btn-rounded" caption="Twitter" type="button" margin="unset 0.5em .5em 0.5em" backgroundcolor="#5eb3df" color="#ffffff" iconclass="fa fa-twitter" horizontalalign="center" name="button7"></wm-button> 
+                                            </wm-gridcolumn> 
+                                        </wm-gridrow> 
+                                    </wm-layoutgrid> 
+                                </wm-gridcolumn> 
+                            </wm-gridrow> 
+                        </wm-layoutgrid> 
+                    </wm-form> 
+                </wm-tabpane> 
+                <wm-tabpane name="tabpane1" title="Form with Single Column" paneicon="fa fa-edit"> 
+                    <wm-liveform novalidate="false" errormessage="" title="Add User Information" iconclass="wi wi-edit" defaultmode="Edit" dataset="bind:Variables.HrdbUserData.dataSet" captionalign="left" captionposition="top" name="singleColLiveform" subheading="Form to create user records"> 
+                        <wm-layoutgrid columns="1" name="layoutgrid4"> 
+                            <wm-gridrow name="gridrow21"> 
+                                <wm-gridcolumn columnwidth="12" name="gridcolumn39_2"> 
+                                    <wm-form-field name="username" displayname="Username" required="false" show="true" generator="assigned" primary-key="false" key="username" type="string" is-related="false" maxchars="20" pc-display="true" mobile-display="true" widget="text"></wm-form-field> 
+                                </wm-gridcolumn> 
+                            </wm-gridrow> 
+                            <wm-gridrow name="gridrow22"> 
+                                <wm-gridcolumn columnwidth="12" name="gridcolumn40_2"> 
+                                    <wm-form-field name="password" displayname="Password" required="false" show="true" generator="assigned" primary-key="false" key="password" type="string" is-related="false" maxchars="20" pc-display="true" mobile-display="true" widget="text"></wm-form-field> 
+                                </wm-gridcolumn> 
+                            </wm-gridrow> 
+                            <wm-gridrow name="gridrow23"> 
+                                <wm-gridcolumn columnwidth="12" name="gridcolumn41_2"> 
+                                    <wm-form-field name="role" displayname="Role" required="false" show="true" generator="assigned" primary-key="false" key="role" type="string" is-related="false" maxchars="20" pc-display="true" mobile-display="true" widget="text"></wm-form-field> 
+                                </wm-gridcolumn> 
+                            </wm-gridrow> 
+                            <wm-gridrow name="gridrow24"> 
+                                <wm-gridcolumn columnwidth="12" name="gridcolumn42_2"> 
+                                    <wm-form-field name="tenantId" displayname="Tenant Id" required="false" show="true" generator="assigned" primary-key="false" key="tenantId" type="integer" is-related="false" step="0" pc-display="true" mobile-display="true" widget="number"></wm-form-field> 
+                                </wm-gridcolumn> 
+                            </wm-gridrow> 
+                        </wm-layoutgrid> 
+                        <wm-form-action key="reset" class="form-reset btn-secondary" iconclass="wi wi-refresh" action="reset()" display-name="Reset" show="true" type="button" update-mode="true"></wm-form-action> 
+                        <wm-form-action key="save" class="form-save btn-success" iconclass="wi wi-save" display-name="Save" show="true" type="submit" update-mode="true"></wm-form-action> 
+                    </wm-liveform> 
+                </wm-tabpane> 
+                <wm-tabpane name="tabpane2" title="Form with Two Column's" paneicon="fa fa-edit"> 
+                    <wm-liveform novalidate="false" errormessage="" title="Employee Information" iconclass="wi wi-edit" defaultmode="Edit" dataset="bind:Variables.HrdbEmployeeDataContactList.dataSet" captionalign="left" captionposition="top" name="twoColLiveform" subheading="Create records of employee details"> 
+                        <wm-layoutgrid columns="2" name="layoutgrid3"> 
+                            <wm-gridrow name="gridrow31"> 
+                                <wm-gridcolumn columnwidth="6" name="gridcolumn31"> 
+                                    <wm-form-field name="firstname" displayname="Firstname" show="true" primary-key="false" generator="assigned" key="firstname" type="string" widget="text" maxchars="255" inputtype="text" placeholder="Enter value"></wm-form-field> 
+                                </wm-gridcolumn> 
+                                <wm-gridcolumn columnwidth="6" name="gridcolumn32"> 
+                                    <wm-form-field name="lastname" displayname="Lastname" show="true" primary-key="false" generator="assigned" key="lastname" type="string" widget="text" maxchars="255" inputtype="text" placeholder="Enter value"></wm-form-field> 
+                                </wm-gridcolumn> 
+                            </wm-gridrow> 
+                            <wm-gridrow name="gridrow32"> 
+                                <wm-gridcolumn columnwidth="6" name="gridcolumn33"> 
+                                    <wm-form-field name="birthdate" displayname="Birthdate" show="true" primary-key="false" generator="assigned" key="birthdate" type="date" widget="date" placeholder="Select date" outputformat="yyyy-MM-dd"></wm-form-field> 
+                                </wm-gridcolumn> 
+                                <wm-gridcolumn columnwidth="6" name="gridcolumn34"> 
+                                    <wm-form-field name="picurl" displayname="Picurl" show="true" primary-key="false" generator="assigned" key="picurl" type="string" widget="text" maxchars="255" inputtype="text" placeholder="Enter value"></wm-form-field> 
+                                </wm-gridcolumn> 
+                            </wm-gridrow> 
+                            <wm-gridrow name="gridrow33"> 
+                                <wm-gridcolumn columnwidth="6" name="gridcolumn35"> 
+                                    <wm-form-field name="jobTitle" displayname="Job Title" show="true" primary-key="false" generator="assigned" key="jobTitle" type="string" widget="text" maxchars="40" inputtype="text" placeholder="Enter value"></wm-form-field> 
+                                </wm-gridcolumn> 
+                                <wm-gridcolumn columnwidth="6" name="gridcolumn36"> 
+                                    <wm-form-field name="role" displayname="Role" show="true" primary-key="false" generator="assigned" key="role" type="string" widget="text" maxchars="255" inputtype="text" placeholder="Enter value"></wm-form-field> 
+                                </wm-gridcolumn> 
+                            </wm-gridrow> 
+                            <wm-gridrow name="gridrow34"> 
+                                <wm-gridcolumn columnwidth="6" name="gridcolumn37"> 
+                                    <wm-form-field name="city" displayname="City" show="true" primary-key="false" generator="assigned" key="city" type="string" widget="text" maxchars="255" inputtype="text" placeholder="Enter value"></wm-form-field> 
+                                </wm-gridcolumn> 
+                                <wm-gridcolumn columnwidth="6" name="gridcolumn38"> 
+                                    <wm-form-field name="state" displayname="State" show="true" primary-key="false" generator="assigned" key="state" type="string" widget="text" maxchars="2" inputtype="text" placeholder="Enter value"></wm-form-field> 
+                                </wm-gridcolumn> 
+                            </wm-gridrow> 
+                        </wm-layoutgrid> 
+                        <wm-form-field name="empId" displayname="Emp Id" show="false" primary-key="true" generator="identity" key="empId" type="integer" readonly="readonly" required="required" step="0" widget="number" inputtype="number" placeholder="Enter value"></wm-form-field> 
+                        <wm-form-action key="reset" display-name="Reset" show="true" class="form-reset btn-secondary" iconclass="wi wi-refresh" title="Reset" action="reset()" disabled="false" type="button" update-mode="true"></wm-form-action> 
+                        <wm-form-action key="save" display-name="Save" show="true" class="form-save btn-success" iconclass="wi wi-save" title="Save" disabled="false" type="submit" update-mode="true"></wm-form-action> 
+                    </wm-liveform> 
+                </wm-tabpane> 
+                <wm-tabpane name="tabpane3" title="Form with Three Column's" paneicon="fa fa-edit"> 
+                    <wm-liveform novalidate="false" errormessage="" title="Employee Vacation Form" iconclass="wi wi-edit" defaultmode="Edit" dataset="bind:Variables.HrdbEmployeeData.dataSet" captionalign="left" captionposition="top" name="threeColLiveform" subheading="Leave application form for the employees"> 
+                        <wm-layoutgrid name="layoutgrid1"> 
+                            <wm-gridrow name="gridrow1"> 
+                                <wm-gridcolumn show="show" name="gridcolumn1" columnwidth="4"> 
+                                    <wm-form-field name="department" displayname="Department" show="true" primary-key="false" generator="assigned" key="department" type="list" is-related="true" readonly="false" required="false" pc-display="true" mobile-display="true" widget="select"></wm-form-field> 
+                                </wm-gridcolumn> 
+                                <wm-gridcolumn show="show" name="gridcolumn2" columnwidth="4"> 
+                                    <wm-form-field name="employeeByManagerId" displayname="Employee By Manager Id" show="true" primary-key="false" generator="assigned" key="employeeByManagerId" type="list" is-related="true" readonly="false" required="false" pc-display="true" mobile-display="true" widget="select"></wm-form-field> 
+                                </wm-gridcolumn> 
+                                <wm-gridcolumn show="hide" name="gridcolumn3" columnwidth="4"> 
+                                    <wm-form-field name="empId" displayname="Emp Id" show="false" primary-key="true" generator="identity" key="empId" type="integer" is-related="false" readonly="true" required="true" pc-display="true" mobile-display="true" step="0" widget="number"></wm-form-field> 
+                                </wm-gridcolumn> 
+                                <wm-gridcolumn show="show" name="gridcolumn4" columnwidth="4"> 
+                                    <wm-form-field name="firstname" displayname="Firstname" show="true" primary-key="false" generator="assigned" key="firstname" type="string" is-related="false" readonly="false" required="false" pc-display="true" mobile-display="true" widget="text" maxchars="255"></wm-form-field> 
+                                </wm-gridcolumn> 
+                            </wm-gridrow> 
+                            <wm-gridrow name="gridrow2"> 
+                                <wm-gridcolumn show="show" name="gridcolumn5" columnwidth="4"> 
+                                    <wm-form-field name="lastname" displayname="Lastname" show="true" primary-key="false" generator="assigned" key="lastname" type="string" is-related="false" readonly="false" required="false" pc-display="true" mobile-display="true" widget="text" maxchars="255"></wm-form-field> 
+                                </wm-gridcolumn> 
+                                <wm-gridcolumn show="show" name="gridcolumn6" columnwidth="4"> 
+                                    <wm-form-field name="street" displayname="Street" show="true" primary-key="false" generator="assigned" key="street" type="string" is-related="false" readonly="false" required="false" pc-display="true" mobile-display="true" widget="text" maxchars="255"></wm-form-field> 
+                                </wm-gridcolumn> 
+                                <wm-gridcolumn show="show" name="gridcolumn7" columnwidth="4"> 
+                                    <wm-form-field name="city" displayname="City" show="true" primary-key="false" generator="assigned" key="city" type="string" is-related="false" readonly="false" required="false" pc-display="true" mobile-display="true" widget="text" maxchars="255"></wm-form-field> 
+                                </wm-gridcolumn> 
+                            </wm-gridrow> 
+                            <wm-gridrow name="gridrow3"> 
+                                <wm-gridcolumn show="show" name="gridcolumn8" columnwidth="4"> 
+                                    <wm-form-field name="state" displayname="State" show="true" primary-key="false" generator="assigned" key="state" type="string" is-related="false" readonly="false" required="false" pc-display="true" mobile-display="true" widget="text" maxchars="2"></wm-form-field> 
+                                </wm-gridcolumn> 
+                                <wm-gridcolumn show="show" name="gridcolumn9" columnwidth="4"> 
+                                    <wm-form-field name="zip" displayname="Zip" show="true" primary-key="false" generator="assigned" key="zip" type="string" is-related="false" readonly="false" required="false" pc-display="true" mobile-display="true" widget="text" maxchars="255"></wm-form-field> 
+                                </wm-gridcolumn> 
+                                <wm-gridcolumn show="show" name="gridcolumn10" columnwidth="4"> 
+                                    <wm-form-field name="birthdate" displayname="Birthdate" show="true" primary-key="false" generator="assigned" key="birthdate" type="date" is-related="false" readonly="false" required="false" pc-display="true" mobile-display="true" widget="date"></wm-form-field> 
+                                </wm-gridcolumn> 
+                            </wm-gridrow> 
+                            <wm-gridrow name="gridrow4"> 
+                                <wm-gridcolumn show="show" name="gridcolumn11" columnwidth="4"> 
+                                    <wm-form-field name="picurl" displayname="Picurl" show="true" primary-key="false" generator="assigned" key="picurl" type="string" is-related="false" readonly="false" required="false" pc-display="true" mobile-display="true" widget="text" maxchars="255"></wm-form-field> 
+                                </wm-gridcolumn> 
+                                <wm-gridcolumn show="show" name="gridcolumn12" columnwidth="4"> 
+                                    <wm-form-field name="jobTitle" displayname="Job Title" show="true" primary-key="false" generator="assigned" key="jobTitle" type="string" is-related="false" readonly="false" required="false" pc-display="true" mobile-display="true" widget="text" maxchars="40"></wm-form-field> 
+                                </wm-gridcolumn> 
+                                <wm-gridcolumn show="show" name="gridcolumn13" columnwidth="4"> 
+                                    <wm-form-field name="username" displayname="Username" show="true" primary-key="false" generator="assigned" key="username" type="string" is-related="false" readonly="false" required="false" pc-display="true" mobile-display="true" widget="text" maxchars="255"></wm-form-field> 
+                                </wm-gridcolumn> 
+                            </wm-gridrow> 
+                            <wm-gridrow name="gridrow5"> 
+                                <wm-gridcolumn show="show" name="gridcolumn14" columnwidth="4"> 
+                                    <wm-form-field name="password" displayname="Password" show="true" primary-key="false" generator="assigned" key="password" type="string" is-related="false" readonly="false" required="false" pc-display="true" mobile-display="true" widget="text" maxchars="255"></wm-form-field> 
+                                </wm-gridcolumn> 
+                                <wm-gridcolumn show="show" name="gridcolumn15" columnwidth="4"> 
+                                    <wm-form-field name="role" displayname="Role" show="true" primary-key="false" generator="assigned" key="role" type="string" is-related="false" readonly="false" required="false" pc-display="true" mobile-display="true" widget="text" maxchars="255"></wm-form-field> 
+                                </wm-gridcolumn> 
+                                <wm-gridcolumn show="show" name="gridcolumn16" columnwidth="4"> 
+                                    <wm-form-field name="tenantId" displayname="Tenant Id" show="true" primary-key="false" generator="assigned" key="tenantId" type="integer" is-related="false" readonly="false" required="false" pc-display="true" mobile-display="true" step="0" widget="number"></wm-form-field> 
+                                </wm-gridcolumn> 
+                            </wm-gridrow> 
+                        </wm-layoutgrid> 
+                        <wm-form-action key="cancel" class="form-cancel btn-secondary" iconclass="wi wi-cancel" action="cancel()" display-name="Cancel" show="true" type="button" update-mode="true" shortcutkey=""></wm-form-action> 
+                        <wm-form-action key="save" class="form-save btn-success" iconclass="wi wi-save" action="" display-name="Save" show="true" type="submit" update-mode="true" shortcutkey=""></wm-form-action> 
+                    </wm-liveform> 
+                </wm-tabpane> 
+                <wm-tabpane name="tabpane5" title="Form with Validation states" paneicon="wi wi-palette"> 
+                    <wm-form errormessage="" captionposition="top" title="Form" enctype="application/x-www-form-urlencoded" method="get" captionalign="left" name="form11_1" subheading="Validation classess on form elements"> 
+                        <wm-layoutgrid columns="3" name="layoutgrid17"> 
+                            <wm-gridrow name="gridrow195"> 
+                                <wm-gridcolumn columnwidth="4" name="gridcolumn216"> 
+                                    <wm-label padding="0em 0.5em unset 0.5em" name="label13" caption="class= &quot;has-success&quot;" class="code"></wm-label> 
+                                </wm-gridcolumn> 
+                                <wm-gridcolumn columnwidth="4" name="gridcolumn217"> 
+                                    <wm-label padding="0em 0.5em unset 0.5em" caption="class= &quot;has-warning&quot;" class="code" name="label14"></wm-label> 
+                                </wm-gridcolumn> 
+                                <wm-gridcolumn columnwidth="4" name="gridcolumn218"> 
+                                    <wm-label padding="0em 0.5em unset 0.5em" caption="class= &quot;has-error&quot;" class="code" name="label15"></wm-label> 
+                                </wm-gridcolumn> 
+                            </wm-gridrow> 
+                            <wm-gridrow name="gridrow192"> 
+                                <wm-gridcolumn columnwidth="4" name="gridcolumn209"> 
+                                    <wm-form-field name="custom" key="custom" displayname="Success Input" show="true" type="custom" class="has-success" widget="text" inputtype="text" placeholder="Enter value"></wm-form-field> 
+                                </wm-gridcolumn> 
+                                <wm-gridcolumn columnwidth="4" name="gridcolumn215"> 
+                                    <wm-form-field name="custom1" key="custom1" displayname="Warning Input" show="true" type="custom" class="has-warning" widget="text" inputtype="text" placeholder="Enter value"></wm-form-field> 
+                                </wm-gridcolumn> 
+                                <wm-gridcolumn columnwidth="4" name="gridcolumn208"> 
+                                    <wm-form-field name="custom2" key="custom2" displayname="Error Input" show="true" type="custom" class="has-error" widget="text" inputtype="text" placeholder="Enter value"></wm-form-field> 
+                                </wm-gridcolumn> 
+                            </wm-gridrow> 
+                            <wm-gridrow name="gridrow194"> 
+                                <wm-gridcolumn columnwidth="4" name="gridcolumn213"> 
+                                    <wm-form-field name="form_field169" displayname="Checkbox with success" widget="checkbox" show="true" type="custom" key="form_field169" placeholder="" class="has-success"></wm-form-field> 
+                                </wm-gridcolumn> 
+                                <wm-gridcolumn columnwidth="4" name="gridcolumn214"> 
+                                    <wm-form-field name="form_field170" displayname="Checkbox with success" widget="checkbox" show="true" type="custom" key="form_field170" placeholder="" class="has-warning"></wm-form-field> 
+                                </wm-gridcolumn> 
+                                <wm-gridcolumn columnwidth="4" name="gridcolumn219"> 
+                                    <wm-form-field name="form_field171" displayname="Checkbox with error" widget="checkbox" show="true" type="custom" key="form_field171" placeholder="" class="has-error"></wm-form-field> 
+                                </wm-gridcolumn> 
+                            </wm-gridrow> 
+                            <wm-gridrow name="gridrow193"> 
+                                <wm-gridcolumn columnwidth="4" name="gridcolumn211"> 
+                                    <wm-form-field name="form_field174" displayname="Input group with success" widget="currency" show="true" type="custom" key="form_field174" placeholder="Enter value" class="has-success"></wm-form-field> 
+                                </wm-gridcolumn> 
+                                <wm-gridcolumn columnwidth="4" name="gridcolumn212"> 
+                                    <wm-form-field name="form_field175" displayname="Input group with warning" widget="currency" show="true" type="custom" class="has-warning" key="form_field175" placeholder="Enter value"></wm-form-field> 
+                                </wm-gridcolumn> 
+                                <wm-gridcolumn columnwidth="4" name="gridcolumn210"> 
+                                    <wm-form-field name="form_field176" displayname="Input group with error" widget="currency" show="true" type="custom" class="has-error" key="form_field176" placeholder="Enter value"></wm-form-field> 
+                                </wm-gridcolumn> 
+                            </wm-gridrow> 
+                            <wm-gridrow name="gridrow196"> 
+                                <wm-gridcolumn columnwidth="4" name="gridcolumn220"> 
+                                    <wm-form-field name="form_field177" displayname="Select with success" widget="select" show="true" type="custom" class="has-success" key="form_field177" placeholder="Select value"></wm-form-field> 
+                                </wm-gridcolumn> 
+                                <wm-gridcolumn columnwidth="4" name="gridcolumn221"> 
+                                    <wm-form-field name="form_field179" displayname="Select with warning" widget="select" show="true" type="custom" class="has-warning" key="form_field179" placeholder="Select value"></wm-form-field> 
+                                </wm-gridcolumn> 
+                                <wm-gridcolumn columnwidth="4" name="gridcolumn222"> 
+                                    <wm-form-field name="form_field180" displayname="Select with error" widget="select" show="true" type="custom" class="has-error" key="form_field180" placeholder="Select value"></wm-form-field> 
+                                </wm-gridcolumn> 
+                            </wm-gridrow> 
+                        </wm-layoutgrid> 
+                        <wm-buttongroup horizontalalign="right" class="form-action col-md-12" name="buttongroup11_1"> 
+                            <wm-button caption="Reset" type="reset" class="btn-secondary" name="button24_1"></wm-button> 
+                            <wm-button caption="Cancel" type="button" class="btn-warning" name="button25"></wm-button> 
+                            <wm-button caption="Save" type="submit" class="btn-primary" name="button26_1"></wm-button> 
+                        </wm-buttongroup> 
+                    </wm-form> 
+                </wm-tabpane> 
+            </wm-tabs> 
+            <wm-label padding="unset 0.5em" name="label6" caption="Layouts" class="h2"></wm-label> 
+            <wm-layoutgrid name="layoutgrid13"> 
+                <wm-gridrow name="gridrow55" class="bordered-row"> 
+                    <wm-gridcolumn columnwidth="4" name="gridcolumn74" padding=".5em .5em unset unset"> 
+                        <wm-form errormessage="" captionposition="left" title="Left aligned" enctype="application/x-www-form-urlencoded" method="post" captionalign="left" name="form2" subheading="caption position: &quot;left&quot;" iconclass="wi wi-user" class="panel-primary"> 
+                            <wm-layoutgrid columns="1" name="layoutgrid12"> 
+                                <wm-gridrow name="gridrow53"> 
+                                    <wm-gridcolumn columnwidth="12" name="gridcolumn68"> 
+                                        <wm-form-field displayname="Custom field" widget="text" show="true" type="custom" name="form_field44"></wm-form-field> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                                <wm-gridrow name="gridrow52_1"> 
+                                    <wm-gridcolumn columnwidth="12" name="gridcolumn67"> 
+                                        <wm-form-field displayname="Checkbox" widget="checkbox" show="true" type="custom" name="form_field45"></wm-form-field> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                                <wm-gridrow name="gridrow51_2"> 
+                                    <wm-gridcolumn columnwidth="12" name="gridcolumn66_1"> 
+                                        <wm-form-field displayname="Checkboxset" widget="checkboxset" show="true" type="custom" name="form_field46" dataset="Option 1,Option 2,Option 3"></wm-form-field> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                                <wm-gridrow name="gridrow50"> 
+                                    <wm-gridcolumn columnwidth="12" name="gridcolumn65_2"> 
+                                        <wm-chips name="chips1"></wm-chips> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                                <wm-gridrow name="gridrow49"> 
+                                    <wm-gridcolumn columnwidth="12" name="gridcolumn64"> 
+                                        <wm-form-field displayname="Color Picker" widget="colorpicker" show="true" type="custom" name="form_field167"></wm-form-field> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                                <wm-gridrow name="gridrow48_1"> 
+                                    <wm-gridcolumn columnwidth="12" name="gridcolumn63"> 
+                                        <wm-form-field displayname="Currency" widget="currency" show="true" type="custom" name="form_field47"></wm-form-field> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                                <wm-gridrow name="gridrow47_2"> 
+                                    <wm-gridcolumn columnwidth="12" name="gridcolumn62_1"> 
+                                        <wm-form-field displayname="Date" widget="date" show="true" type="custom" name="form_field48"></wm-form-field> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                                <wm-gridrow name="gridrow46"> 
+                                    <wm-gridcolumn columnwidth="12" name="gridcolumn61_1"> 
+                                        <wm-form-field displayname="Date Time" widget="datetime" show="true" type="custom" name="form_field49"></wm-form-field> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                                <wm-gridrow name="gridrow200"> 
+                                    <wm-gridcolumn columnwidth="12" name="gridcolumn232"> 
+                                        <wm-fileupload name="fileupload2" service="FileService" operation="uploadFile" multiple="true"></wm-fileupload> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                                <wm-gridrow name="gridrow45"> 
+                                    <wm-gridcolumn columnwidth="12" name="gridcolumn60"> 
+                                        <wm-form-field displayname="Radioset" widget="radioset" show="true" type="custom" name="form_field51" dataset="Yes, No, Maybe"></wm-form-field> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                                <wm-gridrow name="gridrow44_1"> 
+                                    <wm-gridcolumn columnwidth="12" name="gridcolumn59"> 
+                                        <wm-form-field displayname="Ratings" widget="rating" show="true" type="custom" name="form_field52"></wm-form-field> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                                <wm-gridrow name="gridrow43_1"> 
+                                    <wm-gridcolumn columnwidth="12" name="gridcolumn58"> 
+                                        <wm-form-field displayname="Select" widget="select" show="true" type="custom" name="form_field53"></wm-form-field> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                                <wm-gridrow name="gridrow42"> 
+                                    <wm-gridcolumn columnwidth="12" name="gridcolumn57"> 
+                                        <wm-select class="select-locale" dataset="bind:Variables.supportedLocale.dataSet" on-change="changeAppLocale($scope)" placeholder="Select Language" name="select1"></wm-select> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                                <wm-gridrow name="gridrow41"> 
+                                    <wm-gridcolumn columnwidth="12" name="gridcolumn56"> 
+                                        <wm-form-field displayname="Slider" widget="slider" show="true" type="custom" name="form_field54"></wm-form-field> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                                <wm-gridrow name="gridrow54"> 
+                                    <wm-gridcolumn columnwidth="12" name="gridcolumn69_2"> 
+                                        <wm-form-field displayname="Swicth" widget="switch" show="true" type="custom" name="switchll" datavalue="yes" dataset="Yes, No, Maybe" datafield="All Fields"></wm-form-field> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                                <wm-gridrow name="gridrow56"> 
+                                    <wm-gridcolumn columnwidth="12" name="gridcolumn71"> 
+                                        <wm-form-field displayname="Text Area" widget="textarea" show="true" type="custom" name="form_field57"></wm-form-field> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                                <wm-gridrow name="gridrow57"> 
+                                    <wm-gridcolumn columnwidth="12" name="gridcolumn72"> 
+                                        <wm-form-field displayname="Time" widget="time" show="true" type="custom" name="form_field58"></wm-form-field> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                                <wm-gridrow name="gridrow58"> 
+                                    <wm-gridcolumn columnwidth="12" name="gridcolumn73_1"> 
+                                        <wm-form-field displayname="Toggle" widget="toggle" show="true" type="custom" name="form_field59" caption="On"></wm-form-field> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                            </wm-layoutgrid> 
+                            <wm-buttongroup horizontalalign="right" class="form-action col-md-12" name="buttongroup2"> 
+                                <wm-button caption="Reset" type="reset" class="btn-secondary" name="button6"></wm-button> 
+                                <wm-button caption="Save" type="submit" class="btn-primary" name="button8"></wm-button> 
+                            </wm-buttongroup> 
+                        </wm-form> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="4" name="gridcolumn47_1" padding=".5em .5em unset unset"> 
+                        <wm-form errormessage="" captionposition="right" title="Left aligned" enctype="application/x-www-form-urlencoded" method="post" captionalign="left" name="form3" subheading="caption position: &quot;right&quot;" iconclass="wi wi-user" class="panel-primary"> 
+                            <wm-layoutgrid columns="1" name="layoutgrid12"> 
+                                <wm-gridrow name="gridrow53"> 
+                                    <wm-gridcolumn columnwidth="12" name="gridcolumn68"> 
+                                        <wm-form-field displayname="Custom field" widget="text" show="true" type="custom" name="form_field44"></wm-form-field> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                                <wm-gridrow name="gridrow52_1"> 
+                                    <wm-gridcolumn columnwidth="12" name="gridcolumn67"> 
+                                        <wm-form-field displayname="Checkbox" widget="checkbox" show="true" type="custom" name="form_field45"></wm-form-field> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                                <wm-gridrow name="gridrow51_2"> 
+                                    <wm-gridcolumn columnwidth="12" name="gridcolumn66_1"> 
+                                        <wm-form-field displayname="Checkboxset" widget="checkboxset" show="true" type="custom" name="form_field46" dataset="Option 1,Option 2,Option 3"></wm-form-field> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                                <wm-gridrow name="gridrow50"> 
+                                    <wm-gridcolumn columnwidth="12" name="gridcolumn65_2"> 
+                                        <wm-chips name="chips1"></wm-chips> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                                <wm-gridrow name="gridrow49"> 
+                                    <wm-gridcolumn columnwidth="12" name="gridcolumn64"> 
+                                        <wm-form-field displayname="Color Picker" widget="colorpicker" show="true" type="custom" name="form_field174_1"></wm-form-field> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                                <wm-gridrow name="gridrow48_1"> 
+                                    <wm-gridcolumn columnwidth="12" name="gridcolumn63"> 
+                                        <wm-form-field displayname="Currency" widget="currency" show="true" type="custom" name="form_field47"></wm-form-field> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                                <wm-gridrow name="gridrow47_2"> 
+                                    <wm-gridcolumn columnwidth="12" name="gridcolumn62_1"> 
+                                        <wm-form-field displayname="Date" widget="date" show="true" type="custom" name="form_field48"></wm-form-field> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                                <wm-gridrow name="gridrow46"> 
+                                    <wm-gridcolumn columnwidth="12" name="gridcolumn61_1"> 
+                                        <wm-form-field displayname="Date Time" widget="datetime" show="true" type="custom" name="form_field49"></wm-form-field> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                                <wm-gridrow name="gridrow202"> 
+                                    <wm-gridcolumn columnwidth="12" name="gridcolumn234"> 
+                                        <wm-fileupload name="fileupload2" service="FileService" operation="uploadFile" multiple="true"></wm-fileupload> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                                <wm-gridrow name="gridrow45"> 
+                                    <wm-gridcolumn columnwidth="12" name="gridcolumn60"> 
+                                        <wm-form-field displayname="Radioset" widget="radioset" show="true" type="custom" name="form_field51" dataset="Yes, No, Maybe"></wm-form-field> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                                <wm-gridrow name="gridrow44_1"> 
+                                    <wm-gridcolumn columnwidth="12" name="gridcolumn59"> 
+                                        <wm-form-field displayname="Ratings" widget="rating" show="true" type="custom" name="form_field52"></wm-form-field> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                                <wm-gridrow name="gridrow43_1"> 
+                                    <wm-gridcolumn columnwidth="12" name="gridcolumn58"> 
+                                        <wm-form-field displayname="Select" widget="select" show="true" type="custom" name="form_field53"></wm-form-field> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                                <wm-gridrow name="gridrow42"> 
+                                    <wm-gridcolumn columnwidth="12" name="gridcolumn57"> 
+                                        <wm-select class="select-locale" dataset="bind:Variables.supportedLocale.dataSet" on-change="changeAppLocale($scope)" placeholder="Select Language" name="select1"></wm-select> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                                <wm-gridrow name="gridrow41"> 
+                                    <wm-gridcolumn columnwidth="12" name="gridcolumn56"> 
+                                        <wm-form-field displayname="Slider" widget="slider" show="true" type="custom" name="form_field54"></wm-form-field> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                                <wm-gridrow name="gridrow54"> 
+                                    <wm-gridcolumn columnwidth="12" name="gridcolumn69_2"> 
+                                        <wm-form-field displayname="Swicth" widget="switch" show="true" type="custom" name="switchlr" dataset="Yes, No, Maybe" datavalue="yes" datafield="All Fields"></wm-form-field> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                                <wm-gridrow name="gridrow56"> 
+                                    <wm-gridcolumn columnwidth="12" name="gridcolumn71"> 
+                                        <wm-form-field displayname="Text Area" widget="textarea" show="true" type="custom" name="form_field57"></wm-form-field> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                                <wm-gridrow name="gridrow57"> 
+                                    <wm-gridcolumn columnwidth="12" name="gridcolumn72"> 
+                                        <wm-form-field displayname="Time" widget="time" show="true" type="custom" name="form_field58"></wm-form-field> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                                <wm-gridrow name="gridrow58"> 
+                                    <wm-gridcolumn columnwidth="12" name="gridcolumn73_1"> 
+                                        <wm-form-field displayname="Toggle" widget="toggle" show="true" type="custom" name="form_field59" caption="On"></wm-form-field> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                            </wm-layoutgrid> 
+                            <wm-buttongroup horizontalalign="right" class="form-action col-md-12" name="buttongroup3"> 
+                                <wm-button caption="Reset" type="reset" class="btn-secondary" name="button9"></wm-button> 
+                                <wm-button caption="Save" type="submit" class="btn-primary" name="button11"></wm-button> 
+                            </wm-buttongroup> 
+                        </wm-form> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="4" name="gridcolumn48" padding=".5em .5em unset unset"> 
+                        <wm-form errormessage="" captionposition="top" title="Left aligned" enctype="application/x-www-form-urlencoded" method="post" captionalign="left" name="form4" subheading="caption position: &quot;top&quot;" iconclass="wi wi-user" class="panel-primary"> 
+                            <wm-layoutgrid columns="1" name="layoutgrid12"> 
+                                <wm-gridrow name="gridrow53"> 
+                                    <wm-gridcolumn columnwidth="12" name="gridcolumn68"> 
+                                        <wm-form-field displayname="Custom field" widget="text" show="true" type="custom" name="form_field44"></wm-form-field> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                                <wm-gridrow name="gridrow52_1"> 
+                                    <wm-gridcolumn columnwidth="12" name="gridcolumn67"> 
+                                        <wm-form-field displayname="Checkbox" widget="checkbox" show="true" type="custom" name="form_field45"></wm-form-field> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                                <wm-gridrow name="gridrow51_2"> 
+                                    <wm-gridcolumn columnwidth="12" name="gridcolumn66_1"> 
+                                        <wm-form-field displayname="Checkboxset" widget="checkboxset" show="true" type="custom" name="form_field46" dataset="Option 1,Option 2,Option 3"></wm-form-field> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                                <wm-gridrow name="gridrow50"> 
+                                    <wm-gridcolumn columnwidth="12" name="gridcolumn65_2"> 
+                                        <wm-chips name="chips1"></wm-chips> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                                <wm-gridrow name="gridrow49"> 
+                                    <wm-gridcolumn columnwidth="12" name="gridcolumn64"> 
+                                        <wm-form-field displayname="Color Picker" widget="colorpicker" show="true" type="custom" name="form_field176_1"></wm-form-field> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                                <wm-gridrow name="gridrow48_1"> 
+                                    <wm-gridcolumn columnwidth="12" name="gridcolumn63"> 
+                                        <wm-form-field displayname="Currency" widget="currency" show="true" type="custom" name="form_field47"></wm-form-field> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                                <wm-gridrow name="gridrow47_2"> 
+                                    <wm-gridcolumn columnwidth="12" name="gridcolumn62_1"> 
+                                        <wm-form-field displayname="Date" widget="date" show="true" type="custom" name="form_field48"></wm-form-field> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                                <wm-gridrow name="gridrow46"> 
+                                    <wm-gridcolumn columnwidth="12" name="gridcolumn61_1"> 
+                                        <wm-form-field displayname="Date Time" widget="datetime" show="true" type="custom" name="form_field49"></wm-form-field> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                                <wm-gridrow name="gridrow204"> 
+                                    <wm-gridcolumn columnwidth="12" name="gridcolumn236"> 
+                                        <wm-fileupload name="fileupload2" service="FileService" operation="uploadFile" multiple="true"></wm-fileupload> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                                <wm-gridrow name="gridrow45"> 
+                                    <wm-gridcolumn columnwidth="12" name="gridcolumn60"> 
+                                        <wm-form-field displayname="Radioset" widget="radioset" show="true" type="custom" name="form_field51" dataset="Yes, No, Maybe"></wm-form-field> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                                <wm-gridrow name="gridrow44_1"> 
+                                    <wm-gridcolumn columnwidth="12" name="gridcolumn59"> 
+                                        <wm-form-field displayname="Ratings" widget="rating" show="true" type="custom" name="form_field52"></wm-form-field> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                                <wm-gridrow name="gridrow43_1"> 
+                                    <wm-gridcolumn columnwidth="12" name="gridcolumn58"> 
+                                        <wm-form-field displayname="Select" widget="select" show="true" type="custom" name="form_field53"></wm-form-field> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                                <wm-gridrow name="gridrow42"> 
+                                    <wm-gridcolumn columnwidth="12" name="gridcolumn57"> 
+                                        <wm-select class="select-locale" dataset="bind:Variables.supportedLocale.dataSet" on-change="changeAppLocale($scope)" placeholder="Select Language" name="select1"></wm-select> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                                <wm-gridrow name="gridrow41"> 
+                                    <wm-gridcolumn columnwidth="12" name="gridcolumn56"> 
+                                        <wm-form-field displayname="Slider" widget="slider" show="true" type="custom" name="form_field54"></wm-form-field> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                                <wm-gridrow name="gridrow54"> 
+                                    <wm-gridcolumn columnwidth="12" name="gridcolumn69_2"> 
+                                        <wm-form-field displayname="Swicth" widget="switch" show="true" type="custom" name="switchlt" dataset="Yes, No, Maybe"></wm-form-field> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                                <wm-gridrow name="gridrow56"> 
+                                    <wm-gridcolumn columnwidth="12" name="gridcolumn71"> 
+                                        <wm-form-field displayname="Text Area" widget="textarea" show="true" type="custom" name="form_field57"></wm-form-field> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                                <wm-gridrow name="gridrow57"> 
+                                    <wm-gridcolumn columnwidth="12" name="gridcolumn72"> 
+                                        <wm-form-field displayname="Time" widget="time" show="true" type="custom" name="form_field58"></wm-form-field> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                                <wm-gridrow name="gridrow58"> 
+                                    <wm-gridcolumn columnwidth="12" name="gridcolumn73_1"> 
+                                        <wm-form-field displayname="Toggle" widget="toggle" show="true" type="custom" name="form_field59" caption="On"></wm-form-field> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                            </wm-layoutgrid> 
+                            <wm-buttongroup horizontalalign="right" class="form-action col-md-12" name="buttongroup4"> 
+                                <wm-button caption="Reset" type="reset" class="btn-secondary" name="button12"></wm-button> 
+                                <wm-button caption="Save" type="submit" class="btn-primary" name="button14"></wm-button> 
+                            </wm-buttongroup> 
+                        </wm-form> 
+                    </wm-gridcolumn> 
+                </wm-gridrow> 
+                <wm-gridrow name="gridrow55" class="bordered-row"> 
+                    <wm-gridcolumn columnwidth="4" name="gridcolumn74" padding=".5em .5em unset unset"> 
+                        <wm-form errormessage="" captionposition="left" title="Middle aligned" enctype="application/x-www-form-urlencoded" method="post" captionalign="center" name="form11" subheading="caption position: &quot;left&quot;" iconclass="wi wi-user" class="panel-warning"> 
+                            <wm-layoutgrid columns="1" name="layoutgrid12"> 
+                                <wm-gridrow name="gridrow53"> 
+                                    <wm-gridcolumn columnwidth="12" name="gridcolumn68"> 
+                                        <wm-form-field displayname="Input field" widget="text" show="true" type="custom" name="form_field44"></wm-form-field> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                                <wm-gridrow name="gridrow52_1"> 
+                                    <wm-gridcolumn columnwidth="12" name="gridcolumn67"> 
+                                        <wm-form-field displayname="Checkbox" widget="checkbox" show="true" type="custom" name="form_field45"></wm-form-field> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                                <wm-gridrow name="gridrow51_2"> 
+                                    <wm-gridcolumn columnwidth="12" name="gridcolumn66_1"> 
+                                        <wm-form-field displayname="Checkboxset" widget="checkboxset" show="true" type="custom" name="form_field46" dataset="Option 1,Option 2,Option 3"></wm-form-field> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                                <wm-gridrow name="gridrow50"> 
+                                    <wm-gridcolumn columnwidth="12" name="gridcolumn65_2"> 
+                                        <wm-chips name="chips1"></wm-chips> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                                <wm-gridrow name="gridrow49"> 
+                                    <wm-gridcolumn columnwidth="12" name="gridcolumn64"> 
+                                        <wm-form-field displayname="Color Picker" widget="colorpicker" show="true" type="custom" name="form_field177_1"></wm-form-field> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                                <wm-gridrow name="gridrow48_1"> 
+                                    <wm-gridcolumn columnwidth="12" name="gridcolumn63"> 
+                                        <wm-form-field displayname="Currency" widget="currency" show="true" type="custom" name="form_field47"></wm-form-field> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                                <wm-gridrow name="gridrow47_2"> 
+                                    <wm-gridcolumn columnwidth="12" name="gridcolumn62_1"> 
+                                        <wm-form-field displayname="Date" widget="date" show="true" type="custom" name="form_field48"></wm-form-field> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                                <wm-gridrow name="gridrow46"> 
+                                    <wm-gridcolumn columnwidth="12" name="gridcolumn61_1"> 
+                                        <wm-form-field displayname="Date Time" widget="datetime" show="true" type="custom" name="form_field49"></wm-form-field> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                                <wm-gridrow name="gridrow206"> 
+                                    <wm-gridcolumn columnwidth="12" name="gridcolumn238"> 
+                                        <wm-fileupload name="fileupload2" service="FileService" operation="uploadFile" multiple="true"></wm-fileupload> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                                <wm-gridrow name="gridrow45"> 
+                                    <wm-gridcolumn columnwidth="12" name="gridcolumn60"> 
+                                        <wm-form-field displayname="Radioset" widget="radioset" show="true" type="custom" name="form_field51" dataset="Yes, No, Maybe"></wm-form-field> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                                <wm-gridrow name="gridrow44_1"> 
+                                    <wm-gridcolumn columnwidth="12" name="gridcolumn59"> 
+                                        <wm-form-field displayname="Ratings" widget="rating" show="true" type="custom" name="form_field52"></wm-form-field> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                                <wm-gridrow name="gridrow43_1"> 
+                                    <wm-gridcolumn columnwidth="12" name="gridcolumn58"> 
+                                        <wm-form-field displayname="Select" widget="select" show="true" type="custom" name="form_field53"></wm-form-field> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                                <wm-gridrow name="gridrow42"> 
+                                    <wm-gridcolumn columnwidth="12" name="gridcolumn57"> 
+                                        <wm-select class="select-locale" dataset="bind:Variables.supportedLocale.dataSet" on-change="changeAppLocale($scope)" placeholder="Select Language" name="select1"></wm-select> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                                <wm-gridrow name="gridrow41"> 
+                                    <wm-gridcolumn columnwidth="12" name="gridcolumn56"> 
+                                        <wm-form-field displayname="Slider" widget="slider" show="true" type="custom" name="form_field54"></wm-form-field> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                                <wm-gridrow name="gridrow54"> 
+                                    <wm-gridcolumn columnwidth="12" name="gridcolumn69_2"> 
+                                        <wm-form-field displayname="Switch" widget="switch" show="true" type="custom" name="switchml" dataset="Yes, No, Maybe" datavalue="yes" datafield="All Fields"></wm-form-field> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                                <wm-gridrow name="gridrow56"> 
+                                    <wm-gridcolumn columnwidth="12" name="gridcolumn71"> 
+                                        <wm-form-field displayname="Text Area" widget="textarea" show="true" type="custom" name="form_field57"></wm-form-field> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                                <wm-gridrow name="gridrow57"> 
+                                    <wm-gridcolumn columnwidth="12" name="gridcolumn72"> 
+                                        <wm-form-field displayname="Time" widget="time" show="true" type="custom" name="form_field58"></wm-form-field> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                                <wm-gridrow name="gridrow58"> 
+                                    <wm-gridcolumn columnwidth="12" name="gridcolumn73_1"> 
+                                        <wm-form-field displayname="Toggle" widget="toggle" show="true" type="custom" name="Toggle" caption="On"></wm-form-field> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                            </wm-layoutgrid> 
+                            <wm-buttongroup horizontalalign="right" class="form-action col-md-12" name="buttongroup11"> 
+                                <wm-button caption="Reset" type="reset" class="btn-secondary" name="button33"></wm-button> 
+                                <wm-button caption="Save" type="submit" class="btn-primary" name="button35"></wm-button> 
+                            </wm-buttongroup> 
+                        </wm-form> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="4" name="gridcolumn47_1" padding=".5em .5em unset unset"> 
+                        <wm-form errormessage="" captionposition="right" title="Middle aligned" enctype="application/x-www-form-urlencoded" method="post" captionalign="center" name="form12" subheading="caption position: &quot;right&quot;" iconclass="wi wi-user" class="panel-warning"> 
+                            <wm-layoutgrid columns="1" name="layoutgrid12"> 
+                                <wm-gridrow name="gridrow53"> 
+                                    <wm-gridcolumn columnwidth="12" name="gridcolumn68"> 
+                                        <wm-form-field displayname="Input field" widget="text" show="true" type="custom" name="form_field44"></wm-form-field> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                                <wm-gridrow name="gridrow52_1"> 
+                                    <wm-gridcolumn columnwidth="12" name="gridcolumn67"> 
+                                        <wm-form-field displayname="Checkbox" widget="checkbox" show="true" type="custom" name="form_field45"></wm-form-field> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                                <wm-gridrow name="gridrow51_2"> 
+                                    <wm-gridcolumn columnwidth="12" name="gridcolumn66_1"> 
+                                        <wm-form-field displayname="Checkboxset" widget="checkboxset" show="true" type="custom" name="form_field46" dataset="Option 1,Option 2,Option 3"></wm-form-field> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                                <wm-gridrow name="gridrow50"> 
+                                    <wm-gridcolumn columnwidth="12" name="gridcolumn65_2"> 
+                                        <wm-chips name="chips1"></wm-chips> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                                <wm-gridrow name="gridrow49"> 
+                                    <wm-gridcolumn columnwidth="12" name="gridcolumn64"> 
+                                        <wm-form-field displayname="Color Picker" widget="colorpicker" show="true" type="custom" name="form_field178"></wm-form-field> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                                <wm-gridrow name="gridrow48_1"> 
+                                    <wm-gridcolumn columnwidth="12" name="gridcolumn63"> 
+                                        <wm-form-field displayname="Currency" widget="currency" show="true" type="custom" name="form_field47"></wm-form-field> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                                <wm-gridrow name="gridrow47_2"> 
+                                    <wm-gridcolumn columnwidth="12" name="gridcolumn62_1"> 
+                                        <wm-form-field displayname="Date" widget="date" show="true" type="custom" name="form_field48"></wm-form-field> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                                <wm-gridrow name="gridrow46"> 
+                                    <wm-gridcolumn columnwidth="12" name="gridcolumn61_1"> 
+                                        <wm-form-field displayname="Date Time" widget="datetime" show="true" type="custom" name="form_field49"></wm-form-field> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                                <wm-gridrow name="gridrow208"> 
+                                    <wm-gridcolumn columnwidth="12" name="gridcolumn240"> 
+                                        <wm-fileupload name="fileupload2" service="FileService" operation="uploadFile" multiple="true"></wm-fileupload> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                                <wm-gridrow name="gridrow45"> 
+                                    <wm-gridcolumn columnwidth="12" name="gridcolumn60"> 
+                                        <wm-form-field displayname="Radioset" widget="radioset" show="true" type="custom" name="form_field51" dataset="Yes, No, Maybe"></wm-form-field> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                                <wm-gridrow name="gridrow44_1"> 
+                                    <wm-gridcolumn columnwidth="12" name="gridcolumn59"> 
+                                        <wm-form-field displayname="Ratings" widget="rating" show="true" type="custom" name="form_field52"></wm-form-field> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                                <wm-gridrow name="gridrow43_1"> 
+                                    <wm-gridcolumn columnwidth="12" name="gridcolumn58"> 
+                                        <wm-form-field displayname="Select" widget="select" show="true" type="custom" name="form_field53"></wm-form-field> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                                <wm-gridrow name="gridrow42"> 
+                                    <wm-gridcolumn columnwidth="12" name="gridcolumn57"> 
+                                        <wm-select class="select-locale" dataset="bind:Variables.supportedLocale.dataSet" on-change="changeAppLocale($scope)" placeholder="Select Language" name="select1"></wm-select> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                                <wm-gridrow name="gridrow41"> 
+                                    <wm-gridcolumn columnwidth="12" name="gridcolumn56"> 
+                                        <wm-form-field displayname="Slider" widget="slider" show="true" type="custom" name="form_field54"></wm-form-field> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                                <wm-gridrow name="gridrow54"> 
+                                    <wm-gridcolumn columnwidth="12" name="gridcolumn69_2"> 
+                                        <wm-form-field displayname="Switch" widget="switch" show="true" type="custom" name="switchmr" dataset="Yes, No, Maybe"></wm-form-field> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                                <wm-gridrow name="gridrow56"> 
+                                    <wm-gridcolumn columnwidth="12" name="gridcolumn71"> 
+                                        <wm-form-field displayname="Text Area" widget="textarea" show="true" type="custom" name="form_field57"></wm-form-field> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                                <wm-gridrow name="gridrow57"> 
+                                    <wm-gridcolumn columnwidth="12" name="gridcolumn72"> 
+                                        <wm-form-field displayname="Time" widget="time" show="true" type="custom" name="form_field58"></wm-form-field> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                                <wm-gridrow name="gridrow58"> 
+                                    <wm-gridcolumn columnwidth="12" name="gridcolumn73_1"> 
+                                        <wm-form-field displayname="Toggle" widget="toggle" show="true" type="custom" name="form_field591" caption="On"></wm-form-field> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                            </wm-layoutgrid> 
+                            <wm-buttongroup horizontalalign="right" class="form-action col-md-12" name="buttongroup12"> 
+                                <wm-button caption="Reset" type="reset" class="btn-secondary" name="button36"></wm-button> 
+                                <wm-button caption="Save" type="submit" class="btn-primary" name="button38"></wm-button> 
+                            </wm-buttongroup> 
+                        </wm-form> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="4" name="gridcolumn48" padding=".5em .5em unset unset"> 
+                        <wm-form errormessage="" captionposition="top" title="Middle aligned" enctype="application/x-www-form-urlencoded" method="post" captionalign="center" name="form13" subheading="caption position: &quot;top&quot;" iconclass="wi wi-user" class="panel-warning"> 
+                            <wm-layoutgrid columns="1" name="layoutgrid12"> 
+                                <wm-gridrow name="gridrow53"> 
+                                    <wm-gridcolumn columnwidth="12" name="gridcolumn68"> 
+                                        <wm-form-field displayname="Input field" widget="text" show="true" type="custom" name="form_field44"></wm-form-field> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                                <wm-gridrow name="gridrow52_1"> 
+                                    <wm-gridcolumn columnwidth="12" name="gridcolumn67"> 
+                                        <wm-form-field displayname="Checkbox" widget="checkbox" show="true" type="custom" name="form_field45"></wm-form-field> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                                <wm-gridrow name="gridrow51_2"> 
+                                    <wm-gridcolumn columnwidth="12" name="gridcolumn66_1"> 
+                                        <wm-form-field displayname="Checkboxset" widget="checkboxset" show="true" type="custom" name="form_field46" dataset="Option 1,Option 2,Option 3"></wm-form-field> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                                <wm-gridrow name="gridrow50"> 
+                                    <wm-gridcolumn columnwidth="12" name="gridcolumn65_2"> 
+                                        <wm-chips name="chips1"></wm-chips> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                                <wm-gridrow name="gridrow49"> 
+                                    <wm-gridcolumn columnwidth="12" name="gridcolumn64"> 
+                                        <wm-form-field displayname="Color Picker" widget="colorpicker" show="true" type="custom" name="form_field180_1"></wm-form-field> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                                <wm-gridrow name="gridrow48_1"> 
+                                    <wm-gridcolumn columnwidth="12" name="gridcolumn63"> 
+                                        <wm-form-field displayname="Currency" widget="currency" show="true" type="custom" name="form_field47"></wm-form-field> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                                <wm-gridrow name="gridrow47_2"> 
+                                    <wm-gridcolumn columnwidth="12" name="gridcolumn62_1"> 
+                                        <wm-form-field displayname="Date" widget="date" show="true" type="custom" name="form_field48"></wm-form-field> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                                <wm-gridrow name="gridrow46"> 
+                                    <wm-gridcolumn columnwidth="12" name="gridcolumn61_1"> 
+                                        <wm-form-field displayname="Date Time" widget="datetime" show="true" type="custom" name="form_field49"></wm-form-field> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                                <wm-gridrow name="gridrow210"> 
+                                    <wm-gridcolumn columnwidth="12" name="gridcolumn242"> 
+                                        <wm-fileupload name="fileupload2" service="FileService" operation="uploadFile" multiple="true"></wm-fileupload> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                                <wm-gridrow name="gridrow45"> 
+                                    <wm-gridcolumn columnwidth="12" name="gridcolumn60"> 
+                                        <wm-form-field displayname="Radioset" widget="radioset" show="true" type="custom" name="form_field51" dataset="Yes, No, Maybe"></wm-form-field> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                                <wm-gridrow name="gridrow44_1"> 
+                                    <wm-gridcolumn columnwidth="12" name="gridcolumn59"> 
+                                        <wm-form-field displayname="Ratings" widget="rating" show="true" type="custom" name="form_field52"></wm-form-field> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                                <wm-gridrow name="gridrow43_1"> 
+                                    <wm-gridcolumn columnwidth="12" name="gridcolumn58"> 
+                                        <wm-form-field displayname="Select" widget="select" show="true" type="custom" name="form_field53"></wm-form-field> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                                <wm-gridrow name="gridrow42"> 
+                                    <wm-gridcolumn columnwidth="12" name="gridcolumn57"> 
+                                        <wm-select class="select-locale" dataset="bind:Variables.supportedLocale.dataSet" on-change="changeAppLocale($scope)" placeholder="Select Language" name="select1"></wm-select> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                                <wm-gridrow name="gridrow41"> 
+                                    <wm-gridcolumn columnwidth="12" name="gridcolumn56"> 
+                                        <wm-form-field displayname="Slider" widget="slider" show="true" type="custom" name="form_field54"></wm-form-field> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                                <wm-gridrow name="gridrow54"> 
+                                    <wm-gridcolumn columnwidth="12" name="gridcolumn69_2"> 
+                                        <wm-form-field displayname="Switch" widget="switch" show="true" type="custom" name="switchmt" dataset="Yes, No, Maybe"></wm-form-field> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                                <wm-gridrow name="gridrow56"> 
+                                    <wm-gridcolumn columnwidth="12" name="gridcolumn71"> 
+                                        <wm-form-field displayname="Text Area" widget="textarea" show="true" type="custom" name="form_field57"></wm-form-field> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                                <wm-gridrow name="gridrow57"> 
+                                    <wm-gridcolumn columnwidth="12" name="gridcolumn72"> 
+                                        <wm-form-field displayname="Time" widget="time" show="true" type="custom" name="form_field58"></wm-form-field> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                                <wm-gridrow name="gridrow58"> 
+                                    <wm-gridcolumn columnwidth="12" name="gridcolumn73_1"> 
+                                        <wm-form-field displayname="Toggle" widget="toggle" show="true" type="custom" name="form_field59" caption="On"></wm-form-field> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                            </wm-layoutgrid> 
+                            <wm-buttongroup horizontalalign="right" class="form-action col-md-12" name="buttongroup13"> 
+                                <wm-button caption="Reset" type="reset" class="btn-secondary" name="button39"></wm-button> 
+                                <wm-button caption="Save" type="submit" class="btn-primary" name="button41"></wm-button> 
+                            </wm-buttongroup> 
+                        </wm-form> 
+                    </wm-gridcolumn> 
+                </wm-gridrow> 
+                <wm-gridrow name="gridrow55" class="bordered-row"> 
+                    <wm-gridcolumn columnwidth="4" name="gridcolumn74" padding=".5em .5em unset unset"> 
+                        <wm-form errormessage="" captionposition="left" title="Right Aligned" enctype="application/x-www-form-urlencoded" method="post" captionalign="right" name="form8" subheading="caption position: &quot;left&quot;" iconclass="wi wi-user" class="panel-info"> 
+                            <wm-layoutgrid columns="1" name="layoutgrid12"> 
+                                <wm-gridrow name="gridrow53"> 
+                                    <wm-gridcolumn columnwidth="12" name="gridcolumn68"> 
+                                        <wm-form-field displayname="Input field" widget="text" show="true" type="custom" name="form_field44"></wm-form-field> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                                <wm-gridrow name="gridrow52_1"> 
+                                    <wm-gridcolumn columnwidth="12" name="gridcolumn67"> 
+                                        <wm-form-field displayname="Checkbox" widget="checkbox" show="true" type="custom" name="form_field45"></wm-form-field> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                                <wm-gridrow name="gridrow51_2"> 
+                                    <wm-gridcolumn columnwidth="12" name="gridcolumn66_1"> 
+                                        <wm-form-field displayname="Checkboxset" widget="checkboxset" show="true" type="custom" name="form_field46" dataset="Option 1,Option 2,Option 3"></wm-form-field> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                                <wm-gridrow name="gridrow50"> 
+                                    <wm-gridcolumn columnwidth="12" name="gridcolumn65_2"> 
+                                        <wm-chips name="chips1"></wm-chips> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                                <wm-gridrow name="gridrow49"> 
+                                    <wm-gridcolumn columnwidth="12" name="gridcolumn64"> 
+                                        <wm-form-field displayname="Color Picker" widget="colorpicker" show="true" type="custom" name="form_field181"></wm-form-field> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                                <wm-gridrow name="gridrow48_1"> 
+                                    <wm-gridcolumn columnwidth="12" name="gridcolumn63"> 
+                                        <wm-form-field displayname="Currency" widget="currency" show="true" type="custom" name="form_field47"></wm-form-field> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                                <wm-gridrow name="gridrow47_2"> 
+                                    <wm-gridcolumn columnwidth="12" name="gridcolumn62_1"> 
+                                        <wm-form-field displayname="Date" widget="date" show="true" type="custom" name="form_field48"></wm-form-field> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                                <wm-gridrow name="gridrow46"> 
+                                    <wm-gridcolumn columnwidth="12" name="gridcolumn61_1"> 
+                                        <wm-form-field displayname="Date Time" widget="datetime" show="true" type="custom" name="form_field49"></wm-form-field> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                                <wm-gridrow name="gridrow212"> 
+                                    <wm-gridcolumn columnwidth="12" name="gridcolumn244"> 
+                                        <wm-fileupload name="fileupload2" service="FileService" operation="uploadFile" multiple="true"></wm-fileupload> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                                <wm-gridrow name="gridrow45"> 
+                                    <wm-gridcolumn columnwidth="12" name="gridcolumn60"> 
+                                        <wm-form-field displayname="Radioset" widget="radioset" show="true" type="custom" name="form_field51" dataset="Yes, No, Maybe"></wm-form-field> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                                <wm-gridrow name="gridrow44_1"> 
+                                    <wm-gridcolumn columnwidth="12" name="gridcolumn59"> 
+                                        <wm-form-field displayname="Ratings" widget="rating" show="true" type="custom" name="form_field52"></wm-form-field> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                                <wm-gridrow name="gridrow43_1"> 
+                                    <wm-gridcolumn columnwidth="12" name="gridcolumn58"> 
+                                        <wm-form-field displayname="Select" widget="select" show="true" type="custom" name="form_field53"></wm-form-field> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                                <wm-gridrow name="gridrow42"> 
+                                    <wm-gridcolumn columnwidth="12" name="gridcolumn57"> 
+                                        <wm-select class="select-locale" dataset="bind:Variables.supportedLocale.dataSet" on-change="changeAppLocale($scope)" placeholder="Select Language" name="select1"></wm-select> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                                <wm-gridrow name="gridrow41"> 
+                                    <wm-gridcolumn columnwidth="12" name="gridcolumn56"> 
+                                        <wm-form-field displayname="Slider" widget="slider" show="true" type="custom" name="form_field54"></wm-form-field> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                                <wm-gridrow name="gridrow54"> 
+                                    <wm-gridcolumn columnwidth="12" name="gridcolumn69_2"> 
+                                        <wm-form-field displayname="Switch" widget="switch" show="true" type="custom" name="switchrl" dataset="Yes, No, Maybe"></wm-form-field> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                                <wm-gridrow name="gridrow55_2"> 
+                                    <wm-gridcolumn columnwidth="12" name="gridcolumn70_1"> 
+                                        <wm-form-field displayname="Custom field" widget="text" show="true" type="custom" name="form_field56"></wm-form-field> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                                <wm-gridrow name="gridrow56"> 
+                                    <wm-gridcolumn columnwidth="12" name="gridcolumn71"> 
+                                        <wm-form-field displayname="Custom field" widget="textarea" show="true" type="custom" name="form_field57"></wm-form-field> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                                <wm-gridrow name="gridrow57"> 
+                                    <wm-gridcolumn columnwidth="12" name="gridcolumn72"> 
+                                        <wm-form-field displayname="Time" widget="time" show="true" type="custom" name="form_field58"></wm-form-field> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                                <wm-gridrow name="gridrow58"> 
+                                    <wm-gridcolumn columnwidth="12" name="gridcolumn73_1"> 
+                                        <wm-form-field displayname="Toggle" widget="toggle" show="true" type="custom" name="form_field59" caption="On"></wm-form-field> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                            </wm-layoutgrid> 
+                            <wm-buttongroup horizontalalign="right" class="form-action col-md-12" name="buttongroup8"> 
+                                <wm-button caption="Reset" type="reset" class="btn-secondary" name="button24"></wm-button> 
+                                <wm-button caption="Save" type="submit" class="btn-primary" name="button26"></wm-button> 
+                            </wm-buttongroup> 
+                        </wm-form> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="4" name="gridcolumn47_1" padding=".5em .5em unset unset"> 
+                        <wm-form errormessage="" captionposition="right" title="Right Aligned" enctype="application/x-www-form-urlencoded" method="post" captionalign="right" name="form9" subheading="caption position: &quot;right&quot;" iconclass="wi wi-user" class="panel-info"> 
+                            <wm-layoutgrid columns="1" name="layoutgrid12"> 
+                                <wm-gridrow name="gridrow53"> 
+                                    <wm-gridcolumn columnwidth="12" name="gridcolumn68"> 
+                                        <wm-form-field displayname="Input field" widget="text" show="true" type="custom" name="form_field44"></wm-form-field> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                                <wm-gridrow name="gridrow52_1"> 
+                                    <wm-gridcolumn columnwidth="12" name="gridcolumn67"> 
+                                        <wm-form-field displayname="Checkbox" widget="checkbox" show="true" type="custom" name="form_field45"></wm-form-field> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                                <wm-gridrow name="gridrow51_2"> 
+                                    <wm-gridcolumn columnwidth="12" name="gridcolumn66_1"> 
+                                        <wm-form-field displayname="Checkboxset" widget="checkboxset" show="true" type="custom" name="form_field46" dataset="Option 1,Option 2,Option 3"></wm-form-field> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                                <wm-gridrow name="gridrow50"> 
+                                    <wm-gridcolumn columnwidth="12" name="gridcolumn65_2"> 
+                                        <wm-chips name="chips1"></wm-chips> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                                <wm-gridrow name="gridrow49"> 
+                                    <wm-gridcolumn columnwidth="12" name="gridcolumn64"> 
+                                        <wm-form-field displayname="Color Picker" widget="colorpicker" show="true" type="custom" name="form_field182"></wm-form-field> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                                <wm-gridrow name="gridrow48_1"> 
+                                    <wm-gridcolumn columnwidth="12" name="gridcolumn63"> 
+                                        <wm-form-field displayname="Currency" widget="currency" show="true" type="custom" name="form_field47"></wm-form-field> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                                <wm-gridrow name="gridrow47_2"> 
+                                    <wm-gridcolumn columnwidth="12" name="gridcolumn62_1"> 
+                                        <wm-form-field displayname="Date" widget="date" show="true" type="custom" name="form_field48"></wm-form-field> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                                <wm-gridrow name="gridrow46"> 
+                                    <wm-gridcolumn columnwidth="12" name="gridcolumn61_1"> 
+                                        <wm-form-field displayname="Date Time" widget="datetime" show="true" type="custom" name="form_field49"></wm-form-field> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                                <wm-gridrow name="gridrow214"> 
+                                    <wm-gridcolumn columnwidth="12" name="gridcolumn246"> 
+                                        <wm-fileupload name="fileupload2" service="FileService" operation="uploadFile" multiple="true"></wm-fileupload> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                                <wm-gridrow name="gridrow45"> 
+                                    <wm-gridcolumn columnwidth="12" name="gridcolumn60"> 
+                                        <wm-form-field displayname="Radioset" widget="radioset" show="true" type="custom" name="form_field51" dataset="Yes, No, Maybe"></wm-form-field> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                                <wm-gridrow name="gridrow44_1"> 
+                                    <wm-gridcolumn columnwidth="12" name="gridcolumn59"> 
+                                        <wm-form-field displayname="Ratings" widget="rating" show="true" type="custom" name="form_field52"></wm-form-field> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                                <wm-gridrow name="gridrow43_1"> 
+                                    <wm-gridcolumn columnwidth="12" name="gridcolumn58"> 
+                                        <wm-form-field displayname="Select" widget="select" show="true" type="custom" name="form_field53"></wm-form-field> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                                <wm-gridrow name="gridrow42"> 
+                                    <wm-gridcolumn columnwidth="12" name="gridcolumn57"> 
+                                        <wm-select class="select-locale" dataset="bind:Variables.supportedLocale.dataSet" on-change="changeAppLocale($scope)" placeholder="Select Language" name="select1"></wm-select> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                                <wm-gridrow name="gridrow41"> 
+                                    <wm-gridcolumn columnwidth="12" name="gridcolumn56"> 
+                                        <wm-form-field displayname="Slider" widget="slider" show="true" type="custom" name="form_field54"></wm-form-field> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                                <wm-gridrow name="gridrow54"> 
+                                    <wm-gridcolumn columnwidth="12" name="gridcolumn69_2"> 
+                                        <wm-form-field displayname="Switch" widget="switch" show="true" type="custom" name="switchrr" dataset="Yes, No, Maybe"></wm-form-field> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                                <wm-gridrow name="gridrow55_2"> 
+                                    <wm-gridcolumn columnwidth="12" name="gridcolumn70_1"> 
+                                        <wm-form-field displayname="Custom field" widget="text" show="true" type="custom" name="form_field56"></wm-form-field> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                                <wm-gridrow name="gridrow56"> 
+                                    <wm-gridcolumn columnwidth="12" name="gridcolumn71"> 
+                                        <wm-form-field displayname="Custom field" widget="textarea" show="true" type="custom" name="form_field57"></wm-form-field> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                                <wm-gridrow name="gridrow57"> 
+                                    <wm-gridcolumn columnwidth="12" name="gridcolumn72"> 
+                                        <wm-form-field displayname="Time" widget="time" show="true" type="custom" name="form_field58"></wm-form-field> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                                <wm-gridrow name="gridrow58"> 
+                                    <wm-gridcolumn columnwidth="12" name="gridcolumn73_1"> 
+                                        <wm-form-field displayname="Toggle" widget="toggle" show="true" type="custom" name="form_field59" caption="On"></wm-form-field> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                            </wm-layoutgrid> 
+                            <wm-buttongroup horizontalalign="right" class="form-action col-md-12" name="buttongroup9"> 
+                                <wm-button caption="Reset" type="reset" class="btn-secondary" name="button27"></wm-button> 
+                                <wm-button caption="Save" type="submit" class="btn-primary" name="button29"></wm-button> 
+                            </wm-buttongroup> 
+                        </wm-form> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="4" name="gridcolumn48" padding=".5em .5em unset unset"> 
+                        <wm-form errormessage="" captionposition="top" title="Right Aligned" enctype="application/x-www-form-urlencoded" method="post" captionalign="right" name="form10" subheading="caption position: &quot;top&quot;" iconclass="wi wi-user" show="true" class="panel-info"> 
+                            <wm-layoutgrid columns="1" name="layoutgrid12"> 
+                                <wm-gridrow name="gridrow53"> 
+                                    <wm-gridcolumn columnwidth="12" name="gridcolumn68"> 
+                                        <wm-form-field displayname="Input field" widget="text" show="true" type="custom" name="form_field44"></wm-form-field> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                                <wm-gridrow name="gridrow52_1"> 
+                                    <wm-gridcolumn columnwidth="12" name="gridcolumn67"> 
+                                        <wm-form-field displayname="Checkbox" widget="checkbox" show="true" type="custom" name="form_field45"></wm-form-field> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                                <wm-gridrow name="gridrow51_2"> 
+                                    <wm-gridcolumn columnwidth="12" name="gridcolumn66_1"> 
+                                        <wm-form-field displayname="Checkboxset" widget="checkboxset" show="true" type="custom" name="form_field46" dataset="Option 1,Option 2,Option 3"></wm-form-field> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                                <wm-gridrow name="gridrow50"> 
+                                    <wm-gridcolumn columnwidth="12" name="gridcolumn65_2"> 
+                                        <wm-chips name="chips1"></wm-chips> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                                <wm-gridrow name="gridrow49"> 
+                                    <wm-gridcolumn columnwidth="12" name="gridcolumn64"> 
+                                        <wm-form-field displayname="Color Picker" widget="colorpicker" show="true" type="custom" name="form_field183"></wm-form-field> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                                <wm-gridrow name="gridrow48_1"> 
+                                    <wm-gridcolumn columnwidth="12" name="gridcolumn63"> 
+                                        <wm-form-field displayname="Currency" widget="currency" show="true" type="custom" name="form_field47"></wm-form-field> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                                <wm-gridrow name="gridrow47_2"> 
+                                    <wm-gridcolumn columnwidth="12" name="gridcolumn62_1"> 
+                                        <wm-form-field displayname="Date" widget="date" show="true" type="custom" name="form_field48"></wm-form-field> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                                <wm-gridrow name="gridrow46"> 
+                                    <wm-gridcolumn columnwidth="12" name="gridcolumn61_1"> 
+                                        <wm-form-field displayname="Date Time" widget="datetime" show="true" type="custom" name="form_field49"></wm-form-field> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                                <wm-gridrow name="gridrow216"> 
+                                    <wm-gridcolumn columnwidth="12" name="gridcolumn248"> 
+                                        <wm-fileupload name="fileupload2" service="FileService" operation="uploadFile" multiple="true"></wm-fileupload> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                                <wm-gridrow name="gridrow45"> 
+                                    <wm-gridcolumn columnwidth="12" name="gridcolumn60"> 
+                                        <wm-form-field displayname="Radioset" widget="radioset" show="true" type="custom" name="form_field51" dataset="Yes, No, Maybe"></wm-form-field> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                                <wm-gridrow name="gridrow44_1"> 
+                                    <wm-gridcolumn columnwidth="12" name="gridcolumn59"> 
+                                        <wm-form-field displayname="Ratings" widget="rating" show="true" type="custom" name="form_field52"></wm-form-field> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                                <wm-gridrow name="gridrow43_1"> 
+                                    <wm-gridcolumn columnwidth="12" name="gridcolumn58"> 
+                                        <wm-form-field displayname="Select" widget="select" show="true" type="custom" name="form_field53"></wm-form-field> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                                <wm-gridrow name="gridrow42"> 
+                                    <wm-gridcolumn columnwidth="12" name="gridcolumn57"> 
+                                        <wm-select class="select-locale" dataset="bind:Variables.supportedLocale.dataSet" on-change="changeAppLocale($scope)" placeholder="Select Language" name="select1"></wm-select> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                                <wm-gridrow name="gridrow41"> 
+                                    <wm-gridcolumn columnwidth="12" name="gridcolumn56"> 
+                                        <wm-form-field displayname="Slider" widget="slider" show="true" type="custom" name="form_field54"></wm-form-field> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                                <wm-gridrow name="gridrow54"> 
+                                    <wm-gridcolumn columnwidth="12" name="gridcolumn69_2"> 
+                                        <wm-form-field displayname="Switch" widget="switch" show="true" type="custom" name="switchrt" dataset="Yes, No, Maybe"></wm-form-field> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                                <wm-gridrow name="gridrow55_2"> 
+                                    <wm-gridcolumn columnwidth="12" name="gridcolumn70_1"> 
+                                        <wm-form-field displayname="Custom field" widget="text" show="true" type="custom" name="form_field56"></wm-form-field> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                                <wm-gridrow name="gridrow56"> 
+                                    <wm-gridcolumn columnwidth="12" name="gridcolumn71"> 
+                                        <wm-form-field displayname="Custom field" widget="textarea" show="true" type="custom" name="form_field57"></wm-form-field> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                                <wm-gridrow name="gridrow57"> 
+                                    <wm-gridcolumn columnwidth="12" name="gridcolumn72"> 
+                                        <wm-form-field displayname="Time" widget="time" show="true" type="custom" name="form_field58"></wm-form-field> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                                <wm-gridrow name="gridrow58"> 
+                                    <wm-gridcolumn columnwidth="12" name="gridcolumn73_1"> 
+                                        <wm-form-field displayname="Toggle" widget="toggle" show="true" type="custom" name="form_field59" caption="On"></wm-form-field> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                            </wm-layoutgrid> 
+                            <wm-buttongroup horizontalalign="right" class="form-action col-md-12" name="buttongroup10"> 
+                                <wm-button caption="Reset" type="reset" class="btn-secondary" name="button30"></wm-button> 
+                                <wm-button caption="Save" type="submit" class="btn-primary" name="button32"></wm-button> 
+                            </wm-buttongroup> 
+                        </wm-form> 
+                    </wm-gridcolumn> 
+                </wm-gridrow> 
+            </wm-layoutgrid> 
+        </wm-page-content> 
+    </wm-content> 
+    <wm-footer content="footer" name="footer1"></wm-footer> 
+</wm-page>

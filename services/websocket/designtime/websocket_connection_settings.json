@@ -1,0 +1,15 @@
+{
+  "endpointAddress" : "wss://echo.websocket.org/",
+  "method" : "GET",
+  "contentType" : "",
+  "sampleRequestBody" : "http://www.google.com/calendar/feeds/developer-calendar@google.com/public/full?alt=json",
+  "authType" : "NONE",
+  "headers" : { },
+  "queryParams" : { },
+  "sampleWebSocketResponse" : {
+    "responseBody" : "http://www.google.com/calendar/feeds/developer-calendar@google.com/public/full?alt=json",
+    "convertedResponse" : null,
+    "statusCode" : 0,
+    "contentType" : ""
+  }
+}

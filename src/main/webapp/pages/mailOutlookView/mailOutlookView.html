@@ -1,0 +1,51 @@
+<wm-partial data-ng-controller="mailOutlookViewPageController" name="partial1"> 
+    <wm-layoutgrid name="emailContentLayoutGrid"> 
+        <wm-gridrow name="gridrow5"> 
+            <wm-gridcolumn columnwidth="6" name="gridColumnOne" class="col-lg-6 col-md-12 col-sm-12 col-xs-12"> 
+                <wm-icon name="icon1" iconclass="wi wi-featured-video" class="small"></wm-icon> 
+                <wm-label name="mailtimestamp" margin="0px unset" caption="bind:$parent.Widgets.messageList.selecteditem.birthdate | toDate: 'yyyy-MM-dd HH:mm'" class="small" padding="unset 0.5em"></wm-label> 
+            </wm-gridcolumn> 
+            <wm-gridcolumn columnwidth="6" name="gridColumnTwo" horizontalalign="right" class="col-lg-6 col-md-12 col-sm-12 col-xs-12"> 
+                <wm-button class="btn-default btn-sm" type="button" caption="Plug it" name="plugItButton" iconclass="fa fa-plug" hint="Plug this message"></wm-button> 
+                <wm-button class="btn-default btn-sm" type="button" caption="" name="WatchButton" iconclass="fa fa-eye" hint="Mark as read"></wm-button> 
+                <wm-button class="btn-default btn-sm" type="button" caption="" name="informationButton" iconclass="fa fa-exclamation" hint="Mark as important"></wm-button> 
+                <wm-button class="btn-default btn-sm" caption="" type="button" name="trashButton" iconclass="wi wi-delete" hint="Move to trash"></wm-button> 
+            </wm-gridcolumn> 
+        </wm-gridrow> 
+        <wm-gridrow name="gridrow7_1"> 
+            <wm-gridcolumn columnwidth="12" name="gridColumnThree"> 
+                <wm-label name="label12" caption="Revisions For Sales Report" class="h1"></wm-label> 
+                <wm-html name="emailbody" content="bind:Variables.messageContent.dataSet.dataValue.message">
+                     bind:Variables.messageContent.dataSet.dataValue.message 
+                </wm-html> 
+                <wm-label name="senderName" fontweight="bold" caption="bind:$parent.Widgets.messageList.selecteditem.firstname + ' '+ $parent.Widgets.messageList.selecteditem.lastname"></wm-label> 
+            </wm-gridcolumn> 
+        </wm-gridrow> 
+        <wm-gridrow name="gridrow8_1"> 
+            <wm-gridcolumn columnwidth="12" name="gridColumnFour" padding="1em unset"> 
+                <wm-icon name="icon2 " iconclass="wi wi-paperclip "></wm-icon> 
+                <wm-label margin="0px unset " caption="2 attachments - " name="label9 "></wm-label> 
+                <wm-anchor margin="unset 0.5em " name="anchor2 " caption="Download all "></wm-anchor> 
+                <wm-label padding="unset 0.5em" name="pipeLabel" caption="|"></wm-label> 
+                <wm-anchor margin="unset 0.5em " name="anchor1 " caption="View all images "></wm-anchor> 
+            </wm-gridcolumn> 
+        </wm-gridrow> 
+        <wm-gridrow name="gridrow9"> 
+            <wm-gridcolumn columnwidth="12" name="gridColumnFive"> 
+                <wm-list listclass="list-group" template="true" itemsperrow="xs-1 sm-2 md-3 lg-4" class="list-card" dataset="bind:Variables.mailAttachmentList.dataSet" navigation="None" name="fileAttachmentsLivelist"> 
+                    <wm-listtemplate layout="media" name="listtemplate4"> 
+                        <wm-card name="fileAttachmentCard" class="card-border"> 
+                            <wm-card-content fontsize="0.8" fontunit="em" name="cardContent" horizontalalign="center"> 
+                                <wm-icon iconclass="bind:Variables.mailAttachmentList.dataSet[$i].icon" iconsize="4em" name="fileTypeIcon"></wm-icon> 
+                            </wm-card-content> 
+                            <wm-card-footer name="cardFooter"> 
+                                <wm-anchor margin="unset 0.5em" name="attachedFileLink" caption="bind:Variables.mailAttachmentList.dataSet[$i].fileName"></wm-anchor> 
+                                <wm-label padding="unset 0.5em" name="fileUploadDate" caption="bind:&quot;Added: &quot; + (Variables.mailAttachmentList.dataSet[$i].time | toDate: 'yyyy-MM-dd HH:mm')" class="p" whitespace="nowrap" hint="bind:&quot;Added: &quot; + (Variables.mailAttachmentList.dataSet[$i].time | toDate: 'yyyy-MM-dd HH:mm')"></wm-label> 
+                            </wm-card-footer> 
+                        </wm-card> 
+                    </wm-listtemplate> 
+                </wm-list> 
+            </wm-gridcolumn> 
+        </wm-gridrow> 
+    </wm-layoutgrid> 
+</wm-partial>

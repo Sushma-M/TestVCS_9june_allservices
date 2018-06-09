@@ -1,0 +1,109 @@
+<wm-page data-ng-controller="DialogsPageController" pagetitle="Dialogs" name="page1"> 
+    <wm-header content="header" name="header1"></wm-header> 
+    <wm-top-nav content="topnav" name="top_nav1"></wm-top-nav> 
+    <wm-content name="content1"> 
+        <wm-left-panel columnwidth="2" content="LN_Widgets" name="left_panel1"></wm-left-panel> 
+        <wm-page-content columnwidth="10" name="page_content1"> 
+            <wm-container name="container3" content="breadcrumbpartial"></wm-container> 
+            <wm-layoutgrid name="layoutgrid1"> 
+                <wm-gridrow class="bordered-row" name="gridrow1"> 
+                    <wm-gridcolumn columnwidth="3" name="gridcolumn1"> 
+                        <wm-label padding="unset 0.5em" name="label2" caption="Alert Dialog" class="h4"></wm-label> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="9" name="gridcolumn7"> 
+                        <wm-button class="btn-default" caption="Open Alert Dialog" type="button" margin="unset 0.5em" name="button1" on-click="Widgets.alertdialog.open()" width="160"></wm-button> 
+                    </wm-gridcolumn> 
+                </wm-gridrow> 
+                <wm-gridrow class="bordered-row" name="gridrow1"> 
+                    <wm-gridcolumn columnwidth="3" name="gridcolumn1"> 
+                        <wm-label padding="unset 0.5em" name="label2" caption="Confirm Dialog" class="h4"></wm-label> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="9" name="gridcolumn7"> 
+                        <wm-button class="btn-default" caption="Open Confirm Dialog" type="button" margin="unset 0.5em" name="button1" on-click="Widgets.confirmdialog.open()" width="160"></wm-button> 
+                    </wm-gridcolumn> 
+                </wm-gridrow> 
+                <wm-gridrow class="bordered-row" name="gridrow1"> 
+                    <wm-gridcolumn columnwidth="3" name="gridcolumn1"> 
+                        <wm-label padding="unset 0.5em" name="label2" caption="Design Dialog" class="h4"></wm-label> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="9" name="gridcolumn7"> 
+                        <wm-button class="btn-default" caption="Open Design Dialog" type="button" margin="unset 0.5em" name="button1" on-click="Widgets.designdialog.open()" width="160"></wm-button> 
+                    </wm-gridcolumn> 
+                </wm-gridrow> 
+                <wm-gridrow class="bordered-row" name="gridrow1"> 
+                    <wm-gridcolumn columnwidth="3" name="gridcolumn1"> 
+                        <wm-label padding="unset 0.5em" name="label2" caption="iframe Dialog" class="h4"></wm-label> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="9" name="gridcolumn7"> 
+                        <wm-button class="btn-default" caption="Open iframe Dialog" type="button" margin="unset 0.5em" name="button1" on-click="Widgets.iframedialog.open()" width="160"></wm-button> 
+                    </wm-gridcolumn> 
+                </wm-gridrow> 
+                <wm-gridrow class="bordered-row" name="gridrow1"> 
+                    <wm-gridcolumn columnwidth="3" name="gridcolumn1"> 
+                        <wm-label padding="unset 0.5em" name="label2" caption="Login Dialog" class="h4"></wm-label> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="9" name="gridcolumn7"> 
+                        <wm-button class="btn-default" caption="Open Login Dialog" type="button" margin="unset 0.5em" name="button1" on-click="Widgets.logindialog.open()" width="160"></wm-button> 
+                    </wm-gridcolumn> 
+                </wm-gridrow> 
+                <wm-gridrow class="bordered-row" name="gridrow1"> 
+                    <wm-gridcolumn columnwidth="3" name="gridcolumn1"> 
+                        <wm-label padding="unset 0.5em" name="label2" caption="Page Dialog" class="h4"></wm-label> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="9" name="gridcolumn7"> 
+                        <wm-button class="btn-default" caption="Open Page Dialog" type="button" margin="unset 0.5em" name="button1" on-click="Widgets.pagedialog.open()" width="160"></wm-button> 
+                    </wm-gridcolumn> 
+                </wm-gridrow> 
+            </wm-layoutgrid> 
+        </wm-page-content> 
+    </wm-content> 
+    <wm-footer content="footer" name="footer1"></wm-footer> 
+    <wm-view class="dialog-view" name="view1"> 
+        <wm-alertdialog name="alertdialog"></wm-alertdialog> 
+    </wm-view> 
+    <wm-view class="dialog-view" name="view2"> 
+        <wm-confirmdialog name="confirmdialog"></wm-confirmdialog> 
+    </wm-view> 
+    <wm-view class="dialog-view" name="view3"> 
+        <wm-dialog dialogtype="design-dialog" modal="true" title="Form" iconclass="wi wi-edit" name="designdialog"> 
+            <wm-form errormessage="" captionposition="top" class="app-dialog-form" name="form1"> 
+                <wm-composite name="composite1"> 
+                    <wm-label class="col-md-3 control-label" caption="Name" name="label3"></wm-label> 
+                    <wm-text name="text1"></wm-text> 
+                </wm-composite> 
+            </wm-form> 
+            <wm-dialogactions name="dialogactions1"> 
+                <wm-button class="btn-secondary" caption="Cancel" on-click="closeDialog()" name="button2"></wm-button> 
+                <wm-button class="btn-primary" caption="Save" name="button3"></wm-button> 
+            </wm-dialogactions> 
+        </wm-dialog> 
+    </wm-view> 
+    <wm-view class="dialog-view" name="view4"> 
+        <wm-iframedialog name="iframedialog" url="//www.bing.com" height="480" width="800"></wm-iframedialog> 
+    </wm-view> 
+    <wm-view class="dialog-view" name="view5"> 
+        <wm-logindialog modal="false" caption="Login" iconclass="wi wi-sign-in" name="logindialog" title="Login"> 
+            <wm-form errormessage="" captionposition="top" name="form2"> 
+                <wm-message scopedataset="loginMessage" class="app-login-dialog-message" name="message1"></wm-message> 
+                <wm-composite name="composite2"> 
+                    <wm-label caption="Username" class="col-md-3 control-label" name="label4"></wm-label> 
+                    <wm-container class="col-md-9" name="container1"> 
+                        <wm-text placeholder="Enter username" class="app-login-dialog-username" name="usernametext" updateon="default"></wm-text> 
+                    </wm-container> 
+                </wm-composite> 
+                <wm-composite name="composite3"> 
+                    <wm-label caption="Password" class="col-md-3 control-label" name="label5"></wm-label> 
+                    <wm-container class="col-md-9" name="container2"> 
+                        <wm-text type="password" placeholder="Enter password" class="app-login-dialog-password" name="passwordtext" updateon="default"></wm-text> 
+                    </wm-container> 
+                </wm-composite> 
+            </wm-form> 
+            <wm-dialogactions name="dialogactions2"> 
+                <wm-button class="btn-primary" caption="Sign in" data-role="loginbutton" name="button4"></wm-button> 
+            </wm-dialogactions> 
+        </wm-logindialog> 
+    </wm-view> 
+    <wm-view class="dialog-view" name="view6"> 
+        <wm-pagedialog name="pagedialog" content="pagecontent"></wm-pagedialog> 
+    </wm-view> 
+</wm-page>

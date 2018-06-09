@@ -1,0 +1,28 @@
+{
+  "dynamicProgressBar" : {
+    "_id" : "wm-dynamicProgressBar-wm.Variable-1484575338868",
+    "name" : "dynamicProgressBar",
+    "owner" : "Page",
+    "category" : "wm.Variable",
+    "dataBinding" : [ ],
+    "dataSet" : [ {
+      "type" : "primary",
+      "value" : 20
+    }, {
+      "type" : "info",
+      "value" : 20
+    }, {
+      "type" : "success",
+      "value" : 20
+    }, {
+      "type" : "warning",
+      "value" : 20
+    }, {
+      "type" : "danger",
+      "value" : 20
+    } ],
+    "type" : "string",
+    "isList" : true,
+    "saveInPhonegap" : false
+  }
+}

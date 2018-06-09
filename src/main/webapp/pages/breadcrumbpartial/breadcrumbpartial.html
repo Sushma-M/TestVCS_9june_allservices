@@ -1,0 +1,5 @@
+<wm-partial data-ng-controller="breadcrumbpartialPageController" name="partial1"> 
+    <wm-breadcrumb dataset="bind:Variables.Breadcrumb.dataSet" name="breadcrumb1" itemlabel="pageName" itemicon="icon" itemlink="link" padding="unset unset 0px unset"></wm-breadcrumb> 
+    <wm-label name="heading" class="h1" caption="bind:Variables.currentPageDetails.dataSet.label" margin="0px unset" show="bind:activePageName !== &quot;Widgets&quot;" padding="unset unset unset 10px"></wm-label> 
+    <wm-label name="description" caption="bind:Variables.currentPageDetails.dataSet.description" show="bind:activePageName !== &quot;Widgets&quot;" class="h4" padding="unset unset unset 10px" margin="0em unset 1em unset"></wm-label> 
+</wm-partial>

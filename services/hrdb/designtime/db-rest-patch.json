@@ -1,8 +1,8 @@
 {
-  "UserController" : { },
-  "ProcedureExecutionController" : { },
-  "DepartmentController" : { },
-  "QueryExecutionController" : { },
+  "EmployeeController" : { },
   "VacationController" : { },
-  "EmployeeController" : { }
+  "DepartmentController" : { },
+  "UserController" : { },
+  "QueryExecutionController" : { },
+  "ProcedureExecutionController" : { }
 }

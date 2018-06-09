@@ -1,0 +1,9 @@
+.gradient-styling {
+    background: #57a37c;
+    background: linear-gradient(to left top, #57a37c 0%/*bottom-right color*/, #368991 50% /*middle color*/, #1878a2 100% /*top-left color*/);
+    background: -webkitlinear-gradient(to left top, #57a37c 0%/*bottom-right color*/, #368991 50% /*middle color*/, #1878a2 100% /*top-left color*/); 
+    background: -o-linear-gradient(to left top, #57a37c 0%/*bottom-right color*/, #368991 50% /*middle color*/, #1878a2 100% /*top-left color*/); 
+    background: -moz-linear-gradient(to left top, #57a37c 0%/*bottom-right color*/, #368991 50% /*middle color*/, #1878a2 100% /*top-left color*/);  
+    background: -o-linear-gradient(to left top, #57a37c 0%/*bottom-right color*/, #368991 50% /*middle color*/, #1878a2 100% /*top-left color*/);
+    background: -moz-linear-gradient(to left top, #57a37c 0%/*bottom-right color*/, #368991 50% /*middle color*/, #1878a2 100% /*top-left color*/);
+}

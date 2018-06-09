@@ -1,0 +1,288 @@
+<wm-page data-ng-controller="MediaPageController" pagetitle="Media" name="page1"> 
+    <wm-header content="header" name="header1"></wm-header> 
+    <wm-top-nav content="topnav" name="top_nav1"></wm-top-nav> 
+    <wm-content name="content1"> 
+        <wm-left-panel columnwidth="2" content="LN_Widgets" name="left_panel1"></wm-left-panel> 
+        <wm-page-content columnwidth="10" name="page_content1"> 
+            <wm-container content="breadcrumbpartial" name="container1"></wm-container> 
+            <wm-layoutgrid name="layoutgrid1"> 
+                <wm-gridrow name="gridrow1" class="bordered-row"> 
+                    <wm-gridcolumn columnwidth="2" name="gridcolumn1"> 
+                        <wm-label padding="unset 0.5em" class="h4" caption="Audio" name="label6"></wm-label> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="10" name="gridcolumn2"> 
+                        <wm-audio controls="true" audiopreload="none" name="audio1" mp3format="http://www.w3schools.com/html/horse.ogg"></wm-audio> 
+                    </wm-gridcolumn> 
+                </wm-gridrow> 
+                <wm-gridrow class="bordered-row" name="gridrow2"> 
+                    <wm-gridcolumn columnwidth="2" name="gridcolumn1"> 
+                        <wm-label padding="unset 0.5em" name="label1" class="h4" caption="Video"></wm-label> 
+                        <wm-label padding="unset 0.5em" caption="Poster Image" name="label40_1" class="code"></wm-label> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="10" name="gridcolumn2"> 
+                        <wm-video controls="true" videopreload="none" name="video1" videoposter="resources/images/imagelists/poster.jpg" mp4format="http://www.quirksmode.org/html5/videos/big_buck_bunny.mp4" width="480" height="270"></wm-video> 
+                    </wm-gridcolumn> 
+                </wm-gridrow> 
+            </wm-layoutgrid> 
+            <wm-label padding="unset 0.5em" caption="Picture" class="h2" name="label1"></wm-label> 
+            <wm-layoutgrid name="layoutgrid6"> 
+                <wm-gridrow class="bordered-row" name="gridrow3"> 
+                    <wm-gridcolumn columnwidth="2" name="gridcolumn1"> 
+                        <wm-label padding="unset 0.5em" class="code" caption="Default" name="label7"></wm-label> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="10" name="gridcolumn2"> 
+                        <wm-picture name="picture1" picturesource="http://dev.wavemaker.com/examples/salesrep/Jane-Lisa.png"></wm-picture> 
+                    </wm-gridcolumn> 
+                </wm-gridrow> 
+                <wm-gridrow class="bordered-row" name="gridrow3"> 
+                    <wm-gridcolumn columnwidth="2" name="gridcolumn1"> 
+                        <wm-label padding="unset 0.5em" class="code" caption="Shape: &quot;Rounded&quot;" name="label7"></wm-label> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="10" name="gridcolumn2"> 
+                        <wm-picture name="picture1" shape="rounded" picturesource="http://dev.wavemaker.com/examples/salesrep/Jane-Lisa.png"></wm-picture> 
+                    </wm-gridcolumn> 
+                </wm-gridrow> 
+                <wm-gridrow class="bordered-row" name="gridrow3"> 
+                    <wm-gridcolumn columnwidth="2" name="gridcolumn1"> 
+                        <wm-label padding="unset 0.5em" class="code" caption="Shape: &quot;Circle&quot;" name="label7"></wm-label> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="10" name="gridcolumn2"> 
+                        <wm-picture name="picture1" shape="circle" picturesource="http://dev.wavemaker.com/examples/salesrep/Jane-Lisa.png"></wm-picture> 
+                    </wm-gridcolumn> 
+                </wm-gridrow> 
+                <wm-gridrow class="bordered-row" name="gridrow3"> 
+                    <wm-gridcolumn columnwidth="2" name="gridcolumn1"> 
+                        <wm-label padding="unset 0.5em" class="code" caption="Shape: &quot;Thumbnail&quot;" name="label7"></wm-label> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="10" name="gridcolumn2"> 
+                        <wm-picture name="picture1" shape="thumbnail" picturesource="http://dev.wavemaker.com/examples/salesrep/Jane-Lisa.png"></wm-picture> 
+                    </wm-gridcolumn> 
+                </wm-gridrow> 
+            </wm-layoutgrid> 
+            <wm-label padding="unset 0.5em" caption="Icons" class="h2" name="label9"></wm-label> 
+            <wm-layoutgrid name="layoutgrid2"> 
+                <wm-gridrow name="gridrow8" class="bordered-row"> 
+                    <wm-gridcolumn columnwidth="2" name="gridcolumn17"> 
+                        <wm-label padding="unset 0.5em" class="h4" caption="Basic Icon" name="label10"></wm-label> 
+                        <wm-label padding="unset 0.5em" class="code" caption="icon-class: &quot;wi wi-star&quot;" name="label11"></wm-label> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="10" name="gridcolumn18"> 
+                        <wm-icon name="icon1" iconclass="wi wi-star"></wm-icon> 
+                    </wm-gridcolumn> 
+                </wm-gridrow> 
+                <wm-gridrow name="gridrow10" class="bordered-row"> 
+                    <wm-gridcolumn columnwidth="2" name="gridcolumn21"> 
+                        <wm-label padding="unset 0.5em" class="code" caption="icon-class: &quot;fa fa-star&quot;" name="label13"></wm-label> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="10" name="gridcolumn22"> 
+                        <wm-icon iconclass="fa fa-star" name="icon3"></wm-icon> 
+                    </wm-gridcolumn> 
+                </wm-gridrow> 
+            </wm-layoutgrid> 
+            <wm-label padding="unset 0.5em" caption="Icon Sizes" class="h2" name="label17"></wm-label> 
+            <wm-layoutgrid name="layoutgrid4"> 
+                <wm-gridrow class="bordered-row" name="gridrow13"> 
+                    <wm-gridcolumn columnwidth="2" name="gridcolumn27"> 
+                        <wm-label padding="unset 0.5em" class="code" caption="default" name="label19"></wm-label> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="10" name="gridcolumn28"> 
+                        <wm-icon name="icon6"></wm-icon> 
+                    </wm-gridcolumn> 
+                </wm-gridrow> 
+                <wm-gridrow class="bordered-row" name="gridrow14"> 
+                    <wm-gridcolumn columnwidth="2" name="gridcolumn29"> 
+                        <wm-label padding="unset 0.5em" class="code" caption="size: &quot;fa-lg&quot;" name="label22"></wm-label> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="10" name="gridcolumn30"> 
+                        <wm-icon name="icon8" iconclass="wi wi-star-border fa-lg"></wm-icon> 
+                    </wm-gridcolumn> 
+                </wm-gridrow> 
+                <wm-gridrow name="gridrow15" class="bordered-row"> 
+                    <wm-gridcolumn columnwidth="2" name="gridcolumn31"> 
+                        <wm-label padding="unset 0.5em" class="code" caption="size: &quot;fa-2x&quot;" name="label21_1"></wm-label> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="10" name="gridcolumn32"> 
+                        <wm-icon iconclass="wi wi-star-border fa-2x" name="icon5"></wm-icon> 
+                    </wm-gridcolumn> 
+                </wm-gridrow> 
+                <wm-gridrow name="gridrow12" class="bordered-row"> 
+                    <wm-gridcolumn columnwidth="2" name="gridcolumn25"> 
+                        <wm-label padding="unset 0.5em" class="code" caption="size: &quot;fa-3x&quot;" name="label22_1"></wm-label> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="10" name="gridcolumn26"> 
+                        <wm-icon iconclass="wi wi-star-border fa-3x" name="icon6_1"></wm-icon> 
+                    </wm-gridcolumn> 
+                </wm-gridrow> 
+                <wm-gridrow name="gridrow13_1" class="bordered-row"> 
+                    <wm-gridcolumn columnwidth="2" name="gridcolumn27_1"> 
+                        <wm-label padding="unset 0.5em" class="code" caption="size: &quot;fa-4x&quot;" name="label23"></wm-label> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="10" name="gridcolumn28_1"> 
+                        <wm-icon iconclass="wi wi-star-border fa-4x" name="icon7"></wm-icon> 
+                    </wm-gridcolumn> 
+                </wm-gridrow> 
+                <wm-gridrow name="gridrow14_1" class="bordered-row"> 
+                    <wm-gridcolumn columnwidth="2" name="gridcolumn29_1"> 
+                        <wm-label padding="unset 0.5em" class="code" caption="size: &quot;fa-5x&quot;" name="label24"></wm-label> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="10" name="gridcolumn30_1"> 
+                        <wm-icon iconclass="wi wi-star-border fa-5x" name="icon8_1"></wm-icon> 
+                    </wm-gridcolumn> 
+                </wm-gridrow> 
+            </wm-layoutgrid> 
+            <wm-label padding="unset 0.5em" caption="Animated Icons" class="h2" name="label25"></wm-label> 
+            <wm-layoutgrid name="layoutgrid4_1"> 
+                <wm-gridrow class="bordered-row" name="gridrow16"> 
+                    <wm-gridcolumn columnwidth="2" name="gridcolumn33"> 
+                        <wm-label padding="unset 0.5em" class="h4" caption="Icon Animation" name="label26"></wm-label> 
+                        <wm-label padding="unset 0.5em" class="code" caption="animation: &quot;spin&quot;" name="label29"></wm-label> 
+                        <wm-label padding="unset 0.5em" class="code" caption="size: &quot;fa-4x&quot;" name="label31"></wm-label> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="2" name="gridcolumn34" horizontalalign="left"> 
+                        <wm-icon name="icon10" iconclass="fa fa-spinner fa-spin fa-4x"></wm-icon> 
+                        <wm-container name="container2"> 
+                            <wm-label padding="unset 0.5em" class="code" caption="&quot;fa fa-spinner&quot;" name="label27" margin=".88em unset unset unset"></wm-label> 
+                        </wm-container> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="2" name="gridcolumn50" horizontalalign="left"> 
+                        <wm-icon iconclass="fa fa-circle-o-notch fa-4x fa-spin" name="icon23"></wm-icon> 
+                        <wm-container name="container3"> 
+                            <wm-label padding="unset 0.5em" class="code" caption="&quot;fa fa-circle-o-notch&quot;" name="label36" margin=".88em unset unset unset"></wm-label> 
+                        </wm-container> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="2" name="gridcolumn47_1" horizontalalign="left"> 
+                        <wm-icon iconclass="wi wi-refresh fa-4x fa-spin" name="icon21"></wm-icon> 
+                        <wm-container name="container4"> 
+                            <wm-label padding="unset 0.5em" class="code" caption="&quot;wi wi-refresh&quot;" name="label38" margin=".88em unset unset unset"></wm-label> 
+                        </wm-container> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="2" name="gridcolumn49" horizontalalign="left"> 
+                        <wm-icon iconclass="wi wi-settings fa-4x fa-spin" name="icon22"></wm-icon> 
+                        <wm-container name="container5"> 
+                            <wm-label padding="unset 0.5em" class="code" caption="&quot;wi wi-settings&quot;" name="label39" margin=".88em unset unset unset"></wm-label> 
+                        </wm-container> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="2" name="gridcolumn51" horizontalalign="left"> 
+                        <wm-icon iconclass="wi wi-timelapse fa-4x fa-spin" name="icon21_1"></wm-icon> 
+                        <wm-container name="container6"> 
+                            <wm-label padding="unset 0.5em" class="code" caption="&quot;wi wi-timelapse&quot;" name="label40" margin=".88em unset unset unset"></wm-label> 
+                        </wm-container> 
+                    </wm-gridcolumn> 
+                </wm-gridrow> 
+                <wm-gridrow class="bordered-row" name="gridrow17"> 
+                    <wm-gridcolumn columnwidth="2" name="gridcolumn35"> 
+                        <wm-label padding="unset 0.5em" class="code" caption="animation: &quot;pulse&quot;" name="label30"></wm-label> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="10" name="gridcolumn36"> 
+                        <wm-icon iconclass="fa fa-spinner fa-pulse fa-4x" name="icon11"></wm-icon> 
+                    </wm-gridcolumn> 
+                </wm-gridrow> 
+            </wm-layoutgrid> 
+            <wm-label padding="unset 0.5em" caption="Rotated &amp; Flipped" class="h2" name="label33"></wm-label> 
+            <wm-layoutgrid name="layoutgrid5"> 
+                <wm-gridrow class="bordered-row" name="gridrow18"> 
+                    <wm-gridcolumn columnwidth="2" name="gridcolumn37"> 
+                        <wm-label padding="unset 0.5em" class="h4" caption="Rotation" name="label34"></wm-label> 
+                        <wm-label padding="unset 0.5em" class="code" caption="Rotate: &quot;normal&quot;" name="label35"></wm-label> 
+                        <wm-label padding="unset 0.5em" class="code" caption="size: &quot;fa-4x&quot;" name="label46"></wm-label> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="10" name="gridcolumn38"> 
+                        <wm-icon iconclass="wi wi-invert-colors fa-4x" name="icon12"></wm-icon> 
+                    </wm-gridcolumn> 
+                </wm-gridrow> 
+                <wm-gridrow class="bordered-row" name="gridrow19"> 
+                    <wm-gridcolumn columnwidth="2" name="gridcolumn39"> 
+                        <wm-label padding="unset 0.5em" class="code" caption="Rotate: &quot;90&quot;" name="label41"></wm-label> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="10" name="gridcolumn40"> 
+                        <wm-icon iconclass="wi wi-invert-colors fa-rotate-90 fa-4x" name="icon14"></wm-icon> 
+                    </wm-gridcolumn> 
+                </wm-gridrow> 
+                <wm-gridrow name="gridrow20" class="bordered-row"> 
+                    <wm-gridcolumn columnwidth="2" name="gridcolumn41"> 
+                        <wm-label padding="unset 0.5em" class="code" caption="Rotate: &quot;180&quot;" name="label42"></wm-label> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="10" name="gridcolumn42"> 
+                        <wm-icon iconclass="wi wi-invert-colors fa-rotate-180 fa-4x" name="icon15"></wm-icon> 
+                    </wm-gridcolumn> 
+                </wm-gridrow> 
+                <wm-gridrow name="gridrow21" class="bordered-row"> 
+                    <wm-gridcolumn columnwidth="2" name="gridcolumn43"> 
+                        <wm-label padding="unset 0.5em" class="code" caption="Rotate: &quot;270&quot;" name="label43"></wm-label> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="10" name="gridcolumn44"> 
+                        <wm-icon iconclass="wi wi-invert-colors fa-rotate-270 fa-4x" name="icon16"></wm-icon> 
+                    </wm-gridcolumn> 
+                </wm-gridrow> 
+                <wm-gridrow name="gridrow22" class="bordered-row"> 
+                    <wm-gridcolumn columnwidth="2" name="gridcolumn45"> 
+                        <wm-label padding="unset 0.5em" class="code" caption="Fip: &quot;horizontal&quot;" name="label44"></wm-label> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="10" name="gridcolumn46"> 
+                        <wm-icon iconclass="wi wi-invert-colors fa-flip-horizontal fa-4x" name="icon17"></wm-icon> 
+                    </wm-gridcolumn> 
+                </wm-gridrow> 
+                <wm-gridrow name="gridrow23" class="bordered-row"> 
+                    <wm-gridcolumn columnwidth="2" name="gridcolumn47"> 
+                        <wm-label padding="unset 0.5em" class="code" caption="Fip: &quot;vertical&quot;" name="label45"></wm-label> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="10" name="gridcolumn48"> 
+                        <wm-icon iconclass="wi wi-invert-colors fa-flip-vertical fa-4x" name="icon18"></wm-icon> 
+                    </wm-gridcolumn> 
+                </wm-gridrow> 
+            </wm-layoutgrid> 
+            <wm-label padding="unset 0.5em" name="label40_2" class="h2" caption="Marquee"></wm-label> 
+            <wm-layoutgrid name="layoutgrid7"> 
+                <wm-gridrow class="bordered-row" name="gridrow6"> 
+                    <wm-gridcolumn columnwidth="2" name="gridcolumn11"> 
+                        <wm-label padding="unset 0.5em" class="h4" caption="Marquee" name="label8"></wm-label> 
+                        <wm-label padding="unset 0.5em" name="label17" class="code" caption="direction: &quot;right&quot;"></wm-label> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="5" name="gridcolumn12"> 
+                        <wm-marquee name="marquee2" direction="right"> 
+                            <wm-label padding="unset 0.5em" caption="It moves right" name="label15"></wm-label> 
+                        </wm-marquee> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="5" name="gridcolumn57"></wm-gridcolumn> 
+                </wm-gridrow> 
+                <wm-gridrow class="bordered-row" name="gridrow4"> 
+                    <wm-gridcolumn columnwidth="2" name="gridcolumn7"> 
+                        <wm-label padding="unset 0.5em" class="h4" caption="Marquee" name="label8_1"></wm-label> 
+                        <wm-label padding="unset 0.5em" class="code" caption="direction: &quot;left&quot;" name="label18"></wm-label> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="5" name="gridcolumn8" horizontalalign="left"> 
+                        <wm-marquee name="marquee2_1" direction="left"> 
+                            <wm-label padding="unset 0.5em" name="label6_1" caption="It moves left"></wm-label> 
+                        </wm-marquee> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="5" name="gridcolumn58"></wm-gridcolumn> 
+                </wm-gridrow> 
+                <wm-gridrow class="bordered-row" name="gridrow5"> 
+                    <wm-gridcolumn columnwidth="2" name="gridcolumn9"> 
+                        <wm-label padding="unset 0.5em" class="h4" caption="Marquee" name="label9"></wm-label> 
+                        <wm-label padding="unset 0.5em" class="code" caption="direction: &quot;top&quot;" name="label19"></wm-label> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="5" name="gridcolumn10"> 
+                        <wm-marquee name="marquee3" direction="up"> 
+                            <wm-label padding="unset 0.5em" caption="It moves up" name="label13"></wm-label> 
+                        </wm-marquee> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="5" name="gridcolumn59"></wm-gridcolumn> 
+                </wm-gridrow> 
+                <wm-gridrow class="bordered-row" name="gridrow6_1"> 
+                    <wm-gridcolumn columnwidth="2" name="gridcolumn11_1"> 
+                        <wm-label padding="unset 0.5em" class="h4" caption="Marquee" name="label10"></wm-label> 
+                        <wm-label padding="unset 0.5em" class="code" caption="direction: &quot;bottom&quot;" name="label20"></wm-label> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="5" name="gridcolumn12_1"> 
+                        <wm-marquee name="marquee4" direction="down"> 
+                            <wm-label padding="unset 0.5em" caption="It moves down" name="label14"></wm-label> 
+                        </wm-marquee> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="5" name="gridcolumn60"></wm-gridcolumn> 
+                </wm-gridrow> 
+            </wm-layoutgrid> 
+        </wm-page-content> 
+    </wm-content> 
+    <wm-footer content="footer" name="footer1"></wm-footer> 
+</wm-page>

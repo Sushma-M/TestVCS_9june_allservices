@@ -1,0 +1,16 @@
+.project-timeline.app-livelist:before {
+    content: '';
+    position: absolute;
+    left: 25px;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.06);
+    width: 4px;
+    height: 100%;
+    /* margin-left: -2px; */
+}
+.project-timeline ul li:last-child {
+    padding-bottom: 0;
+}
+.project-timeline ul li:last-child .panel {
+    margin-bottom: 0;
+}

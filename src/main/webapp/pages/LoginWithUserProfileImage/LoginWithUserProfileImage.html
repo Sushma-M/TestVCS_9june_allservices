@@ -1,0 +1,37 @@
+<wm-page data-ng-controller="LoginWithUserProfileImagePageController" pagetitle="Login With User Profile Image"> 
+    <wm-content> 
+        <wm-page-content columnwidth="12"> 
+            <wm-layoutgrid name="pageLayoutGrid" height="100%"> 
+                <wm-gridrow name="signinRow" class="signin-bg bg-primary" height="100%"> 
+                    <wm-gridcolumn columnwidth="2" name="gridColumnTwo"></wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="8" name="gridColumnThree" horizontalalign="center" class="col-xs-12" height="100%"> 
+                        <wm-container name="container1" style="top: calc(50% - 20em)" padding="1em"> 
+                            <wm-panel style="max-width:350px " padding="1em" margin="unset auto " autoclose="outsideClick " name="loginPanel " title=" " class="panel-default "> 
+                                <wm-picture name="productLogo " style="border-radius: 50%; display: inline-block !important " picturesource="http://dev.wavemaker.com/examples/salesrep/Amanda-Brown.png " height="7em " margin="1em 1em 0em 1em " class="thumbnail "></wm-picture> 
+                                <wm-label padding="unset 0.5em " name="formHeader " caption="Wavemaker Inc. " textalign="center " class="h2 text-muted" margin=".5em unset 0em unset "></wm-label> 
+                                <wm-label padding="unset 0.5em " caption="Sign in to your account " textalign="center " class="text-muted" name="subHeader " margin="0px unset unset unset "></wm-label> 
+                                <wm-login name="loginForm " on-submit="Actions.loginAction.invoke() "> 
+                                    <wm-text placeholder="Enter username/email" name="usernametext " class="app-login-username " updateon="default " required="true " margin="unset unset 1.5em unset"></wm-text> 
+                                    <wm-text type="password " name="passwordtext " placeholder="Enter password " class="app-login-password " updateon="default " required="true "></wm-text> 
+                                    <wm-checkbox class="app-login-rememberme text-primary " scopedatavalue="user.rememberMe " caption="Remember Me " name="remembermecheck "></wm-checkbox> 
+                                    <wm-button type="submit " caption="Sign in" width="100% " class="app-login-button btn-primary btn-lg " name="loginSubmtButton " margin=".5em unset 0em unset"></wm-button> 
+                                </wm-login> 
+                                <wm-panel-footer name="panel_footer1 "> 
+                                    <wm-container name="socialConnectWrapper"> 
+                                        <wm-label padding="0em 0.5em" caption="Or sign in with" class="vertical-align-middle text-muted" margin="5px unset unset unset" textalign="center" name="label4"></wm-label> 
+                                        <wm-button class="btn-twitter " type="button " caption=" " iconclass="fa fa-twitter " margin="unset unset unset .5em " bordercolor="rgb(44, 167, 228) " backgroundcolor="rgb(44, 167, 228) " color="#ffffff
+                        " padding="4px 7px " name="button5"></wm-button> 
+                                        <wm-button class="btn-facebook " type="button " caption=" " iconclass="fa fa-facebook " margin="unset unset unset .8em " color="#ffffff " backgroundcolor="rgb(56, 92, 165) " bordercolor="rgb(56, 92, 165)
+                        " padding="4px 10px " name="button6"></wm-button> 
+                                        <wm-button class="btn-gplus " type="button " caption=" " iconclass="fa fa-google-plus " margin="unset unset unset .8em " backgroundcolor="rgb(221, 50, 26) " bordercolor="rgb(221, 50, 26) " color="#ffffff " padding="4px 6px " name="button7"></wm-button> 
+                                    </wm-container> 
+                                </wm-panel-footer> 
+                            </wm-panel> 
+                        </wm-container> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="2 " name="gridColumnFour "></wm-gridcolumn> 
+                </wm-gridrow> 
+            </wm-layoutgrid> 
+        </wm-page-content> 
+    </wm-content> 
+</wm-page>

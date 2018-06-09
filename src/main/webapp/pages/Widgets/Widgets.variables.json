@@ -1,0 +1,21 @@
+{
+  "BreadcrumbWidgetsVar" : {
+    "_id" : "wm-BreadcrumbWidgetsVar-wm.Variable-1479460630095",
+    "name" : "BreadcrumbWidgetsVar",
+    "owner" : "Page",
+    "category" : "wm.Variable",
+    "dataBinding" : [ ],
+    "dataSet" : [ {
+      "label" : "Home",
+      "icon" : "glyphicon glyphicon-home",
+      "link" : "#/Main"
+    }, {
+      "label" : "Widgets",
+      "icon" : "wi wi-ellipsis-v",
+      "link" : "#/Widgets"
+    } ],
+    "type" : "string",
+    "isList" : true,
+    "saveInPhonegap" : false
+  }
+}

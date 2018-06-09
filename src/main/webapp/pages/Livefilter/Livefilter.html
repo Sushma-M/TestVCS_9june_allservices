@@ -1,0 +1,113 @@
+<wm-page data-ng-controller="LivefilterPageController" pagetitle="Livefilter" name="page1"> 
+    <wm-header content="header" name="header1"></wm-header> 
+    <wm-top-nav content="topnav" name="top_nav1"></wm-top-nav> 
+    <wm-content name="content1"> 
+        <wm-left-panel columnwidth="2" content="LN_Widgets" name="left_panel1"></wm-left-panel> 
+        <wm-page-content columnwidth="10" name="page_content1"> 
+            <wm-container name="container1" content="breadcrumbpartial"></wm-container> 
+            <wm-tabs name="tabs1"> 
+                <wm-tabpane name="tabpane2" title="Live Filter" paneicon="fa fa-filter"> 
+                    <wm-livefilter title="Filter Employee" dataset="bind:Variables.HrdbEmployeeData.dataSet" captionalign="left" captionposition="top" name="liveFilterTwoColumn" subheading="Filter employee details from the database" pagesize="3"> 
+                        <wm-layoutgrid columns="2" name="layoutgrid3"> 
+                            <wm-gridrow name="gridrow8"> 
+                                <wm-gridcolumn columnwidth="6" name="gridcolumn16"> 
+                                    <wm-filter-field name="empId" field="empId" displayname="Emp Id" widget="number" is-range="false" type="integer" is-primary-key="true" generator="identity" show="true" inputtype="number" key="empId" placeholder="Enter value"></wm-filter-field> 
+                                </wm-gridcolumn> 
+                                <wm-gridcolumn columnwidth="6" name="gridcolumn17_1"> 
+                                    <wm-filter-field name="department" field="department" displayname="Department" widget="autocomplete" lookup-type="Department" lookup-field="name" is-related="true" related-entity-name="Department" is-range="false" type="string" is-primary-key="false" generator="assigned" show="true" key="department" placeholder="Enter value" datafield="key" searchkey="value" displaylabel="value" matchmode="start"></wm-filter-field> 
+                                </wm-gridcolumn> 
+                            </wm-gridrow> 
+                            <wm-gridrow name="gridrow9"> 
+                                <wm-gridcolumn columnwidth="6" name="gridcolumn19_1"> 
+                                    <wm-filter-field name="lastname" field="lastname" displayname="Lastname" widget="text" is-range="false" type="string" is-primary-key="false" generator="assigned" show="true" inputtype="text" key="lastname" placeholder="Enter value" matchmode="start"></wm-filter-field> 
+                                </wm-gridcolumn> 
+                                <wm-gridcolumn columnwidth="6" name="gridcolumn18_1"> 
+                                    <wm-filter-field name="firstname" field="firstname" displayname="Firstname" widget="text" is-range="false" type="string" is-primary-key="false" generator="assigned" show="true" inputtype="text" key="firstname" placeholder="Enter value" matchmode="start"></wm-filter-field> 
+                                </wm-gridcolumn> 
+                            </wm-gridrow> 
+                            <wm-gridrow name="gridrow1"> 
+                                <wm-gridcolumn name="gridcolumn1" columnwidth="6"> 
+                                    <wm-filter-field name="jobTitle" field="jobTitle" related-field="Job Title" widget="autocomplete" is-range="false" show="true" type="string" is-primary-key="false" generator="assigned" matchmode="start" inputtype="text" displayname="Job Title" key="jobTitle" placeholder="Enter value"></wm-filter-field> 
+                                </wm-gridcolumn> 
+                                <wm-gridcolumn name="gridcolumn2" columnwidth="6"> 
+                                    <wm-filter-field name="role" field="role" related-field="Role" widget="autocomplete" is-range="false" show="true" type="string" is-primary-key="false" generator="assigned" matchmode="start" inputtype="text" displayname="Role" key="role" placeholder="Enter value"></wm-filter-field> 
+                                </wm-gridcolumn> 
+                            </wm-gridrow> 
+                        </wm-layoutgrid> 
+                        <wm-filter-action key="filter" display-name="Filter" show="true" class="btn-primary" iconclass="wi wi-filter-list" title="Filter" action="filter()" disabled="false" type="button"></wm-filter-action> 
+                        <wm-filter-action key="clear" display-name="Clear" show="true" class="btn-secondary" iconclass="wi wi-cancel" title="Clear" action="clearFilter()" disabled="false" type="button"></wm-filter-action> 
+                    </wm-livefilter> 
+                    <wm-table title="Employees Details" dataset="bind:Widgets.liveFilterTwoColumn.result" navigation="None" name="twoColumnLFGrid" subheading="List of filtered Employees" iconclass="wi wi-account-box" nodatamessage="No records to display" loadingdatamsg="Please wait..."> 
+                        <wm-table-column binding="picurl" caption="Picurl" type="string" widget-type="image" width="64px" generator="assigned" readonly="true" edit-widget-type="text" show="true"> 
+                            <img data-ng-src="{{row.getProperty('picurl')}}" alt="{{row.getProperty('picurl')}}" width="64px" class="img-thumbnail" data-ng-class=""> 
+                        </wm-table-column> 
+                        <wm-table-column binding="empId" caption="Emp Id" type="integer" primary-key="true" generator="identity" readonly="true" edit-widget-type="number" show="true"></wm-table-column> 
+                        <wm-table-column-group name="group1" caption="Personal details"> 
+                            <wm-table-column binding="firstname" caption="Firstname" type="string" generator="assigned" readonly="true" edit-widget-type="text" show="true"></wm-table-column> 
+                            <wm-table-column binding="lastname" caption="Lastname" type="string" generator="assigned" readonly="true" edit-widget-type="text" show="true"></wm-table-column> 
+                            <wm-table-column binding="birthdate" caption="Birthdate" type="date" generator="assigned" readonly="true" edit-widget-type="date" show="true"></wm-table-column> 
+                        </wm-table-column-group> 
+                        <wm-table-column-group name="group2" caption="Professional details"> 
+                            <wm-table-column binding="jobTitle" caption="Job Title" type="string" generator="assigned" readonly="true" edit-widget-type="text" show="true"></wm-table-column> 
+                            <wm-table-column binding="role" caption="Role" type="string" generator="assigned" readonly="true" edit-widget-type="text" show="true"></wm-table-column> 
+                            <wm-table-column binding="department.name" caption="Department Name" type="string" primary-key="false" generator="assigned" readonly="true" edit-widget-type="text" show="true" related-entity-name="Department"></wm-table-column> 
+                        </wm-table-column-group> 
+                        <wm-table-column-group name="group" caption="Location"> 
+                            <wm-table-column binding="street" caption="Street" type="string" generator="assigned" readonly="true" edit-widget-type="text" show="true"></wm-table-column> 
+                            <wm-table-column binding="city" caption="City" type="string" generator="assigned" readonly="true" edit-widget-type="text" show="true"></wm-table-column> 
+                            <wm-table-column binding="state" caption="State" type="string" generator="assigned" readonly="true" edit-widget-type="text" show="true"></wm-table-column> 
+                            <wm-table-column binding="zip" caption="Zip" type="string" generator="assigned" readonly="true" edit-widget-type="text" show="true"></wm-table-column> 
+                        </wm-table-column-group> 
+                    </wm-table> 
+                </wm-tabpane> 
+                <wm-tabpane name="tabpane1" title="Live Filter Collapsed" paneicon="wi wi-filter"> 
+                    <wm-livefilter title="Filter Employee" dataset="bind:Variables.HrdbEmployeeData.dataSet" captionalign="left" captionposition="top" name="employeeFilter" collapsible="true" expanded="false" subheading="Filter employees details from the database" pagesize="3"> 
+                        <wm-layoutgrid name="layoutgrid4"> 
+                            <wm-gridrow name="gridrow6"> 
+                                <wm-gridcolumn show="show" name="gridcolumn6" columnwidth="12"> 
+                                    <wm-filter-field name="department" field="department" displayname="Department" widget="number" is-range="false" lookup-type="Department" lookup-field="deptId" placeholder="" multiple="multiple" type="integer" step="1" is-primary-key="false" generator="assigned" show="true" pc-display="true" mobile-display="true" is-related="true" related-entity-name="Department"></wm-filter-field> 
+                                </wm-gridcolumn> 
+                            </wm-gridrow> 
+                            <wm-gridrow name="gridrow7"> 
+                                <wm-gridcolumn show="show" name="gridcolumn7" columnwidth="12"> 
+                                    <wm-filter-field name="employeeByManagerId" field="employeeByManagerId" displayname="Employee By Manager Id" widget="number" is-range="false" lookup-type="Employee" lookup-field="empId" placeholder="" multiple="multiple" type="integer" step="1" is-primary-key="false" generator="assigned" show="true" pc-display="true" mobile-display="true" is-related="true" related-entity-name="Employee"></wm-filter-field> 
+                                </wm-gridcolumn> 
+                            </wm-gridrow> 
+                            <wm-gridrow name="gridrow8"> 
+                                <wm-gridcolumn show="show" name="gridcolumn8" columnwidth="12"> 
+                                    <wm-filter-field name="empId" field="empId" displayname="Emp Id" widget="number" is-range="false" placeholder="" multiple="multiple" type="integer" step="1" is-primary-key="true" generator="identity" show="true" pc-display="true" mobile-display="true" is-related="false"></wm-filter-field> 
+                                </wm-gridcolumn> 
+                            </wm-gridrow> 
+                            <wm-gridrow name="gridrow9"> 
+                                <wm-gridcolumn show="show" name="gridcolumn9" columnwidth="12"> 
+                                    <wm-filter-field name="firstname" field="firstname" displayname="Firstname" widget="text" is-range="false" placeholder="" multiple="multiple" type="string" is-primary-key="false" generator="assigned" show="true" pc-display="true" mobile-display="true" is-related="false"></wm-filter-field> 
+                                </wm-gridcolumn> 
+                            </wm-gridrow> 
+                            <wm-gridrow name="gridrow10"> 
+                                <wm-gridcolumn show="show" name="gridcolumn10" columnwidth="12"> 
+                                    <wm-filter-field name="lastname" field="lastname" displayname="Lastname" widget="text" is-range="false" placeholder="" multiple="multiple" type="string" is-primary-key="false" generator="assigned" show="true" pc-display="true" mobile-display="true" is-related="false"></wm-filter-field> 
+                                </wm-gridcolumn> 
+                            </wm-gridrow> 
+                        </wm-layoutgrid> 
+                        <wm-filter-action key="filter" class="btn-primary" iconclass="wi wi-filter-list" action="filter()" display-name="Filter" show="true" type="button" shortcutkey=""></wm-filter-action> 
+                        <wm-filter-action key="clear" class="btn-secondary" iconclass="wi wi-trash" action="clearFilter()" display-name="Clear" show="true" type="button" shortcutkey=""></wm-filter-action> 
+                    </wm-livefilter> 
+                    <wm-table title="Filter Result" dataset="bind:Widgets.employeeFilter.result" navigation="Basic" name="FilterCollapsedResultSet" iconclass="wi wi-account-box" subheading="List of filtered Employees"> 
+                        <wm-table-column binding="empId" caption="Emp Id" type="integer" primary-key="true" generator="identity" readonly="true" edit-widget-type="number" show="true"></wm-table-column> 
+                        <wm-table-column binding="firstname" caption="Firstname" type="string" primary-key="false" generator="assigned" readonly="true" edit-widget-type="text" show="true"></wm-table-column> 
+                        <wm-table-column binding="lastname" caption="Lastname" type="string" primary-key="false" generator="assigned" readonly="true" edit-widget-type="text" show="true"></wm-table-column> 
+                        <wm-table-column binding="street" caption="Street" type="string" primary-key="false" generator="assigned" readonly="true" edit-widget-type="text" show="true"></wm-table-column> 
+                        <wm-table-column binding="city" caption="City" type="string" primary-key="false" generator="assigned" readonly="true" edit-widget-type="text" show="true"></wm-table-column> 
+                        <wm-table-column binding="state" caption="State" type="string" primary-key="false" generator="assigned" readonly="true" edit-widget-type="text" show="true"></wm-table-column> 
+                        <wm-table-column binding="zip" caption="Zip" type="string" primary-key="false" generator="assigned" readonly="true" edit-widget-type="text" show="true"></wm-table-column> 
+                        <wm-table-column binding="birthdate" caption="Birthdate" type="date" primary-key="false" generator="assigned" readonly="true" datepattern="yyyy-MM-dd" formatpattern="toDate" edit-widget-type="date" show="true"></wm-table-column> 
+                        <wm-table-column binding="jobTitle" caption="Job Title" type="string" primary-key="false" generator="assigned" readonly="true" edit-widget-type="text" show="true"></wm-table-column> 
+                        <wm-table-column binding="role" caption="Role" type="string" primary-key="false" generator="assigned" readonly="true" edit-widget-type="text" show="true"></wm-table-column> 
+                        <wm-table-column binding="department.name" caption="Department Name" type="string" primary-key="false" generator="assigned" readonly="true" edit-widget-type="text" show="true" related-entity-name="Department"></wm-table-column> 
+                    </wm-table> 
+                </wm-tabpane> 
+            </wm-tabs> 
+        </wm-page-content> 
+    </wm-content> 
+    <wm-footer content="footer" name="footer1"></wm-footer> 
+</wm-page>

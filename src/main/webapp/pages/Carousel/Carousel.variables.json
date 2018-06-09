@@ -1,0 +1,22 @@
+{
+  "dynamicCarouselPictures" : {
+    "_id" : "wm-dynamicCarouselPictures-wm.Variable-1488965560744",
+    "name" : "dynamicCarouselPictures",
+    "owner" : "Page",
+    "category" : "wm.Variable",
+    "dataBinding" : [ ],
+    "dataSet" : [ {
+      "label" : "Picture 1",
+      "src" : "resources/images/imagelists/evening.jpg"
+    }, {
+      "label" : "Picture 1",
+      "src" : "resources/images/imagelists/city.jpg"
+    }, {
+      "label" : "Picture 1",
+      "src" : "resources/images/imagelists/laptop.jpg"
+    } ],
+    "type" : "string",
+    "isList" : true,
+    "saveInPhonegap" : false
+  }
+}

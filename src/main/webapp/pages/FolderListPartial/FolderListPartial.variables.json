@@ -1,0 +1,31 @@
+{
+  "uploadFolders" : {
+    "_id" : "wm-uploadFolders-wm.Variable-1484656462543",
+    "name" : "uploadFolders",
+    "owner" : "Page",
+    "category" : "wm.Variable",
+    "dataBinding" : [ ],
+    "dataSet" : [ {
+      "label" : "Files",
+      "icon" : "fa fa-folder"
+    }, {
+      "label" : "Pictures",
+      "icon" : "fa fa-folder"
+    }, {
+      "label" : "Web pages",
+      "icon" : "fa fa-folder"
+    }, {
+      "label" : "Illustrations",
+      "icon" : "fa fa-folder"
+    }, {
+      "label" : "Films",
+      "icon" : "fa fa-folder"
+    }, {
+      "label" : "Books",
+      "icon" : "fa fa-folder"
+    } ],
+    "type" : "string",
+    "isList" : true,
+    "saveInPhonegap" : false
+  }
+}

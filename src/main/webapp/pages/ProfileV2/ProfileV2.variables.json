@@ -1,0 +1,17 @@
+{
+  "privateMessageFields" : {
+    "_id" : "wm-privateMessageFields-wm.Variable-1483079672737",
+    "name" : "privateMessageFields",
+    "owner" : "Page",
+    "category" : "wm.Variable",
+    "dataBinding" : [ ],
+    "dataSet" : [ {
+      "label" : "Subject"
+    }, {
+      "label" : "Message"
+    } ],
+    "type" : "string",
+    "isList" : true,
+    "saveInPhonegap" : false
+  }
+}

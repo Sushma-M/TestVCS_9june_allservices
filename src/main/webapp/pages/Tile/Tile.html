@@ -1,0 +1,126 @@
+<wm-page data-ng-controller="TilePageController" pagetitle="Tile" name="page1"> 
+    <wm-header content="header" name="header1"></wm-header> 
+    <wm-top-nav content="topnav" name="top_nav1"></wm-top-nav> 
+    <wm-content name="content1"> 
+        <wm-left-panel columnwidth="2" content="LN_Widgets" name="left_panel1"></wm-left-panel> 
+        <wm-page-content columnwidth="10" name="page_content1"> 
+            <wm-container name="container1" content="breadcrumbpartial"></wm-container> 
+            <wm-layoutgrid name="layoutgrid1" show="true"> 
+                <wm-gridrow name="gridrow13" class="bordered-row"> 
+                    <wm-gridcolumn columnwidth="12" name="gridcolumn26"> 
+                        <wm-tile name="statTile" width="20%" height="200" class="bg-primary"> 
+                            <wm-layoutgrid height="100%" name="layoutgrid3"> 
+                                <wm-gridrow height="100%" name="gridrow14"> 
+                                    <wm-gridcolumn columnwidth="3" horizontalalign="center" padding="2em unset unset unset" name="gridcolumn27"> 
+                                        <wm-icon iconsize="2em" name="tileIcon" iconclass="wi wi-bar-chart"></wm-icon> 
+                                    </wm-gridcolumn> 
+                                    <wm-gridcolumn columnwidth="9" padding="2em unset unset unset" horizontalalign="center" name="gridcolumn28"> 
+                                        <wm-label name="tileTitle" caption="Primary Tile" class="p" fontsize="1.5" fontunit="em"></wm-label> 
+                                        <wm-label name="tileStatLabel" caption="100" fontsize="3" fontunit="em" class="p"></wm-label> 
+                                        <wm-label padding="unset 0.5em" name="label34" caption="class: &quot;bg-primary&quot;" class="code"></wm-label> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                            </wm-layoutgrid> 
+                        </wm-tile> 
+                        <wm-tile width="20%" height="200" class="bg-danger" name="tile2"> 
+                            <wm-layoutgrid height="100%" name="layoutgrid4"> 
+                                <wm-gridrow height="100%" name="gridrow15"> 
+                                    <wm-gridcolumn columnwidth="3" horizontalalign="center" padding="2em unset unset unset" name="gridcolumn29"> 
+                                        <wm-icon iconsize="2em" iconclass="wi wi-bar-chart" name="icon2"></wm-icon> 
+                                    </wm-gridcolumn> 
+                                    <wm-gridcolumn columnwidth="9" padding="2em unset unset unset" horizontalalign="center" name="gridcolumn30"> 
+                                        <wm-label caption="Danger Tile" class="p" fontsize="1.5" fontunit="em" name="label28"></wm-label> 
+                                        <wm-label caption="100" fontsize="3" fontunit="em" class="p" name="label29"></wm-label> 
+                                        <wm-label padding="unset 0.5em" caption="class: &quot;bg-danger&quot;" name="label35" class="code"></wm-label> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                            </wm-layoutgrid> 
+                        </wm-tile> 
+                        <wm-tile width="20%" height="200" class="bg-success" name="tile3"> 
+                            <wm-layoutgrid height="100%" name="layoutgrid5"> 
+                                <wm-gridrow height="100%" name="gridrow16"> 
+                                    <wm-gridcolumn columnwidth="3" horizontalalign="center" padding="2em unset unset unset" name="gridcolumn31"> 
+                                        <wm-icon iconsize="2em" iconclass="wi wi-bar-chart" name="icon3"></wm-icon> 
+                                    </wm-gridcolumn> 
+                                    <wm-gridcolumn columnwidth="9" padding="2em unset unset unset" horizontalalign="center" name="gridcolumn32"> 
+                                        <wm-label caption="Success Tile" class="p" fontsize="1.5" fontunit="em" name="label30_1"></wm-label> 
+                                        <wm-label caption="100" fontsize="3" fontunit="em" class="p" name="label31"></wm-label> 
+                                        <wm-label padding="unset 0.5em" caption="class: &quot;bg-success&quot;" name="label36" class="code"></wm-label> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                            </wm-layoutgrid> 
+                        </wm-tile> 
+                        <wm-tile width="20%" height="200" class="bg-info" name="tile4"> 
+                            <wm-layoutgrid height="100%" name="layoutgrid6"> 
+                                <wm-gridrow height="100%" name="gridrow17"> 
+                                    <wm-gridcolumn columnwidth="3" horizontalalign="center" padding="2em unset unset unset" name="gridcolumn33"> 
+                                        <wm-icon iconsize="2em" iconclass="wi wi-bar-chart" name="icon4"></wm-icon> 
+                                    </wm-gridcolumn> 
+                                    <wm-gridcolumn columnwidth="9" padding="2em unset unset unset" horizontalalign="center" name="gridcolumn34"> 
+                                        <wm-label caption="Info Tile" class="p" fontsize="1.5" fontunit="em" name="label32"></wm-label> 
+                                        <wm-label caption="100" fontsize="3" fontunit="em" class="p" name="label33"></wm-label> 
+                                        <wm-label padding="unset 0.5em" caption="class: &quot;bg-info&quot;" name="label37" class="code"></wm-label> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                            </wm-layoutgrid> 
+                        </wm-tile> 
+                        <wm-tile width="20%" height="200" class="bg-warning" name="tile4"> 
+                            <wm-layoutgrid height="100%" name="layoutgrid6"> 
+                                <wm-gridrow height="100%" name="gridrow17"> 
+                                    <wm-gridcolumn columnwidth="3" horizontalalign="center" padding="2em unset unset unset" name="gridcolumn33"> 
+                                        <wm-icon iconsize="2em" iconclass="wi wi-bar-chart" name="icon4"></wm-icon> 
+                                    </wm-gridcolumn> 
+                                    <wm-gridcolumn columnwidth="9" padding="2em unset unset unset" horizontalalign="center" name="gridcolumn34"> 
+                                        <wm-label caption="Warning Tile" class="p" fontsize="1.5" fontunit="em" name="label32"></wm-label> 
+                                        <wm-label caption="100" fontsize="3" fontunit="em" class="p" name="label33"></wm-label> 
+                                        <wm-label padding="unset 0.5em" caption="class: &quot;bg-warning&quot;" name="label37" class="code"></wm-label> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                            </wm-layoutgrid> 
+                        </wm-tile> 
+                    </wm-gridcolumn> 
+                </wm-gridrow> 
+            </wm-layoutgrid> 
+            <wm-layoutgrid name="layoutgrid1" show="true"> 
+                <wm-gridrow name="gridrow13" class="bordered-row"> 
+                    <wm-gridcolumn columnwidth="12" name="gridcolumn26"> 
+                        <wm-tile name="statTile" width="19%" class="bg-primary" margin="unset 1em unset unset"> 
+                            <wm-layoutgrid height="100%" name="layoutgrid3"> 
+                                <wm-gridrow name="gridrow14"> 
+                                    <wm-gridcolumn columnwidth="12" horizontalalign="center" name="gridcolumn28"> 
+                                        <wm-icon name="tileIcon" iconclass="wi wi-people-outline fa-3x"></wm-icon> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                                <wm-gridrow name="gridrow14_1"> 
+                                    <wm-gridcolumn columnwidth="12" name="gridcolumn25" horizontalalign="center"> 
+                                        <wm-label name="tileTitle" caption="Primary Tile" class="p" fontsize="1.5" fontunit="em" margin="1em unset unset unset"></wm-label> 
+                                        <wm-label caption="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed aliquet mauris vel felis aliquam, eu dictum velit met, consectetur adipiscing elit. Sed aliquet mauris vel felis aliquam, eu dictum velit" fontunit="em" name="label32_1"></wm-label> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                            </wm-layoutgrid> 
+                        </wm-tile> 
+                        <wm-tile width="19%" class="bg-success" margin="unset 1em unset unset" name="tile11"> 
+                            <wm-layoutgrid height="100%" name="layoutgrid13"> 
+                                <wm-gridrow name="gridrow15_1"> 
+                                    <wm-gridcolumn columnwidth="12" horizontalalign="center" name="gridcolumn26_1"> 
+                                        <wm-icon iconclass="wi wi-school fa-3x" name="icon11"></wm-icon> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                                <wm-gridrow name="gridrow16_1"> 
+                                    <wm-gridcolumn columnwidth="12" horizontalalign="center" name="gridcolumn27_1"> 
+                                        <wm-label caption="Success Tile" class="p" fontsize="1.5" fontunit="em" margin="1em unset unset unset" name="label33_1"></wm-label> 
+                                        <wm-label caption="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed aliquet mauris vel felis aliquam, eu dictum velit met, consectetur adipiscing elit. Sed aliquet mauris vel felis aliquam, eu dictum velit" fontunit="em" name="label35_1"></wm-label> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                            </wm-layoutgrid> 
+                        </wm-tile> 
+                    </wm-gridcolumn> 
+                </wm-gridrow> 
+                <wm-gridrow name="gridrow13_1"> 
+                    <wm-gridcolumn columnwidth="12" name="gridcolumn23"></wm-gridcolumn> 
+                </wm-gridrow> 
+            </wm-layoutgrid> 
+        </wm-page-content> 
+    </wm-content> 
+    <wm-footer content="footer" name="footer1"></wm-footer> 
+</wm-page>

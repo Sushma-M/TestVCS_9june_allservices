@@ -14,8 +14,8 @@
                     <wm-gridrow name="loginGridRow"> 
                         <wm-gridcolumn columnwidth="3" name="gridcolumn8" class="col-xs-1 col-md-4"></wm-gridcolumn> 
                         <wm-gridcolumn name="loginContentColumn" columnwidth="6" class="col-xs-10  col-md-4"> 
-                            <wm-container name="container1" class="panel" backgroundcolor="#ffffff" color="#bdbdbd"> 
-                                <wm-label name="label1" caption="User Login" horizontalalign="center" class="p" backgroundcolor="#f7f7f7" margin="0px unset" fontsize="20" padding="1em unset" color="#1e1e1e"></wm-label> 
+                            <wm-container name="container1" class="panel" borderwidth="0px"> 
+                                <wm-label name="label1" caption="User Login" horizontalalign="center" class="h2 text-primary" backgroundcolor="rgba(0, 0, 0, 0.05)" margin="0px unset" padding="1em unset"></wm-label> 
                                 <wm-login name="loginForm" data-ng-controller="loginFormController" on-submit="Actions.loginAction.invoke()" title="" autocomplete="nofill"> 
                                     <wm-layoutgrid name="layoutgrid2"> 
                                         <wm-gridrow name="gridrow2"> 
@@ -40,7 +40,7 @@
                                         </wm-gridrow> 
                                         <wm-gridrow name="gridrow6"> 
                                             <wm-gridcolumn columnwidth="7" name="gridcolumn14" class="col-xs-7"> 
-                                                <wm-checkbox caption="Remember me" name="remembermecheck"></wm-checkbox> 
+                                                <wm-checkbox caption="Remember me" name="remembermecheck" class="text-primary"></wm-checkbox> 
                                             </wm-gridcolumn> 
                                             <wm-gridcolumn columnwidth="5" name="gridcolumn15" padding="1.15em unset 1em unset" horizontalalign="right" class="col-xs-5"> 
                                                 <wm-anchor name="anchor1" caption="Forgot Password?"></wm-anchor> 

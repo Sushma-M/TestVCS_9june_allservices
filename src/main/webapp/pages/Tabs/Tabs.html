@@ -1,0 +1,65 @@
+<wm-page data-ng-controller="TabsPageController" pagetitle="Tabs" name="page1"> 
+    <wm-header content="header" name="header1"></wm-header> 
+    <wm-top-nav content="topnav" name="top_nav1"></wm-top-nav> 
+    <wm-content name="content1"> 
+        <wm-left-panel columnwidth="2" content="LN_Widgets" name="left_panel1"></wm-left-panel> 
+        <wm-page-content columnwidth="10" name="page_content1"> 
+            <wm-container name="container1" content="breadcrumbpartial"></wm-container> 
+            <wm-layoutgrid name="layoutgrid1"> 
+                <wm-gridrow class="bordered-row" name="gridrow9"> 
+                    <wm-gridcolumn columnwidth="2" name="gridcolumn17"> 
+                        <wm-label padding="unset 0.5em" caption="Default Tabs" class="h4" name="label19"></wm-label> 
+                        <wm-label padding="unset 0.5em" class="code" caption="position: &quot;top&quot;" name="label20"></wm-label> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="10" name="gridcolumn18"> 
+                        <wm-tabs name="tabs1" height="300"> 
+                            <wm-tabpane name="tabpane1" paneicon="wi wi-person-outline" title="Employee" content="employee"></wm-tabpane> 
+                            <wm-tabpane name="tabpane2" paneicon="wi wi-card-membership" title="Department" content="pagecontent"></wm-tabpane> 
+                            <wm-tabpane name="tabpane3" paneicon="wi wi-touch-app" title="Disabled Tab" disabled="true"></wm-tabpane> 
+                        </wm-tabs> 
+                    </wm-gridcolumn> 
+                </wm-gridrow> 
+                <wm-gridrow class="bordered-row" name="gridrow18"> 
+                    <wm-gridcolumn columnwidth="2" name="gridcolumn35"> 
+                        <wm-label padding="unset 0.5em" caption="Left Tabs" class="h4" name="label19_1"></wm-label> 
+                        <wm-label padding="unset 0.5em" class="code" caption="position: &quot;left&quot;" name="label20_1"></wm-label> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="10" name="gridcolumn36"> 
+                        <wm-tabs name="tabs2" tabsposition="left" height="400"> 
+                            <wm-tabpane name="tabpane1" paneicon="wi wi-person-outline" title="Employee" content="employee"></wm-tabpane> 
+                            <wm-tabpane name="tabpane2" paneicon="wi wi-card-membership" title="Department" content="pagecontent"></wm-tabpane> 
+                            <wm-tabpane name="tabpane3" paneicon="wi wi-touch-app" title="Disabled Tab" disabled="true"></wm-tabpane> 
+                        </wm-tabs> 
+                    </wm-gridcolumn> 
+                </wm-gridrow> 
+                <wm-gridrow class="bordered-row" name="gridrow18"> 
+                    <wm-gridcolumn columnwidth="2" name="gridcolumn35"> 
+                        <wm-label padding="unset 0.5em" caption="Right Tabs" class="h4" name="label19_1"></wm-label> 
+                        <wm-label padding="unset 0.5em" class="code" caption="position: &quot;right&quot;" name="label20_1"></wm-label> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="10" name="gridcolumn36"> 
+                        <wm-tabs name="tabs2" tabsposition="right" height="400"> 
+                            <wm-tabpane name="tabpane1" paneicon="wi wi-person-outline" title="Employee" content="employee"></wm-tabpane> 
+                            <wm-tabpane name="tabpane2" paneicon="wi wi-card-membership" title="Department" content="pagecontent"></wm-tabpane> 
+                            <wm-tabpane name="tabpane3" paneicon="wi wi-touch-app" title="Disabled Tab" disabled="true"></wm-tabpane> 
+                        </wm-tabs> 
+                    </wm-gridcolumn> 
+                </wm-gridrow> 
+                <wm-gridrow class="bordered-row" name="gridrow19"> 
+                    <wm-gridcolumn columnwidth="2" name="gridcolumn35"> 
+                        <wm-label padding="unset 0.5em" caption="Bottom Tabs" class="h4" name="label19_1"></wm-label> 
+                        <wm-label padding="unset 0.5em" class="code" caption="position: &quot;bottom&quot;" name="label20_1"></wm-label> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="10" name="gridcolumn36"> 
+                        <wm-tabs name="tabs2" tabsposition="bottom" height="400"> 
+                            <wm-tabpane name="tabpane1" paneicon="wi wi-person-outline" title="Employee" content="employee"></wm-tabpane> 
+                            <wm-tabpane name="tabpane2" paneicon="wi wi-card-membership" title="Department" content="pagecontent"></wm-tabpane> 
+                            <wm-tabpane name="tabpane3" paneicon="wi wi-touch-app" title="Disabled Tab" disabled="true"></wm-tabpane> 
+                        </wm-tabs> 
+                    </wm-gridcolumn> 
+                </wm-gridrow> 
+            </wm-layoutgrid> 
+        </wm-page-content> 
+    </wm-content> 
+    <wm-footer content="footer" name="footer1"></wm-footer> 
+</wm-page>

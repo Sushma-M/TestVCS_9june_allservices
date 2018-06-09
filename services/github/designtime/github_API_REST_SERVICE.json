@@ -1,0 +1,177 @@
+{
+  "tags" : [ {
+    "description" : "Rest service swagger documentation",
+    "name" : "RestServiceVirtualController"
+  } ],
+  "basePath" : "",
+  "paths" : {
+    "/github/invoke/vmg/redcarpet/comments" : {
+      "x-WM-TAG" : "RestServiceVirtualController",
+      "x-WM-BASE_PATH" : "/github/invoke/vmg/redcarpet/comments",
+      "get" : {
+        "tags" : [ "RestServiceVirtualController" ],
+        "x-WM-METHOD_NAME" : "invoke",
+        "x-WM-ACCESS_SPECIFIER" : "APP_ONLY",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "page",
+          "format" : "int32",
+          "type" : "integer",
+          "required" : false,
+          "in" : "query"
+        }, {
+          "name" : "per_page",
+          "format" : "int32",
+          "type" : "integer",
+          "required" : false,
+          "in" : "query"
+        } ],
+        "consumes" : [ "text/xml" ],
+        "responses" : {
+          "200" : {
+            "schema" : {
+              "x-WM-IS_LIST" : true,
+              "items" : {
+                "$ref" : "#/definitions/RootResponseROOTEntryItem"
+              },
+              "type" : "array"
+            },
+            "description" : "Success"
+          }
+        },
+        "operationId" : "github_RestServiceVirtualController-invoke"
+      },
+      "x-WM-COMPLETE_PATH" : "${rest.github.scheme}://${rest.github.host}${rest.github.basepath}/vmg/redcarpet/comments",
+      "x-WM-RELATIVE_PATH" : ""
+    }
+  },
+  "host" : "api.github.com",
+  "schemes" : [ "https" ],
+  "swagger" : "2.0",
+  "definitions" : {
+    "RootResponse" : {
+      "x-WM-FULLY_QUALIFIED_NAME" : "github.RootResponse",
+      "x-WM-TAGS" : [ "RestServiceVirtualController" ],
+      "properties" : {
+        "RootResponseROOT" : {
+          "x-WM-IS_LIST" : true,
+          "items" : {
+            "$ref" : "#/definitions/RootResponseROOTEntryItem"
+          },
+          "type" : "array"
+        }
+      },
+      "required" : [ "RootResponseROOT" ]
+    },
+    "RootResponseROOTEntryItem" : {
+      "x-WM-FULLY_QUALIFIED_NAME" : "github.RootResponseROOTEntryItem",
+      "x-WM-TAGS" : [ "RestServiceVirtualController" ],
+      "properties" : {
+        "position" : {
+          "format" : "int32",
+          "type" : "integer"
+        },
+        "id" : {
+          "format" : "int32",
+          "type" : "integer"
+        },
+        "html_url" : {
+          "type" : "string"
+        },
+        "body" : {
+          "type" : "string"
+        },
+        "updated_at" : {
+          "type" : "string"
+        },
+        "commit_id" : {
+          "type" : "string"
+        },
+        "path" : {
+          "type" : "string"
+        },
+        "created_at" : {
+          "type" : "string"
+        },
+        "line" : {
+          "format" : "int32",
+          "type" : "integer"
+        },
+        "user" : {
+          "$ref" : "#/definitions/user"
+        },
+        "url" : {
+          "type" : "string"
+        }
+      },
+      "required" : [ "body", "commit_id", "created_at", "html_url", "id", "line", "path", "position", "updated_at", "url", "user" ]
+    },
+    "user" : {
+      "x-WM-FULLY_QUALIFIED_NAME" : "github.user",
+      "x-WM-TAGS" : [ "RestServiceVirtualController" ],
+      "properties" : {
+        "received_events_url" : {
+          "type" : "string"
+        },
+        "organizations_url" : {
+          "type" : "string"
+        },
+        "avatar_url" : {
+          "type" : "string"
+        },
+        "gravatar_id" : {
+          "type" : "string"
+        },
+        "gists_url" : {
+          "type" : "string"
+        },
+        "starred_url" : {
+          "type" : "string"
+        },
+        "site_admin" : {
+          "type" : "boolean"
+        },
+        "type" : {
+          "type" : "string"
+        },
+        "url" : {
+          "type" : "string"
+        },
+        "id" : {
+          "format" : "int32",
+          "type" : "integer"
+        },
+        "html_url" : {
+          "type" : "string"
+        },
+        "following_url" : {
+          "type" : "string"
+        },
+        "events_url" : {
+          "type" : "string"
+        },
+        "login" : {
+          "type" : "string"
+        },
+        "subscriptions_url" : {
+          "type" : "string"
+        },
+        "repos_url" : {
+          "type" : "string"
+        },
+        "followers_url" : {
+          "type" : "string"
+        }
+      },
+      "required" : [ "avatar_url", "events_url", "followers_url", "following_url", "gists_url", "gravatar_id", "html_url", "id", "login", "organizations_url", "received_events_url", "repos_url", "site_admin", "starred_url", "subscriptions_url", "type", "url" ]
+    }
+  },
+  "info" : {
+    "x-WM-SERVICE_TYPE" : "RestService",
+    "x-WM-API_ID" : "eca1dc7d-7d40-4e31-8b2e-aab4c3e15f15",
+    "x-WM-USE_PROXY_FOR_WEB" : true,
+    "x-WM-SERVICE_ID" : "github2",
+    "x-WM-USE_PROXY_FOR_MOBILE" : true,
+    "version" : "2.0"
+  }
+}

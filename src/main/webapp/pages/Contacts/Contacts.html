@@ -1,0 +1,36 @@
+<wm-page data-ng-controller="ContactsPageController" pagetitle="Contacts" name="page1"> 
+    <wm-header content="header" name="header1"></wm-header> 
+    <wm-top-nav content="topnav" name="top_nav1"></wm-top-nav> 
+    <wm-content name="content1"> 
+        <wm-left-panel columnwidth="2" content="leftnav" name="left_panel1"></wm-left-panel> 
+        <wm-page-content columnwidth="10" name="page_content1"> 
+            <wm-container name="container1" content="breadcrumbpartial"> 
+                <wm-param name="category" value="ui" type="string"></wm-param> 
+            </wm-container> 
+            <wm-list listclass="list-group" template="true" itemsperrow="xs-1 sm-2 md-3 lg-3" class="list-card" dataset="bind:Variables.HrdbEmployeeData.dataSet" navigation="None" name="empContactDetails" itemclass="card-margin" title=""> 
+                <wm-listtemplate layout="media" name="employeeListTemplate"> 
+                    <wm-card name="employeeContactCard" margin="1em"> 
+                        <wm-card-content fontunit="em" name="empCardContent" height="210"> 
+                            <wm-layoutgrid columns="2" name="empListGLayoutGrid"> 
+                                <wm-gridrow name="gridRowOne"> 
+                                    <wm-gridcolumn colwidth="6" columnwidth="4" class="col-xs-4" horizontalalign="center" name="gridColumnOne" padding="1em 1em unset 1em"> 
+                                        <wm-picture width="64" picturesource="bind:Variables.HrdbEmployeeData.dataSet.picurl" shape="circle" name="employeePicture" height="64"></wm-picture> 
+                                        <wm-label caption="bind:Variables.HrdbEmployeeData.dataSet.data[$i].jobTitle" class="h5" name="Designation" fontunit="em"></wm-label> 
+                                    </wm-gridcolumn> 
+                                    <wm-gridcolumn colwidth="6" columnwidth="8" padding="1em 1.25em unset 1.25em" class="col-xs-8" name="gridColumnTwo"> 
+                                        <wm-label caption="bind:Variables.HrdbEmployeeData.dataSet.data[$i].firstname + ' ' + Variables.HrdbEmployeeData.dataSet.data[$i].lastname" fontunit="em" class="h3" margin="0px unset" whitespace="nowrap" name="employeeName"></wm-label> 
+                                        <wm-icon name="officeAddress" iconclass="wi wi-location-pin" caption="Riviera State 32/106"></wm-icon> 
+                                        <wm-label caption="Mobeteq" class="h4" whitespace="nowrap" name="company"></wm-label> 
+                                        <wm-label caption="bind:Variables.HrdbEmployeeData.dataSet.data[$i].street + ', ' + Variables.HrdbEmployeeData.dataSet.data[$i].city + ', ' + Variables.HrdbEmployeeData.dataSet.data[$i].state + ' ' + Variables.HrdbEmployeeData.dataSet.data[$i].zip" margin="unset unset 0px unset" name="houseAddress" height="3em"></wm-label> 
+                                        <wm-anchor name="contactDetails" caption="P:(123)456-7890" hyperlink="tel:1234567890" class="p"></wm-anchor> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                            </wm-layoutgrid> 
+                        </wm-card-content> 
+                    </wm-card> 
+                </wm-listtemplate> 
+            </wm-list> 
+        </wm-page-content> 
+    </wm-content> 
+    <wm-footer content="footer" name="footer1"></wm-footer> 
+</wm-page>

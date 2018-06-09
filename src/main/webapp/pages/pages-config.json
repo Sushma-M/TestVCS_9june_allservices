@@ -1,14 +1,304 @@
 [ {
+  "name" : "Accordion",
+  "type" : "PAGE",
+  "params" : [ ]
+}, {
+  "name" : "AgileBoard",
+  "type" : "PAGE",
+  "params" : [ ]
+}, {
+  "name" : "Article",
+  "type" : "PAGE",
+  "params" : [ ]
+}, {
+  "name" : "Blog",
+  "type" : "PAGE",
+  "params" : [ ]
+}, {
+  "name" : "ButtonsAndAnchor",
+  "type" : "PAGE",
+  "params" : [ ]
+}, {
+  "name" : "Calendar",
+  "type" : "PAGE",
+  "params" : [ ]
+}, {
+  "name" : "Cards",
+  "type" : "PAGE",
+  "params" : [ ]
+}, {
+  "name" : "Carousel",
+  "type" : "PAGE",
+  "params" : [ ]
+}, {
+  "name" : "Charts",
+  "type" : "PAGE",
+  "params" : [ ]
+}, {
+  "name" : "Clients",
+  "type" : "PAGE",
+  "params" : [ ]
+}, {
   "name" : "Common",
   "type" : "PARTIAL",
+  "params" : [ ]
+}, {
+  "name" : "Contacts",
+  "type" : "PAGE",
+  "params" : [ ]
+}, {
+  "name" : "ContactsV2",
+  "type" : "PAGE",
+  "params" : [ ]
+}, {
+  "name" : "CustomToaster",
+  "type" : "PARTIAL",
+  "params" : [ ]
+}, {
+  "name" : "Dashboard",
+  "type" : "PAGE",
+  "params" : [ ]
+}, {
+  "name" : "DashboardV2",
+  "type" : "PAGE",
+  "params" : [ ]
+}, {
+  "name" : "DashboardV3",
+  "type" : "PAGE",
+  "params" : [ ]
+}, {
+  "name" : "DashboardV4",
+  "type" : "PAGE",
+  "params" : [ ]
+}, {
+  "name" : "DashboardV5",
+  "type" : "PAGE",
+  "params" : [ ]
+}, {
+  "name" : "Datatables",
+  "type" : "PAGE",
+  "params" : [ ]
+}, {
+  "name" : "Dialogs",
+  "type" : "PAGE",
+  "params" : [ ]
+}, {
+  "name" : "EmailAttachments",
+  "type" : "PARTIAL",
+  "params" : [ ]
+}, {
+  "name" : "EmailComposition",
+  "type" : "PAGE",
+  "params" : [ ]
+}, {
+  "name" : "EmailInbox",
+  "type" : "PAGE",
+  "params" : [ ]
+}, {
+  "name" : "EmailView",
+  "type" : "PAGE",
+  "params" : [ ]
+}, {
+  "name" : "FAQ",
+  "type" : "PAGE",
+  "params" : [ ]
+}, {
+  "name" : "FileManager",
+  "type" : "PAGE",
+  "params" : [ ]
+}, {
+  "name" : "FolderListPartial",
+  "type" : "PARTIAL",
+  "params" : [ ]
+}, {
+  "name" : "Form",
+  "type" : "PAGE",
+  "params" : [ ]
+}, {
+  "name" : "FormWidget",
+  "type" : "PAGE",
+  "params" : [ ]
+}, {
+  "name" : "Iframe",
+  "type" : "PAGE",
+  "params" : [ ]
+}, {
+  "name" : "Invoice",
+  "type" : "PAGE",
+  "params" : [ ]
+}, {
+  "name" : "IssueTracker",
+  "type" : "PAGE",
+  "params" : [ ]
+}, {
+  "name" : "LN_Widgets",
+  "type" : "LEFTNAV",
+  "params" : [ ]
+}, {
+  "name" : "List",
+  "type" : "PAGE",
+  "params" : [ ]
+}, {
+  "name" : "Livefilter",
+  "type" : "PAGE",
   "params" : [ ]
 }, {
   "name" : "Login",
   "type" : "PAGE",
   "params" : [ ]
 }, {
+  "name" : "LoginAndSignup",
+  "type" : "PAGE",
+  "params" : [ ]
+}, {
+  "name" : "LoginWithUserProfileImage",
+  "type" : "PAGE",
+  "params" : [ ]
+}, {
   "name" : "Main",
   "type" : "PAGE",
+  "params" : [ ]
+}, {
+  "name" : "Media",
+  "type" : "PAGE",
+  "params" : [ ]
+}, {
+  "name" : "Messages",
+  "type" : "PAGE",
+  "params" : [ ]
+}, {
+  "name" : "MessagesPartial",
+  "type" : "PARTIAL",
+  "params" : [ ]
+}, {
+  "name" : "Navigation",
+  "type" : "PAGE",
+  "params" : [ ]
+}, {
+  "name" : "Notifications",
+  "type" : "PAGE",
+  "params" : [ ]
+}, {
+  "name" : "OutlookView",
+  "type" : "PAGE",
+  "params" : [ ]
+}, {
+  "name" : "Panel",
+  "type" : "PAGE",
+  "params" : [ ]
+}, {
+  "name" : "PinBoard",
+  "type" : "PAGE",
+  "params" : [ ]
+}, {
+  "name" : "Profile",
+  "type" : "PAGE",
+  "params" : [ ]
+}, {
+  "name" : "ProfileV2",
+  "type" : "PAGE",
+  "params" : [ ]
+}, {
+  "name" : "ProgressBarsAndSpinner",
+  "type" : "PAGE",
+  "params" : [ ]
+}, {
+  "name" : "ProjectDetail",
+  "type" : "PAGE",
+  "params" : [ ]
+}, {
+  "name" : "Projects",
+  "type" : "PAGE",
+  "params" : [ ]
+}, {
+  "name" : "SignupWithSocialConnect",
+  "type" : "PAGE",
+  "params" : [ ]
+}, {
+  "name" : "Signuppage",
+  "type" : "PARTIAL",
+  "params" : [ ]
+}, {
+  "name" : "SimpleLoginWithSocialConnect",
+  "type" : "PAGE",
+  "params" : [ ]
+}, {
+  "name" : "SocialFeed",
+  "type" : "PAGE",
+  "params" : [ ]
+}, {
+  "name" : "SweetAlert",
+  "type" : "PAGE",
+  "params" : [ ]
+}, {
+  "name" : "Tabs",
+  "type" : "PAGE",
+  "params" : [ ]
+}, {
+  "name" : "TeamsBoard",
+  "type" : "PAGE",
+  "params" : [ ]
+}, {
+  "name" : "Tile",
+  "type" : "PAGE",
+  "params" : [ ]
+}, {
+  "name" : "Timeline",
+  "type" : "PAGE",
+  "params" : [ ]
+}, {
+  "name" : "TimelinePartial",
+  "type" : "PARTIAL",
+  "params" : [ ]
+}, {
+  "name" : "TimelineV3",
+  "type" : "PAGE",
+  "params" : [ ]
+}, {
+  "name" : "Typography",
+  "type" : "PAGE",
+  "params" : [ ]
+}, {
+  "name" : "UserCommentsPartial",
+  "type" : "PARTIAL",
+  "params" : [ ]
+}, {
+  "name" : "VoteList",
+  "type" : "PAGE",
+  "params" : [ ]
+}, {
+  "name" : "Widgets",
+  "type" : "PAGE",
+  "params" : [ ]
+}, {
+  "name" : "Wizard",
+  "type" : "PAGE",
+  "params" : [ ]
+}, {
+  "name" : "breadcrumbpartial",
+  "type" : "PARTIAL",
+  "params" : [ {
+    "name" : "category",
+    "type" : "string"
+  } ]
+}, {
+  "name" : "department",
+  "type" : "PARTIAL",
+  "params" : [ {
+    "name" : "dept_id",
+    "type" : "integer"
+  } ]
+}, {
+  "name" : "emailActionPanel",
+  "type" : "PARTIAL",
+  "params" : [ ]
+}, {
+  "name" : "employee",
+  "type" : "PARTIAL",
+  "params" : [ ]
+}, {
+  "name" : "feedcomments",
+  "type" : "PARTIAL",
   "params" : [ ]
 }, {
   "name" : "footer",
@@ -23,11 +313,31 @@
   "type" : "LEFTNAV",
   "params" : [ ]
 }, {
-  "name" : "rightnav",
-  "type" : "RIGHTNAV",
+  "name" : "mailOutlookView",
+  "type" : "PARTIAL",
+  "params" : [ ]
+}, {
+  "name" : "orderDetails",
+  "type" : "PARTIAL",
+  "params" : [ ]
+}, {
+  "name" : "pagecontent",
+  "type" : "PARTIAL",
+  "params" : [ ]
+}, {
+  "name" : "popoverTemplate",
+  "type" : "POPOVER",
+  "params" : [ ]
+}, {
+  "name" : "projectMeetingScheduleDetails",
+  "type" : "PARTIAL",
+  "params" : [ ]
+}, {
+  "name" : "projectProgressDetails",
+  "type" : "PARTIAL",
   "params" : [ ]
 }, {
   "name" : "topnav",
-  "type" : "TOPNAV",
+  "type" : "PARTIAL",
   "params" : [ ]
 } ]

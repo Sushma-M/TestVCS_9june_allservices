@@ -1,0 +1,48 @@
+<wm-page data-ng-controller="SimpleLoginWithSocialConnectPageController" pagetitle="Simple Login With Social Connect"> 
+    <wm-content> 
+        <wm-page-content columnwidth="12"> 
+            <wm-layoutgrid name="loginGrid" height="100%" class="gradient-styling"> 
+                <wm-gridrow name="loginRow" style="top: calc(50% - 20em);" height="auto"> 
+                    <wm-gridcolumn columnwidth="4" name="loginLeftColumn"></wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="4" name="loginFormColumn" padding="1em" class="col-xs-12"> 
+                        <wm-panel style="max-width:360px; background-color: transparent; border-color: rgba(255, 255, 255, 0.3); border-radius: 10px;" margin="unset auto" autoclose="outsideClick" name="loginPanel" title=""> 
+                            <wm-label padding="unset 0.5em" name="formHeader" caption="LOGIN" textalign="center" class="h1" color="#fff" margin="unset unset 0px unset"></wm-label> 
+                            <wm-login name="loginForm"> 
+                                <wm-text placeholder="Username" name="usernametext" class="app-login-username" updateon="default" required="true" margin="unset unset 2em unset" color="#fff"></wm-text> 
+                                <wm-text type="password" name="passwordtext" placeholder="Password" class="app-login-password" updateon="default" required="true" margin="unset unset 2em unset"></wm-text> 
+                                <wm-button type="submit" caption="LOGIN" width="100%" class="app-login-button btn-primary btn-lg" name="formSubmitButton" margin="unset unset 0em unset"></wm-button> 
+                                <wm-container name="container7" margin="1em unset"> 
+                                    <hr class="col-sm-5 col-xs-4" style="border-color: rgba(255, 255, 255, 0.298039);"> 
+                                    <wm-label name="wmFormSignupConnectLbl" caption="OR" margin="5px 0px unset" padding=".5em" class="col-sm-2 col-xs-4" textalign="center" color="#fff"></wm-label> 
+                                    <hr class="col-sm-5 col-xs-4" style="border-color: rgba(255, 255, 255, 0.298039);"> 
+                                </wm-container> 
+                                <wm-label padding="0px unset" name="socialProfileLabel " caption="Login with social account" class="p " textalign="center " margin="0px unset" color="#fff "></wm-label> 
+                                <wm-layoutgrid name="socialConnectGrid "> 
+                                    <wm-gridrow name="buttonsRow" padding="1.2em unset unset unset"> 
+                                        <wm-gridcolumn columnwidth="4" name="buttonColumnOne" class="col-xs-4" horizontalalign="center"> 
+                                            <wm-button caption=" " type="button " name="facebookButton " iconclass="fa fa-facebook " backgroundcolor="transparent " color="#efefef " class="btn-rounded " style="border-color: rgba(210, 210, 210, 1);
+                                " iconwidth="36 "></wm-button> 
+                                        </wm-gridcolumn> 
+                                        <wm-gridcolumn columnwidth="4" name="buttonColumnThree" class="col-xs-4" horizontalalign="center"> 
+                                            <wm-button caption=" " type="button " iconclass="fa fa-twitter " backgroundcolor="transparent " color="#efefef " name="twitterButton " class="btn-rounded " style="border-color: rgba(210, 210, 210, 1);
+                                " iconwidth="36 "></wm-button> 
+                                        </wm-gridcolumn> 
+                                        <wm-gridcolumn columnwidth="4" name="buttonColumnFour" class="col-xs-4" horizontalalign="center"> 
+                                            <wm-button caption=" " type="button " iconclass="fa fa-google-plus " backgroundcolor="transparent " color="#efefef " name="gmailButton " class="btn-rounded " style="border-color: rgba(210, 210, 210, 1);
+                                " iconwidth="36 "></wm-button> 
+                                        </wm-gridcolumn> 
+                                    </wm-gridrow> 
+                                </wm-layoutgrid> 
+                            </wm-login> 
+                            <wm-container name="signupWrapper" horizontalalign="center" margin="unset unset 2em unset"> 
+                                <wm-label padding="0 0.2em unset 0.5em" name="signupLabel" textalign="center" caption="No account yet?" margin="0px unset" class="vertical-align-middle" color="#fff"></wm-label> 
+                                <wm-anchor style="text-decoration: underline;" margin="unset 0.5em unset 0.2em" name="signupLink" caption="Sign up!" color="#fff"></wm-anchor> 
+                            </wm-container> 
+                        </wm-panel> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="4 " name="loginRightColumn "></wm-gridcolumn> 
+                </wm-gridrow> 
+            </wm-layoutgrid> 
+        </wm-page-content> 
+    </wm-content> 
+</wm-page>

@@ -1,0 +1,46 @@
+<wm-page data-ng-controller="SignupWithSocialConnectPageController" pagetitle="Signup With Social Connect"> 
+    <wm-content> 
+        <wm-page-content columnwidth="12"> 
+            <wm-container name="signupWrapper" width="100%" height="100%" backgroundimage="https://images.unsplash.com/photo-1430609098125-581618d0482f?dpr=1&amp;auto=format&amp;fit=crop&amp;w=1500&amp;h=1000&amp;q=80&amp;cs=tinysrgb&amp;crop=" backgroundrepeat="no-repeat" backgroundsize="100% 100%"> 
+                <wm-layoutgrid name="signupGrid" width="100%" height="100%"> 
+                    <wm-gridrow name="signupRow" height="auto" style="top: calc(50% - 20em)"> 
+                        <wm-gridcolumn columnwidth="4" name="signupLeftColumn" class="col-xs-1"></wm-gridcolumn> 
+                        <wm-gridcolumn columnwidth="4" name="signupColumn" class="col-xs-10" padding="1em unset unset unset"> 
+                            <wm-panel style="max-width:350px; background-color: rgba(255,255,255,0.699)" margin="unset auto" autoclose="outsideClick" name="signupPanel" title=""> 
+                                <wm-label padding="unset 0.5em" name="formHeader" caption="SIGN UP" textalign="center" class="h1" margin="unset unset 0px unset" color="#464343"></wm-label> 
+                                <!--<wm-container name="directLoginWrapper" horizontalalign="center">--> 
+                                <!--    <wm-label padding="unset 0.2em unset 0.5em" name="loginLabel" textalign="center" caption="Have an account?" color="#464343" margin="unset unset 0px unset" class="small vertical-align-middle"></wm-label>--> 
+                                <!--    <wm-anchor margin="unset 0.5em unset 0.2em" name="loginLink" caption="Login" class="small"></wm-anchor>--> 
+                                <!--</wm-container>--> 
+                                <wm-login name="signupForm" class="login-form-padding"> 
+                                    <wm-text placeholder="Full Name" name="usernametext" class="app-login-username" updateon="default" required="true" margin="unset unset 1em unset"></wm-text> 
+                                    <wm-text placeholder="example@wavemaker.com" name="useremailtext" class="app-login-username" updateon="default" required="true" margin="unset unset 1em unset"></wm-text> 
+                                    <wm-text type="password" name="passwordtext" placeholder="Password" class="app-login-password" updateon="default" required="true" margin="unset unset 1em unset"></wm-text> 
+                                    <wm-button type="submit" caption="Sign Up" width="100%" class="app-login-button btn-primary btn-lg" name="signupButton" margin="unset unset 0em unset"></wm-button> 
+                                    <wm-container name="checkboxContainer"> 
+                                        <wm-checkbox class="app-login-rememberme" style="color: #464343;padding-right: .2em;" scopedatavalue="user.rememberMe" caption="I agree to the" name="remembermecheck" margin="unset unset 0px unset"></wm-checkbox> 
+                                        <wm-anchor margin="1em 0.5em 0em 0em" name="termsAndConditions" caption="Terms of service?"></wm-anchor> 
+                                    </wm-container> 
+                                </wm-login> 
+                                <wm-panel-footer name="panel_footer1" style="background-color: transparent; border-color: #f0f0f0"> 
+                                    <wm-label name="socialProfileLabel" caption="Signup with external account" class="p text-center" margin=".5em unset" color="#464343"></wm-label> 
+                                    <wm-layoutgrid name="socialProfileGrid"> 
+                                        <wm-gridrow name="buttonRow" padding="0em 1em .5em 1em"> 
+                                            <wm-gridcolumn columnwidth="6" name="buttonColumnOne" horizontalalign="left" class="col-xs-6"> 
+                                                <wm-button class="bg-info btn-block hide-btn-caption" caption="Facebook" type="button" name="FacebookButton" iconclass="fa fa-facebook" backgroundcolor="#19579d" color="#ffffff"></wm-button> 
+                                            </wm-gridcolumn> 
+                                            <wm-gridcolumn columnwidth="6" name="buttonColumnTwo" horizontalalign="right" class="col-xs-6"> 
+                                                <wm-button class="bg-info btn-block hide-btn-caption" caption="LinkedIn" type="button" name="LinkedInButton" iconclass="fa fa-linkedin" backgroundcolor="#00a0dc" color="#ffffff"></wm-button> 
+                                            </wm-gridcolumn> 
+                                        </wm-gridrow> 
+                                    </wm-layoutgrid> 
+                                </wm-panel-footer> 
+                            </wm-panel> 
+                        </wm-gridcolumn> 
+                        <wm-gridcolumn columnwidth="4" name="signupRigntColumn" class="col-xs-2"></wm-gridcolumn> 
+                    </wm-gridrow> 
+                </wm-layoutgrid> 
+            </wm-container> 
+        </wm-page-content> 
+    </wm-content> 
+</wm-page>

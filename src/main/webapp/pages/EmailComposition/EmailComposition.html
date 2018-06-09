@@ -1,0 +1,59 @@
+<wm-page data-ng-controller="EmailCompositionPageController" pagetitle="Email Composition" name="page1"> 
+    <wm-header content="header" name="header1"></wm-header> 
+    <wm-top-nav content="topnav" name="top_nav1"></wm-top-nav> 
+    <wm-content name="content1"> 
+        <wm-left-panel columnwidth="2" content="leftnav" name="left_panel1"></wm-left-panel> 
+        <wm-page-content columnwidth="10" name="page_content1"> 
+            <wm-container name="container1" content="breadcrumbpartial"> 
+                <wm-param name="category" value="ui" type="string"></wm-param> 
+            </wm-container> 
+            <wm-layoutgrid name="composeEmailLayoutGrid"> 
+                <wm-gridrow name="gridrowOne"> 
+                    <wm-gridcolumn columnwidth="3" name="gridColumnOne" padding="unset 0.5em"> 
+                        <wm-container name="mailActionPanelContainer" content="emailActionPanel" margin="unset unset 2em unset"></wm-container> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="9" name="gridColumnTwo" padding="unset 0.5em"> 
+                        <wm-tile name="mailHeaderTile" class="panel"> 
+                            <wm-layoutgrid height="100%" name="composeMailLayoutGrid"> 
+                                <wm-gridrow height="100%" name="gridRowOne"> 
+                                    <wm-gridcolumn columnwidth="5" horizontalalign="left" name="gridColOne" class="col-xs-5"> 
+                                        <wm-label name="composeMailTitle" caption="Compose Mail" class="h2" fontunit="em" margin="0px unset unset unset"></wm-label> 
+                                    </wm-gridcolumn> 
+                                    <wm-gridcolumn columnwidth="7" name="gridColTwo" horizontalalign="right" class="col-xs-7" padding="0.7em unset unset unset"> 
+                                        <wm-button caption="Discard" type="button" class="btn-sm btn-danger" iconclass="fa fa-close" on-click="Variables.goToPage_EmailInbox.invoke()" name="discardSmButton" hint="Discard email" margin="unset 0.2em"></wm-button> 
+                                        <wm-button caption="Draft" type="submit" class="btn-sm btn-default" iconclass="wi wi-mode-edit" on-click="Variables.goToPage_EmailInbox.invoke()" name="draftSmButton" hint="Move to draft folder" margin="unset 0.2em"></wm-button> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                            </wm-layoutgrid> 
+                        </wm-tile> 
+                        <wm-form errormessage="" captionposition="left" title="" enctype="application/x-www-form-urlencoded" method="get" dataset="bind:Variables.githubcomments.dataSet" captionalign="right" name="composeMailForm"> 
+                            <wm-layoutgrid columns="1" name="layoutgrid2"> 
+                                <wm-gridrow name="gridrow3"> 
+                                    <wm-gridcolumn columnwidth="12" name="gridColThree"> 
+                                        <wm-form-field name="ComposeMailTo" displayname="To:" key="per_page" type="integer" show="true" widget="number" inputtype="number" placeholder="alex.smith@mobeteq.com"></wm-form-field> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                                <wm-gridrow name="gridrow4"> 
+                                    <wm-gridcolumn columnwidth="12" name="gridColFour"> 
+                                        <wm-form-field name="MailSubject" displayname="Subject:" key="per_page" type="integer" show="true" widget="number" inputtype="number" placeholder="Subject:"></wm-form-field> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                                <wm-gridrow name="gridrow1"> 
+                                    <wm-gridcolumn name="gridColFive" columnwidth="12"> 
+                                        <wm-form-field name="newMessage" key="custom" show="true" type="custom" widget="richtext" placeholder="Type message.." class="col-xs-12" defaultvalue="bind:Variables.messageContent.dataSet.dataValue.message + &quot;<p><strong>Eric Lin</strong></p>&quot;"></wm-form-field> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                            </wm-layoutgrid> 
+                            <wm-buttongroup horizontalalign="right" class="form-action col-md-12" name="formButtonGroup"> 
+                                <wm-button caption="Discard" type="button" class="btn-default btn-danger" name="discardButton" iconclass="fa fa-close" on-click="Variables.goToPage_EmailInbox.invoke()" hint="Discard email"></wm-button> 
+                                <wm-button caption="Draft" type="submit" class="btn-default" name="draftButton" iconclass="wi wi-mode-edit" on-click="Variables.goToPage_EmailInbox.invoke()" hint="Move to draft folder"></wm-button> 
+                                <wm-button caption="Send" type="reset" class="btn-primary" name="sendMailButton" iconclass="wi wi-send" on-click="Variables.goToPage_EmailInbox.invoke()" hint="Send"></wm-button> 
+                            </wm-buttongroup> 
+                        </wm-form> 
+                    </wm-gridcolumn> 
+                </wm-gridrow> 
+            </wm-layoutgrid> 
+        </wm-page-content> 
+    </wm-content> 
+    <wm-footer content="footer" name="footer1"></wm-footer> 
+</wm-page>

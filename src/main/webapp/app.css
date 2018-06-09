@@ -1,0 +1,36 @@
+.bordered-row {
+    border-bottom: 1px rgba(0, 0, 0, 0.1) solid;
+    padding: 0.5em;
+}
+.pre-wrap {
+    white-space: pre-wrap;
+    word-break: break-word;
+}
+.dashed-bordered {
+    border: 1px dashed rgba(0, 0, 0, 0.5);
+    padding: 0.5em;
+}
+.code {
+    padding: 2px 4px;
+    margin: .5em .5em 0 0;
+    font-size: 90%;
+    color: #f16600 !important;
+    background-color: #fffaf0;
+    border-radius: 4px;
+    font-family: monospace;
+}
+a.no-decoration:hover,
+a.no-decoration:focus {
+    text-decoration: none;
+}
+.category-card .card-body {
+    background-color: rgba(0, 0, 0, 0.02);
+}
+span.app-progress-label:after {
+    content: '';
+    position: relative;
+    width: 1px;
+    height: 100%;
+    vertical-align: middle;
+    display: inline-block;
+}

@@ -1,0 +1,26 @@
+<wm-partial data-ng-controller="orderDetailsPageController" name="partial1"> 
+    <wm-list template="true" itemsperrow="xs-1 sm-1 md-1 lg-1" class="panel" dataset="bind:Variables.ordersList.dataSet" navigation="None" name="orderDetailsList" itemclass="list-group-item"> 
+        <wm-listtemplate layout="inline" name="listtemplate2"> 
+            <wm-layoutgrid name="layoutgrid7"> 
+                <wm-gridrow name="gridrow9"> 
+                    <wm-gridcolumn columnwidth="12" name="gridcolumn20"> 
+                        <wm-label class="h2" caption="bind:Variables.ordersList.dataSet[$i].data" margin="0px unset" name="orderListData"></wm-label> 
+                    </wm-gridcolumn> 
+                </wm-gridrow> 
+                <wm-gridrow name="gridrow10"> 
+                    <wm-gridcolumn columnwidth="9" name="gridcolumn21"> 
+                        <wm-label caption="bind:Variables.ordersList.dataSet[$i].label" class="small" margin="0px unset" name="orderListLabel"></wm-label> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="3" name="gridcolumn4" horizontalalign="right"> 
+                        <wm-icon name="orderPercentage" iconclass="bind:Variables.ordersList.dataSet[$i].icon + ' text-primary'" caption="bind:Variables.ordersList.dataSet[$i].percentage" iconposition="right"></wm-icon> 
+                    </wm-gridcolumn> 
+                </wm-gridrow> 
+                <wm-gridrow name="gridrow11"> 
+                    <wm-gridcolumn columnwidth="12" name="gridcolumn23"> 
+                        <wm-progress dataset="bind:Variables.ordersList.dataSet[$i].percentage" datavalue="bind:Variables.ordersList.dataSet[$i].progress" type="success" name="orderProgress" margin="unset unset 0px unset" height="6"></wm-progress> 
+                    </wm-gridcolumn> 
+                </wm-gridrow> 
+            </wm-layoutgrid> 
+        </wm-listtemplate> 
+    </wm-list> 
+</wm-partial>

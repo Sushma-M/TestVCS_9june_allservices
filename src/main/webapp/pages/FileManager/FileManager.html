@@ -1,0 +1,54 @@
+<wm-page data-ng-controller="FileManagerPageController" pagetitle="File Manager" name="page1"> 
+    <wm-header content="header" name="header1"></wm-header> 
+    <wm-top-nav content="topnav" name="top_nav1"></wm-top-nav> 
+    <wm-content name="content1"> 
+        <wm-left-panel columnwidth="2" content="leftnav" name="left_panel1"></wm-left-panel> 
+        <wm-page-content columnwidth="10" name="page_content1"> 
+            <wm-container name="container1" content="breadcrumbpartial"> 
+                <wm-param name="category" value="ui" type="string"></wm-param> 
+            </wm-container> 
+            <wm-layoutgrid name="fileManagerLayoutGrid"> 
+                <wm-gridrow name="gridRowOne"> 
+                    <wm-gridcolumn columnwidth="3" name="gridColumnOne" padding="0.5em"> 
+                        <wm-panel iconclass="" autoclose="outsideClick" name="panel1" title="Show"> 
+                            <wm-panel-footer name="panel_footer1"> 
+                                <wm-label padding="unset 0.5em" name="mailGroupLabel" caption="Labels" class="h4"></wm-label> 
+                                <wm-chips name="mailGroupChips" dataset="Family,  Work,  Home,  Children , Holidays , Music,  Photography,  Film" readonly="true"></wm-chips> 
+                            </wm-panel-footer> 
+                            <wm-tabs name="tabs1" transition="slide"> 
+                                <wm-tabpane name="tabpane1" title="All" content="FolderListPartial"></wm-tabpane> 
+                                <wm-tabpane name="tabpane2" title="Documents" content="FolderListPartial"></wm-tabpane> 
+                                <wm-tabpane name="tabpane3" title="Audio" content="FolderListPartial"></wm-tabpane> 
+                            </wm-tabs> 
+                        </wm-panel> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="9" name="gridColumnTwo" padding="0.5em"> 
+                        <wm-list listclass="list-group" template="true" itemsperrow="xs-2 sm-2 md-3 lg-4" class="list-card" dataset="bind:Variables.fileManagerList.dataSet" navigation="None" name="fileAttachmentsLivelist"> 
+                            <wm-listtemplate layout="media" name="listtemplate4"> 
+                                <wm-card name="fileAttachmentCard" class="card-border" iconclass=""> 
+                                    <wm-card-content fontsize="0.8" fontunit="em" name="cardContent" horizontalalign="center"> 
+                                        <wm-icon name="fileTypeIcon" iconsize="12em" iconclass="bind:Variables.fileManagerList.dataSet[$i].icon" show="bind:Variables.fileManagerList.dataSet[$i].icon !== null" opacity="0.2"></wm-icon> 
+                                        <wm-picture name="fileImage" picturesource="bind:Variables.fileManagerList.dataSet[$i].fileImage" width="100%" height="180" show="bind:Variables.fileManagerList.dataSet[$i].fileImage !== &quot;&quot;"></wm-picture> 
+                                    </wm-card-content> 
+                                    <wm-card-footer name="cardFooter"> 
+                                        <wm-anchor margin="unset 0.5em" name="attachedFileLink" caption="bind:Variables.fileManagerList.dataSet[$i].fileName"></wm-anchor> 
+                                        <wm-label padding="unset 0.5em" name="fileUploadDate" caption="bind:&quot;Added: &quot; + Variables.fileManagerList.dataSet[$i].updateDate | toDate: 'yyyy-MM-dd HH:mm'" class="p" whitespace="nowrap"></wm-label> 
+                                    </wm-card-footer> 
+                                </wm-card> 
+                            </wm-listtemplate> 
+                        </wm-list> 
+                        <wm-media-list name="media_list1" dataset="bind:Variables.fileManagerList.dataSet" thumbnailurl="fileImage" mediaurl="fileImage" layout="Multi-row"> 
+                            <wm-media-template name="media_template1"> 
+                                <wm-container class="bg-primary" name="container2"> 
+                                    <wm-anchor margin="unset 0.5em" name="attachedFileLink" caption="bind:Variables.fileManagerList.dataSet[$i].fileName"></wm-anchor> 
+                                    <wm-label padding="unset 0.5em" name="fileUploadDate" caption="bind:&quot;Added: &quot; + Variables.fileManagerList.dataSet[$i].updateDate | toDate: 'yyyy-MM-dd HH:mm'" class="p" whitespace="nowrap"></wm-label> 
+                                </wm-container> 
+                            </wm-media-template> 
+                        </wm-media-list> 
+                    </wm-gridcolumn> 
+                </wm-gridrow> 
+            </wm-layoutgrid> 
+        </wm-page-content> 
+    </wm-content> 
+    <wm-footer content="footer" name="footer1"></wm-footer> 
+</wm-page>

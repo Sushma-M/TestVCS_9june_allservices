@@ -1,0 +1,7 @@
+<wm-partial data-ng-controller="departmentPageController" name="partial1"> 
+    <wm-list listclass="list-inline" template="true" itemsperrow="xs-3 sm-4 md-4 lg-6" datafield="All Fields" dataset="bind:Variables.employeeByDept.dataSet" navigation="None" name="livelist1"> 
+        <wm-listtemplate layout="inline" name="listtemplate1"> 
+            <wm-picture width="32pt" height="32pt" name="Picture" shape="circle" picturesource="bind:Variables.employeeByDept.dataSet.picurl" class="media-object"></wm-picture> 
+        </wm-listtemplate> 
+    </wm-list> 
+</wm-partial>

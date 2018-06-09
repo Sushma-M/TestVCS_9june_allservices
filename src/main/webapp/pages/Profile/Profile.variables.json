@@ -1,0 +1,16 @@
+{
+  "card" : {
+    "_id" : "wm-card-wm.Variable-1481551554567",
+    "name" : "card",
+    "owner" : "Page",
+    "category" : "wm.Variable",
+    "dataBinding" : [ ],
+    "dataSet" : [ {
+      "name" : "name0",
+      "dataValue" : "dataValue0"
+    } ],
+    "type" : "entry",
+    "isList" : true,
+    "saveInPhonegap" : false
+  }
+}

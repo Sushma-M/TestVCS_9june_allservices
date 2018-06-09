@@ -1,0 +1,150 @@
+<wm-page data-ng-controller="ProjectDetailPageController" pagetitle="Project Detail" name="page1"> 
+    <wm-header content="header" name="header1"></wm-header> 
+    <wm-top-nav content="topnav" name="top_nav1"></wm-top-nav> 
+    <wm-content name="content1"> 
+        <wm-left-panel columnwidth="2" content="leftnav" name="left_panel1"></wm-left-panel> 
+        <wm-page-content columnwidth="10" name="page_content1"> 
+            <wm-container name="container1" content="breadcrumbpartial"> 
+                <wm-param name="category" value="ui" type="string"></wm-param> 
+            </wm-container> 
+            <wm-layoutgrid name="projectDetailsLayoutgrid"> 
+                <wm-gridrow name="gridRowOne"> 
+                    <wm-gridcolumn columnwidth="9" name="gridColumnOne" padding="unset 0.5em"> 
+                        <wm-panel iconclass="" name="projectDetailsPanel" title="Contract with Wavemaker" actions="Edit" class="panel-default"> 
+                            <wm-layoutgrid name="projectDescription"> 
+                                <wm-gridrow name="gridRowTwo"> 
+                                    <wm-gridcolumn columnwidth="2" name="gridcolumn5" horizontalalign="left" class="col-xs-4"> 
+                                        <wm-label name="label2" margin="unset 0.5em" caption="Status:" fontweight="bold"></wm-label> 
+                                    </wm-gridcolumn> 
+                                    <wm-gridcolumn columnwidth="10" name="gridcolumn6" class="col-xs-8"> 
+                                        <wm-label padding="0.5em" name="label4" caption="Active" class="label-success small"></wm-label> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                                <wm-gridrow name="gridrow5"> 
+                                    <wm-gridcolumn columnwidth="6" name="gridcolumn11" class="col-xs-12"> 
+                                        <wm-layoutgrid name="projectDetails"> 
+                                            <wm-gridrow name="gridrow1"> 
+                                                <wm-gridcolumn columnwidth="4" name="gridcolumn13" horizontalalign="left" class="col-xs-4"> 
+                                                    <wm-label margin="unset 0.5em" caption="Created by:" fontweight="bold" name="createdLabel"></wm-label> 
+                                                </wm-gridcolumn> 
+                                                <wm-gridcolumn columnwidth="8" name="gridcolumn2" horizontalalign="left" class="col-xs-8"> 
+                                                    <wm-label caption="Eric Lin" name="authorName"></wm-label> 
+                                                </wm-gridcolumn> 
+                                            </wm-gridrow> 
+                                            <wm-gridrow name="gridrow7"> 
+                                                <wm-gridcolumn columnwidth="4" name="gridcolumn3" horizontalalign="left" class="col-xs-4"> 
+                                                    <wm-label margin="unset 0.5em" caption="Messages:" fontweight="bold" name="messageLabel"></wm-label> 
+                                                </wm-gridcolumn> 
+                                                <wm-gridcolumn columnwidth="8" name="gridcolumn4" horizontalalign="left" class="col-xs-8"> 
+                                                    <wm-label caption="162" name="messageCount"></wm-label> 
+                                                </wm-gridcolumn> 
+                                            </wm-gridrow> 
+                                            <wm-gridrow name="gridrow10"> 
+                                                <wm-gridcolumn columnwidth="4" name="gridcolumn21" horizontalalign="left" class="col-xs-4"> 
+                                                    <wm-label margin="unset 0.5em" caption="Client:" fontweight="bold" name="clientLabel"></wm-label> 
+                                                </wm-gridcolumn> 
+                                                <wm-gridcolumn columnwidth="8" name="gridcolumn22" horizontalalign="left" class="col-xs-8"> 
+                                                    <wm-anchor name="anchor5" caption="WaveMaker Inc" hyperlink="http://www.wavemaker.com"></wm-anchor> 
+                                                </wm-gridcolumn> 
+                                            </wm-gridrow> 
+                                            <wm-gridrow name="gridrow11"> 
+                                                <wm-gridcolumn columnwidth="4" name="gridcolumn23" horizontalalign="left" class="col-xs-4"> 
+                                                    <wm-label margin="unset 0.5em" caption="Version:" fontweight="bold" name="versionLabel"></wm-label> 
+                                                </wm-gridcolumn> 
+                                                <wm-gridcolumn columnwidth="8" name="gridcolumn24" class="col-xs-8"> 
+                                                    <wm-label caption="v1.4.2" name="versionName"></wm-label> 
+                                                </wm-gridcolumn> 
+                                            </wm-gridrow> 
+                                        </wm-layoutgrid> 
+                                    </wm-gridcolumn> 
+                                    <wm-gridcolumn columnwidth="6" name="gridcolumn12" class="col-xs-12"> 
+                                        <wm-layoutgrid name="layoutgrid4"> 
+                                            <wm-gridrow name="gridrow8"> 
+                                                <wm-gridcolumn columnwidth="4" name="gridcolumn17" horizontalalign="left" class="col-xs-4"> 
+                                                    <wm-label margin="unset 0.5em" caption="Last Updated:" fontweight="bold" name="lastUpdatedLabel"></wm-label> 
+                                                </wm-gridcolumn> 
+                                                <wm-gridcolumn columnwidth="8" name="gridcolumn18" class="col-xs-8"> 
+                                                    <wm-label caption="bind:currentTime | toDate: 'dd-MMM-yyyy HH:mm:ss'" name="lastUpdatedDetails"></wm-label> 
+                                                </wm-gridcolumn> 
+                                            </wm-gridrow> 
+                                            <wm-gridrow name="gridrow9"> 
+                                                <wm-gridcolumn columnwidth="4" name="gridcolumn19" horizontalalign="left" class="col-xs-4"> 
+                                                    <wm-label margin="unset 0.5em" caption="Created:" fontweight="bold" name="timeOfCreationLabel"></wm-label> 
+                                                </wm-gridcolumn> 
+                                                <wm-gridcolumn columnwidth="8" name="gridcolumn20" class="col-xs-8"> 
+                                                    <wm-label caption="bind:1483337446228 | toDate: 'dd-MMM-yyyy HH:mm:ss'" name="timeOfCreation"></wm-label> 
+                                                </wm-gridcolumn> 
+                                            </wm-gridrow> 
+                                            <wm-gridrow name="gridrow12"> 
+                                                <wm-gridcolumn columnwidth="4" name="gridcolumn25" horizontalalign="left" class="col-xs-4"> 
+                                                    <wm-label margin="unset 0.5em" caption="Participants:" fontweight="bold" name="participantsLabel"></wm-label> 
+                                                </wm-gridcolumn> 
+                                                <wm-gridcolumn columnwidth="8" name="gridcolumn26" class="col-xs-8"> 
+                                                    <wm-list listclass="list-inline" template="true" datafield="All Fields" dataset="bind:Variables.HrdbEmployeeDataContactList.dataSet" navigation="None" name="participantsList" itemsperrow="xs-4 sm-4 md-4 lg-6"> 
+                                                        <wm-listtemplate layout="inline" name="listtemplate1"> 
+                                                            <wm-picture width="32pt" height="32pt" name="clientPicture" shape="circle" picturesource="bind:Variables.HrdbEmployeeDataContactList.dataSet.picurl" class="media-object"></wm-picture> 
+                                                        </wm-listtemplate> 
+                                                    </wm-list> 
+                                                </wm-gridcolumn> 
+                                            </wm-gridrow> 
+                                        </wm-layoutgrid> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                                <wm-gridrow name="gridrow13" padding="4px unset"> 
+                                    <wm-gridcolumn columnwidth="2" name="gridcolumn27"> 
+                                        <wm-label margin="unset 0.5em" caption="Completed:" fontweight="bold" name="progressBarLabel"></wm-label> 
+                                    </wm-gridcolumn> 
+                                    <wm-gridcolumn columnwidth="10" name="gridcolumn28"> 
+                                        <wm-progress name="projectProgressBar" datavalue="60" type="default-striped" height="1.5em"></wm-progress> 
+                                        <wm-label caption="Project completed in 60%. Remaining close the project, sign a contract and invoice." name="projectStatusLabel" class="small"></wm-label> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                                <wm-gridrow name="gridrow14"> 
+                                    <wm-gridcolumn columnwidth="12" name="gridcolumn29"> 
+                                        <wm-tabs name="projectActivityTabs"> 
+                                            <wm-tabpane name="userMessagePane" title="User messages" content="UserCommentsPartial"></wm-tabpane> 
+                                            <wm-tabpane name="userActivityPane" title="Last activity" padding="unset 0px"> 
+                                                <wm-container name="projectProgressList" content="projectProgressDetails"></wm-container> 
+                                            </wm-tabpane> 
+                                        </wm-tabs> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                            </wm-layoutgrid> 
+                        </wm-panel> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="3" name="gridColumnTwo" padding="unset 0.5em"> 
+                        <wm-label name="projectDescriptionLabel" class="h4" caption="Project description"></wm-label> 
+                        <wm-picture name="projectPicture" picturesource="resources/images/logos/logo.png"></wm-picture> 
+                        <wm-label class="p" caption="There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum." name="descriptionLabel"></wm-label> 
+                        <wm-icon name="statusIcon" iconclass="fa fa-circle" class="text-danger"></wm-icon> 
+                        <wm-label caption="High priority" name="priorityLabel" fontweight="bold" margin="unset unset unset 0.5em"></wm-label> 
+                        <wm-label class="h4" caption="Project tag" name="projectTags"></wm-label> 
+                        <wm-chips name="projectTagChip" dataset="bind:Variables.projectTagList.dataSet" datafield="All Fields" readonly="true" datavalue="WaveMaker, Marketing, Passages, Variation" displayimagesrc="image" displayfield="label"></wm-chips> 
+                        <wm-label class="h4" caption="Project Files" name="projectFileLabel"></wm-label> 
+                        <wm-list template="true" itemsperrow="xs-1 sm-1 md-1 lg-1" datafield="All Fields" dataset="bind:Variables.projectFiles.dataSet" navigation="None" name="projectFileList" title="" padding="unset unset 0.5em unset" listclass="media-list"> 
+                            <wm-listtemplate layout="inline" name="listtemplate5"> 
+                                <wm-container class="media-left" name="container3" padding="unset unset unset 0.5em"> 
+                                    <wm-icon name="fileTypeIcon" iconclass="bind:Variables.projectFiles.dataSet[$i].icon"></wm-icon> 
+                                </wm-container> 
+                                <wm-container class="media-body" name="fildeDetailsContainer"> 
+                                    <wm-anchor class="media-heading p" name="fileName" caption="bind:Variables.projectFiles.dataSet[$i].label" fontunit="em"></wm-anchor> 
+                                </wm-container> 
+                            </wm-listtemplate> 
+                        </wm-list> 
+                        <wm-layoutgrid name="fileActionsLayoutGrid"> 
+                            <wm-gridrow name="gridrowOne"> 
+                                <wm-gridcolumn columnwidth="6" name="addFileGridColumn" horizontalalign="right" class="col-xs-6"> 
+                                    <wm-button class="btn-primary btn-sm" type="button" caption="Add files" margin="unset 0.2em" name="addFileButton"></wm-button> 
+                                </wm-gridcolumn> 
+                                <wm-gridcolumn columnwidth="6" name="reportContactGridColumn" horizontalalign="left" class="col-xs-6"> 
+                                    <wm-button class="btn-primary btn-sm" type="button" caption="Report contact" margin="unset 0.2em" name="reportContactButton"></wm-button> 
+                                </wm-gridcolumn> 
+                            </wm-gridrow> 
+                        </wm-layoutgrid> 
+                    </wm-gridcolumn> 
+                </wm-gridrow> 
+            </wm-layoutgrid> 
+        </wm-page-content> 
+    </wm-content> 
+    <wm-footer content="footer" name="footer1"></wm-footer> 
+</wm-page>

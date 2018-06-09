@@ -1,5 +1,5 @@
 {
-  "enforceSecurity" : true,
+  "enforceSecurity" : false,
   "loginConfig" : {
     "type" : "PAGE",
     "pageName" : "Login",
@@ -19,18 +19,12 @@
     "enforceXssSecurity" : false,
     "policyFile" : "wm-xss-policies.xml",
     "xssFilterStrategy" : "NONE",
-    "policyType" : "IMPORT"
+    "policyType" : "MANUAL"
   },
   "csrfConfig" : {
     "enforceCsrfSecurity" : false,
     "headerName" : "X-WM-XSRF-TOKEN"
   },
-  "tokenAuthConfig" : {
-    "enabled" : true,
-    "parameter" : "WM_AUTH_TOKEN",
-    "tokenValiditySeconds" : 1800
-  },
-  "authProviders" : [ "DEMO" ],
   "corsConfig" : {
     "enabled" : false,
     "maxAge" : 1600,
@@ -41,6 +35,12 @@
     } ],
     "allowCredentials" : false
   },
+  "tokenAuthConfig" : {
+    "enabled" : true,
+    "parameter" : "WM_AUTH_TOKEN",
+    "tokenValiditySeconds" : 1800
+  },
+  "authProviders" : [ "DEMO" ],
   "frameOptions" : {
     "enabled" : "true",
     "mode" : "SAMEORIGIN",

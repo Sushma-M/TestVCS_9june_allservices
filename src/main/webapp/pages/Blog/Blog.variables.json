@@ -1,0 +1,16 @@
+{
+  "navigationVariable1" : {
+    "_id" : "wm-navigationVariable1-wm.NavigationVariable-1485258671462",
+    "name" : "navigationVariable1",
+    "owner" : "Page",
+    "category" : "wm.NavigationVariable",
+    "dataBinding" : [ {
+      "target" : "pageName",
+      "value" : "Anchor",
+      "type" : "string"
+    } ],
+    "operation" : "gotoPage",
+    "dataSet" : [ ],
+    "pageTransitions" : "none"
+  }
+}

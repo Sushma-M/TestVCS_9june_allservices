@@ -1,0 +1,55 @@
+{
+  "invoiceAddressData" : {
+    "_id" : "wm-invoiceAddressData-wm.Variable-1488948444692",
+    "name" : "invoiceAddressData",
+    "owner" : "Page",
+    "category" : "wm.Variable",
+    "dataBinding" : [ ],
+    "dataSet" : {
+      "fromAddress" : "<address><strong>Metebu, Inc.</strong><br>50 Software Drive, 600/10<br>London E1 3FR<br><abbr title='Phone'>Tel:</abbr>0208 555 555</address>",
+      "toAddress" : "<address><strong>WM, Inc.</strong><br>Mkt Street, 1080SFO<br>CA 445611<br><abbr title='Phone'>Tel:</abbr> (120) 9000-4321<br/>Acme, Inc</address>"
+    },
+    "type" : "string",
+    "isList" : false,
+    "saveInPhonegap" : false
+  },
+  "invoiceData" : {
+    "_id" : "wm-invoiceData-wm.Variable-1487742006883",
+    "name" : "invoiceData",
+    "owner" : "Page",
+    "category" : "wm.Variable",
+    "dataBinding" : [ ],
+    "dataSet" : [ {
+      "Item list" : "Print and Web Logo Design",
+      "Description" : "Perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam rem aperiam xplicabo.",
+      "Quantity" : "1",
+      "Unit price" : "$26.00",
+      "tax" : "$5.98",
+      "Total price" : "$31.98"
+    }, {
+      "Item list" : "SEO Management",
+      "Description" : "Sit voluptatem accusantium doloremque laudantium inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.",
+      "Quantity" : "1",
+      "Unit price" : "$80.00",
+      "tax" : "$36.80",
+      "Total price" : "$116.8"
+    }, {
+      "Item list" : "Backend Support and Upgrade",
+      "Description" : "Inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.",
+      "Quantity" : "3",
+      "Unit price" : "$420.00",
+      "tax" : "$193.20",
+      "Total price" : "$1453.2"
+    }, {
+      "Item list" : "Brand-new 27' monitor",
+      "Description" : "2,560x1,440-pixel (WQHD) resolution supported!",
+      "Quantity" : "2",
+      "Unit price" : "$270.00",
+      "tax" : "$90.30",
+      "Total price" : "$630.3"
+    } ],
+    "type" : "string",
+    "isList" : true,
+    "saveInPhonegap" : false
+  }
+}

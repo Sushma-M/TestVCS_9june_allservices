@@ -1,0 +1,130 @@
+<wm-page data-ng-controller="DashboardPageController" pagetitle="Dashboard" name="page1"> 
+    <wm-header content="header" name="header1"></wm-header> 
+    <wm-top-nav content="topnav" name="top_nav1"></wm-top-nav> 
+    <wm-content name="content1"> 
+        <wm-left-panel columnwidth="2" content="leftnav" name="left_panel1"></wm-left-panel> 
+        <wm-page-content columnwidth="10" name="page_content1" padding="0px"> 
+            <wm-container name="breadcrumbContainer" content="breadcrumbpartial" margin="unset unset unset 10px"> 
+                <wm-param name="category" value="ui" type="string"></wm-param> 
+            </wm-container> 
+            <wm-panel iconclass="" name="projectInfoPanel" title="" expanded="true" margin="unset unset 0px unset"> 
+                <wm-layoutgrid name="projectLayoutGrid"> 
+                    <wm-gridrow name="projectGridRow"> 
+                        <wm-gridcolumn columnwidth="3" name="messageNotificationColumn" padding="0.5em"> 
+                            <wm-list listclass="list-group" itemclass="list-group-item" template="true" dataset="bind:Variables.messageNotificationList.dataSet" navigation="None" name="messageNotificationPanel" subheading="You have 42 messages and 6 notifications." title="Welcome Wanda" class="panel"> 
+                                <wm-listtemplate layout="media" name="messageListTemplate"> 
+                                    <wm-layoutgrid name="messageLayoutGrid"> 
+                                        <wm-gridrow name="messageGridRow"> 
+                                            <wm-gridcolumn columnwidth="8" name="messageGridColumnTwo" class="col-xs-7"> 
+                                                <wm-label name="count" class="badge inline" caption="bind:Variables.messageNotificationList.dataSet[$i].number"></wm-label> 
+                                                <wm-label name="message" caption="bind:Variables.messageNotificationList.dataSet[$i].message" class="inline vertical-align-bottom"></wm-label> 
+                                            </wm-gridcolumn> 
+                                            <wm-gridcolumn columnwidth="4" name="gridcolumn18"> 
+                                                <wm-label name="messageTime" caption="bind:Variables.messageNotificationList.dataSet[$i].time" margin="0px" class="inline vertical-align-middle"></wm-label> 
+                                            </wm-gridcolumn> 
+                                        </wm-gridrow> 
+                                    </wm-layoutgrid> 
+                                </wm-listtemplate> 
+                            </wm-list> 
+                        </wm-gridcolumn> 
+                        <wm-gridcolumn columnwidth="7" name="salesReportColumn" padding="0.5em"> 
+                            <wm-chart type="Area" title="" iconclass="fa fa-area-chart" name="salesChart" height="200" dataset="bind:Variables.salesMarketingChartData.dataSet" xaxisdatakey="x" yaxisdatakey="y1,y2" showlegend="hide" showxaxis="true" showyaxis="true" offsetleft="25" offsetbottom="25" highlightpoints="false" theme="Retro" interpolation="cardinal"></wm-chart> 
+                            <wm-layoutgrid name="salesLayoutGrid"> 
+                                <wm-gridrow name="revenueReportGridRow" padding="unset .5em unset unset"> 
+                                    <wm-gridcolumn columnwidth="4" name="marketingGridColumn" class="col-xs-4" padding="unset unset unset 2em"> 
+                                        <wm-label name="marketingSalesReport" caption="$ 406,100" class="h4"></wm-label> 
+                                        <wm-label name="marketingSalesLabel" caption="Sales marketing report" class="p small"></wm-label> 
+                                    </wm-gridcolumn> 
+                                    <wm-gridcolumn columnwidth="4" name="annualRevenueGridColumn" class="col-xs-4" padding="unset unset unset 2em"> 
+                                        <wm-label caption="$ 150,401" class="h4" name="annualSalesReport"></wm-label> 
+                                        <wm-label caption="Annual sales revenue" class="p small" name="annualSalesLabel"></wm-label> 
+                                    </wm-gridcolumn> 
+                                    <wm-gridcolumn columnwidth="4" name="halfYearRevenueGridColumn" class="col-xs-4" padding="unset unset unset 2em"> 
+                                        <wm-label caption="$ 16,822" class="h4" name="revenueMarginReport"></wm-label> 
+                                        <wm-label caption="Half-year revenue margin" class="p small" name="revenueMarginLabel"></wm-label> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                            </wm-layoutgrid> 
+                        </wm-gridcolumn> 
+                        <wm-gridcolumn columnwidth="2" name="projectProgressColumn" padding="0.5em"> 
+                            <wm-label padding="unset 0.5em" name="projectTitle" caption="Project Beta progress" class="h4"></wm-label> 
+                            <wm-label padding="unset 0.5em" name="projectDescription" caption="You have two project with not compleated task." class="text-muted"></wm-label> 
+                            <wm-layoutgrid name="chartLayoutGrid"> 
+                                <wm-gridrow name="chartGridRow"> 
+                                    <wm-gridcolumn columnwidth="6" name="chartColumnOne" horizontalalign="center" class="col-xs-12"> 
+                                        <wm-chart type="Donut" title="" iconclass="" height="80" showlegend="hide" showlabels="hide" name="KolterChart" donutratio="0.3" theme="Retro"></wm-chart> 
+                                        <wm-label padding="unset 0.5em" caption="Kolter" color="#676a6c" class="h5" name="kolterLabel"></wm-label> 
+                                    </wm-gridcolumn> 
+                                    <wm-gridcolumn columnwidth="6" name="chartColumnTwo" horizontalalign="center" class="col-xs-12"> 
+                                        <wm-chart type="Donut" title="" iconclass="" height="80" showlegend="hide" showlabels="hide" name="MaxtorChart" donutratio="0.3" theme="Mellow"></wm-chart> 
+                                        <wm-label padding="unset 0.5em" caption="Maxtor" color="#676a6c" class="h5" name="maxtorLabel"></wm-label> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                                <wm-gridrow name="gridrow9"> 
+                                    <wm-gridcolumn columnwidth="12" name="chartFooterMessageGridColumn"> 
+                                        <wm-label padding="unset 0.5em" caption="Lorem Ipsum is simply dummy text of the printing and typesetting industry." class="p small" name="projectFooterLabel"></wm-label> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                            </wm-layoutgrid> 
+                        </wm-gridcolumn> 
+                    </wm-gridrow> 
+                </wm-layoutgrid> 
+            </wm-panel> 
+            <wm-layoutgrid name="projectNewsFeeds"> 
+                <wm-gridrow name="newsFeedGridRow" class="second-row" padding="1.5em 1em unset 1em"> 
+                    <wm-gridcolumn columnwidth="4" name="newsFeedsColumnOne" padding="0.5em 1em"> 
+                        <wm-panel iconclass="" name="newDataPanel" title="New data for the report" collapsible="true" closable="true" actions="bind:Variables.menuactions.dataSet" badgevalue="IN+" badgetype="success" margin="unset unset 2em unset" class="panel-default"> 
+                            <wm-layoutgrid name="dataLayoutGrid"> 
+                                <wm-gridrow name="dataGridRow"> 
+                                    <wm-gridcolumn columnwidth="7" name="dataGridColumnOne" class="col-xs-7"> 
+                                        <wm-label name="reportLabel" class="h4" caption="NYS report new data!"></wm-label> 
+                                    </wm-gridcolumn> 
+                                    <wm-gridcolumn columnwidth="5" name="dataGridColumnTwo" class="col-xs-5"> 
+                                        <wm-chart type="Column" title="" iconclass="wi wi-bar-chart" name="dataReportChart" height="40" showlegend="hide" showyaxis="false" showxaxis="false" offsetleft="0" offsetright="0" offsetbottom="0" offsettop="0" dataset="bind:Variables.salesMarketingChartData.dataSet" xaxisdatakey="x" yaxisdatakey="x,y1" theme="Orient"></wm-chart> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                                <wm-gridrow name="gridrow8"> 
+                                    <wm-gridcolumn columnwidth="7" name="gridcolumn17" class="col-xs-6"> 
+                                        <wm-anchor name="priceLink" caption="Check the stock price!" class="small"></wm-anchor> 
+                                    </wm-gridcolumn> 
+                                    <wm-gridcolumn columnwidth="5" name="gridcolumn18_1" class="col-xs-6"> 
+                                        <wm-label name="price" class="text-right small p" caption="$ 20 054.43 NYS"></wm-label> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                            </wm-layoutgrid> 
+                        </wm-panel> 
+                        <wm-panel iconclass="" name="commentPanel" title="Read below comments" collapsible="true" closable="true" actions="bind:Variables.menuactions.dataSet" content="MessagesPartial" class="panel-default"></wm-panel> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="4" name="newsFeedsColumnTwo" padding="0.5em 1em"> 
+                        <wm-panel iconclass="" name="newsFeedPanel" title="Your daily feeds" badgevalue="10 messages" badgetype="warning" class="panel-default"> 
+                            <wm-list listclass="list-group" itemclass="list-group-item" template="true" class="media-list panel" dataset="bind:Variables.employeeList.dataSet" navigation="On-Demand" name="dailyFeedsLivelist"> 
+                                <wm-listtemplate layout="media" name="dailyFeedsListTemplate"> 
+                                    <wm-container class="media-left media-top" name="containerOne"> 
+                                        <wm-picture name="userPicture" class="media-object" width="32pt" height="32pt" picturesource="bind:Variables.employeeList.dataSet.data[$i].picurl" shape="circle"></wm-picture> 
+                                    </wm-container> 
+                                    <wm-container class="media-body" name="containerTwo"> 
+                                        <wm-label class="p media-heading" caption="bind:Variables.employeeList.dataSet.data[$i].firstname + ' posted message a new blog'" name="Name" margin="0em unset 0.5em unset" fontunit="em"></wm-label> 
+                                        <wm-label caption="bind:Variables.employeeList.dataSet.data[$i].jobTitle" name="Description" class="p text-muted small"></wm-label> 
+                                    </wm-container> 
+                                    <wm-container class="media-right" horizontalalign="right" name="containerThree"> 
+                                        <wm-label name="Date" class="text-muted small" caption="bind:Variables.employeeList.dataSet.data[$i].birthdate | timeFromNow" whitespace="nowrap"></wm-label> 
+                                    </wm-container> 
+                                </wm-listtemplate> 
+                            </wm-list> 
+                        </wm-panel> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="4" name="newsFeedsColumnThree" padding="0.5em 1em"> 
+                        <wm-panel iconclass="" name="meetingPanel" title="Alpha project" collapsible="true" closable="true" actions="bind:Variables.menuactions.dataSet" class="panel-default"> 
+                            <wm-tile name="meetingDetails" padding="1em"> 
+                                <wm-label name="meetingHeader" class="h3" caption="You have meeting today!" margin="0px unset"></wm-label> 
+                                <wm-label name="meetingDescription" caption="Meeting is on 6:00am. Check your schedule to see detail." class="p text-muted small"></wm-label> 
+                            </wm-tile> 
+                            <wm-container name="meetingDetailsContainer" content="TimelinePartial"></wm-container> 
+                        </wm-panel> 
+                    </wm-gridcolumn> 
+                </wm-gridrow> 
+            </wm-layoutgrid> 
+        </wm-page-content> 
+    </wm-content> 
+    <wm-footer content="footer" name="footer1"></wm-footer> 
+</wm-page>

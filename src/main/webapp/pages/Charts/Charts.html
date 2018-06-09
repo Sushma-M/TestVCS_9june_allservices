@@ -1,0 +1,157 @@
+<wm-page data-ng-controller="ChartsPageController" pagetitle="Charts" name="page1"> 
+    <wm-header content="header" name="header1"></wm-header> 
+    <wm-top-nav content="topnav" name="top_nav1"></wm-top-nav> 
+    <wm-content name="content1"> 
+        <wm-left-panel columnwidth="2" content="LN_Widgets" name="left_panel1"></wm-left-panel> 
+        <wm-page-content columnwidth="10" name="page_content1"> 
+            <wm-container name="container1" content="breadcrumbpartial"></wm-container> 
+            <wm-tabs name="tabs1"> 
+                <wm-tabpane name="tabpane3" title="Area Chart"> 
+                    <wm-layoutgrid name="layoutgrid2_1"> 
+                        <wm-gridrow name="gridrow2"> 
+                            <wm-gridcolumn name="gridcolumn2" columnwidth="2" class="col-padding-right"> 
+                                <wm-list listclass="list-group" itemclass="list-group-item" template="true" itemsperrow="xs-1 sm-1 md-1 lg-1" class="media-list" datafield="All Fields" dataset="bind:Variables.chartthemes.dataSet" navigation="None" name="areaChartThemeList" on-click="areaChartThemeListClick($event, $scope)"> 
+                                    <wm-listtemplate layout="inline" name="listtemplate1"> 
+                                        <wm-container class="media-body" name="container11"> 
+                                            <wm-label class="p media-heading" name="Name" caption="bind:Variables.chartthemes.dataSet.title" fontunit="em" padding="unset unset unset 1.25em"></wm-label> 
+                                        </wm-container> 
+                                    </wm-listtemplate> 
+                                </wm-list> 
+                            </wm-gridcolumn> 
+                            <wm-gridcolumn name="gridcolumn3" columnwidth="10"> 
+                                <wm-chart type="Area" title="Area Chart" iconclass="fa fa-area-chart" height="400" dataset="bind:Variables.salesMarketingChartData.dataSet" xaxisdatakey="x" yaxisdatakey="y1,y2" showlegend="hide" showxaxis="true" showyaxis="true" offsetleft="25" offsetbottom="25" highlightpoints="false" name="areaChart" subheading="Information about chart"></wm-chart> 
+                            </wm-gridcolumn> 
+                        </wm-gridrow> 
+                    </wm-layoutgrid> 
+                </wm-tabpane> 
+                <wm-tabpane name="tabpane4" title="Bar Chart"> 
+                    <wm-layoutgrid name="layoutgrid2"> 
+                        <wm-gridrow name="gridrow2_1"> 
+                            <wm-gridcolumn columnwidth="2" class="col-padding-right" name="gridcolumn3_1"> 
+                                <wm-list listclass="list-group" itemclass="list-group-item" template="true" itemsperrow="xs-1 sm-1 md-1 lg-1" class="media-list" datafield="All Fields" dataset="bind:Variables.chartthemes.dataSet" navigation="None" on-click="barChartThemeListClick($event, $scope)" name="barChartThemeList"> 
+                                    <wm-listtemplate layout="inline" name="listtemplate2"> 
+                                        <wm-container class="media-body" name="container10"> 
+                                            <wm-label class="p media-heading" caption="bind:Variables.chartthemes.dataSet.title" fontunit="em" padding="unset unset unset 1.25em" name="label10"></wm-label> 
+                                        </wm-container> 
+                                    </wm-listtemplate> 
+                                </wm-list> 
+                            </wm-gridcolumn> 
+                            <wm-gridcolumn columnwidth="10" name="gridcolumn4"> 
+                                <wm-chart type="Bar" title="Bar Chart" iconclass="wi wi-bar-chart" name="barChart" subheading="Information about chart" height="400" xaxisdatakey="x" yaxisdatakey="y1,y2" dataset="bind:Variables.salesMarketingChartData.dataSet"></wm-chart> 
+                            </wm-gridcolumn> 
+                        </wm-gridrow> 
+                    </wm-layoutgrid> 
+                </wm-tabpane> 
+                <wm-tabpane name="tabpane5" title="Bubble chart"> 
+                    <wm-layoutgrid name="layoutgrid3"> 
+                        <wm-gridrow name="gridrow3"> 
+                            <wm-gridcolumn columnwidth="2" class="col-padding-right" name="gridcolumn5"> 
+                                <wm-list listclass="list-group" itemclass="list-group-item" template="true" itemsperrow="xs-1 sm-1 md-1 lg-1" class="media-list" datafield="All Fields" dataset="bind:Variables.chartthemes.dataSet" navigation="None" on-click="bubbleChartThemeListClick($event, $scope)" name="bubbleChartThemeList"> 
+                                    <wm-listtemplate layout="inline" name="listtemplate3"> 
+                                        <wm-container class="media-body" name="container11_1"> 
+                                            <wm-label class="p media-heading" caption="bind:Variables.chartthemes.dataSet.title" fontunit="em" padding="unset unset unset 1.25em" name="label11"></wm-label> 
+                                        </wm-container> 
+                                    </wm-listtemplate> 
+                                </wm-list> 
+                            </wm-gridcolumn> 
+                            <wm-gridcolumn columnwidth="10" name="gridcolumn6"> 
+                                <wm-chart type="Bubble" title="Bubble Chart" iconclass="wi wi-bubble-chart" name="bubbleChart" subheading="Information about chart" height="400" xaxisdatakey="x" yaxisdatakey="y1" dataset="bind:Variables.salesMarketingChartData.dataSet" bubblesize="y2"></wm-chart> 
+                            </wm-gridcolumn> 
+                        </wm-gridrow> 
+                    </wm-layoutgrid> 
+                </wm-tabpane> 
+                <wm-tabpane name="tabpane6" title="Column chart"> 
+                    <wm-layoutgrid name="layoutgrid4"> 
+                        <wm-gridrow name="gridrow4"> 
+                            <wm-gridcolumn columnwidth="2" class="col-padding-right" name="gridcolumn7"> 
+                                <wm-list listclass="list-group" itemclass="list-group-item" template="true" itemsperrow="xs-1 sm-1 md-1 lg-1" class="media-list" datafield="All Fields" dataset="bind:Variables.chartthemes.dataSet" navigation="None" on-click="columnChartThemeListClick($event, $scope)" name="columnChartThemeList"> 
+                                    <wm-listtemplate layout="inline" name="listtemplate4"> 
+                                        <wm-container class="media-body" name="container12"> 
+                                            <wm-label class="p media-heading" caption="bind:Variables.chartthemes.dataSet.title" fontunit="em" padding="unset unset unset 1.25em" name="label12"></wm-label> 
+                                        </wm-container> 
+                                    </wm-listtemplate> 
+                                </wm-list> 
+                            </wm-gridcolumn> 
+                            <wm-gridcolumn columnwidth="10" name="gridcolumn8"> 
+                                <wm-chart type="Column" title="Column Chart" iconclass="wi wi-bar-chart" name="columnChart" subheading="Information about chart" height="400" xaxisdatakey="x" yaxisdatakey="y1,y2" dataset="bind:Variables.salesMarketingChartData.dataSet"></wm-chart> 
+                            </wm-gridcolumn> 
+                        </wm-gridrow> 
+                    </wm-layoutgrid> 
+                </wm-tabpane> 
+                <wm-tabpane name="tabpane7" title="Cumulative chart"> 
+                    <wm-layoutgrid name="layoutgrid5"> 
+                        <wm-gridrow name="gridrow5"> 
+                            <wm-gridcolumn columnwidth="2" class="col-padding-right" name="gridcolumn9"> 
+                                <wm-list listclass="list-group" itemclass="list-group-item" template="true" itemsperrow="xs-1 sm-1 md-1 lg-1" class="media-list" datafield="All Fields" dataset="bind:Variables.chartthemes.dataSet" navigation="None" on-click="cumulativeChartThemeListClick($event, $scope)" name="cumulativeChartThemeList"> 
+                                    <wm-listtemplate layout="inline" name="listtemplate5"> 
+                                        <wm-container class="media-body" name="container13"> 
+                                            <wm-label class="p media-heading" caption="bind:Variables.chartthemes.dataSet.title" fontunit="em" padding="unset unset unset 1.25em" name="label13"></wm-label> 
+                                        </wm-container> 
+                                    </wm-listtemplate> 
+                                </wm-list> 
+                            </wm-gridcolumn> 
+                            <wm-gridcolumn columnwidth="10" name="gridcolumn10"> 
+                                <wm-chart type="Cumulative Line" title="Cumulative Line Chart" iconclass="wi wi-line-chart" name="cumulativeChart" subheading="Information about chart" height="400" xaxisdatakey="x" yaxisdatakey="y1,y2" dataset="bind:Variables.salesMarketingChartData.dataSet"></wm-chart> 
+                            </wm-gridcolumn> 
+                        </wm-gridrow> 
+                    </wm-layoutgrid> 
+                </wm-tabpane> 
+                <wm-tabpane name="tabpane8" title="Donut Chart"> 
+                    <wm-layoutgrid name="layoutgrid6"> 
+                        <wm-gridrow name="gridrow6"> 
+                            <wm-gridcolumn columnwidth="2" class="col-padding-right" name="gridcolumn11"> 
+                                <wm-list listclass="list-group" itemclass="list-group-item" template="true" itemsperrow="xs-1 sm-1 md-1 lg-1" class="media-list" datafield="All Fields" dataset="bind:Variables.chartthemes.dataSet" navigation="None" on-click="donutChartThemeListClick($event, $scope)" name="donutChartThemeList"> 
+                                    <wm-listtemplate layout="inline" name="listtemplate6"> 
+                                        <wm-container class="media-body" name="container14"> 
+                                            <wm-label class="p media-heading" caption="bind:Variables.chartthemes.dataSet.title" fontunit="em" padding="unset unset unset 1.25em" name="label14"></wm-label> 
+                                        </wm-container> 
+                                    </wm-listtemplate> 
+                                </wm-list> 
+                            </wm-gridcolumn> 
+                            <wm-gridcolumn columnwidth="10" name="gridcolumn12"> 
+                                <wm-chart type="Donut" title="Donut Chart" iconclass="wi wi-donut-large" name="donutChart" subheading="Information about chart" theme="Terrestrial" height="400" xaxisdatakey="x" yaxisdatakey="y2" dataset="bind:Variables.salesMarketingChartData.dataSet"></wm-chart> 
+                            </wm-gridcolumn> 
+                        </wm-gridrow> 
+                    </wm-layoutgrid> 
+                </wm-tabpane> 
+                <wm-tabpane name="tabpane1" title="Line Chart"> 
+                    <wm-layoutgrid name="layoutgrid7"> 
+                        <wm-gridrow name="gridrow7"> 
+                            <wm-gridcolumn columnwidth="2" class="col-padding-right" name="gridcolumn13"> 
+                                <wm-list listclass="list-group" itemclass="list-group-item" template="true" itemsperrow="xs-1 sm-1 md-1 lg-1" class="media-list" datafield="All Fields" dataset="bind:Variables.chartthemes.dataSet" navigation="None" on-click="lineChartThemeListClick($event, $scope)" name="lineChartThemeList"> 
+                                    <wm-listtemplate layout="inline" name="listtemplate7"> 
+                                        <wm-container class="media-body" name="container15"> 
+                                            <wm-label class="p media-heading" caption="bind:Variables.chartthemes.dataSet.title" fontunit="em" padding="unset unset unset 1.25em" name="label15"></wm-label> 
+                                        </wm-container> 
+                                    </wm-listtemplate> 
+                                </wm-list> 
+                            </wm-gridcolumn> 
+                            <wm-gridcolumn columnwidth="10" name="gridcolumn14"> 
+                                <wm-chart type="Line" title="Line Chart" iconclass="wi wi-line-chart" name="lineChart" subheading="Information about chart" height="400" xaxisdatakey="x" yaxisdatakey="y1,y2" dataset="bind:Variables.salesMarketingChartData.dataSet"></wm-chart> 
+                            </wm-gridcolumn> 
+                        </wm-gridrow> 
+                    </wm-layoutgrid> 
+                </wm-tabpane> 
+                <wm-tabpane name="tabpane2" title="Pie Chart"> 
+                    <wm-layoutgrid name="layoutgrid8"> 
+                        <wm-gridrow name="gridrow8"> 
+                            <wm-gridcolumn columnwidth="2" class="col-padding-right" name="gridcolumn15"> 
+                                <wm-list listclass="list-group" itemclass="list-group-item" template="true" itemsperrow="xs-1 sm-1 md-1 lg-1" class="media-list" datafield="All Fields" dataset="bind:Variables.chartthemes.dataSet" navigation="None" on-click="pieChartThemeListClick($event, $scope)" name="pieChartThemeList"> 
+                                    <wm-listtemplate layout="inline" name="listtemplate8"> 
+                                        <wm-container class="media-body" name="container16"> 
+                                            <wm-label class="p media-heading" caption="bind:Variables.chartthemes.dataSet.title" fontunit="em" padding="unset unset unset 1.25em" name="label16"></wm-label> 
+                                        </wm-container> 
+                                    </wm-listtemplate> 
+                                </wm-list> 
+                            </wm-gridcolumn> 
+                            <wm-gridcolumn columnwidth="10" name="gridcolumn16"> 
+                                <wm-chart type="Pie" title="Pie Chart" iconclass="wi wi-pie-chart" name="pieChart" subheading="Information about chart" theme="Terrestrial" height="400" xaxisdatakey="x" yaxisdatakey="y1" dataset="bind:Variables.salesMarketingChartData.dataSet"></wm-chart> 
+                            </wm-gridcolumn> 
+                        </wm-gridrow> 
+                    </wm-layoutgrid> 
+                </wm-tabpane> 
+            </wm-tabs> 
+        </wm-page-content> 
+    </wm-content> 
+    <wm-footer content="footer" name="footer1"></wm-footer> 
+</wm-page>

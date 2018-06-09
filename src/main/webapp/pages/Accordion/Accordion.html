@@ -1,0 +1,43 @@
+<wm-page data-ng-controller="AccordionPageController" pagetitle="Accordion" name="page1"> 
+    <wm-header content="header" name="header1"></wm-header> 
+    <wm-top-nav content="topnav" name="top_nav1"></wm-top-nav> 
+    <wm-content name="content1"> 
+        <wm-left-panel columnwidth="2" content="LN_Widgets" name="left_panel1"></wm-left-panel> 
+        <wm-page-content columnwidth="10" name="page_content1"> 
+            <wm-container name="breadcrumbContainer" content="breadcrumbpartial"></wm-container> 
+            <wm-accordion name="accordion1"> 
+                <wm-accordionpane name="accordionpane1" title="Primary Accordion Pane" subheading="class: &quot;panel-primary&quot;" iconclass="wi wi-account-circle" class="panel-primary" on-expand="accordionpane1Expand($event, $scope)"> 
+                    <wm-liveform novalidate="false" errormessage="" title="User Info" iconclass="wi wi-edit" defaultmode="Edit" dataset="bind:Variables.HrdbUserData.dataSet" captionalign="left" captionposition="top" name="liveform1"> 
+                        <wm-layoutgrid columns="2" name="layoutgrid2"> 
+                            <wm-gridrow name="gridrow2"> 
+                                <wm-gridcolumn columnwidth="6" name="gridcolumn3"> 
+                                    <wm-form-field name="username" displayname="Username" required="false" show="true" generator="assigned" primary-key="false" key="username" type="string" is-related="false" maxchars="20" pc-display="true" mobile-display="true" widget="text"></wm-form-field> 
+                                </wm-gridcolumn> 
+                                <wm-gridcolumn columnwidth="6" name="gridcolumn4"> 
+                                    <wm-form-field name="password" displayname="Password" required="false" show="true" generator="assigned" primary-key="false" key="password" type="string" is-related="false" maxchars="20" pc-display="true" mobile-display="true" widget="text"></wm-form-field> 
+                                </wm-gridcolumn> 
+                            </wm-gridrow> 
+                            <wm-gridrow name="gridrow3"> 
+                                <wm-gridcolumn columnwidth="6" name="gridcolumn5"> 
+                                    <wm-form-field name="role" displayname="Role" required="false" show="true" generator="assigned" primary-key="false" key="role" type="string" is-related="false" maxchars="20" pc-display="true" mobile-display="true" widget="text"></wm-form-field> 
+                                </wm-gridcolumn> 
+                                <wm-gridcolumn columnwidth="6" name="gridcolumn6"> 
+                                    <wm-form-field name="tenantId" displayname="Tenant Id" required="false" show="true" generator="assigned" primary-key="false" key="tenantId" type="integer" is-related="false" step="0" pc-display="true" mobile-display="true" widget="number"></wm-form-field> 
+                                </wm-gridcolumn> 
+                            </wm-gridrow> 
+                        </wm-layoutgrid> 
+                        <wm-form-field name="userId" displayname="User Id" required="true" show="false" generator="identity" primary-key="true" key="userId" type="integer" is-related="false" step="0" pc-display="true" mobile-display="true" widget="number"></wm-form-field> 
+                        <wm-form-action key="reset" class="form-reset btn-secondary" iconclass="wi wi-refresh" action="reset()" display-name="Reset" show="true" type="button" update-mode="true"></wm-form-action> 
+                        <wm-form-action key="save" class="form-save btn-success" iconclass="wi wi-save" display-name="Save" show="true" type="submit" update-mode="true"></wm-form-action> 
+                    </wm-liveform> 
+                </wm-accordionpane> 
+                <wm-accordionpane name="accordionpane2" class="panel-info" iconclass="wi wi-account-box" subheading="class: &quot;panel-info&quot;" title="Info Accordion Pane" content="pagecontent"></wm-accordionpane> 
+                <wm-accordionpane name="accordionpane3" class="panel-success" iconclass="wi wi-star" subheading="class: &quot;panel-success&quot;" title="Success Accordion Pane" content="employee"></wm-accordionpane> 
+                <wm-accordionpane name="accordionpane4" class="panel-danger" title="Danger Accordion Pane" subheading="class: &quot;panel-danger&quot;" iconclass="wi wi-bell" content="pagecontent"></wm-accordionpane> 
+                <wm-accordionpane name="accordionpane5" class="panel-warning" subheading="class: &quot;panel-warning&quot;" title="Warning Accordion Pane" iconclass="wi wi-warning" content="pagecontent"></wm-accordionpane> 
+                <wm-accordionpane name="accordionpane6" class="panel-default" title="Default Accordion Pane" subheading="class: &quot;panel-default&quot;" iconclass="wi wi-build" content="pagecontent"></wm-accordionpane> 
+            </wm-accordion> 
+        </wm-page-content> 
+    </wm-content> 
+    <wm-footer content="footer" name="footer1"></wm-footer> 
+</wm-page>

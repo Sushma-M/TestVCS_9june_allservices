@@ -1,0 +1,376 @@
+<wm-page data-ng-controller="FormWidgetPageController" pagetitle="Form Widget" name="page1"> 
+    <wm-header content="header" name="header1"></wm-header> 
+    <wm-top-nav content="topnav" name="top_nav1"></wm-top-nav> 
+    <wm-content name="content1"> 
+        <wm-left-panel columnwidth="2" content="LN_Widgets" name="left_panel1"></wm-left-panel> 
+        <wm-page-content columnwidth="10" name="page_content1"> 
+            <wm-container name="container14_1" content="breadcrumbpartial"></wm-container> 
+            <wm-layoutgrid name="layoutgrid1"> 
+                <wm-gridrow name="gridrow23_1" class="bordered-row"> 
+                    <wm-gridcolumn columnwidth="2" name="gridcolumn91" padding="unset unset unset 1.5em"> 
+                        <wm-label caption="Label" class="h4" name="label24_2"></wm-label> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="4" name="gridcolumn92_1" padding="1em" class="col-xs-6"> 
+                        <wm-label padding="unset unset unset 5px" caption="Label as help text" required="false" class="form-control-static p" name="label74_1"></wm-label> 
+                        <wm-label padding="unset 0.5em" caption="class: &quot;form-control-static&quot;" name="label75_1" class="code"></wm-label> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="1" name="gridcolumn93_1"></wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="4" name="gridcolumn94_1" padding="1em" class="col-xs-6"> 
+                        <wm-label padding="unset unset unset 5px" caption="Label when used with Input" required="false" class="control-label p" name="label76"></wm-label> 
+                        <wm-label padding="unset 0.5em" caption="class: &quot;control-label&quot;" name="label77_1" class="code"></wm-label> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="1" name="gridcolumn95"></wm-gridcolumn> 
+                </wm-gridrow> 
+                <wm-gridrow name="gridrow29" class="bordered-row"> 
+                    <wm-gridcolumn columnwidth="2" name="gridcolumn77" padding="unset unset unset 1.5em"> 
+                        <wm-label caption="Text" class="h4" name="label29"></wm-label> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="4" name="gridcolumn78" class="col-xs-6" padding="unset 1em 1em 1em"> 
+                        <wm-text name="text2" readonly="false" disabled="false"></wm-text> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="1" name="gridcolumn64_1"></wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="4" name="gridcolumn80" padding="unset 1em 1em 1em" class="col-xs-6"> 
+                        <wm-text name="text2_1" datavalue="example@gmail.com" readonly="false" show="true" autocomplete="true"></wm-text> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="1" name="gridcolumn77_1"></wm-gridcolumn> 
+                </wm-gridrow> 
+                <wm-gridrow name="gridrow29" class="bordered-row"> 
+                    <wm-gridcolumn columnwidth="2" name="gridcolumn77" padding="unset unset unset 1.5em"></wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="4" name="gridcolumn78" class="col-xs-6" padding="unset 1em 1em 1em"> 
+                        <wm-text name="text2" readonly="true" disabled="false"></wm-text> 
+                        <wm-label padding="unset 0.5em" caption="Read-only" class="code" name="label38"></wm-label> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="1" name="gridcolumn64_1"></wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="4" name="gridcolumn80" padding="unset 1em 1em 1em" class="col-xs-6"> 
+                        <wm-text name="text2_1" readonly="false" show="true" autocomplete="true" disabled="true"></wm-text> 
+                        <wm-label padding="unset 0.5em" caption="Disabled" class="code" name="label39"></wm-label> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="1" name="gridcolumn77_1"></wm-gridcolumn> 
+                </wm-gridrow> 
+                <wm-gridrow name="gridrow27" class="bordered-row"> 
+                    <wm-gridcolumn columnwidth="2" name="gridcolumn108_1" padding="1em unset 1em 1.5em"> 
+                        <wm-label padding="unset 0.5em" caption="class: &quot;input-lg&quot;" class="code" name="label33"></wm-label> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="4" name="gridcolumn109_1" padding="unset 1em 1em 1em" class="col-xs-6"> 
+                        <wm-text name="text3" class="input-lg"></wm-text> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="1" name="gridcolumn110_1"></wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="4" name="gridcolumn111" class="col-xs-6" padding="unset 1em 1em 1em"> 
+                        <wm-text datavalue="example@gmail.com" name="text5" class="input-lg" disabled="false"></wm-text> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="1" name="gridcolumn112"></wm-gridcolumn> 
+                </wm-gridrow> 
+                <wm-gridrow name="gridrow28_1" class="bordered-row"> 
+                    <wm-gridcolumn columnwidth="2" name="gridcolumn113" padding="1em unset 1em 1.5em"> 
+                        <wm-label padding="unset 0.5em" caption="class: &quot;input-sm&quot;" class="code" name="label34"></wm-label> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="4" name="gridcolumn114" padding="1em" class="col-xs-6"> 
+                        <wm-text class="input-sm" name="text4"></wm-text> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="1" name="gridcolumn115"></wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="4" name="gridcolumn116" class="col-xs-6" padding="1em"> 
+                        <wm-text class="input-sm" name="text6"></wm-text> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="1" name="gridcolumn117"></wm-gridcolumn> 
+                </wm-gridrow> 
+                <wm-gridrow name="gridrow32" class="bordered-row"> 
+                    <wm-gridcolumn columnwidth="2" name="gridcolumn89" padding="unset unset unset 1.5em"> 
+                        <wm-label caption="Select" class="h4" name="label24"></wm-label> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="4" name="gridcolumn90" class="col-xs-6" padding="unset 1em 1em 1em"> 
+                        <wm-select name="select1" datafield="name" dataset="bind:Variables.listOfNations.dataSet" displayfield="name"></wm-select> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="1" name="gridcolumn65_1"></wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="4" name="gridcolumn92" padding="unset 1em 1em 1em" class="col-xs-6"> 
+                        <wm-select dataset="bind:Variables.listOfNations.dataSet" datafield="name" name="select3" displayfield="name" datavalue="India"></wm-select> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="1" name="gridcolumn78_1"></wm-gridcolumn> 
+                </wm-gridrow> 
+                <wm-gridrow name="gridrow24" class="bordered-row"> 
+                    <wm-gridcolumn columnwidth="2" name="gridcolumn57" padding="unset unset unset 1.5em"> 
+                        <wm-label caption="Date" class="h4" name="label13"></wm-label> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="4" name="gridcolumn58" class="col-xs-6" padding="unset 1em 1em 1em"> 
+                        <wm-date name="date1"></wm-date> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="1" name="gridcolumn66_1"></wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="5" name="gridcolumn60" padding="unset 1em 1em 1em" class="col-xs-6"> 
+                        <wm-date name="date2" datavalue="2016-11-16"></wm-date> 
+                    </wm-gridcolumn> 
+                </wm-gridrow> 
+                <wm-gridrow name="gridrow25" class="bordered-row"> 
+                    <wm-gridcolumn columnwidth="2" name="gridcolumn61" padding="unset unset unset 1.5em"> 
+                        <wm-label caption="DateTime" class="h4" name="label17"></wm-label> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="4" name="gridcolumn62" padding="unset 1em 1em 1em" class="col-xs-6"> 
+                        <wm-datetime name="datetime1"></wm-datetime> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="1" name="gridcolumn67"></wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="5" name="gridcolumn64" padding="unset 1em 1em 1em" class="col-xs-6"> 
+                        <wm-datetime name="datetime2" datavalue="2016-11-18 04:17:01 AM"></wm-datetime> 
+                    </wm-gridcolumn> 
+                </wm-gridrow> 
+                <wm-gridrow name="gridrow26" class="bordered-row"> 
+                    <wm-gridcolumn columnwidth="2" name="gridcolumn65" padding="unset unset unset 1.5em"> 
+                        <wm-label caption="Time" class="h4" name="label31"></wm-label> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="4" name="gridcolumn66" padding="unset 1em 1em 1em" class="col-xs-6"> 
+                        <wm-time name="time1"></wm-time> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="1" name="gridcolumn68_1"></wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="5" name="gridcolumn68" padding="unset 1em 1em 1em" class="col-xs-6"> 
+                        <wm-time name="time2" datavalue="04:02 PM"></wm-time> 
+                    </wm-gridcolumn> 
+                </wm-gridrow> 
+                <wm-gridrow name="gridrow31" class="bordered-row"> 
+                    <wm-gridcolumn columnwidth="2" name="gridcolumn85" padding="unset unset unset 1.5em"> 
+                        <wm-label caption="Rating" class="h4" name="label20"></wm-label> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="4" name="gridcolumn86" padding="1em" class="col-xs-6"> 
+                        <wm-rating name="rating1"></wm-rating> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="1" name="gridcolumn69"></wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="5" name="gridcolumn88" padding="1em" class="col-xs-6"> 
+                        <wm-rating name="rating2" datavalue="4"></wm-rating> 
+                    </wm-gridcolumn> 
+                </wm-gridrow> 
+                <wm-gridrow name="gridrow5" class="bordered-row"> 
+                    <wm-gridcolumn columnwidth="2" name="gridcolumn9" padding="unset unset unset 1.5em"> 
+                        <wm-label caption="Checkbox" class="h4" name="label8"></wm-label> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="4" name="gridcolumn10" padding="unset 1em unset unset" class="col-xs-6"> 
+                        <wm-checkbox caption="Show" name="checkbox1" margin="unset unset 0px unset"></wm-checkbox> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="1" name="gridcolumn70"></wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="5" name="gridcolumn40_1" padding="unset 1em unset unset" class="col-xs-6"> 
+                        <wm-checkbox caption="Show" name="checkbox2" datavalue="true" margin="unset unset 0px unset"></wm-checkbox> 
+                    </wm-gridcolumn> 
+                </wm-gridrow> 
+                <wm-gridrow name="gridrow20_1" class="bordered-row"> 
+                    <wm-gridcolumn columnwidth="2" name="gridcolumn41_1" padding="unset unset unset 1.5em"> 
+                        <wm-label caption="Checkbox set" class="h4 p" name="label9"></wm-label> 
+                        <wm-label padding="unset 0.5em" caption="layout: &quot;stacked&quot;" class="code" name="label29_1"></wm-label> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="4" name="gridcolumn42_1" padding="unset 1em unset unset" class="col-xs-6"> 
+                        <wm-checkboxset height="auto" name="checkboxset1" dataset="Internet Explorer,  Mozilla,  Opera" margin="unset unset 0px unset" layout="stacked"></wm-checkboxset> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="1" name="gridcolumn71"></wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="5" name="gridcolumn44" padding="unset 1em unset unset" class="col-xs-6"> 
+                        <wm-checkboxset height="auto" dataset="Internet Explorer,  Mozilla,  Opera" name="checkboxset3" selectedvalues="Internet Explorer,  Mozilla" margin="unset unset 0px unset"></wm-checkboxset> 
+                    </wm-gridcolumn> 
+                </wm-gridrow> 
+                <wm-gridrow name="gridrow25_1" class="bordered-row"> 
+                    <wm-gridcolumn columnwidth="2" name="gridcolumn100" padding="1em unset unset 1.5em"> 
+                        <wm-label padding="unset 0.5em" caption="layout: &quot;inline&quot;" class="code" name="label28_2"></wm-label> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="5" name="gridcolumn101_1" class="col-xs-6"> 
+                        <wm-checkboxset height="auto" dataset="Internet Explorer,  Mozilla,  Opera" margin="unset unset 0px unset" name="checkboxset5" layout="inline"></wm-checkboxset> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="5" name="gridcolumn118" class="col-xs-6"> 
+                        <wm-checkboxset height="auto" dataset="Internet Explorer,  Mozilla,  Opera" selectedvalues="Internet Explorer,  Mozilla" margin="unset unset 0px unset" name="checkboxset6" layout="inline"></wm-checkboxset> 
+                    </wm-gridcolumn> 
+                </wm-gridrow> 
+                <wm-gridrow name="gridrow21_1" class="bordered-row"> 
+                    <wm-gridcolumn columnwidth="2" name="gridcolumn45" padding="unset unset unset 1.5em"> 
+                        <wm-label caption="RadioSet" class="h4 p" name="label28_1"></wm-label> 
+                        <wm-label padding="unset 0.5em" caption="layout: &quot;stacked&quot;" class="code" name="label30_1"></wm-label> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="4" name="gridcolumn46" padding="unset 1em unset unset" class="col-xs-6"> 
+                        <wm-radioset height="auto" name="radioset2" dataset="Male, Female, Other" layout="stacked" margin="unset unset 0px unset"></wm-radioset> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="1" name="gridcolumn72"></wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="5" name="gridcolumn48" padding="unset 1em unset unset" class="col-xs-6"> 
+                        <wm-radioset height="auto" name="radioset3" dataset="Male, Female, Other" selectedvalue="Male" layout="stacked" margin="unset unset 0px unset"></wm-radioset> 
+                    </wm-gridcolumn> 
+                </wm-gridrow> 
+                <wm-gridrow name="gridrow26_1" class="bordered-row"> 
+                    <wm-gridcolumn columnwidth="2" name="gridcolumn104" padding="1em 1em 1em 1.5em"> 
+                        <wm-label padding="unset 0.5em" caption="layout: &quot;inline&quot;" class="code" name="label31_1"></wm-label> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="4" name="gridcolumn105_1" class="col-xs-6"> 
+                        <wm-radioset height="auto" dataset="Male, Female, Other" layout="inline" margin="unset unset 0px unset" name="radioset3_1"></wm-radioset> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="1" name="gridcolumn106_1"></wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="5" name="gridcolumn107"> 
+                        <wm-radioset height="auto" dataset="Male, Female, Other" selectedvalue="Male" layout="inline" margin="unset unset 0px unset" name="radioset4"></wm-radioset> 
+                    </wm-gridcolumn> 
+                </wm-gridrow> 
+                <wm-gridrow name="gridrow22" class="bordered-row"> 
+                    <wm-gridcolumn columnwidth="2" name="gridcolumn49" padding="unset unset unset 1.5em"> 
+                        <wm-label caption="Color Picker" class="h4" name="label32"></wm-label> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="4" name="gridcolumn50" padding="unset 1em 1em 1em" class="col-xs-6"> 
+                        <wm-colorpicker name="colorpicker2"></wm-colorpicker> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="1" name="gridcolumn73_1"></wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="5" name="gridcolumn52" padding="unset 1em 1em 1em" class="col-xs-6"> 
+                        <wm-colorpicker name="colorpicker3" datavalue="#bc91e2"></wm-colorpicker> 
+                    </wm-gridcolumn> 
+                </wm-gridrow> 
+                <wm-gridrow name="gridrow23" class="bordered-row"> 
+                    <wm-gridcolumn columnwidth="2" name="gridcolumn53" padding="unset unset unset 1.5em"> 
+                        <wm-label caption="Currency" class="h4" name="label12"></wm-label> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="4" name="gridcolumn54" padding="unset 1em 1em 1em" class="col-xs-6"> 
+                        <wm-currency name="currency1"></wm-currency> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="1" name="gridcolumn74_1"></wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="4" name="gridcolumn56" padding="unset 1em 1em 1em" class="col-xs-6"> 
+                        <wm-currency name="currency2" datavalue="56"></wm-currency> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="1" name="gridcolumn79"></wm-gridcolumn> 
+                </wm-gridrow> 
+                <wm-gridrow name="gridrow28" class="bordered-row"> 
+                    <wm-gridcolumn columnwidth="2" name="gridcolumn73" padding="unset unset unset 1.5em"> 
+                        <wm-label caption="File Upload" class="h4" name="label18_1"></wm-label> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="4" name="gridcolumn74" padding="1em 1em unset 1em" class="col-xs-6"> 
+                        <wm-fileupload name="fileupload1" service="FileService" operation="uploadFile"></wm-fileupload> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="1" name="gridcolumn75"></wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="4" name="gridcolumn76" padding="1em 1em unset 1em" class="col-xs-6"> 
+                        <wm-fileupload service="FileService" operation="uploadFile" name="fileupload2" multiple="true"></wm-fileupload> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="1" name="gridcolumn80_1"></wm-gridcolumn> 
+                </wm-gridrow> 
+                <wm-gridrow name="gridrow30" class="bordered-row"> 
+                    <wm-gridcolumn columnwidth="2" name="gridcolumn81" padding="unset unset unset 1.5em"> 
+                        <wm-label caption="Text Area" class="h4" name="label30"></wm-label> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="4" name="gridcolumn82" padding="unset 1em 1em 1em" class="col-xs-6"> 
+                        <wm-textarea name="textarea1"></wm-textarea> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="1" name="gridcolumn76_1"></wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="4" name="gridcolumn84" padding="unset 1em 1em 1em" class="col-xs-6"> 
+                        <wm-textarea name="textarea2" datavalue="Choose one or more options Name of the field. Value that is submitted if checked. Alignment of the field. Tab order of the field. Default check this field."></wm-textarea> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="1" name="gridcolumn81_1"></wm-gridcolumn> 
+                </wm-gridrow> 
+                <wm-gridrow name="gridrow36" class="bordered-row"> 
+                    <wm-gridcolumn columnwidth="2" name="gridcolumn105" padding="unset unset unset 1.5em"> 
+                        <wm-label caption="Toggle" class="h4" name="label37"></wm-label> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="5" name="gridcolumn106" padding="1em 1em unset 1em" class="col-xs-6"> 
+                        <wm-checkbox caption="Toggle" type="toggle" name="toggle1"></wm-checkbox> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="5" name="gridcolumn108" padding="1em 1em unset 1em" class="col-xs-6"> 
+                        <wm-checkbox caption="Toggle" type="toggle" name="toggle2" datavalue="true" checkedvalue="true"></wm-checkbox> 
+                    </wm-gridcolumn> 
+                </wm-gridrow> 
+                <wm-gridrow name="gridrow33" class="bordered-row"> 
+                    <wm-gridcolumn columnwidth="2" name="gridcolumn93" padding="unset unset unset 1.5em"> 
+                        <wm-label caption="Select Locale" class="h4" name="label25"></wm-label> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="4" name="gridcolumn94" padding="unset 1em 1em 1em" class="col-xs-6"> 
+                        <wm-select class="select-locale" on-change="changeAppLocale($scope)" placeholder="Select Language" name="select6" datafield="All Fields"></wm-select> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="1" name="gridcolumn82_1"></wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="4" name="gridcolumn96" padding="unset 1em 1em 1em" class="col-xs-6"> 
+                        <wm-select class="select-locale" dataset="bind:Variables.supportedLocale.dataSet" on-change="changeAppLocale($scope)" placeholder="Select Language" name="select7"></wm-select> 
+                        <wm-label padding="unset 0.5em" name="label36_1" class="h4" caption="bind:appLocale.LABEL_HELLO"></wm-label> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="1" name="gridcolumn83"></wm-gridcolumn> 
+                </wm-gridrow> 
+                <wm-gridrow name="gridrow20_2" class="bordered-row"> 
+                    <wm-gridcolumn columnwidth="2" name="gridcolumn56_1" padding="unset unset unset 1.5em"> 
+                        <wm-label caption="Search" class="h4" name="label23"></wm-label> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="4" name="gridcolumn57_2" padding="unset 1em 1em 1em" class="col-xs-6"> 
+                        <wm-search name="search1"></wm-search> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="1" name="gridcolumn84_1"></wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="4" name="gridcolumn58_2" padding="1em" class="col-xs-6"> 
+                        <wm-search name="search2" dataset="bind:Variables.HrdbEmployeeDataContactList.dataSet" searchkey="firstname" displaylabel="firstname" displayimagesrc="picurl" datafield="All Fields" placeholder="Type to search..."></wm-search> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="1" name="gridcolumn85_1"></wm-gridcolumn> 
+                </wm-gridrow> 
+                <wm-gridrow name="gridrow30_1" class="bordered-row"> 
+                    <wm-gridcolumn columnwidth="2" name="gridcolumn124" padding="1em unset unset 1.5em"> 
+                        <wm-label padding="unset 0.5em" caption="class: &quot;input-group-lg&quot;" class="code" name="label37_1"></wm-label> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="4" name="gridcolumn125" padding="1em"> 
+                        <wm-search name="search3" class="input-group-lg"></wm-search> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="1" name="gridcolumn126"></wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="4" name="gridcolumn127" padding="1em"> 
+                        <wm-search dataset="bind:Variables.HrdbEmployeeDataContactList.dataSet" searchkey="firstname" displaylabel="firstname" displayimagesrc="picurl" datafield="All Fields" placeholder="Type to search..." name="search4" class="input-group-lg"></wm-search> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="1" name="gridcolumn128"></wm-gridcolumn> 
+                </wm-gridrow> 
+                <wm-gridrow name="gridrow31_1" class="bordered-row"> 
+                    <wm-gridcolumn columnwidth="2" name="gridcolumn129" padding="1em unset unset 1.5em"> 
+                        <wm-label padding="unset 0.5em" caption="class: &quot;input-group-sm&quot;" class="code" name="label36"></wm-label> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="4" name="gridcolumn130" padding="1em"> 
+                        <wm-search datafield="All Fields" placeholder="Search" name="search5" class="input-group-sm"></wm-search> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="1" name="gridcolumn131"></wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="4" name="gridcolumn132" padding="1em"> 
+                        <wm-search dataset="bind:Variables.HrdbEmployeeDataContactList.dataSet" searchkey="firstname" displaylabel="firstname" displayimagesrc="picurl" datafield="All Fields" placeholder="Type to search..." name="search6" class="input-group-sm"></wm-search> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="1" name="gridcolumn133"></wm-gridcolumn> 
+                </wm-gridrow> 
+                <wm-gridrow name="gridrow22_2" class="bordered-row"> 
+                    <wm-gridcolumn columnwidth="2" name="gridcolumn60_2" padding="unset unset unset 1.5em"> 
+                        <wm-label caption="Chips" class="h4" name="label23_1"></wm-label> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="4" name="gridcolumn61_2" padding="1em" class="col-xs-6"> 
+                        <wm-chips name="chips1"></wm-chips> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="1" name="gridcolumn86_1"></wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="4" name="gridcolumn61_3" padding="1em" class="col-xs-6"> 
+                        <wm-chips name="chips2" dataset="bind:Variables.HrdbEmployeeDataContactList.dataSet" datafield="firstname" displayfield="firstname" displayimagesrc="picurl" placeholder="Tag here..." datavalue="bind:Variables.HrdbEmployeeDataContactList.dataSet.data[$i].firstname"></wm-chips> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="1" name="gridcolumn88_1"></wm-gridcolumn> 
+                </wm-gridrow> 
+                <wm-gridrow name="gridrow34" class="bordered-row"> 
+                    <wm-gridcolumn columnwidth="2" name="gridcolumn97" padding=".5em unset unset 1.5em"> 
+                        <wm-label caption="Slider" class="h4" name="label27"></wm-label> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="4" name="gridcolumn98" padding="1em 1em 1em unset"> 
+                        <wm-slider name="slider1"></wm-slider> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="6" name="gridcolumn58_1"></wm-gridcolumn> 
+                </wm-gridrow> 
+                <wm-gridrow name="gridrow35" class="bordered-row"> 
+                    <wm-gridcolumn columnwidth="2" name="gridcolumn101" padding="unset unset unset 1.5em"> 
+                        <wm-label caption="Switch" class="h4" name="label28"></wm-label> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="4" name="gridcolumn102" padding="1em"> 
+                        <wm-switch datavalue="yes" name="switch1"></wm-switch> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="6" name="gridcolumn63"></wm-gridcolumn> 
+                </wm-gridrow> 
+                <wm-gridrow name="gridrow37" class="bordered-row"> 
+                    <wm-gridcolumn columnwidth="2" name="gridcolumn109" padding="unset unset unset 1.5em"> 
+                        <wm-label caption="Calendar" class="h4" name="label7"></wm-label> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="10" name="gridcolumn110" padding="unset 1em 1em 1em"> 
+                        <wm-calendar name="calendar1"></wm-calendar> 
+                    </wm-gridcolumn> 
+                </wm-gridrow> 
+                <wm-gridrow name="gridrow21" class="bordered-row"> 
+                    <wm-gridcolumn columnwidth="2" name="gridcolumn59" padding="unset unset unset 1.5em"> 
+                        <wm-label caption="Html" class="h4" name="label25_1"></wm-label> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="9" name="gridcolumn60_1" padding="unset 1em 1em 1em"> 
+                        <wm-html name="html1" borderstyle="none" padding="1em unset"> 
+                            <p><strong><em>Lorem ipsum </em></strong> dolor sit amet, consectetur adipiscing elit. Sed aliquet <u><i>mauris vel felis</i></u> aliquam, eu dictum velit lobortis. Integer sit amet porttitor eros, non consectetur tortor. Proin ultrices justo sed elit imperdiet ornare.</p> 
+                        </wm-html> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="1" name="gridcolumn89_2"></wm-gridcolumn> 
+                </wm-gridrow> 
+                <wm-gridrow name="gridrow22_1" class="bordered-row"> 
+                    <wm-gridcolumn columnwidth="2" name="gridcolumn61_1" padding="unset unset unset 1.5em"> 
+                        <wm-label caption="Rich Text Editor" class="h4" name="label24_1"></wm-label> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="9" name="gridcolumn62_1" padding="unset 1em 1em 1em"> 
+                        <wm-richtexteditor name="richtexteditor1" placeholder="Type here!"></wm-richtexteditor> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="1" name="gridcolumn90_1"></wm-gridcolumn> 
+                </wm-gridrow> 
+            </wm-layoutgrid> 
+        </wm-page-content> 
+    </wm-content> 
+    <wm-footer content="footer" name="footer1"></wm-footer> 
+</wm-page>

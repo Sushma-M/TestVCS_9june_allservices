@@ -1,0 +1,58 @@
+<wm-page data-ng-controller="MessagesPageController" pagetitle="Messages" name="page1"> 
+    <wm-header content="header" name="header1"></wm-header> 
+    <wm-top-nav content="topnav" name="top_nav1"></wm-top-nav> 
+    <wm-content name="content1"> 
+        <wm-left-panel columnwidth="2" content="LN_Widgets" name="left_panel1"></wm-left-panel> 
+        <wm-page-content columnwidth="10" name="page_content1"> 
+            <wm-container content="breadcrumbpartial" name="container1"></wm-container> 
+            <wm-layoutgrid name="layoutgrid1"> 
+                <wm-gridrow name="gridrow1" class="bordered-row"> 
+                    <wm-gridcolumn columnwidth="3" name="gridcolumn1"> 
+                        <wm-label padding="unset 0.5em" name="label2" caption="Success Message" class="h4"></wm-label> 
+                        <wm-label padding="unset 0.5em" caption="type: &quot;success&quot;" name="label7" class="code"></wm-label> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="9" name="gridcolumn2" padding="1em unset unset unset"> 
+                        <wm-message name="message1" caption="Success! This alert box indicates a successful or positive action."></wm-message> 
+                    </wm-gridcolumn> 
+                </wm-gridrow> 
+                <wm-gridrow name="gridrow2" class="bordered-row"> 
+                    <wm-gridcolumn columnwidth="3" name="gridcolumn3"> 
+                        <wm-label padding="unset 0.5em" caption="Info Message" class="h4" name="label8"></wm-label> 
+                        <wm-label padding="unset 0.5em" caption="type: &quot;info&quot;" name="label3" class="code"></wm-label> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="9" name="gridcolumn4" padding="1em unset unset unset"> 
+                        <wm-message caption="Info! This alert box indicates a neutral informative change or action." name="message2" type="info"></wm-message> 
+                    </wm-gridcolumn> 
+                </wm-gridrow> 
+                <wm-gridrow name="gridrow3" class="bordered-row"> 
+                    <wm-gridcolumn columnwidth="3" name="gridcolumn5"> 
+                        <wm-label padding="unset 0.5em" caption="Warning Message" class="h4" name="label9"></wm-label> 
+                        <wm-label padding="unset 0.5em" caption="type: &quot;warning&quot;" name="label4" class="code"></wm-label> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="9" name="gridcolumn6" padding="1em unset unset unset"> 
+                        <wm-message caption="Warning! This alert box indicates a warning that might need attention." type="warning" name="message3"></wm-message> 
+                    </wm-gridcolumn> 
+                </wm-gridrow> 
+                <wm-gridrow name="gridrow4" class="bordered-row"> 
+                    <wm-gridcolumn columnwidth="3" name="gridcolumn7"> 
+                        <wm-label padding="unset 0.5em" caption="Error Message" class="h4" name="label10"></wm-label> 
+                        <wm-label padding="unset 0.5em" caption="type: &quot;error&quot;" name="label5" class="code"></wm-label> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="9" name="gridcolumn8" padding="1em unset unset unset"> 
+                        <wm-message caption="Danger! This alert box indicates a dangerous or potentially negative action." type="error" name="message4"></wm-message> 
+                    </wm-gridcolumn> 
+                </wm-gridrow> 
+                <wm-gridrow name="gridrow5" class="bordered-row"> 
+                    <wm-gridcolumn columnwidth="3" name="gridcolumn9"> 
+                        <wm-label padding="unset 0.5em" caption="Loading Message" class="h4" name="label11"></wm-label> 
+                        <wm-label padding="unset 0.5em" caption="type: &quot;loading&quot;" name="label6" class="code"></wm-label> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="9" name="gridcolumn10" padding="1em unset unset unset"> 
+                        <wm-message caption="Wait! It might take sometime..." type="loading" name="message5"></wm-message> 
+                    </wm-gridcolumn> 
+                </wm-gridrow> 
+            </wm-layoutgrid> 
+        </wm-page-content> 
+    </wm-content> 
+    <wm-footer content="footer" name="footer1"></wm-footer> 
+</wm-page>

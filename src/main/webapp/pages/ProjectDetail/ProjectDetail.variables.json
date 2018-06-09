@@ -1,0 +1,52 @@
+{
+  "projectFiles" : {
+    "_id" : "wm-projectFiles-wm.Variable-1483073535826",
+    "name" : "projectFiles",
+    "owner" : "Page",
+    "category" : "wm.Variable",
+    "dataBinding" : [ ],
+    "dataSet" : [ {
+      "label" : "Project_document.docx",
+      "icon" : "wi wi-insert-drive-file"
+    }, {
+      "label" : "Logo_zender_company.jpg",
+      "icon" : "wi wi-picture"
+    }, {
+      "label" : "Email_from_Alex.mln",
+      "icon" : "wi wi-message"
+    }, {
+      "label" : "Contract_20_11_2014.docx",
+      "icon" : "wi wi-insert-drive-file"
+    } ],
+    "type" : "string",
+    "isList" : true,
+    "saveInPhonegap" : false
+  },
+  "projectTagList" : {
+    "_id" : "wm-projectTagList-wm.Variable-1483363062793",
+    "name" : "projectTagList",
+    "owner" : "Page",
+    "category" : "wm.Variable",
+    "dataBinding" : [ ],
+    "dataSet" : [ {
+      "label" : "WaveMaker",
+      "icon" : "fa fa-tag",
+      "image" : "http://www.iconsdb.com/icons/preview/gray/tag-xxl.png"
+    }, {
+      "label" : "Marketing",
+      "icon" : "fa fa-tag",
+      "image" : "http://www.iconsdb.com/icons/preview/gray/tag-xxl.png"
+    }, {
+      "label" : "Passages",
+      "icon" : "fa fa-tag",
+      "image" : "http://www.iconsdb.com/icons/preview/gray/tag-xxl.png"
+    }, {
+      "label" : "Variation",
+      "icon" : "fa fa-tag",
+      "image" : "http://www.iconsdb.com/icons/preview/gray/tag-xxl.png"
+    } ],
+    "type" : "string",
+    "isList" : true,
+    "saveInPhonegap" : false
+  }
+}

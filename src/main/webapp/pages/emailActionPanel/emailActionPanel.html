@@ -1,0 +1,9 @@
+<wm-partial data-ng-controller="emailActionPanelPageController" name="partial1"> 
+    <wm-button class="btn-primary" caption="Compose Mail" type="button" name="composeMailButton" width="100%" iconclass="wi wi-trash" on-click="Variables.goToPage_EmailComposition.invoke()"></wm-button> 
+    <wm-label padding="unset 0.5em" name="folderLabel" class="h4" caption="Folders"></wm-label> 
+    <wm-nav type="pills" autoclose="outsideClick" name="folderActionListNav" layout="stacked" dataset="bind:Variables.mailFolderActionList.dataSet" itembadge="badge"></wm-nav> 
+    <wm-label padding="unset 0.5em" class="h4" caption="Categories" name="categoriesLabel"></wm-label> 
+    <wm-nav type="pills" autoclose="outsideClick" name="categoriesActionListNav" layout="stacked" dataset="bind:Variables.categoriesList.dataSet" itemlabel="label" itemicon="icon"></wm-nav> 
+    <wm-label padding="unset 0.5em" name="mailGroupLabel" caption="Labels" class="h4"></wm-label> 
+    <wm-chips name="mailGroupChips" dataset="Family,  Work,  Home,  Children , Holidays , Music,  Photography,  Film" readonly="true"></wm-chips> 
+</wm-partial>

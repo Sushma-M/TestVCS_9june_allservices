@@ -1,0 +1,3 @@
+.wm-app .checkbox.checkbox-list-item input:checked + .caption {
+    text-decoration: line-through;
+}

@@ -1,0 +1,138 @@
+<wm-page data-ng-controller="ProfileV2PageController" pagetitle="Profile V 2" name="page1"> 
+    <wm-header content="header" name="header1"></wm-header> 
+    <wm-top-nav content="topnav" name="top_nav1"></wm-top-nav> 
+    <wm-content name="content1"> 
+        <wm-left-panel columnwidth="2" content="leftnav" name="left_panel1"></wm-left-panel> 
+        <wm-page-content columnwidth="10" name="page_content1"> 
+            <wm-container name="container1" content="breadcrumbpartial"> 
+                <wm-param name="category" value="ui" type="string"></wm-param> 
+            </wm-container> 
+            <wm-layoutgrid name="founderLayoutGrid"> 
+                <wm-gridrow name="gridRowOne" padding="1em 0em"> 
+                    <wm-gridcolumn columnwidth="6" name="gridColumnOne" padding="unset 0.5em"> 
+                        <wm-container name="wrapperContainer" class="media"> 
+                            <wm-container name="leftContainer" class="media-left media-middle"> 
+                                <wm-picture width="80" picturesource="http://dev.wavemaker.com/examples/salesrep/Eric-Lin.png" shape="circle" class="media-object" name="founderImage"></wm-picture> 
+                            </wm-container> 
+                            <wm-container class="media-body media-middle" name="rightContainer"> 
+                                <wm-label caption="Eric Lin" fontunit="em" color="#676a6c" class="h2" margin="0px unset" name="label39"></wm-label> 
+                                <wm-label caption="Founder of Group" class="h4" margin="0px unset unset unset" whitespace="normal" color="#676a6c" name="organizationName"></wm-label> 
+                                <wm-label caption="There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form Ipsum available." class="p small text-mute" margin="unset unset 0px unset" whitespace="pre-line" color="#676a6c" name="companyDescription"></wm-label> 
+                            </wm-container> 
+                        </wm-container> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="3" name="gridColumTwo" padding="0.5em 1em"> 
+                        <wm-layoutgrid height="100%" name="projectDetailsLayoutGrid"> 
+                            <wm-gridrow name="detailsRowOne" padding="0.5em unset" class="bordered-top"> 
+                                <wm-gridcolumn columnwidth="6" name="gridcolumn1" padding="unset unset unset 1em" class="col-xs-6"> 
+                                    <wm-label name="projectCount" margin="0px unset" caption="142" fontweight="bold"></wm-label> 
+                                    <wm-label padding="unset unset unset 0.5em" margin="0px unset" caption="Projects" name="projectLabel"></wm-label> 
+                                </wm-gridcolumn> 
+                                <wm-gridcolumn columnwidth="6" name="gridcolumn2" padding="unset unset unset 1em" class="col-xs-6"> 
+                                    <wm-label margin="0px unset" caption="22" fontweight="bold" name="followersCount"></wm-label> 
+                                    <wm-label padding="unset unset unset 0.5em" margin="0px unset" caption="Followers" name="followersLabel"></wm-label> 
+                                </wm-gridcolumn> 
+                            </wm-gridrow> 
+                            <wm-gridrow name="detailsRowTwo" padding="0.5em unset" class="bordered-top"> 
+                                <wm-gridcolumn columnwidth="6" name="gridcolumn12" padding="unset unset unset 1em" class="col-xs-6"> 
+                                    <wm-label margin="0px unset" caption="61" fontweight="bold" name="commentsCount"></wm-label> 
+                                    <wm-label padding="unset unset unset 0.5em" margin="0px unset" caption="Comments" name="commentsLabel"></wm-label> 
+                                </wm-gridcolumn> 
+                                <wm-gridcolumn columnwidth="6" name="gridcolumn13" padding="unset unset unset 1em" class="col-xs-6"> 
+                                    <wm-label margin="0px unset" caption="54" fontweight="bold" name="projectCountTwo"></wm-label> 
+                                    <wm-label padding="unset unset unset 0.5em" margin="0px unset" caption="Projects" name="projectLabelTwo"></wm-label> 
+                                </wm-gridcolumn> 
+                            </wm-gridrow> 
+                            <wm-gridrow name="detailsRowThree" padding="0.5em unset" class="bordered-top"> 
+                                <wm-gridcolumn columnwidth="6" name="gridcolumn5" padding="unset unset unset 1em" class="col-xs-6"> 
+                                    <wm-label margin="0px unset" caption="154" fontweight="bold" name="tagCount"></wm-label> 
+                                    <wm-label padding="unset unset unset 0.5em" margin="0px unset" caption="Tags" name="tagLabel"></wm-label> 
+                                </wm-gridcolumn> 
+                                <wm-gridcolumn columnwidth="6" name="gridcolumn6" padding="unset unset unset 1em" class="col-xs-6"> 
+                                    <wm-label margin="0px unset" caption="32" fontweight="bold" name="friendCount"></wm-label> 
+                                    <wm-label padding="unset unset unset 0.5em" margin="0px unset" caption="Friends" name="friendsLabel"></wm-label> 
+                                </wm-gridcolumn> 
+                            </wm-gridrow> 
+                        </wm-layoutgrid> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="3" name="gridColumnThree" padding="0.5em 0.5em 1em 1em"> 
+                        <wm-label name="salesLabel" caption="Sales in last 24h" margin="0px unset" class="small"></wm-label> 
+                        <wm-label name="salesCount" caption="206 480" class="h2" margin="0px unset"></wm-label> 
+                        <wm-chart type="Line" title="" iconclass="" dataset="bind:Variables.salesMarketingChartData.dataSet" xaxisdatakey="x" yaxisdatakey="y1" offsetleft="0" offsetbottom="0" showlegend="hide" height="40" name="salesGraph" offsettop="0" yaxislabeldistance="0" showyaxis="false" showxaxis="false" theme="Orient"></wm-chart> 
+                    </wm-gridcolumn> 
+                </wm-gridrow> 
+                <wm-gridrow name="gridRowTwo"> 
+                    <wm-gridcolumn columnwidth="4" name="gridColumnFour" padding="unset 1em"> 
+                        <wm-panel iconclass="" name="employeePanel" title="About Eric Lin" class="panel-default" margin="unset unset 2em unset"> 
+                            <wm-label name="employeeDescriptionOne" margin="0em unset 1em unset" class="p" caption="There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't."></wm-label> 
+                            <wm-label margin="0px unset" class="p" caption="If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing" name="employeeDescriptionTwo"></wm-label> 
+                            <wm-panel-footer name="panel_footer1"> 
+                                <wm-icon name="onlineIcon" iconclass="fa fa-circle" class="text-primary inline"></wm-icon> 
+                                <wm-label margin="1em unset" class="p inline" name="onlineLabel" caption="Online status" padding="unset 0.5em"></wm-label> 
+                            </wm-panel-footer> 
+                        </wm-panel> 
+                        <wm-panel iconclass="" name="followersPanel" title="Followers and friends" class="panel-default" margin="unset unset 2em unset"> 
+                            <wm-label margin="0px unset" class="p" caption="If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing" name="followersAndFriendsLabel"></wm-label> 
+                            <wm-list listclass="list-inline" template="true" itemsperrow="xs-4 sm-4 md-4 lg-4" datafield="All Fields" dataset="bind:Variables.HrdbEmployeeDataContactList.dataSet" navigation="None" name="followersLiveList" width="auto" height="auto" padding="1em unset"> 
+                                <wm-listtemplate layout="inline" name="listtemplate1"> 
+                                    <wm-picture width="32pt" height="32pt" name="followersPicture" shape="circle" picturesource="bind:Variables.HrdbEmployeeDataContactList.dataSet.picurl" class="media-object"></wm-picture> 
+                                </wm-listtemplate> 
+                            </wm-list> 
+                        </wm-panel> 
+                        <wm-form errormessage="" captionposition="top" title="Private message" enctype="application/x-www-form-urlencoded" method="post" dataset="bind:Variables.FileServiceUploadFile.dataSet" captionalign="left" name="messageForm" subheading="Send private message to Alex Smith" class="panel-default" margin="unset unset 2em unset"> 
+                            <wm-layoutgrid columns="1" name="messageFields"> 
+                                <wm-gridrow name="rowOne"> 
+                                    <wm-gridcolumn columnwidth="12" name="postColumnOne"> 
+                                        <wm-form-field readonly="false" name="messageSubject" displayname="Subject" key="relativePath" type="string" show="true" widget="text" placeholder="Message subject" width="100%"></wm-form-field> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                                <wm-gridrow name="rowTwo"> 
+                                    <wm-gridcolumn columnwidth="12" name="postColumnTwo"> 
+                                        <wm-form-field readonly="false" displayname="Message" key="relativePath" type="string" show="true" widget="text" name="messageText" placeholder="Your message" width="100%"></wm-form-field> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                                <wm-gridrow name="rowThree"> 
+                                    <wm-gridcolumn columnwidth="12" name="postColumnThree" padding="1.5em unset"> 
+                                        <wm-button caption="Send" type="submit" class="btn-primary" name="sendMessageButton" width="100%"></wm-button> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                            </wm-layoutgrid> 
+                        </wm-form> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="4" name="gridColumnFive" padding="unset 1em"> 
+                        <wm-card name="employeePostOne" iconurl="http://dev.wavemaker.com/examples/salesrep/Eric-Lin.png" title="Eric Lin" subheading="Today 4:21 pm - 12.06.2014" margin="unset 0em 2em 0em"> 
+                            <wm-card-content padding="2em" name="postContent"> 
+                                <wm-label name="postDescription" class="p" caption="Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Packages and web page editors now use Lorem Ipsum as their default mod"></wm-label> 
+                            </wm-card-content> 
+                            <wm-card-actions name="cardButtonActions"> 
+                                <wm-button class="btn-default btn-xs" type="button" caption="Like this!" name="likeButton" iconclass="wi wi-thumb-up" iconwidth="1.5em" margin="unset 0.2em unset unset"></wm-button> 
+                                <wm-button class="btn-default btn-xs" type="button" caption="Comment" name="commentButton" iconclass="fa fa-comments" iconwidth="1.5em" margin="unset 0.2em"></wm-button> 
+                                <wm-button class="btn-default btn-xs" type="button" caption="Share" name="shareButton" iconclass="fa fa-share" iconwidth="1.5em" margin="unset 0.2em"></wm-button> 
+                            </wm-card-actions> 
+                            <wm-card-footer name="cardFooter"> 
+                                <wm-container name="userCommentContainer" content="UserCommentsPartial"></wm-container> 
+                            </wm-card-footer> 
+                        </wm-card> 
+                        <wm-card iconurl="http://dev.wavemaker.com/examples/salesrep/Jane-Lisa.png" title="Jane Lisa" subheading="Today 4:21 pm - 12.06.2014" name="employeePostTwo" picturesource="resources/images/imagelists/stock/1.jpg" margin="unset 0em 2em 0em"> 
+                            <wm-card-content padding="2em" name="card_content3"> 
+                                <wm-label class="p" caption="Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Packages and web page editors now use Lorem Ipsum as their default model text." name="description"></wm-label> 
+                            </wm-card-content> 
+                            <wm-card-actions name="card_actions2"> 
+                                <wm-button class="btn-default btn-xs" type="button" caption="Like this!" iconclass="wi wi-thumb-up" name="likeBtn" iconwidth="1.5em" margin="unset 0.2em unset unset"></wm-button> 
+                                <wm-button class="btn-default btn-xs" type="button" caption="Comment" iconclass="fa fa-comments" name="commentBtn" iconwidth="1.5em" margin="unset 0.2em"></wm-button> 
+                                <wm-button class="btn-default btn-xs" type="button" caption="Share" iconclass="fa fa-share" name="shareBtn" iconwidth="1.5em" margin="unset 0.2em"></wm-button> 
+                            </wm-card-actions> 
+                            <wm-card-footer name="employeeCard_Footer"> 
+                                <wm-container name="JanePostComments" content="UserCommentsPartial"></wm-container> 
+                            </wm-card-footer> 
+                        </wm-card> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="4" name="gridColumnSix" padding="unset 0.5em"> 
+                        <wm-container name="meetingScheduleContainer" content="projectMeetingScheduleDetails"></wm-container> 
+                    </wm-gridcolumn> 
+                </wm-gridrow> 
+            </wm-layoutgrid> 
+        </wm-page-content> 
+    </wm-content> 
+    <wm-footer content="footer" name="footer1"></wm-footer> 
+</wm-page>

@@ -1,0 +1,43 @@
+<wm-page data-ng-controller="CarouselPageController" pagetitle="Carousel" name="page1"> 
+    <wm-header content="header" name="header1"></wm-header> 
+    <wm-top-nav content="topnav" name="top_nav1"></wm-top-nav> 
+    <wm-content name="content1"> 
+        <wm-left-panel columnwidth="2" content="LN_Widgets" name="left_panel1"></wm-left-panel> 
+        <wm-page-content columnwidth="10" name="page_content1"> 
+            <wm-container content="breadcrumbpartial" name="container4"></wm-container> 
+            <wm-layoutgrid name="layoutgrid1"> 
+                <wm-gridrow class="bordered-row" name="gridrow1"> 
+                    <wm-gridcolumn columnwidth="2" name="gridcolumn1"> 
+                        <wm-label padding="unset 0.5em" name="label14_1" caption="Dynamic Carousel" class="code"></wm-label> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="10" name="gridcolumn2"> 
+                        <wm-carousel height="480" type="dynamic" name="carousel2" dataset="bind:Variables.dynamicCarouselPictures.dataSet" animation="none"> 
+                            <wm-carousel-template horizontalalign="center" name="carousel_template1"> 
+                                <wm-picture width="100%" name="picture4" picturesource="bind:Variables.dynamicCarouselPictures.dataSet[$i].src"></wm-picture> 
+                            </wm-carousel-template> 
+                        </wm-carousel> 
+                    </wm-gridcolumn> 
+                </wm-gridrow> 
+                <wm-gridrow class="bordered-row" name="gridrow7"> 
+                    <wm-gridcolumn columnwidth="2" name="gridcolumn13"> 
+                        <wm-label padding="unset 0.5em" caption="Static Carousel" name="label16" class="code"></wm-label> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="10" name="gridcolumn14"> 
+                        <wm-carousel height="500" name="carousel3" controls="both"> 
+                            <wm-carousel-content name="carousel_content4"> 
+                                <wm-picture width="100%" name="picture5" picturesource="resources/images/imagelists/city.jpg"></wm-picture> 
+                            </wm-carousel-content> 
+                            <wm-carousel-content name="carousel_content5" picturesource="https://rukminim1.flixcart.com/flap/50/50/brandtest/e3c87a9078336913920629971.jpg?q=50"> 
+                                <wm-picture width="100%" name="picture6" picturesource="resources/images/imagelists/evening.jpg"></wm-picture> 
+                            </wm-carousel-content> 
+                            <wm-carousel-content name="carousel_content6" picturesource="https://rukminim1.flixcart.com/flap/844/140/brandtest/758ce86203373058079574669.jpg?q=50"> 
+                                <wm-picture width="100%" name="picture7" picturesource="resources/images/imagelists/laptop.jpg"></wm-picture> 
+                            </wm-carousel-content> 
+                        </wm-carousel> 
+                    </wm-gridcolumn> 
+                </wm-gridrow> 
+            </wm-layoutgrid> 
+        </wm-page-content> 
+    </wm-content> 
+    <wm-footer content="footer" name="footer1"></wm-footer> 
+</wm-page>

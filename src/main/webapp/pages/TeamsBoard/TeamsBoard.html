@@ -1,0 +1,52 @@
+<wm-page data-ng-controller="TeamsBoardPageController" pagetitle="Teams Board" name="page1"> 
+    <wm-header content="header" name="header1"></wm-header> 
+    <wm-top-nav content="topnav" name="top_nav1"></wm-top-nav> 
+    <wm-content name="content1"> 
+        <wm-left-panel columnwidth="2" content="leftnav" name="left_panel1"></wm-left-panel> 
+        <wm-page-content columnwidth="10" name="page_content1"> 
+            <wm-container name="container1" content="breadcrumbpartial"> 
+                <wm-param name="category" value="ui" type="string"></wm-param> 
+            </wm-container> 
+            <wm-list listclass="list-group" template="true" itemsperrow="xs-1 sm-2 md-3 lg-3" class="list-card" dataset="bind:Variables.departmentData.dataSet" navigation="None" name="teamBoardList"> 
+                <wm-listtemplate layout="media" name="listtemplate2"> 
+                    <wm-panel iconclass="" name="teamBoardPanel" title="bind:&quot;IT-0&quot;+ Variables.departmentData.dataSet.data[$i].deptId +&quot; &quot;+ Variables.departmentData.dataSet.data[$i].name" badgevalue="bind:(Variables.departmentData.dataSet.data[$i].deptId < 3 ) ? 'New' : ''" badgetype="bind:(Variables.departmentData.dataSet.data[$i].deptId === 2)?&quot;warning&quot;:&quot;primary&quot;" margin="1em" class="panel-default"> 
+                        <wm-panel-footer name="panel_footer1"> 
+                            <wm-layoutgrid name="projectDetailsLayoutgrid"> 
+                                <wm-gridrow name="gridrow2"> 
+                                    <wm-gridcolumn columnwidth="4" name="gridcolumn3" class="col-xs-4"> 
+                                        <wm-label name="projectLabel" margin="0px unset" fontweight="bold" caption="PROJECTS"></wm-label> 
+                                    </wm-gridcolumn> 
+                                    <wm-gridcolumn columnwidth="4" name="gridcolumn4" class="col-xs-4"> 
+                                        <wm-label margin="0px unset" fontweight="bold" caption="RANKING" name="rankingLabel"></wm-label> 
+                                    </wm-gridcolumn> 
+                                    <wm-gridcolumn columnwidth="4" name="gridcolumn7" class="col-xs-4"> 
+                                        <wm-label margin="0px unset" fontweight="bold" caption="BUDGET" name="budgetLabel"></wm-label> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                                <wm-gridrow name="gridrow3"> 
+                                    <wm-gridcolumn columnwidth="4" name="gridcolumn5" horizontalalign="left" class="col-xs-4"> 
+                                        <wm-label margin="0px unset" caption="12" name="projectsCount"></wm-label> 
+                                    </wm-gridcolumn> 
+                                    <wm-gridcolumn columnwidth="4" name="gridcolumn6" class="col-xs-4"> 
+                                        <wm-label margin="0px unset" caption="bind:Variables.departmentData.dataSet.data[$i].deptId" name="rankingPosition"></wm-label> 
+                                    </wm-gridcolumn> 
+                                    <wm-gridcolumn columnwidth="4" name="gridcolumn8" class="col-xs-4"> 
+                                        <wm-icon name="budgetCountAndIcon" iconclass="fa fa-level-up" class="text-primary" caption="bind:Variables.departmentData.dataSet.data[$i].budget | toCurrency: '$': '2'" iconposition="right"></wm-icon> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                            </wm-layoutgrid> 
+                        </wm-panel-footer> 
+                        <wm-container name="container3" content="department"> 
+                            <wm-param name="dept_id" value="bind:Variables.departmentData.dataSet.data[$i].deptId" type="integer"></wm-param> 
+                        </wm-container> 
+                        <wm-label name="teamDesignationLabel" caption="bind:'Info about ' + Variables.departmentData.dataSet.data[$i].name  + ' Team'" class="h4"></wm-label> 
+                        <wm-label caption="It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has." name="TeamDescription" class="p"></wm-label> 
+                        <wm-label caption="Status of current project:" name="projectStatusLabel" class="p"></wm-label> 
+                        <wm-progress name="projectStatusProgressBar" datavalue="bind:Variables.departmentData.dataSet.data[$i].deptId" maxvalue="8" captionplacement="inside" type="bind:( Variables.departmentData.dataSet.data[$i].deptId < 3 ) ? &quot;success&quot; : &quot;default&quot; " displayformat="percentage"></wm-progress> 
+                    </wm-panel> 
+                </wm-listtemplate> 
+            </wm-list> 
+        </wm-page-content> 
+    </wm-content> 
+    <wm-footer content="footer" name="footer1"></wm-footer> 
+</wm-page>

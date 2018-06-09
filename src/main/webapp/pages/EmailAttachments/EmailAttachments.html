@@ -1,0 +1,30 @@
+<wm-partial data-ng-controller="EmailAttachmentsPageController" name="partial1"> 
+    <wm-layoutgrid name="mailAttachmentLayout"> 
+        <wm-gridrow name="gridRowOne"> 
+            <wm-gridcolumn columnwidth="12" name="gridColumnOne" padding="1em unset"> 
+                <wm-icon name="attachmentIcon" iconclass="wi wi-paperclip "></wm-icon> 
+                <wm-label margin="0px unset " caption="2 attachments - " name="attachmentCountLabel"></wm-label> 
+                <wm-anchor margin="unset 0.5em " name="downloadAllLabel" caption="Download all "></wm-anchor> 
+                <wm-label padding="unset 0.5em" name="pipeLabel" caption="|"></wm-label> 
+                <wm-anchor margin="unset 0.5em " name="viewImagesLabel" caption="View all images "></wm-anchor> 
+            </wm-gridcolumn> 
+        </wm-gridrow> 
+        <wm-gridrow name="gridRowTwo"> 
+            <wm-gridcolumn columnwidth="12" name="gridColumnTwo"> 
+                <wm-list listclass="list-group" template="true" itemsperrow="xs-2 sm-2 md-3 lg-4" class="list-card" dataset="bind:Variables.mailAttachmentList.dataSet" navigation="None" name="fileAttachmentsLivelist"> 
+                    <wm-listtemplate layout="media" name="listtemplate4"> 
+                        <wm-card name="fileAttachmentCard" class="card-border"> 
+                            <wm-card-content fontsize="0.8" fontunit="em" name="cardContent" horizontalalign="center"> 
+                                <wm-icon iconclass="bind:Variables.mailAttachmentList.dataSet[$i].icon" iconsize="4em" name="fileTypeIcon"></wm-icon> 
+                            </wm-card-content> 
+                            <wm-card-footer name="cardFooter"> 
+                                <wm-anchor margin="unset 0.5em" name="attachedFileLink" caption="bind:Variables.mailAttachmentList.dataSet[$i].fileName" class="text-ellipsis"></wm-anchor> 
+                                <wm-label padding="unset 0.5em" name="fileUploadDate" caption="bind:&quot;Added: &quot; + (Variables.mailAttachmentList.dataSet[$i].time | toDate: 'yyyy-MM-dd HH:mm')" class="p" whitespace="nowrap" hint="bind:&quot;Added: &quot; + (Variables.mailAttachmentList.dataSet[$i].time | toDate: 'yyyy-MM-dd HH:mm')"></wm-label> 
+                            </wm-card-footer> 
+                        </wm-card> 
+                    </wm-listtemplate> 
+                </wm-list> 
+            </wm-gridcolumn> 
+        </wm-gridrow> 
+    </wm-layoutgrid> 
+</wm-partial>

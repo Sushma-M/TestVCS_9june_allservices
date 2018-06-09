@@ -2,17 +2,43 @@
 <!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
         "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 <hibernate-mapping>
-    <sql-query name="employeedatabyID">
+    <sql-query name="insertQuesryEmployee">
         <![CDATA[
-        select * from Employee where DEPT_ID =:id
+        insert into EMPLOYEE(EMP_ID, LASTNAME, FIRSTNAME, USERNAME, PASSWORD, STREET, CITY, STATE, ZIP,BIRTHDATE, TENANT_ID) values(:EMP_ID, :LASTNAME, :FIRSTNAME, :USERNAME, :PASSWORD, :STREET, :CITY, :STATE, :ZIP, :BIRTHDATE, :TENANT_ID)
         ]]>
-    <query-param name="id" type="java.lang.Integer"/>
+    <query-param name="EMP_ID" type="java.lang.Integer"/>
+    <query-param name="LASTNAME" type="java.lang.String"/>
+    <query-param name="FIRSTNAME" type="java.lang.String"/>
+    <query-param name="USERNAME" type="java.lang.String"/>
+    <query-param name="PASSWORD" type="java.lang.String"/>
+    <query-param name="STREET" type="java.lang.String"/>
+    <query-param name="CITY" type="java.lang.String"/>
+    <query-param name="STATE" type="java.lang.String"/>
+    <query-param name="ZIP" type="java.lang.String"/>
+    <query-param name="BIRTHDATE" type="java.sql.Date"/>
+    <query-param name="TENANT_ID" type="java.lang.Integer"/>
     </sql-query>
 
-    <sql-query name="employeedatabyID__count">
+    <sql-query name="insertQuery_User">
         <![CDATA[
-        select count(*) from (select * from Employee where DEPT_ID =:id) wmTempTable
+        insert into USER(USERNAME, PASSWORD, ROLE, TENANT_ID) values(:USERNAME, :PASSWORD, :ROLE, :TENANT_ID)
         ]]>
-    <query-param name="id" type="java.lang.Integer"/>
+    <query-param name="USERNAME" type="java.lang.String"/>
+    <query-param name="PASSWORD" type="java.lang.String"/>
+    <query-param name="ROLE" type="java.lang.String"/>
+    <query-param name="TENANT_ID" type="java.lang.Integer"/>
+    </sql-query>
+
+    <sql-query name="insertQuesryVacation">
+        <![CDATA[
+        insert into VACATION(ID, START_DATE, END_DATE, EMP_ID, TENANT_ID, STATUS, "TYPE") values(:ID, :START_DATE, :END_DATE, :EMP_ID, :TENANT_ID, :STATUS, :TYPECol)
+        ]]>
+    <query-param name="ID" type="java.lang.Integer"/>
+    <query-param name="START_DATE" type="java.sql.Date"/>
+    <query-param name="END_DATE" type="java.sql.Date"/>
+    <query-param name="EMP_ID" type="java.lang.Integer"/>
+    <query-param name="TENANT_ID" type="java.lang.Integer"/>
+    <query-param name="STATUS" type="java.lang.String"/>
+    <query-param name="TYPECol" type="java.lang.String"/>
     </sql-query>
 </hibernate-mapping>

@@ -1,0 +1,19 @@
+<wm-partial data-ng-controller="UserCommentsPartialPageController" name="partial1"> 
+    <wm-list listclass="list-group" itemclass="list-group-item" template="true" itemsperrow="xs-1 sm-1 md-1 lg-1" class="media-list panel" dataset="bind:Variables.githubcomments.dataSet" navigation="On-Demand" name="empPostList" title="" ondemandmessage="Show More" pagesize="3" paginationclass="btn-primary"> 
+        <wm-listtemplate layout="media" name="listtemplate1"> 
+            <wm-container class="media-left media-top" name="empImageContainer"> 
+                <wm-picture name="empImage" class="media-object" width="32pt" height="32pt" picturesource="bind:Variables.githubcomments.dataSet.user.avatar_url" shape="circle"></wm-picture> 
+            </wm-container> 
+            <wm-container class="media-body" padding="unset .25em unset 1.25em" name="postContainer"> 
+                <wm-anchor class="inline" caption="bind:Variables.githubcomments.dataSet[$i].user.login + ' '" name="Name" margin="0em unset 0.5em unset"></wm-anchor> 
+                <wm-label name="Time" class="pull-right small" caption="bind:Variables.githubcomments.dataSet[$i].updated_at | timeFromNow"></wm-label> 
+                <wm-label caption="posted a new blog." class="p inline" name="postMessage"></wm-label> 
+                <wm-label caption="bind:Variables.githubcomments.dataSet[$i].updated_at | toDate: 'yyyy-MM-dd hh:mm a'" name="UpdatedAt" class="p small"></wm-label> 
+                <wm-html name="postDescription" content="bind:Variables.githubcomments.dataSet[$i].body" class="pre-wrap" height="auto">
+                     bind:Variables.githubcomments.dataSet[$i].body 
+                </wm-html> 
+                <wm-anchor margin="unset 0.5em" name="LikeAnchor" iconclass="wi wi-thumb-up" caption="11 Like this!" class="small"></wm-anchor> 
+            </wm-container> 
+        </wm-listtemplate> 
+    </wm-list> 
+</wm-partial>

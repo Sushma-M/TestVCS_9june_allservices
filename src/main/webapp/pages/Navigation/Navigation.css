@@ -1,0 +1,14 @@
+.app-login .app-form.app-login-form {
+    padding: 2px;
+}
+
+input.form-control.apply-margin {
+    margin-top: 4px;
+}
+.app-login .app-form.app-login-form .app-login-button{
+    margin-top: 5px;
+}
+
+.app-grid-row.apply-padding {
+    padding-top: 0.5em;   
+}

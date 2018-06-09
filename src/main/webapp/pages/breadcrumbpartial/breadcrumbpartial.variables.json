@@ -1,0 +1,35 @@
+{
+  "Breadcrumb" : {
+    "_id" : "wm-BreadcrumbVar-wm.Variable-1479461901335",
+    "name" : "Breadcrumb",
+    "owner" : "Page",
+    "category" : "wm.Variable",
+    "dataBinding" : [ ],
+    "dataSet" : [ {
+      "pageName" : "Home",
+      "icon" : "",
+      "link" : "#/Main"
+    } ],
+    "type" : "string",
+    "isList" : true,
+    "saveInPhonegap" : false
+  },
+  "currentPageDetails" : {
+    "_id" : "wm-currentPageDetails-wm.Variable-1487326150565",
+    "name" : "currentPageDetails",
+    "owner" : "Page",
+    "category" : "wm.Variable",
+    "dataBinding" : [ ],
+    "dataSet" : {
+      "label" : "",
+      "icon" : "",
+      "link" : "",
+      "category" : "",
+      "description" : "",
+      "thumbnail" : ""
+    },
+    "type" : "string",
+    "isList" : false,
+    "saveInPhonegap" : false
+  }
+}

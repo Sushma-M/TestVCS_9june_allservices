@@ -1,0 +1,37 @@
+<wm-page data-ng-controller="BlogPageController" pagetitle="Blog" name="page1"> 
+    <wm-header content="header" name="header1"></wm-header> 
+    <wm-top-nav content="topnav" name="top_nav1"></wm-top-nav> 
+    <wm-content name="content1"> 
+        <wm-left-panel columnwidth="2" content="leftnav" name="left_panel1"></wm-left-panel> 
+        <wm-page-content columnwidth="10" name="page_content1"> 
+            <wm-container name="container1" content="breadcrumbpartial"> 
+                <wm-param name="category" value="ui" type="string"></wm-param> 
+            </wm-container> 
+            <wm-list listclass="list-group" itemsperrow="xs-1 sm-2 md-2 lg-3" template="true" class="list-card" navigation="None" name="blogPostList" dataset="bind:Variables.blogAndFAQNewsFeed.dataSet"> 
+                <wm-listtemplate layout="media" name="listtemplate"> 
+                    <wm-card name="Blog" title="bind:Variables.blogAndFAQNewsFeed.dataSet[$i].blogTitle" subheading="bind:Variables.blogAndFAQNewsFeed.dataSet[$i].postedBy +&quot;-&quot;+(Variables.blogAndFAQNewsFeed.dataSet[$i].postedOn | toDate: 'yyyy-MM-dd HH:mm')"> 
+                        <wm-card-content name="cardContent" padding="unset 1.5em"> 
+                            <wm-label name="blogDescription" class="p" caption="bind:Variables.blogAndFAQNewsFeed.dataSet[$i].blogDescription"></wm-label> 
+                        </wm-card-content> 
+                        <wm-card-footer name="card_footer1"> 
+                            <wm-layoutgrid name="panelActionLayout"> 
+                                <wm-gridrow name="gridRowOne"> 
+                                    <wm-gridcolumn columnwidth="8" name="gridColumnOne" class="col-xs-6"> 
+                                        <wm-label name="tagLabel" caption="Tags:" class="bold p"></wm-label> 
+                                        <wm-chips name="chips1" datavalue="bind:Variables.blogAndFAQNewsFeed.dataSet[$i].queryTags" datafield="label" displayfield="label" readonly="true"></wm-chips> 
+                                    </wm-gridcolumn> 
+                                    <wm-gridcolumn columnwidth="4" name="gridColumnTwo" horizontalalign="right" class="col-xs-6"> 
+                                        <wm-label name="statisticsLabel" caption="Stats:" class="p bold"></wm-label> 
+                                        <wm-anchor name="commentsInfo" iconclass="fa fa-comments" caption="bind:Variables.blogAndFAQNewsFeed.dataSet[$i].comments + &quot; comments&quot;" class="small p"></wm-anchor> 
+                                        <wm-anchor name="viewsInfo" iconclass="wi wi-eye" caption="bind:Variables.blogAndFAQNewsFeed.dataSet[$i].voteCount + &quot; views&quot;" class="small p"></wm-anchor> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                            </wm-layoutgrid> 
+                        </wm-card-footer> 
+                    </wm-card> 
+                </wm-listtemplate> 
+            </wm-list> 
+        </wm-page-content> 
+    </wm-content> 
+    <wm-footer content="footer" name="footer1"></wm-footer> 
+</wm-page>

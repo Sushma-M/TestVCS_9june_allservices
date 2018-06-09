@@ -1,0 +1,193 @@
+<wm-page data-ng-controller="DashboardV3PageController" pagetitle="Dashboard V 3" name="page1"> 
+    <wm-header content="header" name="header1"></wm-header> 
+    <wm-top-nav content="topnav" name="top_nav1"></wm-top-nav> 
+    <wm-content name="content1"> 
+        <wm-left-panel columnwidth="2" content="leftnav" name="left_panel1"></wm-left-panel> 
+        <wm-page-content columnwidth="10" name="page_content1"> 
+            <wm-container name="breadcrumbContainer" content="breadcrumbpartial"> 
+                <wm-param name="category" value="ui" type="string"></wm-param> 
+            </wm-container> 
+            <wm-layoutgrid name="outerLayoutgrid"> 
+                <wm-gridrow name="outerGridRow"> 
+                    <wm-gridcolumn columnwidth="3" name="gridColumnTwo" class="col-md-3 col-md-push-9 col-sm-3 col-sm-push-9 col-xs-12" padding="0.5em unset unset unset"> 
+                        <wm-list template="true" dataset="bind:Variables.HrdbEmployeeData.dataSet" navigation="None" name="messageList" title="Messages"> 
+                            <wm-listtemplate layout="media" name="messageListTemplate"> 
+                                <wm-container class="media-left media-top" name="pictureContainer"> 
+                                    <wm-picture name="userPicture" class="media-object img-circle" width="32pt" height="32pt" picturesource="bind:Variables.HrdbEmployeeData.dataSet.picurl" margin="unset unset unset 1em"></wm-picture> 
+                                </wm-container> 
+                                <wm-container class="media-body" padding="unset 1.5em unset 1.25em" name="messageContainer"> 
+                                    <wm-label caption="bind:'@'+Variables.HrdbEmployeeData.dataSet.data[$i].firstname + ' ' + Variables.HrdbEmployeeData.dataSet.data[$i].lastname + ' '" name="Name" margin="0em unset 0.5em unset" fontsize="1.143" fontunit="em" class="inline"></wm-label> 
+                                    <wm-label name="messageDescription" class="inline text-muted" caption="I belive that. Lorem Ipsum is simply dummy text of the printing and typesetting industry."></wm-label> 
+                                    <wm-label caption="bind:Variables.HrdbEmployeeData.dataSet.data[$i].jobTitle" name="Designation" class="p"></wm-label> 
+                                </wm-container> 
+                            </wm-listtemplate> 
+                        </wm-list> 
+                        <wm-tile name="statTile"> 
+                            <wm-layoutgrid name="statLayoutgrid"> 
+                                <wm-gridrow name="statGridRowOne"> 
+                                    <wm-gridcolumn columnwidth="12" name="statGridColumnOne"> 
+                                        <wm-label padding="unset 0.5em" name="Statistics" caption="Statistics" class="h4"></wm-label> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                                <wm-gridrow name="statGridRowTwo"> 
+                                    <wm-gridcolumn columnwidth="12" name="statGridColumnTwo"> 
+                                        <wm-label padding="unset 0.5em" name="label5" caption="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt." class="p"></wm-label> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                                <wm-gridrow name="statGridRowThree"> 
+                                    <wm-gridcolumn columnwidth="6" name="statGridColumnThree" class="col-xs-6"> 
+                                        <wm-chart type="Column" title="" iconclass="" name="chart3" dataset="bind:Variables.ordersChartData.dataSet" xaxisdatakey="Number of Orders" yaxisdatakey="Number of Orders,Payments" offsetleft="-1" offsetbottom="0" showlegend="hide" height="60" class="col-xs-12 col-md-12" theme="Retro"></wm-chart> 
+                                        <wm-label padding="unset 0.5em" name="label6" caption="169 Posts" class="h5"></wm-label> 
+                                    </wm-gridcolumn> 
+                                    <wm-gridcolumn columnwidth="6" name="statGridColumnFour" class="col-xs-6"> 
+                                        <wm-chart type="Area" title="" iconclass="" name="chart4" dataset="bind:Variables.salesMarketingChartData.dataSet" xaxisdatakey="x" yaxisdatakey="y1,y2" offsetleft="-1" offsetbottom="0" showlegend="hide" height="60" class="col-xs-12  col-md-12" theme="Orient" customcolors="#389768, #181A0E" interpolation="cardinal"></wm-chart> 
+                                        <wm-label caption="28 Orders" class="h5" name="label7"></wm-label> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                            </wm-layoutgrid> 
+                        </wm-tile> 
+                        <wm-list template="true" itemsperrow="xs-1 sm-1 md-1 lg-1" datafield="All Fields" dataset="bind:Variables.discussionList.dataSet" navigation="None" name="DiscussionLivelist" title="Discussion"> 
+                            <wm-listtemplate layout="inline" name="discussionListTemplate"> 
+                                <wm-layoutgrid name="discussionLayoutgrid"> 
+                                    <wm-gridrow name="discussionGridRow"> 
+                                        <wm-gridcolumn columnwidth="9" name="discussionGridColOne" class="col-xs-8"> 
+                                            <wm-label class="p media-heading" caption="bind:Variables.discussionList.dataSet[$i].title" fontunit="em" name="title" margin="unset unset unset 1em"></wm-label> 
+                                        </wm-gridcolumn> 
+                                        <wm-gridcolumn columnwidth="3" name="discussionGridColTwo" class="col-xs-4" padding="unset 1em"> 
+                                            <wm-label class="p  badge" name="Number" caption="bind:Variables.discussionList.dataSet[$i].badgeValue" fontunit="em"></wm-label> 
+                                        </wm-gridcolumn> 
+                                    </wm-gridrow> 
+                                </wm-layoutgrid> 
+                            </wm-listtemplate> 
+                        </wm-list> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="9" name="gridColumnOne" class="col-md-9 col-md-pull-3 col-sm-9 col-sm-pull-3 col-xs-12"> 
+                        <wm-layoutgrid name="layoutGrid"> 
+                            <wm-gridrow name="saleGridRow"> 
+                                <wm-gridcolumn columnwidth="12" name="saleGridColumnOne" padding="0.5em"> 
+                                    <wm-panel iconclass="" autoclose="outsideClick" name="salePanel" title="Sales Marketing." class="panel-default" subheading="Half-year revenue margin" margin="unset unset 0px unset"> 
+                                        <wm-layoutgrid name="saleLayoutGrid"> 
+                                            <wm-gridrow name="saleGridRowOne"> 
+                                                <wm-gridcolumn columnwidth="4" name="gridcolumnOne" class="col-xs-5"> 
+                                                    <wm-label class="h1" caption="$50,992" margin="0px unset" name="caption"></wm-label> 
+                                                </wm-gridcolumn> 
+                                                <wm-gridcolumn columnwidth="8" name="gridcolumnTwo" horizontalalign="right" class="col-xs-7"> 
+                                                    <wm-label class="p" caption="Average value of sales in the past month in: United states" margin="0px unset" name="country"></wm-label> 
+                                                    <wm-label class="p" caption="All sales: 162,862" margin="0px unset" name="allSales"></wm-label> 
+                                                </wm-gridcolumn> 
+                                            </wm-gridrow> 
+                                            <wm-gridrow name="saleGridRowTwo"> 
+                                                <wm-gridcolumn columnwidth="12" name="gridcolumnThree"> 
+                                                    <wm-chart type="Area" title="" iconclass="" dataset="bind:Variables.salesMarketingChartData.dataSet" xaxisdatakey="x" yaxisdatakey="y1,y2" offsetleft="25" offsetbottom="25" name="revenueMargin" theme="Azure" interpolation="cardinal"></wm-chart> 
+                                                </wm-gridcolumn> 
+                                            </wm-gridrow> 
+                                            <wm-gridrow name="saleGridRowThree"> 
+                                                <wm-gridcolumn columnwidth="6" name="gridColumnFour" class="col-xs-7"> 
+                                                    <wm-label class="p" caption="Analysis of sales: The value has been changed over time, and last month reached a level over $50,000." margin="0px unset" name="analysisSale"></wm-label> 
+                                                </wm-gridcolumn> 
+                                                <wm-gridcolumn columnwidth="6" name="gridColumFive" horizontalalign="right" class="col-xs-5" padding="unset unset unset .5em"> 
+                                                    <wm-icon iconclass="wi wi-clock" name="updateLabel" caption="Update on 16.07.2015"></wm-icon> 
+                                                </wm-gridcolumn> 
+                                            </wm-gridrow> 
+                                        </wm-layoutgrid> 
+                                    </wm-panel> 
+                                </wm-gridcolumn> 
+                            </wm-gridrow> 
+                            <wm-gridrow name="orderGridRow"> 
+                                <wm-gridcolumn columnwidth="4" name="orderColumnOne" padding="0.5em"> 
+                                    <wm-panel iconclass="" title="Visits" badgevalue="Today" badgetype="success" name="visitsPanel" class="panel-default" margin="unset unset 0px unset"> 
+                                        <wm-label class="h1" caption="22,285,400" margin="0px unset" name="visitCount"></wm-label> 
+                                        <wm-layoutgrid name="visitLayoutGrid"> 
+                                            <wm-gridrow name="visitGridRow"> 
+                                                <wm-gridcolumn columnwidth="6" name="gridcolumn25" class="col-xs-6"> 
+                                                    <wm-label class="p" caption="New orders" margin="0px unset" name="orderLabelOne"></wm-label> 
+                                                </wm-gridcolumn> 
+                                                <wm-gridcolumn columnwidth="6" name="gridcolumn26" horizontalalign="right" class="col-xs-6"> 
+                                                    <wm-icon class="text-success" iconclass="fa fa-level-up text-success" name="levelUpIconOne" caption="20%" iconposition="right"></wm-icon> 
+                                                </wm-gridcolumn> 
+                                            </wm-gridrow> 
+                                        </wm-layoutgrid> 
+                                    </wm-panel> 
+                                </wm-gridcolumn> 
+                                <wm-gridcolumn columnwidth="4" name="orderColumnTwo" padding="0.5em"> 
+                                    <wm-panel iconclass="" title="Orders" badgevalue="Monthly" badgetype="info" name="orderPanel" class="panel-default" margin="unset unset 0px unset"> 
+                                        <wm-label class="h1" caption="60,420,600" margin="0px unset" name="orderCount"></wm-label> 
+                                        <wm-layoutgrid name="orderLayoutGrid"> 
+                                            <wm-gridrow name="ordersGridRow"> 
+                                                <wm-gridcolumn columnwidth="6" name="gridcolumn22" class="col-xs-6"> 
+                                                    <wm-label class="p" caption="New orders" margin="0px unset" name="orderLabelTwo"></wm-label> 
+                                                </wm-gridcolumn> 
+                                                <wm-gridcolumn columnwidth="6" name="gridcolumn23" horizontalalign="right" class="col-xs-6"> 
+                                                    <wm-icon class="text-info" iconclass="fa fa-level-up" name="percentLabelTwo" caption="40%" iconposition="right"></wm-icon> 
+                                                </wm-gridcolumn> 
+                                            </wm-gridrow> 
+                                        </wm-layoutgrid> 
+                                    </wm-panel> 
+                                </wm-gridcolumn> 
+                                <wm-gridcolumn columnwidth="4" name="orderColumnThree" padding="0.5em"> 
+                                    <wm-panel iconclass="" title="Income" badgevalue="Annual" badgetype="warning" name="incomePanel" class="panel-default" margin="unset unset 0px unset"> 
+                                        <wm-label class="h1" caption="$120,430,800" margin="0px unset" name="incomeCount"></wm-label> 
+                                        <wm-layoutgrid name="layoutgrid5"> 
+                                            <wm-gridrow name="incomeGridRow"> 
+                                                <wm-gridcolumn columnwidth="6" name="gridcolumn20_1" class="col-xs-6"> 
+                                                    <wm-label class="p" caption="New orders" margin="0px unset" name="orderLabelThree"></wm-label> 
+                                                </wm-gridcolumn> 
+                                                <wm-gridcolumn columnwidth="6" name="gridcolumn21" horizontalalign="right" class="col-xs-6"> 
+                                                    <wm-icon class="text-warning" iconclass="fa fa-level-up" name="percentLabelThree" caption="16%" iconposition="right"></wm-icon> 
+                                                </wm-gridcolumn> 
+                                            </wm-gridrow> 
+                                        </wm-layoutgrid> 
+                                    </wm-panel> 
+                                </wm-gridcolumn> 
+                            </wm-gridrow> 
+                            <wm-gridrow name="reportGridRow"> 
+                                <wm-gridcolumn columnwidth="6" name="reportColumnOne" padding="0.5em"> 
+                                    <wm-panel iconclass="" name="reportPanel" collapsible="true" closable="true" actions="bind:Variables.menuactions.dataSet" title="New data for the report" margin="unset unset 1em unset" class="panel-default"> 
+                                        <wm-panel-footer name="panel_footer2"> 
+                                            <wm-layoutgrid name="layoutgrid8"> 
+                                                <wm-gridrow name="gridrow15"> 
+                                                    <wm-gridcolumn columnwidth="7" name="gridcolumn29" class="col-xs-7"> 
+                                                        <wm-label class="h4" caption="NYS report new data!" name="label25" margin="unset unset 0px unset"></wm-label> 
+                                                        <wm-anchor caption="Check the stock price!" name="anchor1"></wm-anchor> 
+                                                    </wm-gridcolumn> 
+                                                    <wm-gridcolumn columnwidth="5" name="gridcolumn30" class="col-xs-5"> 
+                                                        <wm-chart type="Column" title="" iconclass="wi wi-bar-chart" height="30" showlegend="hide" showyaxis="false" showxaxis="false" offsetleft="0" offsetright="0" offsetbottom="0" offsettop="0" dataset="bind:Variables.salesMarketingChartData.dataSet" xaxisdatakey="x" yaxisdatakey="x,y1" name="chart4_1"></wm-chart> 
+                                                        <wm-label class="text-right p" caption="$ 20 054.43" name="label26" padding="unset 0.5em unset unset"></wm-label> 
+                                                    </wm-gridcolumn> 
+                                                </wm-gridrow> 
+                                            </wm-layoutgrid> 
+                                        </wm-panel-footer> 
+                                        <wm-tile padding="1em" name="tile1" backgroundcolor="rgba(0,0,0,0.04)" class="display-block"> 
+                                            <wm-layoutgrid name="layoutgrid9"> 
+                                                <wm-gridrow name="gridrow16"> 
+                                                    <wm-gridcolumn columnwidth="8" name="gridcolumn31" class="col-xs-8"> 
+                                                        <wm-label caption="Stock price up" margin="0px unset" name="label29" fontsize="2.2" fontunit="em"></wm-label> 
+                                                    </wm-gridcolumn> 
+                                                    <wm-gridcolumn columnwidth="4" name="gridcolumn32" horizontalalign="right" class="col-xs-4"> 
+                                                        <wm-icon name="stockpricePercentage" iconclass="fa fa-level-up" class="text-primary" iconsize="2em" caption="34%" iconposition="right"></wm-icon> 
+                                                    </wm-gridcolumn> 
+                                                </wm-gridrow> 
+                                                <wm-gridrow name="gridrow17"> 
+                                                    <wm-gridcolumn columnwidth="12" name="gridcolumn35"> 
+                                                        <wm-icon name="icon5" class="text-muted" iconclass="wi wi-message" caption="New economic data from the previous quarter."></wm-icon> 
+                                                    </wm-gridcolumn> 
+                                                </wm-gridrow> 
+                                            </wm-layoutgrid> 
+                                        </wm-tile> 
+                                    </wm-panel> 
+                                    <wm-panel iconclass="" title="Read below comments" collapsible="true" closable="true" name="commentPanel" class="panel-default" content="MessagesPartial" margin="unset unset 0px unset"></wm-panel> 
+                                </wm-gridcolumn> 
+                                <wm-gridcolumn columnwidth="6" name="reportColumnTwo" padding="0.5em"> 
+                                    <wm-panel iconclass="" title="Timeline" collapsible="true" closable="true" name="timelinePanel" badgevalue="Meeting today" badgetype="success" actions="bind:Variables.menuactions.dataSet" class="panel-default" margin="unset unset 0px unset"> 
+                                        <wm-container name="meetingTimelineContainer" content="TimelinePartial"></wm-container> 
+                                    </wm-panel> 
+                                </wm-gridcolumn> 
+                            </wm-gridrow> 
+                        </wm-layoutgrid> 
+                    </wm-gridcolumn> 
+                </wm-gridrow> 
+            </wm-layoutgrid> 
+        </wm-page-content> 
+    </wm-content> 
+    <wm-footer content="footer" name="footer1"></wm-footer> 
+</wm-page>

@@ -1,0 +1,151 @@
+<wm-page data-ng-controller="DashboardV5PageController" pagetitle="Dashboard V 5" name="page1"> 
+    <wm-header content="header" name="header1"></wm-header> 
+    <wm-top-nav content="topnav" name="top_nav1"></wm-top-nav> 
+    <wm-content name="content1"> 
+        <wm-left-panel columnwidth="2" content="leftnav" name="left_panel1"></wm-left-panel> 
+        <wm-page-content columnwidth="10" name="page_content1"> 
+            <wm-container name="breadcrumbContainer" content="breadcrumbpartial"> 
+                <wm-param name="category" value="ui" type="string"></wm-param> 
+            </wm-container> 
+            <wm-layoutgrid name="outerLayoutGrid"> 
+                <wm-gridrow name="gridRowOne" padding="unset unset 0.5em unset"> 
+                    <wm-gridcolumn columnwidth="4" name="gridcolumnOne" padding="1em"> 
+                        <wm-layoutgrid height="210" name="currentMonthLayoutgrid"> 
+                            <wm-gridrow name="gridrowOne"> 
+                                <wm-gridcolumn columnwidth="12" horizontalalign="left" name="gridcolumn14"> 
+                                    <wm-label name="monthlyStatistics" class="h1" caption="26,900" textalign="left" margin="0px unset"></wm-label> 
+                                    <wm-label name="monthlyStatisticsLabel" class="small" caption="Sales in current month" margin="0px unset"></wm-label> 
+                                </wm-gridcolumn> 
+                            </wm-gridrow> 
+                            <wm-gridrow name="gridrowTwo"> 
+                                <wm-gridcolumn columnwidth="12" name="gridcolumn16"> 
+                                    <wm-chart type="Line" title="" iconclass="" name="chartOne" dataset="bind:Variables.salesMarketingChartData.dataSet" xaxisdatakey="x" yaxisdatakey="y1" offsetleft="-1" offsetbottom="6.5" showlegend="hide" height="60px" width="100%" interpolation="cardinal" offsettop="6.5" offsetright="0" theme="GrayScale"></wm-chart> 
+                                </wm-gridcolumn> 
+                            </wm-gridrow> 
+                            <wm-gridrow name="gridrowThree" padding="1em unset unset unset"> 
+                                <wm-gridcolumn columnwidth="4" name="gridcolumn18" class="col-xs-4"> 
+                                    <wm-label name="pagesLabel" class="p" caption="Pages / Visit"></wm-label> 
+                                    <wm-label name="pageCountLabel" fontweight="bold" caption="236 321.80"></wm-label> 
+                                </wm-gridcolumn> 
+                                <wm-gridcolumn columnwidth="4" name="gridcolumn19" class="col-xs-4"> 
+                                    <wm-label class="p" name="visitsLabel" caption="% New Visits"></wm-label> 
+                                    <wm-label fontweight="bold" name="visitsPercentage" caption="46.11%"></wm-label> 
+                                </wm-gridcolumn> 
+                                <wm-gridcolumn columnwidth="4" name="gridcolumn20" class="col-xs-4"> 
+                                    <wm-label class="p" name="lastWeekCountLabel" caption="Last week"></wm-label> 
+                                    <wm-label fontweight="bold" name="lastWeekCount" caption="432.021"></wm-label> 
+                                </wm-gridcolumn> 
+                            </wm-gridrow> 
+                        </wm-layoutgrid> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="4" name="gridcolumnTwo" padding="1em"> 
+                        <wm-layoutgrid height="210" name="lastMonthLayoutgrid"> 
+                            <wm-gridrow name="gridrowFour"> 
+                                <wm-gridcolumn columnwidth="12" horizontalalign="left" name="gridcolumn22"> 
+                                    <wm-label class="h1" caption="98,100" textalign="left" margin="0px unset" name="weeklyStatistic"></wm-label> 
+                                    <wm-label class="small" caption="Sales in last 24h" margin="0px unset" name="weeklyStatisticLabel"></wm-label> 
+                                </wm-gridcolumn> 
+                            </wm-gridrow> 
+                            <wm-gridrow name="gridrowFive"> 
+                                <wm-gridcolumn columnwidth="12" name="gridcolumn24"> 
+                                    <wm-chart type="Line" title="" iconclass="" dataset="bind:Variables.salesMarketingChartData.dataSet" xaxisdatakey="x" yaxisdatakey="y2" offsetleft="-1" offsetbottom="6" showlegend="hide" height="60px" name="chart4" width="100%" interpolation="linear" offsettop="6" offsetright="0"></wm-chart> 
+                                </wm-gridcolumn> 
+                            </wm-gridrow> 
+                            <wm-gridrow name="gridrowSix" padding="1em unset unset unset"> 
+                                <wm-gridcolumn columnwidth="4" name="gridcolumn25" class="col-xs-4"> 
+                                    <wm-label class="p" name="label38" caption="Pages / Visit"></wm-label> 
+                                    <wm-label fontweight="bold" name="label39" caption="166 781.80"></wm-label> 
+                                </wm-gridcolumn> 
+                                <wm-gridcolumn columnwidth="4" name="gridcolumn26" class="col-xs-4"> 
+                                    <wm-label class="p" name="label40" caption="% New Visits"></wm-label> 
+                                    <wm-label fontweight="bold" name="label41" caption="22.45%"></wm-label> 
+                                </wm-gridcolumn> 
+                                <wm-gridcolumn columnwidth="4" name="gridcolumn27" class="col-xs-4"> 
+                                    <wm-label class="p" name="label42" caption="Last week"></wm-label> 
+                                    <wm-label fontweight="bold" name="label43" caption="862.044"></wm-label> 
+                                </wm-gridcolumn> 
+                            </wm-gridrow> 
+                        </wm-layoutgrid> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="4" name="gridcolumnThree" padding="1em"> 
+                        <wm-layoutgrid height="210" name="revenueLayoutGrid"> 
+                            <wm-gridrow name="gridrowSeven"> 
+                                <wm-gridcolumn columnwidth="6" horizontalalign="left" name="gridcolumn6" class="col-xs-6"> 
+                                    <wm-label name="incomeLabel" class="h5" margin="0px unset" caption="Income last month"></wm-label> 
+                                    <wm-label name="incomeData" class="h1" margin="0px unset" caption="160,000"></wm-label> 
+                                    <wm-icon name="percentLabelOne" iconclass="wi wi-flash-on" class="text-success" caption="98%" iconposition="right"></wm-icon> 
+                                </wm-gridcolumn> 
+                                <wm-gridcolumn columnwidth="6" horizontalalign="left" name="gridcolumn7" class="col-xs-6"> 
+                                    <wm-label class="h5" margin="0px unset" name="salesLabel" caption="Sales current year"></wm-label> 
+                                    <wm-label class="h1" margin="0px unset" name="salesData" caption="42,120"></wm-label> 
+                                    <wm-icon name="percentLabelTwo" iconclass="wi wi-flash-on" class="text-success" caption="98%" iconposition="right"></wm-icon> 
+                                </wm-gridcolumn> 
+                            </wm-gridrow> 
+                            <wm-gridrow name="gridrowEight"> 
+                                <wm-gridcolumn columnwidth="6" name="gridcolumn8" class="col-xs-6"> 
+                                    <wm-label name="projectCount" caption="142" fontweight="bold"></wm-label> 
+                                    <wm-label padding="unset 0.5em" name="projectLabel" caption="Projects"></wm-label> 
+                                </wm-gridcolumn> 
+                                <wm-gridcolumn columnwidth="6" name="gridcolumn9" class="col-xs-6"> 
+                                    <wm-label caption="22" fontweight="bold" name="messagesCount"></wm-label> 
+                                    <wm-label padding="unset 0.5em" caption="Messages" name="messagesLabel"></wm-label> 
+                                </wm-gridcolumn> 
+                            </wm-gridrow> 
+                            <wm-gridrow name="gridrowNine"> 
+                                <wm-gridcolumn columnwidth="6" name="gridcolumn10" class="col-xs-6"> 
+                                    <wm-label name="commentsCount" caption="61" fontweight="bold"></wm-label> 
+                                    <wm-label padding="unset 0.5em" name="commentsLabel" caption="Comments"></wm-label> 
+                                </wm-gridcolumn> 
+                                <wm-gridcolumn columnwidth="6" name="gridcolumn11" class="col-xs-6"> 
+                                    <wm-label caption="54" fontweight="bold" name="articleCount"></wm-label> 
+                                    <wm-label padding="unset 0.5em" caption="Articles" name="articleLabel"></wm-label> 
+                                </wm-gridcolumn> 
+                            </wm-gridrow> 
+                            <wm-gridrow name="gridrowTen"> 
+                                <wm-gridcolumn columnwidth="6" name="gridcolumn12" class="col-xs-6"> 
+                                    <wm-label name="companiesCount" fontweight="bold" caption="154"></wm-label> 
+                                    <wm-label padding="unset 0.5em" name="CompaniesLabel" caption="Companies"></wm-label> 
+                                </wm-gridcolumn> 
+                                <wm-gridcolumn columnwidth="6" name="gridcolumn13" class="col-xs-6"> 
+                                    <wm-label caption="32" fontweight="bold" name="clientsCount"></wm-label> 
+                                    <wm-label padding="unset 0.5em" caption="Clients" name="clientsLabel"></wm-label> 
+                                </wm-gridcolumn> 
+                            </wm-gridrow> 
+                        </wm-layoutgrid> 
+                    </wm-gridcolumn> 
+                </wm-gridrow> 
+                <wm-gridrow name="gridRowTwo"> 
+                    <wm-gridcolumn columnwidth="6" name="gridcolumn24_1" class="col-xs-12"> 
+                        <wm-label caption="Sales char have evolvedd over the years sometimes." name="salesLabelOne" padding="unset 0.5em unset 1em"></wm-label> 
+                    </wm-gridcolumn> 
+                    <wm-gridcolumn columnwidth="6" name="gridcolumn25_1" class="col-xs-12" horizontalalign="right"> 
+                        <wm-label caption="There are many variations of passages of Lorem Ipsum available, but the majority have suffered." name="salesLabelTwo" padding="unset 2em unset 1em"></wm-label> 
+                    </wm-gridcolumn> 
+                </wm-gridrow> 
+                <wm-gridrow name="gridRowThree"> 
+                    <wm-gridcolumn columnwidth="12" name="gridcolumn28"> 
+                        <wm-chart type="Area" title="" iconclass="" name="salesChart" dataset="bind:Variables.salesMarketingChartData.dataSet" yaxisdatakey="y1,y2" xaxisdatakey="x" offsetleft="25" offsetbottom="25" showlegend="hide" theme="Annabelle" customcolors="#7ecfa3,  #257293" interpolation="cardinal"></wm-chart> 
+                    </wm-gridcolumn> 
+                </wm-gridrow> 
+                <wm-gridrow name="gridRowFour"> 
+                    <wm-gridcolumn columnwidth="12" name="gridcolumn30" padding="2em 0.5em unset 0.5em"> 
+                        <wm-table title="" dataset="bind:Variables.HrdbEmployeeData.dataSet" navigation="None" name="responsiveTable" spacing="normal" filtermode="multicolumn"> 
+                            <wm-table-column binding="picurl" caption="Picurl" type="string" widget-type="image" width="64px" generator="assigned" readonly="true" searchable="false" show="true"> 
+                                <img data-ng-src="{{row.getProperty('picurl')}}" alt="{{row.getProperty('picurl')}}" class="img-rounded" data-ng-class=""> 
+                            </wm-table-column> 
+                            <wm-table-column binding="firstname" caption="Firstname" type="string" width="10%" generator="assigned" readonly="true" show="true"></wm-table-column> 
+                            <wm-table-column binding="lastname" caption="Lastname" type="string" width="10%" generator="assigned" readonly="true" show="true"></wm-table-column> 
+                            <wm-table-column binding="jobTitle" caption="Job Title" type="string" generator="assigned" readonly="true" show="true"></wm-table-column> 
+                            <wm-table-column binding="customField" caption="email" type="string" readonly="true" mobiledisplay="false" searchable="false" show="true"> 
+                                <wm-anchor href="mailto:" iconclass="wi wi-email" caption="{{row.getProperty('firstname')+'.'+row.getProperty('lastname')+'@mobeteq.com'}}"></wm-anchor> 
+                            </wm-table-column> 
+                            <wm-table-column binding="city" caption="City" type="string" width="20%" generator="assigned" readonly="true" show="true"></wm-table-column> 
+                            <wm-table-column binding="state" caption="State" type="string" width="10%" generator="assigned" readonly="true" mobiledisplay="false" show="true"></wm-table-column> 
+                        </wm-table> 
+                    </wm-gridcolumn> 
+                </wm-gridrow> 
+            </wm-layoutgrid> 
+        </wm-page-content> 
+    </wm-content> 
+    <wm-footer content="footer" name="footer1"></wm-footer> 
+</wm-page>

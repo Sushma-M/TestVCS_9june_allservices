@@ -1,0 +1,62 @@
+<wm-page data-ng-controller="IssueTrackerPageController" pagetitle="Issue Tracker" name="page1"> 
+    <wm-header content="header" name="header1"></wm-header> 
+    <wm-top-nav content="topnav" name="top_nav1"></wm-top-nav> 
+    <wm-content name="content1"> 
+        <wm-left-panel columnwidth="2" content="leftnav" name="left_panel1"></wm-left-panel> 
+        <wm-page-content columnwidth="10" name="page_content1"> 
+            <wm-container name="container1" content="breadcrumbpartial"> 
+                <wm-param name="category" value="ui" type="string"></wm-param> 
+            </wm-container> 
+            <wm-panel iconclass="" autoclose="outsideClick" name="issuePanel" title="Issue List" badgetype="primary" class="panel-default" actions="Add new issue"> 
+                <wm-layoutgrid name="layoutgrid1"> 
+                    <wm-gridrow name="gridrow1" padding="0.5em"> 
+                        <wm-gridcolumn columnwidth="12" name="gridcolumn1"> 
+                            <wm-search name="search1" placeholder="Search issue by name..." dataset="bind:Variables.blogAndFAQNewsFeed.dataSet" searchkey="FAQ" displaylabel="FAQ" datafield="All Fields"></wm-search> 
+                        </wm-gridcolumn> 
+                    </wm-gridrow> 
+                    <wm-gridrow name="gridrow2" padding="0.5em"> 
+                        <wm-gridcolumn columnwidth="6" name="gridcolumn3" class="col-xs-5"> 
+                            <wm-label name="foundIssues" caption="bind:&quot;Found &quot;+ Variables.blogAndFAQNewsFeed.dataSet.length+ &quot; issues.&quot;" fontweight="bold" margin="0.5em unset unset unset"></wm-label> 
+                        </wm-gridcolumn> 
+                        <wm-gridcolumn columnwidth="6" name="gridcolumn4" horizontalalign="right" class="col-xs-7"> 
+                            <wm-button class="btn-default btn-sm" caption="" type="button" margin="unset 0.2em unset unset" name="commentButton" iconclass="wi wi-comments"></wm-button> 
+                            <wm-button class="btn-default btn-sm" caption="" type="button" margin="unset 0.2em" name="profileButton" iconclass="wi wi-account-circle"></wm-button> 
+                            <wm-button class="btn-default btn-sm" caption="" type="button" margin="unset 0.2em" name="listButton" iconclass="wi wi-view-list"></wm-button> 
+                            <wm-button class="btn-default btn-sm" caption="" type="button" margin="unset 0.2em" name="editButton" iconclass="wi wi-mode-edit"></wm-button> 
+                            <wm-button class="btn-default btn-sm" caption="" type="button" margin="unset 0.2em" name="printButton" iconclass="wi wi-printer"></wm-button> 
+                            <wm-button class="btn-default btn-sm" caption="" type="button" margin="unset unset unset 0.2em" iconclass="fa fa-gears" name="settingButton"></wm-button> 
+                        </wm-gridcolumn> 
+                    </wm-gridrow> 
+                    <wm-gridrow name="gridrow3" padding="0.5em"> 
+                        <wm-gridcolumn columnwidth="12" name="gridcolumn4_1" padding="0.5em unset unset unset"> 
+                            <wm-table title="" dataset="bind:Variables.blogAndFAQNewsFeed.dataSet" navigation="None" name="grid1" showheader="false" gridclass="table-hover"> 
+                                <wm-table-column binding="bugType" caption="Bug Type" type="string" widget-type="label" width="8%" readonly="true" edit-widget-type="text" show="true"> 
+                                    <label class="text-small label" data-ng-class="{'label-info':row.getProperty('bugType') == 'Added', 'label-success':row.getProperty('bugType') == 'Fixed', 'label-danger':row.getProperty('bugType') == &quot;Bug&quot;}">{{row.getProperty('bugType')}}</label> 
+                                </wm-table-column> 
+                                <wm-table-column binding="FAQ" caption="Faq" type="string" widget-type="anchor" width="30%" readonly="true" edit-widget-type="text" show="true"> 
+                                    <wm-anchor padding="unset 0.5em" caption="{{'ISSUE - '+row.getProperty('comments')}}" hyperlink="" fontweight="bold" ng-class=""></wm-anchor> 
+                                    <wm-label caption="{{row.getProperty('FAQ')}}" class="p small" ng-class="" padding="unset 0.5em"></wm-label> 
+                                </wm-table-column> 
+                                <wm-table-column binding="postedBy" caption="Posted By" type="string" width="15%" readonly="true" edit-widget-type="text" show="true"></wm-table-column> 
+                                <wm-table-column binding="postedOn" caption="Posted On" type="string" widget-type="label" width="15%" readonly="true" edit-widget-type="text" show="true"> 
+                                    <wm-label caption="{{row.getProperty('postedOn')  | toDate: 'yyyy-MM-dd HH:mm'}}" class="inline" ng-class="" padding="unset 0.5em"></wm-label> 
+                                </wm-table-column> 
+                                <wm-table-column binding="customField" caption="stats" type="string" widget-type="label" width="80px" readonly="true" edit-widget-type="text" searchable="false" show="true"> 
+                                    <wm-chart type="Pie" title="" iconclass="" height="64" width="64" showlegend="hide" showlabels="hide" theme="Retro" name="KolterChart" donutratio="0.3" offsettop="0" dataset="bind:row.status" xaxisdatakey="dataValue" yaxisdatakey="dataValue" style="margin-top:-20px"></wm-chart> 
+                                </wm-table-column> 
+                                <wm-table-column binding="comments" caption="Comments" type="string" widget-type="label" width="3%" readonly="true" edit-widget-type="text" show="true"> 
+                                    <wm-label caption="{{row.getProperty('comments')+'d'}}" class="" ng-class="" data-ng-class=""></wm-label> 
+                                </wm-table-column> 
+                                <wm-table-column binding="customField2" caption="customtag" type="string" readonly="true" edit-widget-type="text" searchable="false" show="true"> 
+                                    <wm-chips name="chips1" datavalue="bind:row.queryTags" datafield="label" displayfield="label" readonly="true"></wm-chips> 
+                                </wm-table-column> 
+                            </wm-table> 
+                        </wm-gridcolumn> 
+                    </wm-gridrow> 
+                </wm-layoutgrid> 
+            </wm-panel> 
+            <!-- <wm-chart type="Pie" title="Pie Chart" height="250px" iconclass="wi wi-pie-chart" name="chart2" dataset="bind:Variables.blogAndFAQNewsFeed.dataSet" xaxisdatakey="status[0].dataValue" yaxisdatakey="status[0].dataValue"></wm-chart>--> 
+        </wm-page-content> 
+    </wm-content> 
+    <wm-footer content="footer" name="footer1"></wm-footer> 
+</wm-page>
